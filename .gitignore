@@ -2,7 +2,17 @@
 source/original/*.xlsx
 source/original/**/*.xlsx
 
-# 忽略改动排查报告
+# 忽略标记文件备份（大文件）
+backup_marked/
+*.xlsx
+
+# 忽略转换脚本（已使用过）
+convert_to_md.py
+convert_to_md_v2.py
+
+# 忽略诊断报告
+diagnostic_report.md
+诊断报告.md
 改动排查报告.md
 
 # 忽略系统文件
