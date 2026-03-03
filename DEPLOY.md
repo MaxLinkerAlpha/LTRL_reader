@@ -197,4 +197,13 @@ npx http-server -p 8000
 
 ---
 
+## 鸣谢
+
+**LTRL翻译小组** - 感谢所有译者的辛勤工作和专业贡献。
+
+- 译者：Lanx、簪花落梅、Yancey、tuche est、Mecius
+- 特别感谢所有参与审校、润色的贡献者
+
+---
+
 **MaxLinkerAlpha 🏛️ LTRL Reader**

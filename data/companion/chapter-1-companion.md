@@ -48,3 +48,15 @@
 推荐阅读相关章节：
 - Chapter II, Section 3（形容词与名词的一致）
 - Chapter III, Section 1（代词的格变化）
+
+---
+
+## 鸣谢
+
+本伴侣文档由 **LTRL翻译小组** 编写维护。
+
+感谢所有参与编写和审校的译者。
+
+---
+
+*Lingua Latina per se illustrata* 🏛️
