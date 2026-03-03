@@ -10,10 +10,10 @@ title: "Chapter V"
 <div class='latin-text'>Lanx</div>
 <div class='latin-text'>Yancey</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>李勋 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:115 page:83 -->
+<div class='translation' data-translator='簪花落梅' style='border-color:#9A38D7'>序号115，页数83（拆分：？，？）（机翻：？，？）（人翻：Yancey，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#9A38D7'>簪花落梅</span></div>
 ## Vocabulary
 <div class='translation' data-translator='簪花落梅' style='border-color:#9A38D7'>单词表（暂缓） <span class='tag' style='background:#9A38D7'>簪花落梅</span></div>
-<!-- seq:116 page:84 -->
+<div class='translation' data-translator='簪花落梅' style='border-color:#9A38D7'>序号116，页数84（拆分：？，？）（机翻：？，？）（人翻：Yancey，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#9A38D7'>簪花落梅</span></div>
 <div class='latin-text'>amicitia, amicitiae f. and inimicitia, inimicitiae f. are both abstract nouns.They are formed by the addition of the suffix -tia to the stems of amicus, -a, -um and inimicus, -a, -um. All abstract nouns of this type are thus first-declension nouns.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>阿米西蒂亚湾和inimicitia，inimicitiae f.都是抽象名词。它们是在amicus，-a，-um和inimicus，-a，-um的词干上加上后缀-tia而形成的。所有这类抽象名词都是第一变格名词。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>amicitia, amicitiae f. 与 inimicitia, inimicitiae f. 二者均为抽象名词，由 amicus, -a, -um 和 inimicus, -a, -um 在词干后加后缀 -tia 构成。诸如此类抽象名词均属第一变格法。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -32,7 +32,7 @@ title: "Chapter V"
 <div class='latin-text'>Compound Verbs, Prefixes, Assimilation, and Vowel Weakening</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>复合动词、前缀、同化与元音弱化 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>符合动词、前缀、语音同化及元音弱化 <span class='tag' style='background:#999999'>机翻</span></div>
-<div class='latin-text'>A compound verb【原文脚注】 (&lt; compônö, put together) is a verb formed from the combination of a simple, or uncompounded, verb and a prefix. A prefix (&lt; praefigö, fasten in front) is a unit of meaning added to the beginning of a word to produce another word.</div>
+<div class='latin-text'>A compound verb【正文原文】 (&lt; compônö, put together) is a verb formed from the combination of a simple, or uncompounded, verb and a prefix. A prefix (&lt; praefigö, fasten in front) is a unit of meaning added to the beginning of a word to produce another word.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>复合动词 (&lt; compônö, put together) 是由简单动词或非复合动词和前缀组合而成的动词。前缀（&lt; praefigö，fasten in front）是加在一个词的开头以产生另一个词的意义单位 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>复合动词 (&lt; compônö, com一起，pono放) 由简单或非复合动词及前缀构成。前缀是指附加于词首构成新词的意义单位。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Most prefixes in Latin are derived from adverbs, and many prefixes have corresponding prepositions.A prefix has a basic meaning, and the meaning of a compound Latin verb can sometimes be deduced by combining the meaning of the simple verb with the basic meaning of the prefix.</div>
@@ -90,7 +90,7 @@ title: "Chapter V"
 <div class='latin-text'>1. A phonetic change is an alteration in pronunciation with a corresponding change in spelling.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>1.语音变化是指发音的改变和相应的拼写变化 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>1.语音变化是指伴随拼写变化的发音变化。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:117 page:85 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号117，页数85（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>WHEN A COMPOUND OF ONE OF THESE VERBS APPEARS IN READINGS, ITS PRINCIPAL PARTS ARE NOT SUPPLIED, BUT THE PREFIX AND SIMPLE VERB ARE GIVEN.Instances of vowel weakening or retention of the simple verb within the compound are cited in the vocabulary notes.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>当这些动词之一的复合词出现在阅读中时，它的主要部分不提供，但前缀和简单动词是给定的。元音弱化的例子或复合词中简单动词的保留在词汇注释中列出 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>谨记，阅读中出现这些动词的复合词时，不会标出其主要部分，但会给出其前缀及简单动词。词汇注释中会给出元音弱化的示例或者复合词中保留的简单动词。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -172,7 +172,7 @@ title: "Chapter V"
 <div class='latin-text'>2. The Objective Genitive that appears with memini is also called the Genitive with Expressions of Remembering and Forgetting.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>2.与memini一起出现的客观属格也被称为与Remembering和Forgetting一起出现的属格 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>2. 同memini搭配使用的宾语属格也称为表达记忆及遗忘的属格（the Genitive with Expressions of Remembering and Forgetting）。</div>
-<!-- seq:118 page:86 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号118，页数86（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Meministine patriae?   Do you remember (your) homeland? (Objective Genitive)</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Meministine patriae？   你还记得你的家乡吗？（客观属格） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Meministine patriae?你还记得吗家乡的？   Do you remember (your) homeland? 吗你记得（你的）家乡？  你还记得家乡吗(宾语属格) <span class='tag' style='background:#999999'>机翻</span></div>
@@ -247,8 +247,8 @@ title: "Chapter V"
 <div class='latin-text'>Bonum est sapientia, ut mihi videtur.</div>
 <div class='latin-text'>Wisdom is a good thing, as it seems to me.在我看来，智慧是个好东西，</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Bonum好的 est是 sapientia智慧, ut据 mihi对我 videtur被看.  Wisdom智慧 is是 a good thing一个好东西, as据 it它 seems看来 to对 me我。  在我看来，拥有智慧无疑受益匪浅 <span class='tag' style='background:#999999'>机翻</span></div>
-## Derivatives派生词
-## Cognates 同源词
+<div class='latin-text'>Derivatives派生词</div>
+<div class='latin-text'>Cognates 同源词</div>
 <div class='latin-text latin-special'>cēdo</div>
 <div class='latin-text'>ancestor祖先; cease停止, cede放弃; necessary必要的</div>
 <div class='latin-text'>ferõ, ferre</div>
@@ -261,7 +261,7 @@ title: "Chapter V"
 <div class='latin-text'>-, sui</div>
 <div class='latin-text'>suicide自杀</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>self自己; swami阁下; secede脱离; secret秘密; sober清醒; ethnic民族的; Sinn Fein辛·费恩（爱尔兰共和主义政党名称，意为我们自己的道路） <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:119 page:87 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号119，页数87（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>J40. The Perfect Active System</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>J40完美的主动系统 <span class='tag' style='background:#999999'>机翻</span></div>
 ### §40. 完成时主动态系统
@@ -338,7 +338,7 @@ title: "Chapter V"
 <div class='latin-text'>3rd</div>
 <div class='latin-text latin-special'>-ērunt or或 -ēre</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>they他们 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:120 page:88 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号120，页数88（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>88 OBSERVATIONS</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>温馨提示 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>1. The perfect active personal endings are used to form the perfect active indicative of all verbs in Latin. MEMORIZE THESE ENDINGS AND BE PREPARED TO RECITE THEM QUICKLY.</div>
@@ -404,7 +404,7 @@ title: "Chapter V"
 <div class='latin-text'>3. add the active personal endings (use -m for first person singular)</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>3.添加主动人称词尾（使用-m表示第一人称单数） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>3. 添加过去完成时主动态人称词尾至于中缀之后（第一人称单数词尾是-m） <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:121 page:89 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号121，页数89（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>J41. Perfect, Pluperfect, and Future Perfect Active Indicative of All Verbs</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>J41表示所有动词的完成时、过去完成时和将来完成时 <span class='tag' style='background:#999999'>机翻</span></div>
 ### §41 动词完成时、过去完成时、将来完成时主动态直陈式
@@ -492,7 +492,7 @@ title: "Chapter V"
 <div class='latin-text'>2. The future perfect active indicative conjugation may also be viewed as the perfect active stem plus the future active indicative of sum. For example: rẽxerõ = rẽx- + erö.The third person plural, however, is rexerint.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>2.将来完全主动指示共轭也可以看作是完全主动词干加上将来主动指示和。例如：r xerint = r x- + erö。然而，第三人称复数是rexerint <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>2. 将来完成主动直陈式变位可视为，完成主动词干加sum的将来主动直陈式构成。例如：rẽxerõ = rẽx- + erö。不过须注意第三人称复数应为rexerint. <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:122 page:90 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号122，页数90（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>3. The future perfect indicative is used to indicate an event that will be completed at a future time.It has future time with completed aspect.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>3.将来完成时指示语用来表示一个事件将在将来某个时间完成。它有将来时间和完成体 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>3. 将来完成直陈式用以表达将来某时完成某事件，由将来时与完成态构成。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -560,7 +560,7 @@ title: "Chapter V"
 <div class='latin-text'>• DRILI 40-42, PAGE 177, MAY NOW BE DONE.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>·练习40-42，第177页，现在可以完成。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>• 现在可以进行第177页的第40-42项练习了。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:123 page:91 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号123，页数91（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>J43. The Irregular Third-Conjugation Verb ferò</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>J43不规则第三共轭动词fertilization <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>J43. 不规则变化第三变位动词fero <span class='tag' style='background:#999999'>机翻</span></div>
@@ -670,7 +670,7 @@ title: "Chapter V"
 <div class='latin-text'>ourselves(etc.)从我们自己（等等）</div>
 <div class='latin-text'>vobis</div>
 <div class='latin-text'>yourselves(etc.)从你们自己（等等）</div>
-<!-- seq:124 page:92 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号124，页数92（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>For the third person one reflexive pronoun functions as both the singular and the plural.The third-person reflexive pronoun is not borrowed from the third-person personal pronoun and must be memorized.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>对于第三人称来说，一个反身代词同时充当单数和复数。第三人称反身代词不是从第三人称代词借用的，必须记住。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>反身代词的第三人称形式可同时表示单复数。谨记，它并非借自第三人称代词。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -727,7 +727,7 @@ title: "Chapter V"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>6. 当介词per后接反身代词时，可以翻译为“for one's own sake为了谁的目的”或“by oneself（alone）借由某人自己（一个人）”。“例如： <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Optatur per sẽ sapientia.   Wisdom is desired for its own sake. 智慧被渴望为它自己之故  为智慧本身寻求智慧</div>
 <div class='latin-text'>Per me populum regam.   By myselfI shall rule the people. 借由我自己将统治这些人民  我将亲自统治臣民</div>
-<!-- seq:125 page:93 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号125，页数93（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>J45. Reflexive-Possessive Adjectives</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>J45反身所有格形容词 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>J45 反身物主形容词 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -824,7 +824,7 @@ title: "Chapter V"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>ipse的翻译取决于它所修饰或替代的词。可以使用“他自己”、“她自己”、“它自己”或“它们自己”等词 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>3. Ipse is sometimes used as a substantive.When ipse is used as a substantive, it may be called an intensive pronoun.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>3.代词有时作实词使用。当ipse作实词使用时，可称为加强代词 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:126 page:94 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号126，页数94（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>When ipse modifies the unexpressed subject of a verb, phrases such as "I myself," "he himself," "she herself," "they themselves" may be used.For example:</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>当ipse修饰动词未表达的主语时，可以使用“我自己”、“他自己”、“她自己”、“他们自己”等短语。例如： <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Catilina ipse ad provinciam it.</div>
@@ -890,7 +890,7 @@ title: "Chapter V"
 <div class='latin-text'>strongly (regularly formed)</div>
 <div class='latin-text latin-special'>valdē</div>
 <div class='latin-text'>strongly (irregularly formed)</div>
-<!-- seq:127 page:95 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号127，页数95（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>OBSERVATION</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>温馨提示 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>95 Certain adjectives, such as validus, -a, -um, have both a regularly and an irregularly formed adverb.Irregularities such as these are mentioned in the vocabulary notes.</div>
@@ -931,7 +931,7 @@ title: "Chapter V"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>拉丁语和英语中的从属分句都是由各种各样的从属连词引入的。从属连词是引入从属分句的连词。本章介绍的拉丁语从属连词及其相应的英语含义是： <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>4. In the case of valde, the stress on the antepenult (válide) resulted in a weakly pronounced penult, and the unstressed penult eventually dropped out altogether.The loss of a syllable in the middle of a word is called syncope (K Greek synkope, cutting together).For a similar development compare Latin tabula with its English derivative, "table."</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>4.在valde的例子中，在前小音节（válide）上的重音导致了一个弱发音的小音节，而非重音的小音节最终完全消失了。在一个单词中间丢失一个音节被称为syncope（希腊语synkope，切在一起）。“ <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:128 page:96 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号128，页数96（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>96 Chapter V</div>
 <div class='latin-text'>Latin</div>
 <div class='latin-text'>English</div>
@@ -1000,7 +1000,7 @@ title: "Chapter V"
 <div class='latin-text'>2. The third translation given above is to be preferred for correct English and requires the addition of the English pronoun "she" to begin the main clause.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>2.以上给出的第三种翻译是正确英语的首选，需要在主句的开始加上英语代词“她”。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>• DRILL 48, PAGE 203, MAY NOW BE DONE.</div>
-<!-- seq:129 page:97 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号129，页数97（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>$49. Conditional Sentences I</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>49块条件句I <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>A conditional sentence is the name given to a complex sentence that includes a condition or conditional clause—a type of subordinate clause—and a main clause.For example:</div>
@@ -1033,7 +1033,7 @@ title: "Chapter V"
 <div class='latin-text'>If he (repeatedly) had friends, he (repeatedly) did not desire money.如果他（一再）有朋友，他（一再）不想要钱。</div>
 <div class='latin-text'>5. For contrary-to-fact conditional sentences, see §71.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>5.关于与事实相反的条件句，见§71。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:130 page:98 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号130，页数98（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>98 OBSERVATIONS</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>温馨提示 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>1. Simple conditional sentences make simple factual statements about the present or the past in the indicative mood, the mood used to express something as factual.</div>
@@ -1080,7 +1080,7 @@ title: "Chapter V"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>6.动词的句法包括时态、语气、语气的原因和时态的原因。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>7. For Future Less Vivid conditional sentences, see $71.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>7.对于未来不生动的条件句，见$71 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:131 page:99 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号131，页数99（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>J49. Conditional Sentences I</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>J49条件句I <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>In all future conditional sentences, it is possible to replace the future indicative in the apodosis with an imperative since commands look to future time.For example:</div>
@@ -1115,7 +1115,7 @@ title: "Chapter V"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>9.这个名字通常缩写为FMV。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>10. This name is commonly abbreviated FMVE.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>10.这个名字通常缩写为FMVE。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:132 page:100 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号132，页数100（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>100 Short Short Readings</div>
 <div class='latin-text'>1. A quick exchange between two slaves</div>
 <div class='latin-text'>Euclio: Tace atque abi intrõ.Staphyla: Taceõ atque abeo. (PiAUTUs, AULULaRIA</div>
@@ -1152,7 +1152,7 @@ title: "Chapter V"
 <div class='latin-text'>püblicus, -a, -um public</div>
 <div class='latin-text'>magnificentia, magnificentiae f. magnificence, sumptuousness</div>
 <div class='latin-text'>diligo, diligere, dilẽxi, dilectus value, esteem, love</div>
-<!-- seq:133 page:101 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号133，页数101（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Short Readings</div>
 <div class='latin-text'>101 7. One of the interlocutors in a philosophical dialogue offers a persuasive analogy.</div>
 <div class='latin-text'>...ut ager ... sine cultüra früctuõsus esse non potest, sic sine doctrinã animus ...(CICERO, TUScULANAE DIspUTATIoNEs II.5)</div>
@@ -1186,7 +1186,7 @@ title: "Chapter V"
 <div class='latin-text'>duc, age, discipulõs ad mea templa tuõs .. (OvID, ARS AMATÕRIA II.493)</div>
 <div class='latin-text'>discipulus, discipuli m. pupil, follower</div>
 <div class='latin-text'>templum, templi n. temple</div>
-<!-- seq:134 page:102 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号134，页数102（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>14. A portion of Queen Clytaemnestra's soliloquy</div>
 <div class='latin-text latin-special'>tēcum ipsa nunc ēvolve fèmineõs dolõs ..• (SENECA THE YOUNGER, AGAMEMNON116)</div>
 <div class='latin-text'>êvolvo, évolvere, évolvi, évolütus unroll; turn over (in one's mind)</div>
@@ -1219,7 +1219,7 @@ title: "Chapter V"
 <div class='latin-text'>üllus, -a, -um any</div>
 <div class='latin-text'>inter (prep. + acc.) between; among</div>
 <div class='latin-text'>nöndum (adv.) not yet Short Readings</div>
-<!-- seq:135 page:103 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号135，页数103（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>20. An irritated dinner guest finds fault with another diner.</div>
 <div class='latin-text'>in alio péduclum vides, in te ricinum non vides. (PETRoNIUs, SATYRICON57.7)</div>
 <div class='latin-text'>alius, alia, aliud other, another</div>
@@ -1246,5 +1246,5 @@ title: "Chapter V"
 <div class='latin-text'>amãrus, -a, -um bitter</div>
 <div class='latin-text'>numquam (adv.) never</div>
 <div class='latin-text'>26. Fatis cessit suis. (CIL X.7658) 103</div>
-<!-- seq:136 page:104 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号136，页数104（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>空白页【正文译文】（你猜我为什么叫空白页？？？） <span class='tag' style='background:#999999'>机翻</span></div>

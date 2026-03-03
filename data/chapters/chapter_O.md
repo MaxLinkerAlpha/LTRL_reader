@@ -20,7 +20,7 @@ title: "Chapter O"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>拉丁语 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#00A3F5'>【章节标题译文】 <span class='tag' style='background:#00A3F5'>机翻</span></div>
 <div class='latin-text'>【译者：Lanx】</div>
-<div class='translation' data-translator='机翻' style='border-color:#00A3F5'>【译者注：作为标题，单拉丁语三个字感觉很奇怪】 <span class='tag' style='background:#00A3F5'>机翻</span></div>
+<div class='note'>【译者注：作为标题，单拉丁语三个字感觉很奇怪】</div>
 <div class='translation' data-translator='机翻' style='border-color:#00A3F5'>拉丁语这门语言 <span class='tag' style='background:#00A3F5'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>【正文原文】 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>1</div>
@@ -129,7 +129,7 @@ title: "Chapter O"
 <div class='latin-text'>11</div>
 <div class='latin-text'>【译者：Lanx】</div>
 <div class='translation' data-translator='机翻' style='border-color:#00A3F5'>意大利语族同原始印欧语一样，虽亦未留下直接证据，但它的四门语言较于其他印欧语系语言，彼此联系更为紧密，因而往往认为起源于同一祖先。（拉丁语、法利希语、奥斯坎语和翁布里亚语） <span class='tag' style='background:#00A3F5'>机翻</span></div>
-<!-- seq:34 page:2 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号34，页数2（拆分：？，？）（机翻：？，？）（人翻：？，？）（第一次润色（按句）：？，？）（第一次校对：？，？）（第二次润色（按意群）：？，？）（第二次校对：？，？）（终润（按段落）：？，？）（终校：？，？）（附加评论/修改建议：？，？）（排版/美化：？，？）（美化后期再做） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>The early speakers of the Latin language are known as Latini. By the early part of the first millennium B.c.E. they were living in many settlements in central Italy.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>拉丁语的早期使用者被称为拉丁人，公元前1000年初，他们就已在意大利建立了多处定居点。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>【译者：Lanx】</div>
@@ -192,7 +192,7 @@ title: "Chapter O"
 <div class='latin-text'>【译者：Lanx】</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>萨姆尼特人是支使用奥斯坎语的古意大利民族，早年间与罗马人有过冲突。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#FFCC99'>萨姆尼特人，一支说奥斯坎语的古意大利民族，早年间与罗马人发生过冲突 <span class='tag' style='background:#FFCC99'>机翻</span></div>
-<!-- seq:35 page:3 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号35，页数3（拆分：？，？）（机翻：？，？）（人翻：？，？）（第一次润色（按句）：？，？）（第一次校对：？，？）（第二次润色（按意群）：？，？）（第二次校对：？，？）（终润（按段落）：？，？）（终校：？，？）（附加评论/修改建议：？，？）（排版/美化：？，？）（美化后期再做） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>first to have established a literary language-a written language with increasingly strict rules of vocabulary and syntax.</div>
 <div class='latin-text'>【译者：Lanx】</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>他的风格极大地影响了后来的诗人，可以说他是第一位确立了文学语言（ literary language）【正文译文】（规范）【正文译文】的人（一种词汇和句法都逐渐严谨的的书面语）。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -244,7 +244,7 @@ title: "Chapter O"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>拉丁语语法学家的活跃时间远远晚于古典拉丁语的时期，但他们引用了早期拉丁语作者的作品，并从其他来源确定了发音特点。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>虽然语法学家们活跃的时间远远晚于古典拉丁语时期，但他们援引先人的作品，并根据其他原始资料确定了发音特点 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>2. the orthography, or spelling, of Latin words in inscriptions.</div>
-<div class='note'>2. 如通过铭文中拉丁语词汇（译者注：此后简写为“拉丁词”）的正字法或拼写。</div>
+<div class='translation' data-translator='机翻' style='border-color:#999999'>2. 如通过铭文中拉丁语词汇（译者注：此后简写为“拉丁词”）的正字法或拼写。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>2.铭文中拉丁单词的正字法或拼法 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Ancient spelling, both in Latin and in other ancient languages, was considerably less standardized than modern spelling. Variations in spelling usually indicate differences in pronunciation.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>无论是拉丁语还是其他古代语言，古代拼写都远没有现代拼写那么标准化。拼写不同通常也标示着发音不同。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -266,7 +266,7 @@ title: "Chapter O"
 <div class='latin-text'>4. For this presentation of pronunciation the authors are indebted 1o W. S. Allen's Vox Latina (Cambridge, 1965).</div>
 <div class='latin-text'>4. 作者很感谢W. S. Allen的《Vox Latina》(剑桥，1965)</div>
 <div class='latin-text'>4. 感谢W. S. Allen的《Vox Latina》(剑桥，1965)</div>
-<!-- seq:36 page:4 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号36，页数4（拆分：？，？）（机翻：？，？）（人翻：？，？）（第一次润色（按句）：？，？）（第一次校对：？，？）（第二次润色（按意群）：？，？）（第二次校对：？，？）（终润（按段落）：？，？）（终校：？，？）（附加评论/修改建议：？，？）（排版/美化：？，？）（美化后期再做） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>4. the internal grammatical and poetic structure of Latin. This includes the evidence available from the metrical structure of Latin poetry.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>4. 如通过拉丁语的内部语法和诗歌结构，包括诗歌中的格律结构。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>【译者：簪花落梅】 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -393,7 +393,7 @@ title: "Chapter O"
 <div class='translation' data-translator='机翻' style='border-color:#00A3F5'>【原文脚注】 <span class='tag' style='background:#00A3F5'>机翻</span></div>
 <div class='latin-text'>【译者：Lanx】</div>
 <div class='latin-text'>qu读作quit 的 qu</div>
-<!-- seq:37 page:5 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号37，页数5（拆分：？，？）（机翻：？，？）（人翻：？，？）（第一次润色（按句）：？，？）（第一次校对：？，？）（第二次润色（按意群）：？，？）（第二次校对：？，？）（终润（按段落）：？，？）（终校：？，？）（附加评论/修改建议：？，？）（排版/美化：？，？）（美化后期再做） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>OBSERVATION</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>注意 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Although qu is written with a-u.this u is the consonantal u (v).This spelling convention is also used in the combinations su and gu,which in some Latin words are pronounced as the su of persuade and the gu of anguish.</div>
@@ -513,7 +513,7 @@ title: "Chapter O"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>【原文脚注】 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>【译者：Lanx】</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>3.元音长度不同往往含义大不同，比如单词alium(a打头)表示“另一个人”；单词ālium(ā打头)却表示“大蒜”。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:38 page:6 -->
+<div class='translation' data-translator='Lanx' style='border-color:#FFC000'>序号38，页数6（拆分：？，？）（机翻：？，？）（人翻：？，？）（第一次润色（按句）：？，？）（第一次校对：？，？）（第二次润色（按意群）：？，？）（第二次校对：？，？）（终润（按段落）：？，？）（终校：？，？）（附加评论/修改建议：？，？）（排版/美化：？，？）（美化后期再做） <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>A MACRON ON A LONG VOWEL SHOULD BE CONSIDERED PART OF THE SPELLING OF A LATIN WORD. WHEN LEARNING NEW VOCABULARY,MEMORIZE ALL MACRONS AND AL- WAYS WRITE THEM ON LONG VOWELS. 5</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>长元音（Long vowel）上的长音符（Macron）应认为是拉丁语单词拼写的一部分。学习新单词时，要注意识记长音符，并总是将它们标注在长元音上。5 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#A5A5A5'>谨记，长音符也是单词的一部分，学习新单词时要记住并标注长音符。 <span class='tag' style='background:#A5A5A5'>机翻</span></div>
@@ -577,11 +577,11 @@ title: "Chapter O"
 <div class='latin-text'>As its spelling indicates,it is a combination of the short vowels e and u pronounced as one sound</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>如其拼写所示，它由短元音e和u组合发为一个音 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>.If Elmer Fudd pronounced "very"(vewy),the ew would closely resemble the Latin sound of eu.</div>
-<div class='note'>若爱发先生（译注：系动画人物）将“very”发作“vewy”，那么“ew”的发音将与拉丁语中“eu”的发音非常相似。</div>
-<div class='note'>爱发先生（译注：系动画人物）读“very”（“vewy”）时“ew”的发音与之非常相似。</div>
+<div class='translation' data-translator='Lanx' style='border-color:#FFC000'>若爱发先生（译注：系动画人物）将“very”发作“vewy”，那么“ew”的发音将与拉丁语中“eu”的发音非常相似。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
+<div class='translation' data-translator='机翻' style='border-color:#A5A5A5'>爱发先生（译注：系动画人物）读“very”（“vewy”）时“ew”的发音与之非常相似。 <span class='tag' style='background:#A5A5A5'>机翻</span></div>
 <div class='latin-text'>5.All long vowels in this book are marked by macrons.Vowels not so marked are short.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>5.此书中所有长元音都将用长音符标记。若无则为短元音。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<!-- seq:39 page:7 -->
+<div class='translation' data-translator='Lanx' style='border-color:#FFC000'>序号39，页数7（拆分：？，？）（机翻：？，？）（人翻：？，？）（第一次润色（按句）：？，？）（第一次校对：？，？）（第二次润色（按意群）：？，？）（第二次校对：？，？）（终润（按段落）：？，？）（终校：？，？）（附加评论/修改建议：？，？）（排版/美化：？，？）（美化后期再做） <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>Stress</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>重音 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>Latin has a stress accent.This means that one syllable in a word is slightly stressed or emphasized when the word is pronounced.</div>
@@ -648,7 +648,7 @@ title: "Chapter O"
 <div class='translation' data-translator='机翻' style='border-color:#A5A5A5'>擦音由压迫气流通过收紧的呼吸道产生，是辅音。 <span class='tag' style='background:#A5A5A5'>机翻</span></div>
 <div class='latin-text'>l and r are called liquids because their sounds are capable of being prolonged as vowels.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>L和r称为流音，它们的发音可像元音般延长。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<!-- seq:40 page:8 -->
+<div class='translation' data-translator='Lanx' style='border-color:#FFC000'>序号40，页数8（拆分：？，？）（机翻：？，？）（人翻：？，？）（第一次润色（按句）：？，？）（第一次校对：？，？）（第二次润色（按意群）：？，？）（第二次校对：？，？）（终润（按段落）：？，？）（终校：？，？）（附加评论/修改建议：？，？）（排版/美化：？，？）（美化后期再做） <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>ONLY THE PENULT OR THE ANTEPENULT OF A LATIN WORD MAY BE STRESSED.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>谨记，只有拉丁单词的倒数第二或第三音节可以重读。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>If a word has only two syllables,the penult is stressed.The following words are stressed on the penult because they have two syllables only.</div>
@@ -703,7 +703,7 @@ title: "Chapter O"
 <div class='latin-text'>DRILLS A-C,PAGE 1,MAY NOW BE DONE</div>
 <div class='latin-text'>【译者：Lanx】</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>练习 A-C，第一页，现在可以完成了 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:41 page:9 -->
+<div class='translation' data-translator='Lanx' style='border-color:#FFC000'>序号41，页数9（拆分：？，？）（机翻：？，？）（人翻：？，？）（第一次润色（按句）：？，？）（第一次校对：？，？）（第二次润色（按意群）：？，？）（第二次校对：？，？）（终润（按段落）：？，？）（终校：？，？）（附加评论/修改建议：？，？）（排版/美化：？，？）（美化后期再做） <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>LANGUAGE STUDY: VOCABULARY, MORPHOLOGY, AND SYNTAX</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>语言学习:词汇、词法和句法 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>Elementary language study may be divided into three parts: vocabulary, morphology, and syntax.</div>
@@ -745,7 +745,7 @@ title: "Chapter O"
 <div class='latin-text'>Morphology extends as well to nouns, adjectives, and certain other parts of speech that have multiple forms. The changing of form to convey changed meaning is called inflection.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>词法也可以扩展到名词、形容词和其他具有多种形式的词性。通过改变形式来表达改变了的意思称为屈折变化。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>针对名词、形容词和许多其他词性单词不同形式进行研究也是学习词法。像这样传达了单词含义变化的词形变化称为屈折变化【正文译文】（像这样，词形变化传达着单词含义的改变，这种变化称为屈折变化） <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:42 page:10 -->
+<div class='translation' data-translator='Lanx' style='border-color:#FFC000'>序号42，页数10（拆分：？，？）（机翻：？，？）（人翻：？，？）（第一次润色（按句）：？，？）（第一次校对：？，？）（第二次润色（按意群）：？，？）（第二次校对：？，？）（终润（按段落）：？，？）（终校：？，？）（附加评论/修改建议：？，？）（排版/美化：？，？）（美化后期再做） <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>Language Study: Vocabulary, Morphology, and Syntax</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>语言学习:词汇、词法和句法 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>Some languages are more inflected than others. Thus the English noun regularly appears in only four forms:</div>

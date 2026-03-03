@@ -12,16 +12,16 @@ title: "Chapter I"
 <div class='translation' data-translator='Yancey' style='border-color:#D58EFF'>Yancey（暂时前来查漏补缺，捡一些还没人做的来做，目前可能主要负责润色与校对，浅紫1） <span class='tag' style='background:#D58EFF'>Yancey</span></div>
 <div class='latin-text'>Mecius</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>本章特殊规范（由各组自定义）： <span class='tag' style='background:#999999'>机翻</span></div>
-<div class='note'>注：本章开始，1.0版本只做一次润色和校对，第二次放到2.0版本。</div>
+<div class='translation' data-translator='机翻' style='border-color:#999999'>注：本章开始，1.0版本只做一次润色和校对，第二次放到2.0版本。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>《简明拉丁语》计划：本章为试验章，除去原文翻译外，还可对原文进行”简明化“，即用自己的话重述原文要点，进行大量删改。另起一行，不破坏原文翻译行。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:43 page:11 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号43，页数11（拆分：1，Lanx）（机翻：1，Lanx）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？） <span class='tag' style='background:#999999'>机翻</span></div>
 ## Vocabulary
 <div class='translation' data-translator='机翻' style='border-color:#999999'>单词表 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>单词表暂缓 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>1. An arrow next to a vocabulary entry indicates that there is additional important information about this entry in the【正文原文】 vocabulary notes【正文原文】 that follow.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>1. 词汇条目旁边的箭头表示在后面的词汇注释中还有其他有关此条目的重要信息 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='簪花落梅' style='border-color:#9A38D7'>1.词旁箭头表示【译者注释】注释【正文译文】有其他重要信息 <span class='tag' style='background:#9A38D7'>簪花落梅</span></div>
-<!-- seq:44 page:12 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号44，页数12（拆分：1，Lanx）（机翻：？，？）（人翻：2, 簪花落梅, tuche）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？） <span class='tag' style='background:#999999'>机翻</span></div>
 ## Vocabulary
 <div class='translation' data-translator='机翻' style='border-color:#999999'>单词表 <span class='tag' style='background:#999999'>机翻</span></div>
 ## Vocabulary Notes
@@ -107,7 +107,7 @@ title: "Chapter I"
 <div class='latin-text'>When it takes the ablative case,it expresses location and means ei- ther"in"or"on."These differences in meaning are illustrated in the diagram that follows</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>取离格时，它表位置，意为“于其中”或“于其上”。下图也将展现这一区别 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>后接离格时，表示（中心语所处的）位置，意为“处其中”或“在其上”。下图将展现它们的区别 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:45 page:13 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号45，页数13（拆分：1，Lanx）（机翻：1，Lanx）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>图略 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Figure 2. Prepositions</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>图2.介词 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -138,8 +138,8 @@ title: "Chapter I"
 <div class='latin-text'>-que is used in place of the first et in the phrase et . .. et . .. by certain prose stylists (the historians Livy, Sallust, and Tacitus) and by many poets. Caesar and Cicero never use -que...et .. The use of -que... -que... is found only in poetry and occasionally in the historians</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>-que 用于代替短语 et 中的第一个 et。..等等。..由某些散文风格家（历史学家李维、萨卢斯特和塔西佗）和许多诗人。凯撒和西塞罗从不使用-que...等等..-que... -que...只在诗歌中找到，偶尔在历史学家中发现 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>许多诗人与一些文体家（历史学家李维、萨卢斯特和塔西佗）会用-que来代替短语“et ... et ...”中的第一个et，凯撒和西塞罗则从不这样写。短语“-que... -que...”通常只在诗歌中出现，历史学家偶尔也会用。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:46 page:14 -->
-## Derivatives and Cognates
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号46，页数14（拆分：1，Lanx）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？） <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='latin-text'>Derivatives and Cognates</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>派生词和同源词 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Many words in English are derived from Latin words; that is, they descend directly from words in Latin. Such words are called derivatives. For example, the English word "counsel" is a derivative of the Latin word cônsilium.A</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>英语中的许多单词都源自拉丁语单词;也就是说，它们直接来自拉丁语中的单词。这样的词被称为衍生词。例如，英语单词“counsel”是拉丁词cônsilium的衍生词。一个 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -172,7 +172,7 @@ title: "Chapter I"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>如果只有英语单词的词根与相应的拉丁词相关，则英语单词中从该词根衍生出来的部分以粗体显示2。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>如果英语单词与相应拉丁语单词间仅有词根相关，我们会用粗体标记出英语单词中由源自该词根的部分 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#D58EFF'>仅与拉丁语词根相关的英语单词，源自拉丁文词根的部分将以粗体标记。 <span class='tag' style='background:#D58EFF'>Yancey</span></div>
-## Derivatives           Cognates【原文脚注】 (以下翻译直接标注在英文后，须人翻) 【原文脚注】(ಥ_ಥ)
+<div class='latin-text'>Derivatives           Cognates【正文译文】 (以下翻译直接标注在英文后，须人翻) 【正文原文】(ಥ_ಥ)</div>
 <div class='latin-text'>ager                                agrarian（农业）            acre（英亩）</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>anima                              animate（有活力的 ；使有活力） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>bellum                             bellicose（好战的）</div>
@@ -195,9 +195,9 @@ title: "Chapter I"
 <div class='latin-text'>2. For further information on these and other derivatives and cognates, consult the Indo-European Roots Appendix of the 【正文原文】American Heritage Dictionary of the English Language【正文原文】, 4th ed. (Houghton-Mifflin, 2006</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>2. 请参阅《美国英语遗产词典》印欧语系词根附录，第 4 版（Houghton-Mifflin，2006 年）来获取这些及其他派生词和同源词的更多信息 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#D58EFF'>2. 如需获取更多有关上文以及其他派生词与同源词的信息，请参阅 Houghton-Mifflin《美国英语遗产词典（第 4 版）》的印欧语系词根附录。 <span class='tag' style='background:#D58EFF'>Yancey</span></div>
-<!-- seq:47 page:15 -->
-## S1. The Latin Noun and Its Properties: Gender, Number, Case
-### S1.拉丁名词及其属性：性别、数字、大小写
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号47，页数15（拆分：1，Lanx）（机翻：1，Lanx）（人翻：1，Lanx）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？） <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='latin-text'>S1. The Latin Noun and Its Properties: Gender, Number, Case</div>
+<div class='translation' data-translator='机翻' style='border-color:#999999'>S1.拉丁名词及其属性：性别、数字、大小写 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>拉丁语名词及其属性：性、数、格 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>A noun is the name of a person, place, or thing.3 Every noun in Latin has three properties: gender, number, and case.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>名词是人、地名或事物的名称.3 拉丁语中的每个名词都有三个属性：性别、数字和大小写 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -205,7 +205,7 @@ title: "Chapter I"
 <div class='translation' data-translator='Yancey' style='border-color:#D58EFF'>名词即人、地、物或概念的名称. 3. 任何拉丁语名词都拥有三种属性，分别是性、数、格。 <span class='tag' style='background:#D58EFF'>Yancey</span></div>
 <div class='latin-text'>GENDER-Latin nouns have the genders masculine or feminine. Nouns that are neither masculine nor feminine are called neuter (&lt; neuter, neutra, neutrum, neither). In the vocabulary entry for each noun, gender is indicated by m., f., or n.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>性别-拉丁名词的性别为男性或女性。既不是男性也不是女性的名词被称为中性（&lt;中性，中性，中性，两者都不是）。在每个名词的词汇条目中，性别用 m.、f 或 n 表示。 <span class='tag' style='background:#999999'>机翻</span></div>
-<div class='translation' data-translator='机翻' style='border-color:#999999'>性别——拉丁语名词的性分为阳性(m.)、阴性(f.)，若“两者皆非”(neither)，则称为中性(neuter)(n.)（【译者注释】译注：英文中neither源于拉丁语neuter，即使ne(非)+uter(两者之一)组成两者皆非，所以原文处会提到neither与neuter的关系【正文译文】）。在单词表里的词汇条目中，性别使用缩写表示。 <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='机翻' style='border-color:#999999'>性别——拉丁语名词的性分为阳性(m.)、阴性(f.)，若“两者皆非”(neither)，则称为中性(neuter)(n.)（【正文译文】译注：英文中neither源于拉丁语neuter，即使ne(非)+uter(两者之一)组成两者皆非，所以原文处会提到neither与neuter的关系【正文译文】）。在单词表里的词汇条目中，性别使用缩写表示。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#D58EFF'>性属——拉丁语名词区分三种性属：阳性、阴性、中性。【二者皆非（neuter = ne + uter，既不是阳性，也不是阴性），即为中性】 <span class='tag' style='background:#D58EFF'>Yancey</span></div>
 <div class='latin-text'>THIS INFORMATION MUST BE MEMORIZED FOR EACH NOUN.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>谨记，必须为每个名词记住此信息 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -260,7 +260,7 @@ title: "Chapter I"
 <div class='latin-text'>动词性名词(verbal nouns)：running(跑)（动名词）、to run(跑)（不定式）</div>
 <div class='latin-text'>4. A few Latin nouns have a seventh case, the locative, used to express location in a place</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>4.某些拉丁语名词有第七格，即位格，用于表示某地的位置 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:48 page:16 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号48，页数16（拆分：1，Lanx）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Certain verbs such as "be," "become," and "seem" are called copulative or linking verbs</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>我们把像"be（是）" "become（变成）" and "seem（看起来）"这样的动词称为系动词 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#D58EFF'>诸如 “be（是）” “become（变成）” “seem（看起来）”的动词，语法学家称之为系动词（linking verb） <span class='tag' style='background:#D58EFF'>Yancey</span></div>
@@ -301,7 +301,7 @@ title: "Chapter I"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>我们同样用与格来表达“to the cat（猫）”或“cat（猫）”这一短语，而这一成分在句法上称为间接宾语与格（Dative of Indirect Object），常搭配有“给予”“展示”“诉说”这类含义的动词使用。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>This use of the dative case appears most often with verbs of giving, showing, and telling</div>
 <div class='note'>*为行文便利，并入上一行</div>
-<!-- seq:49 page:17 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号49，页数17（拆分：1，Lanx）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Accusative Case</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>宾格 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>-used for the direct object of a verb</div>
@@ -352,7 +352,7 @@ title: "Chapter I"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>在拉丁语中，我们无需介词，仅用“sword（剑）”的离格便能表达短语“with a sword（用剑）”，而这一成分在句法上称为手段离格（Ablative of Means，或工具离格， Ablative of Instrument） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>NOTE THAT NO PREPOSITION IS USED WITH THE ABLATIVE OF MEANS</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>谨记，手段离格无须搭配介词使用。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:50 page:18 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号50，页数18（拆分：1，Lanx）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Location</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>表位置 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>In the sentences "Farmers work in fields" and "The queen lives on an island," the phrases "in fields" and "on an island" express ideas of location or place where</div>
@@ -420,7 +420,7 @@ title: "Chapter I"
 <div class='latin-text latin-special'>5th declension   -eī/-ēī</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>第五变格 -eī/-ēī <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>快拆分~~ <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:51 page:19 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号51，页数19（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>A full vocabulary entry for a Latin noun contains, in the following order, the nominative singular, the genitive singular, a notation of gender, and the English meaning(s). For example:</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>完整的拉丁语名词词条，按下列顺序，包含着主格单数，属格单数，性，与意义 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>puella, puellae f. girl</div>
@@ -470,7 +470,7 @@ title: "Chapter I"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>1.指五大变格中的一类 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>2. a complete set of forms for an individual noun.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>2.一个名词成套的形式 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:52 page:20 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号52，页数20（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>MEMORIZE THESE ENDINGS THOROUGHIY, PROCEEDING FIRST DOWN THE SINGULAR COLUMN AND THEN DOWN THE PIURAL COIUMN. BE PREPARED TO RECITE THE ENDINGS QUICKIY.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>谨记，牢记这些词尾，按列先后记住单数与复数。要能够快速复述它们。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>To decline a noun of the first declension, add these endings to the stem.  For example:</div>
@@ -522,7 +522,7 @@ title: "Chapter I"
 <div class='latin-text'>Although there are words in Latin for "his," "her," and "their," possessive adjectives such as these are often omitted in Latin. They may be freely added in English translations.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>虽然拉丁语中有对应“他的”“她的”“他们的”的单词，但我们常常省略这些所有格形容词。翻译时可自由选择添加与否。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>• DRILL 2-3, PAGE 9, MAY NOW BE DONE</div>
-<!-- seq:53 page:21 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号53，页数21（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？） <span class='tag' style='background:#999999'>机翻</span></div>
 ## §4 Noun Morphology:Second Declension
 ### §4 名词词法：第二变格
 <div class='latin-text'>Gender Note: Most nous of the second declension are masculine, some are feminine. and many are neuter with endings slightly different from masculine and feminine nouns.</div>
@@ -583,7 +583,7 @@ title: "Chapter I"
 <div class='latin-text'>As is clear from the vocabulary entries, however, a number of nouns lack any nominative singular ending and instead use a form of the stem of the noun as the nominative singular form. Thus, servus, suervi m.slave, but puer, pueri m. boy and liber, libri m. book.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>然而，单词表中明显有些单词以词干的一种形式代替了其主格单数词尾，因此servus, suervi m.（奴隶）是这样, 但是 puer, pueri m. （男孩） 与liber, libri m.（书）.则是这样。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#D58EFF'>但毫无疑问单词表中明显有相当一部分单词缺少单数主格词尾，并且单数主格是其词干的某种形式，因此第二变格法既有像servus, suervi（m. 奴隶）这样的名词, 也有诸如puer, pueri（m. 男孩） 和liber, libri（m. 书）的名词。 <span class='tag' style='background:#D58EFF'>Yancey</span></div>
-<!-- seq:54 page:22 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号54，页数22（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>OBSERVATIONS</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>注意 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>1.Certain endings for masculine/feminine nouns of the second declension are used to mark more than one case: -i = genitive singular and nominative/vocative plural; -ö = dative singular and ablative singular; -is = dative plural and ablative plural.</div>
@@ -619,7 +619,7 @@ title: "Chapter I"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>6.名词deus, dei 阳，有着不规则的复数形式:di(主格/呼格复数)，deum（属格复数），dis（与格/离格复数）。这一名词的全变格见单词表（12页） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Case Endings of the Second Declension: Neuter</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>第二变格格尾：中性 <span class='tag' style='background:#999999'>机翻</span></div>
-<div class='latin-text'>Singular【原文脚注】(表格以原书为准)    【正文原文】 Plural</div>
+<div class='latin-text'>Singular【正文译文】(表格以原书为准)    【正文原文】 Plural</div>
 <div class='latin-text'>Nominative/Vocative     -um                        -a</div>
 <div class='latin-text latin-special'>Genitive                          -i                           -ōrum</div>
 <div class='latin-text latin-special'>Dative                            -ō                           -īs</div>
@@ -627,7 +627,7 @@ title: "Chapter I"
 <div class='latin-text latin-special'>Ablative                          -ō                           -īs</div>
 <div class='latin-text'>MEMORIZE THESE ENDINGS THOROUGHIY, PROCEEDING FIRST DOWN THE SINGULAR COLUMN AND THEN DOWN THE PLURAL COLUMN.  BE PREPARED TO RECITE THE ENDINGS QUICKLY</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>谨记，牢记这些词尾，按列先后记住单数与复数。要能够快速复述它们。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:55 page:23 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号55，页数23（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>To decline a neuter noun of the second declension, add these endings to the stem.  For example:</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>通过在词干上添加下列词尾来对第二变格中性名词进行变格。例如： <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>periculum, periculi n.  danger 【正文译文】（表格注意对照原文）</div>
@@ -659,5 +659,5 @@ title: "Chapter I"
 <div class='latin-text'>consilium, consilii 或 consili 中（计划，建议；决定）</div>
 <div class='latin-text'>• DRILL 4, PAGE 15, MAY NOW BE DONE</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>略 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:56 page:24 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号56，页数24（空白页） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>你在期待什么？猜猜这页为什么叫空白页？（手动滑稽） <span class='tag' style='background:#999999'>机翻</span></div>

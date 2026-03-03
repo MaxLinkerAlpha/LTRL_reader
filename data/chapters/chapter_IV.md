@@ -10,12 +10,12 @@ title: "Chapter IV"
 <div class='latin-text'>iambicus</div>
 <div class='latin-text'>Lanx</div>
 <div class='latin-text'>cyan</div>
-<div class='footnote'>(灰色表示书中例举内容)</div>
+<div class='translation' data-translator='机翻' style='border-color:#999999'>(灰色表示书中例举内容) <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Yancey</div>
-<!-- seq:95 page:63 -->
+<div class='translation' data-translator='Mecius' style='border-color:#FDEBFF'>序号95，页数63（拆分：？，？）（机翻：？，？）（人翻：Yancey，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#FDEBFF'>Mecius</span></div>
 ## Vocabulary
 <div class='translation' data-translator='Mecius' style='border-color:#FDEBFF'>单词表（暂缓） <span class='tag' style='background:#FDEBFF'>Mecius</span></div>
-<!-- seq:96 page:64 -->
+<div class='translation' data-translator='Mecius' style='border-color:#FDEBFF'>序号96，页数64（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#FDEBFF'>Mecius</span></div>
 ## Vocabulary Notes
 <div class='latin-text'>The noun causa, causae f. has a general meaning of "reason" or "cause" and a more particular meaning of legal "case."</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>名词causa，causae f.一般意义上的“理由”或“原因”，更具体的意义上的法律的“情况”。“ <span class='tag' style='background:#999999'>机翻</span></div>
@@ -104,7 +104,7 @@ title: "Chapter IV"
 <div class='latin-text'>Context usually makes clear which meaning is appropriate.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>语境通常能清楚地表明哪种意义是恰当的 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>通常可以从语境中应使用哪种含义。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:97 page:65 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号97，页数65（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>&gt; audio, audire, audivi, auditus is a transitive verb that may be used absolutely. When it takes a direct object, it may be translated either "hear" or "listen to." When it is used absolutely, it may be translated either "hear" or "listen."</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>audio，audire，audivi，audius是一个及物动词，可以绝对使用。当它接直接宾语时，可以翻译成“hear”或“listen to”。当它被绝对地使用时，它可以被翻译为“听到”或“听”。“ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>&gt; audiō，audīre，audīvī，audīus是一个及物动词，可以独立使用。当它接直接宾语时，可以翻译成“hear”或“listen to”。当它独立使用时，可翻为“hear”或“listen”。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -159,9 +159,9 @@ title: "Chapter IV"
 <div class='latin-text'>Régina nẽ filiõ quidem aurum dat.                    The queen is giving gold not even to (her) son.</div>
 <div class='latin-text'>Régina nẽ filiõ quidem aurum dat.   女王甚至不给儿子金子</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Régina nẽ filiõ quidem aurum dat. 女王不给儿子甚至不金子给                   The queen is giving gold not even to (her) son.女王正在给金子甚至不给（她的）儿子。女王甚至连金子都不给她儿子。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:98 page:66 -->
-## Derivatives
-## Cognates
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号98，页数66（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='latin-text'>Derivatives</div>
+<div class='latin-text'>Cognates</div>
 <div class='latin-text'>ago</div>
 <div class='latin-text'>act, agent</div>
 <div class='latin-text'>agony; pedagogue; protagonist; axiom</div>
@@ -220,7 +220,7 @@ title: "Chapter IV"
 <div class='latin-text'>venio</div>
 <div class='latin-text'>event; covenat; prevent</div>
 <div class='latin-text'>come</div>
-<!-- seq:99 page:67 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号99，页数67（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>J30. Present, Imperfect, and Future Active and Passive Indicative of Third, Third i-stem, and Fourth Conjugations</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>J30现在、未完成和将来主动和被动指示第三、第三词干和第四共轭 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>J30第三、第三i-词干和第四变位法的现在、未完成和将来主动和被动直陈式。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -269,7 +269,7 @@ title: "Chapter IV"
 <div class='latin-text'>3. add the active or passive personal endings (use -o or -or for first person singular) directly to the changed present stem</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>3.直接在改变后的现在词干上加上主动或被动人称词尾（第一人称单数用-o或-or） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>3. 直接在变化后的现在词干后加主动或被动人称词尾（第一人称单数用-o或-or） <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:100 page:68 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号100，页数68（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Thus the present active and passive indicative conjugations of, for example, regõ, capio, and audio are:</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>因此，例如regõ、capio和audio的当前主动和被动指示性变化是： <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>比如，regõ, capio, and audio的现在主动及被动直陈式变位有： <span class='tag' style='background:#999999'>机翻</span></div>
@@ -368,7 +368,7 @@ title: "Chapter IV"
 <div class='latin-text'>1. The original stem vowel of the third conjugation was -i, but this -i- changed to -e- before the -re ending of the present active infinitive.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>1.第三个动词变化的原词干元音是-i，但这个-i-在现在主动不定式的-re词尾之前变成了-e- <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>1.第三变位法动词的原始词干元音为-i-，但在现在主动不定式中，-i-在-re词尾前变为-e-。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:101 page:69 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号101，页数69（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>30. Indicative of Third, Third i-stem, and Fourth Conjugations</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>30.指示第三、第三i-词干和第四共轭 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>30.第三、第三i词干以及第四变位法动词的直陈式。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -465,7 +465,7 @@ title: "Chapter IV"
 <div class='latin-text'>3. In the first person singular active and passive, third person singular active, and third person plural active and passive of all three conjugations above, long vowels shorten according to the long vowel rule.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>3.在第一人称单数主动和被动，第三人称单数主动和第三人称复数主动和被动的所有三个词形变化中，长元音根据长元音规则缩短 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>3.上述三种变位法动词的第一人称单数主动及被动、第三人称单数主动、第三人称复数主动和被动形式中，长元音均按长元音规则缩短。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:102 page:70 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号102，页数70（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Future Active and Passive Indicative of Third, Third i-stem, and Fourth Conjugations</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>表示第三、第三词干和第四共轭的将来主动和被动 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>第三、第三i词干及第四变位法动词的将来主动及被动直陈式 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -561,7 +561,7 @@ title: "Chapter IV"
 <div class='latin-text'>• DRILI 30, PAGE 127, MAY NOW BE DONE.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>·练习30，第127页，现在可以完成 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>现在可以完成第127页的练习30了 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:103 page:71 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号103，页数71（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>$31. Present Passive Infinitive of All Verbs</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>31美元所有动词的现在被动不定式 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>31.动词的现在被动不定式 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -645,7 +645,7 @@ title: "Chapter IV"
 <div class='latin-text'>2. The present passive infinitive of facio is supplied by another verb. See $126.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>2. facio的现在被动不定式由另一个动词提供。看到126美元。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>2.facio的现在被动不定式较为特别，请见 $126. <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:104 page:72 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号104，页数72（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>OBSERVATIONS</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>温馨提示 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>1. In the present active imperative plural of third- and third-i-stem-conjugation verbs, the stem vowel -e- changes to -i- before the ending -te.</div>
@@ -739,7 +739,7 @@ title: "Chapter IV"
 <div class='latin-text'>4. The verb ferö, ferre, tuli, latus, "bring," "bear," "carry," "endure," is a third-conjugation verb with certain irregular forms in the present system, which are presented in f43.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>4.动词ferö，ferre，tuli，latus，“bring”，“bear”，“carry”，“endure”是第三变位法动词，在本系统中具有某些不规则形式，在f43中给出。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>4.动词fero （"bring"，带来），ferre（"bear"，携带） ，tuli（"carry"，携着），latus（ "endure"，忍受），是特殊的第三变位法动词，我们将在j43中学到它们现在时态下的不规则形式。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:105 page:73 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号105，页数73（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>OBSERVATIONS</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>温馨提示 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>1. In the present passive imperative plural of third- and third-i-stem-conjugation verbs, the stem vowel -e- changes to -i- before the ending -mini.</div>
@@ -826,7 +826,7 @@ title: "Chapter IV"
 <div class='latin-text'>• DRILL 31-33, PAGE 143, MAY NOW BE DONE.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>·现在可以进行练习31-33，第143页 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>现在可以完成第143页的练习31-33。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:106 page:74 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号106，页数74（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>34. Partitive Genitive</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>34.部分属格 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>34.部分属格 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -857,9 +857,9 @@ title: "Chapter IV"
 <div class='latin-text'>In this sentence the syntax of the italicized word (【正文原文】mali【正文原文】) is 【正文原文】Subjective Genitive 【正文原文】since the bad man feels or performs the action of hating implied by the noun 【正文原文】odium【正文原文】:</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>在这个句子中，斜体字（mali）的句法是主观所有格，因为坏人感觉到或执行了由名词“恨”所暗示的仇恨行为： <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>此句中，斜体部分（mali）的句法即为主语属格的用法，坏人感觉到（feel）或施加（perform）了由名词odium意为的仇恨行为。 <span class='tag' style='background:#999999'>机翻</span></div>
-## S36.Objective Genitive
-### S36.客观发生
-### S36.宾语属格
+<div class='latin-text'>S36.Objective Genitive</div>
+<div class='translation' data-translator='机翻' style='border-color:#999999'>S36.客观发生 <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='机翻' style='border-color:#999999'>S36.宾语属格 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>When a noun in the genitive case expresses the person or thing receiving a verbal action implied in another noun, it is called an Objective Genitive. For example:</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>当一个名词在属格中表示接受另一个名词所暗示的言语行为的人或事物时，它被称为客观属格。举例来说： <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>若名词的意为某种动作，而该动作的受动者使用另一名词的属格形式，则该形式称为宾语属格。比如： <span class='tag' style='background:#999999'>机翻</span></div>
@@ -876,7 +876,7 @@ title: "Chapter IV"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>除了依赖于其他名词外，客观属格还可能与某些形容词和动词一起出现。例如: <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>宾语属格除依赖其他名词一齐使用，也可依赖某些形容词及动词一齐使用。比如： <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Vir auri cupidus poenãs dabit.人金子的渴望的罚金给。</div>
-<div class='footnote'>(cupidus, -a, -um desirous)</div>
+<div class='latin-text'>(cupidus, -a, -um desirous)</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>贪图钱财者，将自取灭亡 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>In this sentence the Objective Genitive (auri) depends on the adjective cupidus.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>在这个句子中，客观属格（auri）依赖于形容词cupidus <span class='tag' style='background:#999999'>机翻</span></div>
@@ -884,7 +884,7 @@ title: "Chapter IV"
 <div class='latin-text'>5. The Partitive Genitive is also known as the Genitive of the Divided Whole.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>5.分割所有格也被称为分割整体所有格 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>5.部分属格（ Partitive Genitive）也称Genitive of the Divided Whole.</div>
-<!-- seq:107 page:75 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号107，页数75（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>75 Subjective and Objective Genitives may appear together, and word order may help to distinguish between them. For example:</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>75主观的和客观的属格可能一起出现，词序可能有助于区分它们。举例来说： <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>75 主语属格及宾语属格可能一同使用，根据词序来区分它们。比如： <span class='tag' style='background:#999999'>机翻</span></div>
@@ -909,8 +909,8 @@ title: "Chapter IV"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Gracchus was good in judgment.格拉古过去是好的在判断力。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>格拉古很有判断力 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text latin-special'>Mea sententia imperium habére debēs.我的在观点方面权力去有你应该。</div>
-<div class='footnote'>(meus, -a, -um my我的)</div>
-<div class='footnote'>(sententia, sententiae f. opinion观点)</div>
+<div class='latin-text'>(meus, -a, -um my我的)</div>
+<div class='latin-text'>(sententia, sententiae f. opinion观点)</div>
 <div class='latin-text'>In respect to my opinion power (d.o.) to have you ought.在方面我的观点权力（d.o.）去有你应该</div>
 <div class='latin-text'>In my opinion you ought to have power.在我的观点你应该去有权力。</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>在我看来，你应该有权力 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -923,7 +923,7 @@ title: "Chapter IV"
 <div class='latin-text'>斜体单词（consilio，consitia，consigentia）的句法均为指定夺格。</div>
 <div class='latin-text'>• DRILL 34-37, PAGE 149, MAY NOW BE DONE.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>现在可以完成第149页的练习34-37。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:108 page:76 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号108，页数76（拆分：？，？）（机翻：？，？）（人翻：Yancey，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>J38. Personal Pronouns</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>J38人称代词 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Yancey</div>
@@ -1008,7 +1008,7 @@ title: "Chapter IV"
 <div class='latin-text latin-special'>4. When a first- or second-person personal pronoun functions as an Ablative of Accompaniment, the preposition cum is attached directly to the pronoun. Thus, mēcum (with me), nöbiscum (with us), tēcum (with you), and vöbiscum (with you [pl.]).</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>4.当第一人称或第二人称代词充当伴随词的消融时，介词cum直接附在代词上。“我，我，我。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>4. 若第一、二人称代词充当伴随夺格，此时介词 cum 作为前倾词附着于代词上。故有诸如 mēcum (with me), nōbīscum (with us), tēcum (with you), vōbīscum (with you [pl.]) 此类的形式。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:109 page:77 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号109，页数77（拆分：？，？）（机翻：？，？）（人翻：Yancey，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>J39. Possessive Adjectives</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>J39所有格形容词 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>∫ 39. 物主形容词 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -1120,7 +1120,7 @@ title: "Chapter IV"
 <div class='latin-text'>A noun in the genitive case may express ownership or possession: liber pueri (the book of the boy) ($1). However, the genitives of the first- and second-person personal pronouns (mei, nostrum/nostri, tui, vestrum/vestri) are not used to express possession (J38). There are instead possessive adjectives that correspond to each personal pronoun:</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>所有格中的名词可以表示所有权或占有：《男孩的书》（liber pueri）（1美元）。然而，第一人称和第二人称代词的属格（mei，nostrum/nostri，tui，vestrum/vestri）不用于表示拥有（J38）。相反，有与每个人称代词对应的所有格形容词： <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>属格名词可表示属有、拥有或占有，如 liber pueri（男孩的书）($1)，但是属格形式的第一、二人称代词并不像名词属格一样，能表达属有关系。人称代词都有各自的物主形容词。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:110 page:78 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号110，页数78（拆分：？，？）（机翻：？，？）（人翻：Yancey，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>78 Personal Pronoun</div>
 <div class='latin-text'>Corresponding Possessive Adjective</div>
 <div class='latin-text'>ego</div>
@@ -1198,7 +1198,7 @@ title: "Chapter IV"
 <div class='latin-text'>• DRILL 38-39, PAGE 153, MAY NOW BE DONE</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>·现在可以进行练习38-39，第153页 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>·现在你可以做练习38-39了，请翻至书本第153页 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:111 page:79 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号111，页数79（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Short Readings</div>
 <div class='latin-text'>1. Andronicus translates the first line of Homer's Odyssey into Latin.</div>
 <div class='latin-text'>Virum mihi, Camèna, insece versutum .. (LIvIUs ANDRONICUs, ODyssEY FRAG. 1)</div>
@@ -1232,7 +1232,7 @@ title: "Chapter IV"
 <div class='latin-text'>fäbula, fäbulae f. story, tale; play, drama</div>
 <div class='latin-text'>6. When es or est follows a word ending in -m or -e, it may drop the initial e- and join the preceding word. This is called aphaeresis (&lt; Greek aphaeresis, taking away).</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>6.当es或est跟在以-m或-e结尾的单词之后时，它可能会去掉开头的e-并加入前面的单词。这就是所谓的aphaeresis（&lt;希腊aphaeresis，带走） <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:112 page:80 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号112，页数80（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>7. In a discussion of immortality the Roman epic poet Ennius is paraphrased.</div>
 <div class='latin-text'>Romulus in caelo cum dis agit aevum. (CICERo, TUSCULiNAE DIsPUTATIONEs 1.28)</div>
 <div class='latin-text'>aevum, aevi n. age, lifetime; life</div>
@@ -1265,7 +1265,7 @@ title: "Chapter IV"
 <div class='latin-text'>expello, expellere, expuli, expulsus drive out                 recurro, recurrere, recurri, recursum run back, rush back</div>
 <div class='latin-text'>furca, furcae f. pitchfork</div>
 <div class='latin-text'>tamen (adv.) nevertheless</div>
-<!-- seq:113 page:81 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号113，页数81（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>15. The chorus of a tragic play comments on the nature of rulers.</div>
 <div class='latin-text'>metui cupiunt metuique timent. (SENECA THE YOUNGER, AGAMEMNON 73)</div>
 <div class='latin-text'>metuõ, metuere, metui, —- fear, dread</div>
@@ -1282,5 +1282,5 @@ title: "Chapter IV"
 <div class='latin-text'>tantum (adv.) only</div>
 <div class='latin-text'>18. A Roman inscription</div>
 <div class='latin-text latin-special'>Cape mē; tua sum. (CIL I.1499)</div>
-<!-- seq:114 page:82 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号114，页数82（拆分：？，？）（机翻：？，？）（人翻：？，？）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>空白页 <span class='tag' style='background:#999999'>机翻</span></div>

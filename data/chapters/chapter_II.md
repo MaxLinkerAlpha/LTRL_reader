@@ -13,10 +13,10 @@ title: "Chapter II"
 <div class='latin-text'>Lanx</div>
 <div class='latin-text'>iambicus</div>
 <div class='latin-text'>tuche est</div>
-<!-- seq:57 page:25 -->
+<div class='translation' data-translator='机翻' style='border-color:#FF9C99'>序号57，页数25（拆分：1，cyan）（机翻：1，cyan）（人翻：簪子）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#FF9C99'>机翻</span></div>
 ## Vocabulary
 <div class='translation' data-translator='机翻' style='border-color:#FF9C99'>单词表（暂缓） <span class='tag' style='background:#FF9C99'>机翻</span></div>
-<!-- seq:58 page:26 -->
+<div class='translation' data-translator='机翻' style='border-color:#FF9C99'>序号58，页数26（拆分：1，cyan）（机翻：1，cyan）（人翻：簪子）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？，？ <span class='tag' style='background:#FF9C99'>机翻</span></div>
 ## Vocabulary Notes
 <div class='translation' data-translator='机翻' style='border-color:#FF9C99'>单词笔记 <span class='tag' style='background:#FF9C99'>机翻</span></div>
 <div class='latin-text'>When ira appears in the plural, it may be translated "(feelings of) anger.</div>
@@ -115,8 +115,8 @@ title: "Chapter II"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>水手们没有起航。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>1. A missing fourth principal part may indicate only that no forms derived from this part occur in the Latin that has survived.</div>
 <div class='note'>注释：1.缺失的第四个主要部分可能只是表明在拉丁语中没有出现从这一部分衍生出来的形式。</div>
-<div class='note'>注：1缺少第四个主要部分</div>
-<!-- seq:59 page:27 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>注：1缺少第四个主要部分 <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号59，页数27（拆分：1，cyan）（机翻：1，cyan）（人翻：?）（润色（按句）：？，？）（校对：？，？）（附加评论/修改建议：？， <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text latin-special'>dōnō, dōnāre, dōnāvī, dōnātus is a denominative verb. The term denominative is used of verbs that are derived from nouns or adjectives.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>dōnō, dōnāre, dōnāvī, dōnātus是一个名词动词。术语denominative是指源自名词或形容词的动词。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text latin-special'>The verb dōnō is derived from the noun dōnum, dōni n. Two constructions regularly occur with this verb.</div>
@@ -183,7 +183,7 @@ title: "Chapter II"
 <div class='translation' data-translator='tuche' style='border-color:#C3EAD5'>农夫害怕女王。 <span class='tag' style='background:#C3EAD5'>tuche</span></div>
 <div class='translation' data-translator='tuche' style='border-color:#C3EAD5'>农夫为女王担心。 <span class='tag' style='background:#C3EAD5'>tuche</span></div>
 <div class='translation' data-translator='tuche' style='border-color:#C3EAD5'>农夫害怕他的儿子。 <span class='tag' style='background:#C3EAD5'>tuche</span></div>
-<!-- seq:60 page:28 -->
+<div class='latin-text'>序号60，页数28（拆分：1，Lanx）（机翻：1，Lanx）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='latin-text latin-special'>The principal parts of the irregular verb sum, esse, fuī, futūrus derive from two different PIE roots, *Ees-, “be; exist” (the root for the first two principal parts) and *bheu-, “be, exist, grow” (for the third and fourth principal parts).2</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>不规则动词 sum、esse、fuī、futūrus 的主要部分来自两个不同的 PIE 词根：*Ees-，"是；存在"（前两个主要部分的词根）和 *bheu-，"是、存在、生长"（第三和第四个主要部分的词根）。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>不规则动词 sum、esse、fuī、futūrus 的主要部分来自两个不同的 PIE 词根：*Ees-，"是；存在"（前两个主要部分的词根）和 *bheu-，"是、存在、生长"（第三和第四个主要部分的词根）。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -259,8 +259,8 @@ title: "Chapter II"
 <div class='latin-text'>Agricola agrum, non pecüniam, optat.The farmer desires a field, not money.</div>
 <div class='latin-text'>Agricola agrum， non pecüniam， optat.农民想要的是田地，而不是钱。</div>
 <div class='latin-text'>Agricola agrum， non pecüniam， optat.农民想要田地，而不是钱。</div>
-## Derivatives
-## Cognates
+<div class='latin-text'>Derivatives</div>
+<div class='latin-text'>Cognates</div>
 <div class='latin-text'>ambulo</div>
 <div class='latin-text'>somnambulist</div>
 <div class='latin-text'>cüra</div>
@@ -300,9 +300,9 @@ title: "Chapter II"
 <div class='translation' data-translator='机翻' style='border-color:#999999'>2. 表单旁边的星号表示该表单是假设的。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>2.星号表明该形式是假定形式 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>3. See the vocabulary note on -que (p.13</div>
-<div class='note'>3.见-que上的词汇注释（第13页）</div>
+<div class='translation' data-translator='机翻' style='border-color:#999999'>3.见-que上的词汇注释（第13页） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='note'>3.见-que的注释（第13页）</div>
-<!-- seq:61 page:29 -->
+<div class='latin-text'>序号61，页数29（拆分：?，?）（机翻：1，Lanx）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='latin-text'>5.The Finite Latin Verb and Its Properties: Person,Number,Tense,Voice,Mood</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>5.有限拉丁语动词及其性质：人称，数字，时态，语气，语气 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>5.【正文译文】拉丁语动词定式【正文译文】及其性质：人称、数、时态、语态、语气。</div>
@@ -387,7 +387,7 @@ title: "Chapter II"
 <div class='latin-text'>5.A verb agrees with its subject in person and number.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>5.动词在人称和数字上与其主语一致 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>5.动词在人称和数与主语一致。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:62 page:30 -->
+<div class='latin-text'>序号62，页数30（拆分：1，Lanx）（机翻：1，Lanx）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='latin-text'>This is called subject-verb agreement</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>这称为主谓一致 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>即主谓一致 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -466,7 +466,7 @@ title: "Chapter II"
 <div class='latin-text'>6.Future Perfect: reports an action in future time with completed aspect. (She will have thought</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>6.未来完美：报告未来时间的动作，已完成方面。（她会想到 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>6.将来完成时：用完成体述说将来时间的动作。（她将寻思了。She will have thought） <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:63 page:31 -->
+<div class='latin-text'>序号63，页数31（拆分：1，Lanx）（机翻：1，Lanx）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='latin-text'>The chart below shows these six tenses arranged according to time and aspect with a sample verb showing the corresponding tense in English:</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>下图显示了根据时间和方面排列的这六种时态，并带有一个示例动词，显示了英语中的相应时态： <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>下表显示了根据时间和体排列的这六种时态，并附有一个示例动词，展示了对应的英语时态： <span class='tag' style='background:#999999'>机翻</span></div>
@@ -503,9 +503,9 @@ E</div>
 <div class='latin-text'>• DRILL 5-6, PAGE 37, MAY NOW BE DONE.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>• 演练 5-6，第 37 页，现在可以完成 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>• 训练 5-6，第 37 页，现在可以完成了 <span class='tag' style='background:#999999'>机翻</span></div>
-## S7.The Vocabulary Entry for a Verb: Principal Parts
-### S7.动词的词汇条目：主要部分
-### S7.动词的词汇条目：主要部分
+<div class='latin-text'>S7.The Vocabulary Entry for a Verb: Principal Parts</div>
+<div class='translation' data-translator='机翻' style='border-color:#999999'>S7.动词的词汇条目：主要部分 <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='机翻' style='border-color:#999999'>S7.动词的词汇条目：主要部分 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>The full vocabulary entry for a verb contains four principal parts and English meanings for the verb.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>动词的完整词汇条目包含四个主要部分和动词的英语含义 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>一个动词的完整词汇条目包含该动词的四个主要部分和英语含义。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -547,7 +547,7 @@ E</div>
 <div class='latin-text'>Certain verbs that lack perfect passive participles have future active participles as their fourth principal parts, which end in -urus</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>某些缺乏完全被动分词的动词将未来的主动分词作为其第四个主部分，以 -urus 结尾 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>某些缺少完成时被动分词的动词，其第四主要部分是将来时主动分词，以-ūrus 结尾 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:64 page:32 -->
+<div class='latin-text'>序号64，页数32（拆分：1，Lanx）（机翻：1，Lanx）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='latin-text'>Latin verbs are grouped in four different families called conjugations.Each verb belongs to one conjugation only, and each conjugation differs slightly from the others in how it creates certain forms.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>拉丁语动词分为四个不同的家族，称为共轭。每个动词只属于一个变位，每个变位在创建某些形式的方式上与其他变位略有不同 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>拉丁语动词分为不同的四类，称为变位法。每个动词只属于一种变位法，每种变位法在构成某些形式时与其他变位法略有不同。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -613,7 +613,7 @@ E</div>
 <div class='latin-text'>10.There are thus two meanings for the word "conjugation": 1.the name for each of the four families of verbs (first conjugation, second conjugation, etc.); 2.a complete set of forms for a particular tense of a given verb.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>10.因此，“共轭”一词有两个含义：1.动词的四个语系（第一变位、第二变位等）的名称;2.给定动词的特定时态的完整形式集 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>10.因此，"conjugation（变位）"一词有两种含义： 1.动词四个类（第一变位法、第二变位法等）的名称；2.特定动词的特定时态的一整套形态。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:65 page:33 -->
+<div class='latin-text'>序号65，页数33（拆分：1，Lanx）（机翻：1，Lanx）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='latin-text'>f9.Present, Imperfect, and Future Active Indicative of First and Second Conjugations</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>f9.现在、不完全和未来的主动指示第一和第二共轭 <span class='tag' style='background:#999999'>机翻</span></div>
 ### §9. 第一、二变位法主动态直陈式的现在时，未完成时和将来时
@@ -713,7 +713,7 @@ E</div>
 <div class='latin-text'>11.The symbol &gt; means "becomes"</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>11.符号&gt;的意思是“成为” <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>11.符号 &gt; 表示 "变为"。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:66 page:34 -->
+<div class='latin-text'>序号66，页数34（拆分：1，Lanx）（机翻：1，Lanx）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='latin-text'>4.In the third person singular and plural of both first- and second-conjugation verbs, the stem vowels (-à- and -ê- respectively) shorten before the endings -t and -nt.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>4.In 第一和第二变位动词的第三人称单数和复数，词干元音（分别为 -à- 和 -ê-）在结尾 -t 和 -nt 之前缩短 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>4.在第一和第二变位法动词的第三人称单复数中，构干元音（分别为 -ā- 和 -ē-）在词尾 -t 和 -nt 前缩短。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -801,7 +801,7 @@ E</div>
 <div class='latin-text'>2.The English translations for the imperfect tense forms given above have progressive aspect. Because the imperfect tense also has repeated aspect, alternate translations are possible: "I used to call," "I called (repeatedly)," etc</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>2.上面给出的不完全时态形式的英文翻译具有渐进性。因为不完全时态也有重复的方面，所以可以有替代翻译：“我曾经打电话”，“我打电话（反复）”等 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>2.上面给出的英语翻译中的未完成时形态都有进行体。由于未完成时也有重复体，因此可以有其他译法： "我曾经呼唤（I used to call）"、"我（多次）呼唤过【I called (repeatedly)】"等。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:67 page:35 -->
+<div class='latin-text'>序号67，页数35（拆分：1，Lanx）（机翻：1，Lanx）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='latin-text'>(10.Active Indicative of the Irregular Verbs sum and possum</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>（10.不规则动词和和负鼠的主动指示 <span class='tag' style='background:#999999'>机翻</span></div>
 ### §10.不规则动词 sum 和 possum 的主动态直陈式
@@ -886,7 +886,7 @@ E</div>
 <div class='latin-text'>12.The fourth principal part of most verbs is the perfect passive participle (see $7). However, the fourth principal part of sum-futürus-is a future active participle and is translated "about to be</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>12.大多数动词的第四个主部分是完全被动分词（见7美元）。然而，sum-futürus的第四个主要部分是一个未来的主动分词，并被翻译为“即将成为 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>12.大多数动词的第四个主要部分是完成时被动分词（见$7）。但是，sum-futūrus 的第四个主要部分是将来时主动分词，译为 "能够被……的（about to be）"。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:68 page:36 -->
+<div class='latin-text'>序号68，页数36（拆分：1，Lanx）（机翻：?，?）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='latin-text'>Present Active Indicative of sum and possum</div>
 <div class='latin-text'>Singular</div>
 <div class='latin-text'>1</div>
@@ -997,7 +997,7 @@ E</div>
 <div class='latin-text'>(10. Active Indicative of the Irregular Verbs sum and possum</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>（10.不规则动词sum和possum的主动指示语 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>（10.不规则动词sum和possum的主动语态 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:69 page:37 -->
+<div class='latin-text'>序号69，页数37（拆分：1，Lanx）（机翻：?，?）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='latin-text'>37 Future Active Indicative of sum and possum Singular 1 2 3 ero eris erit I shall be you will be he, she, it will be Plural 1 2 erimus eritis erunt we shall be you (pl.) will be they will be potero poteris poterit I shall be able you will be able he, she, it will be able poterimus poteritis poterunt we shall be able you (pl.) will be able they will be able OBSERVATIONS 1. In the future active indicative, the stem of sum is eri-.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>……这是表格 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Future Active Indicative of sum and possum</div>
@@ -1087,7 +1087,7 @@ E</div>
 <div class='latin-text'>15. An expletive is a word that stands in place of or anticipates a following word or phrase.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>15.咒骂语是一个代替或预示后面的单词或短语的单词。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>15.语法虚词是一类用于补全句子结构或引出下文的单词 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:70 page:38 -->
+<div class='latin-text'>序号70，页数38（拆分：1，Lanx）（机翻：?，?）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='latin-text'>38 f11. Distinguishing Transitive and Intransitive Verbs</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>38 f11。区分及物动词和不及物动词及物动词表达直接作用于人或事物的动作。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>38.区分及物动词与不及物动词。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -1169,7 +1169,7 @@ E</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>17.不定式（＜infinitivus，not limited）是一种不受人称和数字限制的动词形式。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>17.不定式（＜infinitivus，not limited）是一种无人称和数量限制的动词形式。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>17.不定式（＜infinitivus，未被限定）是一种不受人称与数限定的动词形式。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:71 page:39 -->
+<div class='latin-text'>序号71，页数39（拆分：1，Lanx）（机翻：?，?）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='latin-text'>An infinitive may be used to complete the meaning of another verb. Such an infinitive is called a Complementary Infinitive (&lt; compleô, fill out). For example: Insulam videre possum.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>不定式可用于完成另一个动词的含义。这样的不定式称为互补不定式（&lt; compleô，填写）。例如：负鼠硫酸盐 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>不定式可以补充另一个动词的意义，称这种不定式为互补不定式 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -1194,7 +1194,7 @@ E</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>在第二句中，以“we should”开头的动词概念由不定式“to work”完成：不定式指定debımus的主语应该做什么。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>第二句中以“we ought（我们得）”起始的【正文译文】动词意图【正文译文】由不定式“to work（工作）”补全：这一不定式具体说明了 debēmus的主语“得”做什么事。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Verbs that can take a Complementary Infinitive are identified in the vocabulary notes.</div>
-<div class='note'>可以采取互补不定式的动词在词汇注释中被识别。</div>
+<div class='translation' data-translator='机翻' style='border-color:#999999'>可以采取互补不定式的动词在词汇注释中被识别。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>单词表注明了可以用作补全性不定式的动词 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>(13. Object Infinitive</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>宾语不定式 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -1213,8 +1213,8 @@ E</div>
 <div class='latin-text latin-special'>The Object Infinitive may be understood as a variety of Complementary Infinitive. The infinitive laborāre in the sentence above both is the direct obiect of optat and serves to complete the verbal idea begun with optat.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Obiect无穷大可以理解为互补无穷大的一个变种。上面句子中的不定式劳āre既是optat的直接宾语，又是完成以optat开头的言语概念。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>宾语不定式可以视作补全性不定式的一个变种。上例中不定式laborare既是optat的直接宾语，又补全了以optat起始的动词意图。 <span class='tag' style='background:#999999'>机翻</span></div>
-## S14. Dative of the Possessor
-### S14.占有人的与格
+<div class='latin-text'>S14. Dative of the Possessor</div>
+<div class='translation' data-translator='机翻' style='border-color:#FF9C99'>S14.占有人的与格 <span class='tag' style='background:#FF9C99'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>14. 物主与格 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>A noun in the dative case is used to indicate the person who possesses something. This use is an extension of the case's referential function, and a dative so used is called a Dative of the Possessor. For example:</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>与格名词用于表示拥有某物的人。这种用法是格的指称函数的扩展，这样使用的与格被称为占有者的与格。例如： <span class='tag' style='background:#999999'>机翻</span></div>
@@ -1236,7 +1236,7 @@ E</div>
 <div class='latin-text'>The verb asserts the existence of the noun in the nominative case with reference to the person in the dative case.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>动词在主格中断言名词的存在，而在与格中则断言人的存在。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>动词言明了指向与格所有者的主格名词存在这一事实。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:72 page:40 -->
+<div class='latin-text'>序号72，页数40（拆分：1，Lanx）（机翻：?，?）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='latin-text'>2. The translations of these sentences move from the more to the less literal. In the less literal translation, the Dative of the Possessor becomes in English the subject of the verb "have," and the nominative of the thing possessed becomes the direct object.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>2.这些句子的翻译从字面意思多到字面意思少。在不太直译的情况下，占有者的形容词在英语中成为动词“have”的主语，占有物的主格成为直接宾语。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>2.这些句子可以直译也可以意译。意译时，物主与格译为英语中动词“have（有）”的主语，而所有物主格则译为直接宾语。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -1266,7 +1266,7 @@ E</div>
 <div class='latin-text'>The sentence 【正文原文】Dominus librum habet【正文原文】 is a neutral statement of ownership, in which equal stress is given to both possessor and thing possessed.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Dominus librum habet这句话是一种中立的所有权陈述，其中对占有人和被占有物都给予了同等的重视。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Dominus librum habet这句话是对“占有”的中立陈述，物主与所有物一样重要。 <span class='tag' style='background:#999999'>机翻</span></div>
-<div class='latin-text'>In the sentence【正文原文】 Domino est liber 【原文脚注】(Dative of the Possessor), the thing possessed receives slightly greater stress because it is the subject of the sentence.</div>
+<div class='latin-text'>In the sentence【正文原文】 Domino est liber 【正文原文】(Dative of the Possessor), the thing possessed receives slightly greater stress because it is the subject of the sentence.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>在句子Domino est liber（占有者的Dative）中，占有的东西受到的压力稍大，因为它是句子的主体。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Domino est liber（物主与格）这句话则稍稍强调了所有物——所有物是主语。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>A sentence with a Dative of the Possessor asserts both the existence of the thing possessed and possession by the person in the dative.</div>
@@ -1281,9 +1281,9 @@ E</div>
 <div class='latin-text'>The first two sentences answer the question "What does the master have?" The third answers the question "Whose is the book?"</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>前两句回答“大师有什么？”第三句回答“这本书是谁的？” <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>前两句话回答了问题“主人有什么？”，第三句话回答了“这本书是谁的？” <span class='tag' style='background:#999999'>机翻</span></div>
-## S15. Introduction to the Latin Sentence and Prose Word Order
-### S15.拉丁文句子与散文语序导论
-### S15.拉丁语句子与散文语序导论
+<div class='latin-text'>S15. Introduction to the Latin Sentence and Prose Word Order</div>
+<div class='translation' data-translator='机翻' style='border-color:#999999'>S15.拉丁文句子与散文语序导论 <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='机翻' style='border-color:#999999'>S15.拉丁语句子与散文语序导论 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Like any language, Latin seeks to be understood, and its aim is most often toward clarity. A sentence of Latin prose is not a puzzle to be figured out and not an illarranged version of English in a foreign tongue.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>像任何语言一样，拉丁语寻求被理解，其目的往往是为了清晰。一句拉丁散文不是一个谜，也不是外语中的英语单词。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>同任何语言一样，拉丁语追求被理解，且往往是被清晰地理解。一句拉丁散文不是一个待解的迷，也不是一版腔调陌生，语序错乱的英文 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -1298,7 +1298,7 @@ E</div>
 <div class='latin-text'>A greater degree of inflection of its nouns and verbs allows Latin a more flexible word order than is possible in English.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>名词和动词的词形变化程度更大，使拉丁语的语序比英语更灵活。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>动词与名词更大的屈折程度使得拉丁语的语序比英语更灵活。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:73 page:41 -->
+<div class='latin-text'>序号73，页数41（拆分：1，Lanx）（机翻：?，?）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='latin-text'>word order than is possible in English.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>并入上句 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>The same sentence (The girl loves the boy) could theoretically be written in Latin in six different orders.</div>
@@ -1327,11 +1327,11 @@ E</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>不使用“中性”语序时，这两个位置上的词通常就认为是在进行强调。例： <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Fêmina filiis dona dat.女人给儿子们礼物送。</div>
 <div class='latin-text'>The woman to (her) sons gifts (d.o.) is giving. 这个女人给（她的）儿子们礼物（d.o.）正在送。</div>
-<div class='footnote'>(neutral word order) 中性语序</div>
+<div class='latin-text'>(neutral word order) 中性语序</div>
 <div class='latin-text'>The woman is giving gifts to (her) sons.女人正送礼物给（她的）儿子们</div>
 <div class='latin-text'>Dona femina filiis dat.礼物女人给儿子们送。</div>
 <div class='latin-text'>Gifts (d.o.) the woman to (her) sons is giving. 礼物 (d.o.)这个女人送（她的）儿子们正在给。</div>
-<div class='footnote'>(dôna emphasized) 强调礼物</div>
+<div class='latin-text'>(dôna emphasized) 强调礼物</div>
 <div class='latin-text'>The woman is giving gifts to (her) sons.女人正在送礼物给（她的）儿子们</div>
 <div class='latin-text'>The second sentence violates neutral word order by placing the direct object first, ahead of the subject. Thus dona receives additional emphasis.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>第二句话将直接宾语放在主语之前，违反了中性语序。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -1370,7 +1370,7 @@ E</div>
 <div class='latin-text'>19. Such emphasis is often hard to convey in an English translation, but stressing or italicizing the emphasized word(s) is sometimes effective.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>19.这种强调在英文翻译中通常很难表达，但强调或斜体强调的单词有时是有效的。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>19.这种强调虽很难在英译中传达，但不妨使用加粗或斜体的方法。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:74 page:42 -->
+<div class='latin-text'>序号74，页数42（拆分：1，Lanx）（机翻：?，?）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='latin-text'>Chapter II</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>第二章 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>第二章 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -1450,7 +1450,7 @@ E</div>
 <div class='latin-text'>The boys [see] sailors in the street; [the boys] see farmers in the field.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>男孩们[看到]街上的水手;[男孩们]在田野里看到农民 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>男孩们[看见]水手们在街上；[男孩们]看见农民们在田地里。  男孩们在街上见到水手，在田地见到农民。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:75 page:43 -->
+<div class='latin-text'>序号75，页数43（拆分：1，Lanx）（机翻：?，?）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='latin-text'>15. Introduction to the Latin Sentence and Prose Word Order</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>15.拉丁语句子和散文语序导论 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>15.拉丁语句子与散文语序导论 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -1526,7 +1526,7 @@ E</div>
 <div class='latin-text'>• DRILL 12-15, PAGE 61, MAY NOW BE DONE.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>• 演练 12-15，第 61 页，现在可以完成 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>• 练习 12-15，第 61 页，现在可以完成了。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:76 page:44 -->
+<div class='latin-text'>序号76，页数44（拆分：1，Lanx）（机翻：?，?）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>44 Short Readings 名句翻译请参考群内文件，此栏目置于最后来专项翻译 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>1. The master Lysidamus asks his wife's slave a timorous question about the unwilling object of his affection. Lys.sed etiamne habet nunc Casina gladium? Par. habet, duös. (PLAUTUS, CASINA 69091) Lys. = Lysidamus Casina, Casinae f. Casina etiam (adv.) even Par. = Pardalisca (slave of Lysidamus's wife) nunc (adv.) now duos, masc. pl. acc. adj., two</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>1.主人吕西达姆斯向妻子的奴隶提出了一个胆怯的问题，即他不情愿的感情对象。Lys.sed etiamne habet nunc Casina gladium？帕尔哈贝特，杜奥斯。（普劳图斯，卡西纳69091）赖氨酸。= 利西达姆斯·卡西纳，卡西纳·Casina etiam （adv.） 偶数 Par. = Pardalisca （Lysidamus妻子的奴隶） nunc （adv.） 现在二重奏， masc.pl. acc. adj.， two <span class='tag' style='background:#999999'>机翻</span></div>
@@ -1538,10 +1538,10 @@ E</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>4. 对众神的无益观点值得商榷。（小塞内卡，德恩惠IV.5.1）恩惠，恩惠，恩惠5。哲学家做了一个很好的区分.nunc enim amas mê， amicus non es.（小塞内卡，莫拉莱斯书信，XXXV.1） NUNC （ADV.） 现在 mê， 个人发音， acc.唱歌，我之友，阿米奇· <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>6. A remark attributed to Herodes Atticus (an Athenian who became a Roman consul in 107 c.E.) when he responded to a man attempting to appear to be what he was not video barbam et pallium, philosophum nondum video.(AULUS GELLIUS, NOCTES AITICAE IX.2.4) barba, barbae f. beard pallium, pallii n. cloak philosophus, philosophi m. philosopher nondum (adv.) not yet 45</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>6. 希律阿迪克斯（雅典人，公元 107 年成为罗马执政官）在回应一个试图看起来像他不是视频 barbam et pallium，哲学非达姆视频的人时的评论。（奥卢斯·盖利乌斯，夜辰艾蒂卡 IX.2.4） 巴尔巴，巴尔巴 F. 胡须 帕利姆，帕利· 斗篷 哲学家，哲学家 M. 哲学家 农杜姆 （ADV.） 还不到 45 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:77 page:45 -->
-## S16. Names in Latin I
-### S16.拉丁语名称
-### S16. 拉丁语姓名 I
+<div class='latin-text'>序号77，页数45（拆分：1，Lanx）（机翻：?，?）（人翻：?）（润色（按句）：？，？）（校对：？，？）</div>
+<div class='latin-text'>S16. Names in Latin I</div>
+<div class='translation' data-translator='机翻' style='border-color:#999999'>S16.拉丁语名称 <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='机翻' style='border-color:#999999'>S16. 拉丁语姓名 I <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Like any noun, each proper name in Latin belongs to a particular declension and is declined using the endings of that declension. For example:</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>与任何名词一样，拉丁语中的每个专有名称都属于一个特定的词尾，并使用该词尾来变格。例如： <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>拉丁语中，同其他名词一样，每个专有名词都从属于一种变格法，并按照该变格法词尾进行变格。 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -1625,7 +1625,7 @@ E</div>
 <div class='latin-text'>Only one -i is written in the genitive and vocative singular forms, but they are pronounced as if they were spelled *Gaii (with a consonantal and a vocalic i)</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>只有一个-i是用属格和主音单数形式写的，但它们的发音就像拼写为*Gaii（带有辅音和元音i） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>属格及呼格中只有一个-i-，但他们发作*Gaii（即既有辅音i也有元音i）。 <span class='tag' style='background:#999999'>机翻</span></div>
-<!-- seq:78 page:46 -->
+<div class='translation' data-translator='机翻' style='border-color:#999999'>序号78，页数46（拆分：1，Lanx）（机翻：【正文译文】簪子【正文译文】）（人翻：【正文原文】Yancey【正文原文】）（润色（按句）：？，？）（校对：？，？） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>A Roman woman had only a single name, and this was derived from the name of the gêns to which she belonged.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>一个罗马女人只有一个名字，这个名字来源于她所属的家族的名字。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>罗马女性只有单名，即来自其家族的名字
