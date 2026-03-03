@@ -654,89 +654,102 @@
     
     .hidden { display: none !important; }
     
-    /* ========== 新版本 Block 样式 ========== */
+    /* ========== v7 新版本 Block 样式 ========== */
     
-    /* 底漌显示的翻译 - 使用灰色标签提示用户 */
-    .translation.fallback .translator-label {
-      background: #9ca3af20 !important;
-      color: #6b7280 !important;
-      border-color: #9ca3af40 !important;
-    }
-    
-    .translation.fallback .translator-label::after {
-      content: '(底漌)';
-      margin-left: 4px;
-      font-size: 0.75em;
-      opacity: 0.8;
-    }
-    .block-list {
+    /* 元信息行（序号/页数） */
+    .meta-line {
       display: flex;
-      flex-direction: column;
-      gap: 0.5rem;  /* 紧凑的行间距 */
+      gap: 1rem;
+      padding: 0.5rem 1rem;
+      background: rgba(184,134,11,0.1);
+      border-left: 3px solid var(--gold);
+      font-size: 0.85rem;
+      color: var(--ink-light);
+      margin-bottom: 0.5rem;
+      border-radius: 0 4px 4px 0;
     }
     
+    .meta-line .seq {
+      font-weight: 600;
+      color: var(--wine);
+    }
+    
+    .meta-line .page {
+      color: var(--gold);
+    }
+    
+    /* 内容 block */
     .content-block {
-      padding: 0.75rem;
-      border-left: 3px solid var(--wine);
-      background: rgba(255,255,255,0.4);
-      border-radius: 0 8px 8px 0;
-      margin-bottom: 0.25rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(184,134,11,0.2);
+      border-radius: 8px;
+      overflow: hidden;
     }
     
-    .content-block:hover {
-      background: rgba(255,255,255,0.7);
-    }
-    
-    .original-text {
+    /* 原文样式 - 羊皮纸背景 */
+    .original {
+      padding: 1rem 1.25rem;
+      background: linear-gradient(135deg, #faf6ed 0%, #f5f0e3 100%);
+      border-bottom: 1px solid rgba(184,134,11,0.2);
       font-family: 'Crimson Text', serif;
-      font-size: 1rem;
+      line-height: 1.7;
       color: var(--ink);
-      margin-bottom: 0.5rem;
-      line-height: 1.6;
     }
     
-    .latin-text-block {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 0.5rem;
-      background: linear-gradient(135deg, rgba(114,47,55,0.05) 0%, rgba(184,134,11,0.05) 100%);
-      border-radius: 4px;
-      margin-bottom: 0.5rem;
+    .original.english {
+      font-size: 1rem;
     }
     
-    .latin-content {
-      font-family: 'Crimson Text', serif;
+    .original.latin {
+      font-size: 1.05rem;
       font-style: italic;
       color: var(--wine);
-      flex: 1;
     }
     
-    .translations-block {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
+    /* 译文区域 */
+    .translations {
+      padding: 0.75rem 1rem;
+      background: rgba(255,255,255,0.6);
     }
     
-    .translations-block .translation {
+    .translation {
       display: flex;
       align-items: flex-start;
-      gap: 0.5rem;
-      padding: 0.25rem 0;
+      gap: 0.75rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed rgba(184,134,11,0.15);
     }
     
-    .translations-block .translator-label {
+    .translation:last-child {
+      border-bottom: none;
+    }
+    
+    /* 译者标签 */
+    .translator-tag {
       flex-shrink: 0;
-      font-size: 0.7rem;
-      padding: 0.1rem 0.4rem;
+      font-size: 0.75rem;
+      padding: 0.15rem 0.5rem;
       border-radius: 4px;
+      border: 1px solid;
+      font-weight: 500;
       white-space: nowrap;
     }
     
-    .translations-block .translation-text {
+    .translation-text {
       font-size: 0.95rem;
+      line-height: 1.6;
       color: var(--ink);
-      line-height: 1.5;
+      padding-top: 0.1rem;
+    }
+    
+    /* 底漌显示的翻译 */
+    .translation.fallback .translator-tag {
+      opacity: 0.7;
+    }
+    
+    .translation.fallback .translator-tag::after {
+      content: ' (底漌)';
+      font-size: 0.75em;
     }
     
     footer {
@@ -1060,6 +1073,7 @@ Base Path: ${CONFIG.basePath}</pre>
             <label>译者:</label>
             <select id="ctrl-translator">
               <option value="all">全部对比</option>
+              <option value="original-only">仅显示原文</option>
               <option value="primary">仅主译者</option>
               ${allTranslators.map(t => `<option value="${t.id}">${t.name}</option>`).join('')}
             </select>
@@ -1067,7 +1081,7 @@ Base Path: ${CONFIG.basePath}</pre>
         </div>
         
         <article id="chapter-content">
-          ${data.sections.map((sec, idx) => renderSection(sec, idx, companion[sec.id])).join('')}
+          ${data.sections.map(sec => renderSection(sec, companion[sec.id])).join('')}
         </article>
         
         <nav class="chapter-nav">
@@ -1174,26 +1188,13 @@ Base Path: ${CONFIG.basePath}</pre>
       `;
     }
     
-    // 渲染新版本格式 - 每个Excel行作为一个紧凑的block
-    function renderSectionBlocks(section, companionNote) {
-      const isIncomplete = section.blocks.length === 0;
-      
+    // 渲染段落 (v7 格式)
+    function renderSection(section, companionNote) {
       return `
         <section class="section" id="${section.id}">
-          <h2 class="section-title">
-            ${section.title}
-            ${isIncomplete ? '<span class="incomplete-badge">待补充</span>' : ''}
-          </h2>
+          <h2 class="section-title">${section.title}</h2>
           
-          ${isIncomplete ? `
-            <div class="incomplete-notice">
-              <p>⚠️ 此段落内容尚未完成翻译或原文缺失</p>
-            </div>
-          ` : ''}
-          
-          <div class="block-list">
-            ${section.blocks.map((block, bidx) => renderBlock(block, bidx)).join('')}
-          </div>
+          ${section.blocks.map(block => renderBlockV7(block)).join('')}
           
           ${companionNote ? `
             <div class="companion-section" data-type="companion">
@@ -1213,64 +1214,67 @@ Base Path: ${CONFIG.basePath}</pre>
       `;
     }
     
-    // 渲染单个 block (对应Excel一行)
-    function renderBlock(block, idx) {
-      const hasOriginal = block.original && block.original.trim();
-      const hasLatin = block.latin && block.latin.trim();
-      const hasTranslations = block.translations && block.translations.length > 0;
+    // 渲染 Block (v7 格式)
+    function renderBlockV7(block) {
+      if (block.type === 'meta') {
+        return `
+          <div class="meta-line" data-seq="${block.seq}" data-page="${block.page}">
+            <span class="seq">序号${block.seq}</span>
+            <span class="page">页数${block.page}</span>
+          </div>
+        `;
+      }
       
-      if (!hasOriginal && !hasLatin && !hasTranslations) return '';
-      
-      // 为每个翻译标记是否是底漌显示
-      const translationsWithFallback = hasTranslations ? block.translations.map((t, i) => {
-        const info = getTranslatorInfo(t.translator);
-        // 如果是该block的第一个翻译，标记为fallback候选（用于当选中译者不存在时显示）
-        const isFallback = i === 0;
-        return { ...t, color: info.color, isPrimary: info.is_primary, isFallback };
-      }) : [];
-      
-      return `
-        <div class="content-block" data-block-id="${idx}">
-          ${hasOriginal ? `
-            <div class="original-text" data-type="original">
-              ${escapeHtml(block.original)}
-            </div>
-          ` : ''}
-          
-          ${hasLatin ? `
-            <div class="latin-section" data-type="latin">
-              <div class="latin-text-block">
-                <span class="latin-label">Latin</span>
-                <span class="latin-content">${escapeHtml(block.latin)}</span>
-                <button class="copy-btn" onclick="copyText('${escapeHtml(block.latin).replace(/'/g, "\\'")}')" title="复制">
-                  📋
-                </button>
+      if (block.type === 'content') {
+        const hasOriginal = block.original;
+        const hasTranslations = block.translations && block.translations.length > 0;
+        
+        if (!hasOriginal && !hasTranslations) return '';
+        
+        // 为翻译添加颜色和fallback标记
+        const translations = block.translations.map((t, i) => {
+          const info = getTranslatorInfo(t.translator);
+          return {
+            ...t,
+            color: info.color,
+            isPrimary: info.is_primary,
+            isFallback: i === 0  // 第一个作为底漌
+          };
+        });
+        
+        return `
+          <div class="content-block">
+            ${hasOriginal ? `
+              <div class="original ${block.original.type}" data-type="original">
+                ${escapeHtml(block.original.text)}
               </div>
-            </div>
-          ` : ''}
-          
-          ${hasTranslations ? `
-            <div class="translations-block" data-type="translation">
-              ${translationsWithFallback.map(t => `
-                <div class="translation" 
-                     data-translator="${t.translator}" 
-                     data-primary="${t.isPrimary || false}"
-                     data-fallback="${t.isFallback}">
-                  <span class="translator-label" style="background: ${t.color}20; color: ${t.color}; border: 1px solid ${t.color}40;">
-                    ${t.translator} ${t.isPrimary ? '★' : ''}
-                  </span>
-                  <div class="translation-text">${escapeHtml(t.text)}</div>
-                </div>
-              `).join('')}
-            </div>
-          ` : ''}
-        </div>
-      `;
+            ` : ''}
+            
+            ${hasTranslations ? `
+              <div class="translations" data-type="translation">
+                ${translations.map(t => `
+                  <div class="translation" 
+                       data-translator="${t.translator}"
+                       data-primary="${t.isPrimary}"
+                       data-fallback="${t.isFallback}">
+                    <span class="translator-tag" style="background: ${t.color}20; color: ${t.color}; border-color: ${t.color}40;">
+                      ${t.translator}
+                    </span>
+                    <span class="translation-text">${escapeHtml(t.text)}</span>
+                  </div>
+                `).join('')}
+              </div>
+            ` : ''}
+          </div>
+        `;
+      }
+      
+      return '';
     }
     
-    // ==================== Markdown 解析 (v2 - HTML Block 格式) ====================
+    // ==================== Markdown 解析 (v7 格式) ====================
     function parseChapterMarkdown(md) {
-      log('开始解析 Markdown (v2)');
+      log('开始解析 Markdown (v7)');
       const lines = md.split('\n');
       const result = { meta: {}, sections: [] };
       
@@ -1285,154 +1289,105 @@ Base Path: ${CONFIG.basePath}</pre>
         }
       }
       
-      // 解析段落 - 新格式: 每行Excel = 一个block
+      // 解析段落
       let currentSection = null;
-      let currentBlock = null;  // 用于收集同一Excel行的内容
-      let lineNum = 0;
+      let inContentBlock = false;
+      let currentBlock = null;
+      let blockDepth = 0;
       
       for (let i = 0; i < lines.length; i++) {
-        let line = lines[i].trimEnd();
-        if (!line.trim()) {
-          // 空行 - 如果有当前区块，保存它
-          if (currentBlock && currentSection) {
-            addBlockToSection(currentBlock, currentSection);
-            currentBlock = null;
-          }
-          continue;
-        }
+        let line = lines[i];
         
         // 段落标题 ## Section 1. xxx
         if (line.startsWith('## ')) {
-          // 保存之前的block
-          if (currentBlock && currentSection) {
-            addBlockToSection(currentBlock, currentSection);
-            currentBlock = null;
-          }
           if (currentSection) result.sections.push(currentSection);
           currentSection = {
             id: `sec-${result.sections.length + 1}`,
             title: line.replace('## ', ''),
-            latin: '',
-            translations: [],
-            forvo: [],
-            incomplete: false,
-            blocks: []  // 每个Excel行是一个block
+            blocks: []
           };
           log('发现段落:', currentSection.title);
           continue;
         }
         
-        // 解析 HTML block 格式
-        if (line === '<div class="block">') {
-          currentBlock = { original: '', latin: '', translations: [] };
+        // 元信息行 <div class="meta-line">
+        const metaLineMatch = line.match(/<div class="meta-line" data-seq="(\d+)" data-page="(\d+)">/);
+        if (metaLineMatch && currentSection) {
+          currentSection.blocks.push({
+            type: 'meta',
+            seq: metaLineMatch[1],
+            page: metaLineMatch[2]
+          });
           continue;
         }
         
-        if (line === '</div>' && currentBlock) {
-          if (currentSection) {
-            addBlockToSection(currentBlock, currentSection);
-          }
-          currentBlock = null;
+        // 开始内容 block
+        if (line === '<div class="content-block">') {
+          inContentBlock = true;
+          currentBlock = { type: 'content', original: null, translations: [] };
+          blockDepth = 1;
           continue;
         }
         
-        // 解析 <p class="original">英文原文</p>
-        const originalMatch = line.match(/<p class="original">(.+)<\/p>/);
-        if (originalMatch && currentBlock) {
-          currentBlock.original = originalMatch[1];
-          continue;
-        }
-        
-        // 解析 <p class="latin">拉丁文</p>
-        const latinMatch = line.match(/<p class="latin">(.+)<\/p>/);
-        if (latinMatch && currentBlock) {
-          currentBlock.latin = latinMatch[1];
-          continue;
-        }
-        
-        // 解析 <p class="translation" data-translator="name">...译文...</p>
-        const transStartMatch = line.match(/<p class="translation" data-translator="([^"]+)">/);
-        if (transStartMatch && currentBlock) {
-          const translator = transStartMatch[1];
-          // 收集翻译文本（可能在同一行或下一行）
-          let transText = '';
-          const closeIdx = line.indexOf('</p>');
-          if (closeIdx > 0) {
-            // 单行格式: <p ...>内容</p>
-            const start = line.indexOf('>') + 1;
-            transText = line.substring(start, closeIdx);
-            // 移除 <span class="translator-tag">xxx</span>
-            transText = transText.replace(/<span class="translator-tag">[^<]+<\/span>/g, '').trim();
-          } else {
-            // 多行格式，收集到 </p>
-            let j = i + 1;
-            while (j < lines.length && !lines[j].includes('</p>')) {
-              transText += lines[j].trim() + ' ';
-              j++;
+        // 结束内容 block
+        if (line === '</div>' && inContentBlock) {
+          blockDepth--;
+          if (blockDepth === 0) {
+            inContentBlock = false;
+            if (currentSection && currentBlock) {
+              currentSection.blocks.push(currentBlock);
             }
-            if (j < lines.length) {
-              const lastLine = lines[j];
-              const closePos = lastLine.indexOf('</p>');
-              transText += lastLine.substring(0, closePos);
+            currentBlock = null;
+          }
+          continue;
+        }
+        
+        // 在 block 内部
+        if (inContentBlock && currentBlock) {
+          // 计算嵌套深度
+          blockDepth += (line.match(/<div/g) || []).length;
+          blockDepth -= (line.match(/<\/div>/g) || []).length;
+          
+          // 原文 <div class="original english|latin">
+          const originalMatch = line.match(/<div class="original (english|latin)">\s*$/);
+          if (originalMatch) {
+            // 下一行是内容
+            const contentLine = lines[++i];
+            if (contentLine) {
+              currentBlock.original = {
+                text: contentLine.trim(),
+                type: originalMatch[1]
+              };
             }
-            i = j;
-            transText = transText.replace(/<span class="translator-tag">[^<]+<\/span>/g, '').trim();
+            continue;
           }
-          currentBlock.translations.push({ translator, text: transText });
-          continue;
-        }
-        
-        // 旧格式兼容: ### Latin
-        if (line.startsWith('### Latin') && currentSection) {
-          const nextLine = lines[i + 1]?.trim();
-          if (nextLine && !nextLine.startsWith('###')) {
-            currentSection.latin = nextLine;
-            i++;
+          
+          // 译文 <div class="translation" data-translator="name">
+          const transMatch = line.match(/<div class="translation" data-translator="([^"]+)">/);
+          if (transMatch) {
+            const translator = transMatch[1];
+            // 下一行是 translator-tag
+            i++; // 跳过 tag 行
+            // 再下一行是 translation-text
+            const textLine = lines[++i];
+            if (textLine) {
+              const textMatch = textLine.match(/<span class="translation-text">(.+)<\/span>/);
+              if (textMatch) {
+                currentBlock.translations.push({
+                  translator: translator,
+                  text: textMatch[1]
+                });
+              }
+            }
+            continue;
           }
-          continue;
-        }
-        
-        // 旧格式兼容: ### Translation:译者名
-        if (line.startsWith('### Translation:') && currentSection) {
-          const translator = line.replace('### Translation:', '').trim();
-          const nextLine = lines[i + 1]?.trim();
-          if (nextLine && !nextLine.startsWith('###')) {
-            currentSection.translations.push({
-              translator: translator,
-              text: nextLine,
-              is_primary: false
-            });
-            i++;
-          }
-          continue;
         }
       }
       
-      // 保存最后的block和section
-      if (currentBlock && currentSection) {
-        addBlockToSection(currentBlock, currentSection);
-      }
       if (currentSection) result.sections.push(currentSection);
       
       log('解析完成，共', result.sections.length, '个段落');
       return result;
-    }
-    
-    // 将block内容添加到section
-    function addBlockToSection(block, section) {
-      if (!block) return;
-      // 合并到section的translations
-      if (block.latin && !section.latin) {
-        section.latin = block.latin;
-      }
-      if (block.translations && block.translations.length > 0) {
-        section.translations.push(...block.translations);
-      }
-      // 如果block有原文但没有单独的translation，添加为原文+翻译结构
-      if (block.original || block.latin) {
-        section.blocks = section.blocks || [];
-        section.blocks.push(block);
-      }
     }
     
     function parseCompanionMarkdown(md) {
@@ -1509,7 +1464,19 @@ Base Path: ${CONFIG.basePath}</pre>
     function filterTranslations() {
       const value = state.selectedTranslator;
       
-      // 如果是全部显示，展示所有翻译
+      // 仅显示原文模式
+      if (value === 'original-only') {
+        document.querySelectorAll('.translations').forEach(el => {
+          el.style.display = 'none';
+        });
+        return;
+      } else {
+        document.querySelectorAll('.translations').forEach(el => {
+          el.style.display = '';
+        });
+      }
+      
+      // 全部显示
       if (value === 'all') {
         document.querySelectorAll('.translation').forEach(el => {
           el.classList.remove('hidden', 'fallback');
@@ -1517,7 +1484,7 @@ Base Path: ${CONFIG.basePath}</pre>
         return;
       }
       
-      // 如果是主译者模式
+      // 主译者模式
       if (value === 'primary') {
         document.querySelectorAll('.translation').forEach(el => {
           const isPrimary = el.getAttribute('data-primary') === 'true';
@@ -1528,12 +1495,10 @@ Base Path: ${CONFIG.basePath}</pre>
       }
       
       // 特定译者模式 - 底漌逻辑
-      // 对于每个block（translations-block），检查是否有选中译者的翻译
-      document.querySelectorAll('.translations-block').forEach(block => {
+      document.querySelectorAll('.translations').forEach(block => {
         const translations = block.querySelectorAll('.translation');
         let hasSelectedTranslator = false;
         
-        // 检查是否有选中的译者
         translations.forEach(el => {
           const translator = el.getAttribute('data-translator');
           if (translator === value) {
@@ -1541,20 +1506,16 @@ Base Path: ${CONFIG.basePath}</pre>
           }
         });
         
-        // 应用显示逻辑
         translations.forEach(el => {
           const translator = el.getAttribute('data-translator');
           const isFallback = el.getAttribute('data-fallback') === 'true';
           
           if (translator === value) {
-            // 选中的译者 - 正常显示
             el.classList.remove('hidden', 'fallback');
           } else if (!hasSelectedTranslator && isFallback) {
-            // 没有选中译者，使用底漌显示（第一个可用的翻译）
             el.classList.remove('hidden');
             el.classList.add('fallback');
           } else {
-            // 隐藏其他翻译
             el.classList.add('hidden');
             el.classList.remove('fallback');
           }
