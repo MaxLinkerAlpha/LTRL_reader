@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 """Regenerate chapter markdown files from source/original Excel workbooks.
 
-This parser handles two source formats:
-1) Explicitly tagged rows (Chapter O): marker/seq/translator/content columns.
-2) Color-coded rows (Chapter I-V): single text column + fill color translator mapping.
+Key rules implemented for this repository:
+- Translator attribution prefers explicit translator column, then row background color mapping.
+- Do NOT merge named translators into machine translation based on workflow assignment text.
+- Translator notes are emitted as dedicated blocks.
+- Table-like consecutive declension lines are grouped into one table block.
+- Section heading hierarchy supports:
+  - ## major sections
+  - ### subsection (lines containing "§")
+- Preserve screenshot/page metadata position from source rows.
 """
 
 from __future__ import annotations
@@ -15,18 +21,17 @@ import zipfile
 from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple
 import xml.etree.ElementTree as ET
 
 NS = {"a": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
 
+# Canonical translator naming.
 CANONICAL_NAME_MAP = {
-    "tuche est": "tuche",
-    "tuche": "tuche",
+    "tuche": "tuche est",
+    "tuche est": "tuche est",
     "簪子": "簪花落梅",
     "簪花": "簪花落梅",
-    "cyan": "机翻",
-    "iambicus": "机翻",
     "yancey": "Yancey",
     "lanx": "Lanx",
     "mecius": "Mecius",
@@ -37,24 +42,23 @@ DEFAULT_TRANSLATOR_COLOR = {
     "Lanx": "#FFC000",
     "簪花落梅": "#C3EAD5",
     "Yancey": "#FDEBFF",
-    "tuche": "#00A3F5",
+    "tuche est": "#00A3F5",
     "Mecius": "#D58EFF",
     "李勋": "#9A38D7",
     "机翻": "#999999",
 }
 
+# Stable fallback color->translator mapping inferred from existing legend conventions.
 KNOWN_COLOR_NAME = {
     "FFFFC000": "Lanx",
-    "FF00A3F5": "tuche",
-    "FF00B0F0": "tuche",
+    "FF00A3F5": "tuche est",
+    "FF00B0F0": "tuche est",
     "FFC3EAD5": "簪花落梅",
     "FFFDEBFF": "Yancey",
     "FFD58EFF": "Mecius",
     "FF9A38D7": "李勋",
     "FF99DDFF": "Yancey",
     "FF8CDDFA": "Yancey",
-    "FFEAFAF1": "机翻",
-    "FF92D050": "机翻",
 }
 
 CHAPTER_FILES = [
@@ -88,6 +92,13 @@ KNOWN_SECTION_TITLES = {
     "派生词和同源词",
 }
 
+NOT_TITLE_PATTERNS = [
+    r"\bDRILL\b",
+    r"\bDRILI\b",
+    r"\bMAY NOW BE DONE\b",
+    r"\bPAGE\s*\d+\b",
+]
+
 ADMIN_LINE_PATTERNS = [
     r"本文档仅供组内学习交流使用",
     r"认领章节/分工具体内容及流程",
@@ -106,10 +117,23 @@ ADMIN_LINE_PATTERNS = [
     r"游击队",
     r"简明拉丁语",
     r"暂时前来查漏补缺",
-    r"我先跳过",
     r"截图序号",
     r"正文页数",
     r"本章分工",
+]
+
+TABLE_KEYWORDS = [
+    "Nom.",
+    "Gen.",
+    "Dat.",
+    "Acc.",
+    "Abl.",
+    "Voc.",
+    "Singular",
+    "Plural",
+    "Declension",
+    "Person",
+    "Perfect Active Stem",
 ]
 
 
@@ -195,8 +219,8 @@ def parse_sheet_rows(zf: zipfile.ZipFile, shared: List[str]) -> List[RowRecord]:
 
             style_ids[cidx] = int(c.attrib.get("s", "0"))
             ctype = c.attrib.get("t")
-
             text = ""
+
             if ctype == "s":
                 v = c.find("a:v", NS)
                 if v is not None and v.text is not None:
@@ -230,11 +254,7 @@ def contains_cjk(s: str) -> bool:
 
 
 def html_escape(s: str) -> str:
-    return (
-        s.replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-    )
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
 def normalize_name(name: str) -> str:
@@ -267,9 +287,7 @@ def dominant_row_fill(
     colors: List[str] = []
     for col in range(1, 6):
         style_id = row.style_ids.get(col)
-        if style_id is None:
-            continue
-        if style_id >= len(fill_id_by_style_id):
+        if style_id is None or style_id >= len(fill_id_by_style_id):
             continue
         fill_id = fill_id_by_style_id[style_id]
         if fill_id >= len(fill_rgb_by_fill_id):
@@ -282,86 +300,71 @@ def dominant_row_fill(
     return Counter(colors).most_common(1)[0][0]
 
 
-def parse_machine_names(lines: Iterable[str]) -> List[str]:
-    out: List[str] = []
-    for line in lines:
-        m = re.search(r"机翻\s*[:：]\s*([^;；\n]+)", line)
-        if not m:
-            continue
-        raw = m.group(1)
-        parts = re.split(r"[、,，/\s]+", raw)
-        for p in parts:
-            p = normalize_name(p)
-            if not p or p in {"?", "？"}:
-                continue
-            out.append(p)
-    return out
+def parse_seq_page(text: str) -> Optional[Tuple[int, int]]:
+    m = re.search(r"序号\s*(\d+)\s*[，,]\s*页数\s*(\d+)", text)
+    if not m:
+        return None
+    return int(m.group(1)), int(m.group(2))
 
 
-def guess_name_from_legend_text(text: str) -> Optional[str]:
+def parse_shot_page(marker: str, content: str) -> Optional[Tuple[int, int]]:
+    m1 = re.search(r"截图序号[:：]\s*(\d+)", marker)
+    m2 = re.search(r"正文页数[:：]\s*(\d+)", content)
+    if not m1 or not m2:
+        return None
+    return int(m1.group(1)), int(m2.group(1))
+
+
+def is_translator_note(text: str, marker: str = "") -> bool:
+    t = normalize_whitespace(text)
+    m = normalize_whitespace(marker)
+    if "译者注释" in m:
+        return True
+    if t.startswith("*"):
+        return True
+    if t.startswith("注：") or t.startswith("注:"):
+        return True
+    if "译者注" in t or "本句删除" in t:
+        return True
+    return False
+
+
+def is_table_like_line(text: str) -> bool:
     t = normalize_whitespace(text)
     if not t:
-        return None
+        return False
+    if any(k in t for k in TABLE_KEYWORDS):
+        return True
+    # Rough declension row pattern: starts with case abbreviation + two columns.
+    if re.match(r"^(Nom|Gen|Dat|Acc|Abl|Voc)\.?\s+\S+", t):
+        return True
+    if re.match(r"^[1-5](st|nd|rd|th)\s+Declension", t, re.IGNORECASE):
+        return True
+    return False
 
-    for pat in ADMIN_LINE_PATTERNS:
-        if re.search(pat, t):
-            return None
 
-    # Remove trailing notes in parentheses.
-    t = re.split(r"[（(]", t, maxsplit=1)[0]
-    # Keep first token before separators.
-    t = re.split(r"[，,;；]|\s{2,}|\t+", t, maxsplit=1)[0]
-    t = re.split(r"\s+", t, maxsplit=1)[0]
-    t = t.strip("-•· ")
+def is_subsection_title(text: str) -> bool:
+    t = normalize_whitespace(text)
+    # Only explicit subsection labels should be elevated as headings.
+    if re.match(r"^§\s*\d+[A-Za-z0-9.\-]*", t):
+        return True
+    return False
+
+
+def extract_explicit_translator(raw_translator: str) -> Optional[str]:
+    t = normalize_whitespace(raw_translator)
     if not t:
         return None
 
-    # Keep only compact name-like strings.
-    if re.fullmatch(r"[A-Za-z][A-Za-z\s]{0,20}", t) and len(t) <= 20:
-        return normalize_name(t)
-    if re.fullmatch(r"[\u4e00-\u9fffA-Za-z]{2,10}", t):
-        return normalize_name(t)
+    m = re.search(r"译者\s*[:：]\s*([^】\]]+)", t)
+    if m:
+        return normalize_name(m.group(1))
+
+    # Some sheets place only a translator name in this column.
+    guessed = guess_name_from_legend_text(t)
+    if guessed:
+        return normalize_name(guessed)
     return None
-
-
-def detect_color_name_map(
-    rows: List[RowRecord],
-    fill_rgb_by_fill_id: List[Optional[str]],
-    fill_id_by_style_id: List[int],
-) -> Dict[str, str]:
-    color_to_name_votes: Dict[str, Counter] = {}
-
-    # Legend block usually ends before the first seq/page tracking line.
-    legend_end = min(160, len(rows))
-    for idx, row in enumerate(rows[:160]):
-        line = normalize_whitespace(row.values.get(1, ""))
-        if parse_seq_page(line):
-            legend_end = idx
-            break
-
-    for row in rows[:legend_end]:
-        # Legend rows are usually a single short text with a color fill.
-        text_cells = [(k, v) for k, v in row.values.items() if k <= 5 and normalize_whitespace(v)]
-        if len(text_cells) != 1:
-            continue
-        _, text = text_cells[0]
-        if len(normalize_whitespace(text)) > 60:
-            continue
-
-        color = dominant_row_fill(row, fill_rgb_by_fill_id, fill_id_by_style_id)
-        if not color:
-            continue
-
-        name = guess_name_from_legend_text(text)
-        if not name:
-            continue
-
-        color_to_name_votes.setdefault(color, Counter())[name] += 1
-
-    out: Dict[str, str] = {}
-    for color, votes in color_to_name_votes.items():
-        out[color] = votes.most_common(1)[0][0]
-    return out
 
 
 def is_section_title(text: str) -> bool:
@@ -370,16 +373,16 @@ def is_section_title(text: str) -> bool:
         return False
 
     low = t.lower()
+    if any(re.search(p, t, flags=re.IGNORECASE) for p in NOT_TITLE_PATTERNS):
+        return False
+
     if low in KNOWN_SECTION_TITLES:
         return True
-
     if low.startswith("序号"):
         return False
 
-    if len(t) <= 90:
-        if re.fullmatch(r"[A-Z0-9\s,.'\-()]+", t) and any(ch.isalpha() for ch in t):
-            # ALL CAPS-ish title
-            return True
+    if len(t) <= 90 and re.fullmatch(r"[A-Z0-9\s,.'\-()]+", t) and any(ch.isalpha() for ch in t):
+        return True
 
     return False
 
@@ -399,7 +402,6 @@ def is_admin_line(text: str) -> bool:
         "Lanx",
         "Yancey",
         "Mecius",
-        "tuche",
         "tuche est",
         "cyan",
         "iambicus",
@@ -412,11 +414,68 @@ def is_admin_line(text: str) -> bool:
     return False
 
 
-def parse_seq_page(text: str) -> Optional[Tuple[int, int]]:
-    m = re.search(r"序号\s*(\d+)\s*[，,]\s*页数\s*(\d+)", text)
-    if not m:
+def guess_name_from_legend_text(text: str) -> Optional[str]:
+    t = normalize_whitespace(text)
+    if not t:
         return None
-    return int(m.group(1)), int(m.group(2))
+    for pat in ADMIN_LINE_PATTERNS:
+        if re.search(pat, t):
+            return None
+
+    t = re.split(r"[（(]", t, maxsplit=1)[0]
+    t = re.split(r"[，,;；]|\s{2,}|\t+", t, maxsplit=1)[0]
+    t = re.split(r"\s+", t, maxsplit=1)[0]
+    t = t.strip("-•· ")
+    if not t:
+        return None
+
+    if re.fullmatch(r"[A-Za-z][A-Za-z\s]{0,20}", t) and len(t) <= 20:
+        return normalize_name(t)
+    if re.fullmatch(r"[\u4e00-\u9fffA-Za-z]{2,12}", t):
+        return normalize_name(t)
+    return None
+
+
+def detect_color_name_map(
+    rows: List[RowRecord],
+    fill_rgb_by_fill_id: List[Optional[str]],
+    fill_id_by_style_id: List[int],
+) -> Dict[str, str]:
+    color_to_name_votes: Dict[str, Counter] = {}
+
+    legend_end = min(180, len(rows))
+    for idx, row in enumerate(rows[:180]):
+        line = normalize_whitespace(row.values.get(1, ""))
+        if parse_seq_page(line):
+            legend_end = idx
+            break
+
+    for row in rows[:legend_end]:
+        text_cells = [(k, v) for k, v in row.values.items() if k <= 5 and normalize_whitespace(v)]
+        if len(text_cells) != 1:
+            continue
+        _, text = text_cells[0]
+        if len(normalize_whitespace(text)) > 60:
+            continue
+
+        color = dominant_row_fill(row, fill_rgb_by_fill_id, fill_id_by_style_id)
+        if not color:
+            continue
+
+        name = guess_name_from_legend_text(text)
+        if not name:
+            continue
+
+        color_to_name_votes.setdefault(color, Counter())[name] += 1
+
+    out: Dict[str, str] = {}
+    for color, votes in color_to_name_votes.items():
+        out[color] = normalize_name(votes.most_common(1)[0][0])
+
+    for color, name in KNOWN_COLOR_NAME.items():
+        out.setdefault(color, normalize_name(name))
+
+    return out
 
 
 def build_translation_line(text: str, translator: str, color_hex: str) -> str:
@@ -428,24 +487,40 @@ def build_translation_line(text: str, translator: str, color_hex: str) -> str:
     )
 
 
+def build_translator_note_line(text: str, translator: str) -> str:
+    return (
+        f"<div class='translator-note' data-translator='{html_escape(translator)}'>"
+        f"【译者注释】{html_escape(text)}</div>"
+    )
+
+
 def choose_translator(
     explicit_name: Optional[str],
     row_color: Optional[str],
     color_to_name: Dict[str, str],
-    machine_names: set[str],
-    fallback_machine: bool = True,
 ) -> str:
-    name = None
-    if explicit_name:
-        name = normalize_name(explicit_name)
-    elif row_color and row_color in color_to_name:
-        name = normalize_name(color_to_name[row_color])
+    explicit = normalize_name(explicit_name) if explicit_name else None
+    color_name = normalize_name(color_to_name[row_color]) if row_color and row_color in color_to_name else None
 
-    if name in machine_names:
-        return "机翻"
-    if name:
-        return name
-    return "机翻" if fallback_machine else "Lanx"
+    # Prefer named contributors over machine translation.
+    if explicit and explicit != "机翻":
+        return explicit
+    if color_name and color_name != "机翻":
+        return color_name
+    if color_name:
+        return color_name
+    if explicit:
+        return explicit
+    return "机翻"
+
+
+def flush_table_buffer(out: List[str], table_buffer: List[str]) -> None:
+    if len(table_buffer) < 2:
+        for line in table_buffer:
+            out.append(f"<div class='latin-text'>{html_escape(line)}</div>")
+    else:
+        out.append("<div class='table-content'>" + "<br>".join(html_escape(x) for x in table_buffer) + "</div>")
+    table_buffer.clear()
 
 
 def generate_marked_mode_lines(
@@ -453,12 +528,12 @@ def generate_marked_mode_lines(
     fill_rgb_by_fill_id: List[Optional[str]],
     fill_id_by_style_id: List[int],
     color_to_name: Dict[str, str],
-    machine_names: set[str],
 ) -> Tuple[List[str], set[str], Dict[str, str]]:
     out: List[str] = []
     translators: set[str] = set()
     detected_color_by_translator: Dict[str, str] = {}
     inited_section = False
+    table_buffer: List[str] = []
 
     for row in rows:
         marker = normalize_whitespace(row.values.get(1, ""))
@@ -467,84 +542,119 @@ def generate_marked_mode_lines(
         content = normalize_whitespace(row.values.get(5, ""))
 
         if not content and marker:
-            # Some tagged rows still place content in column A.
             content = marker
 
         if not marker and not content:
             continue
 
-        if is_admin_line(marker) or is_admin_line(content):
-            # Keep seq/page comments even if line is admin-like.
-            seq_page = parse_seq_page(content)
-            if seq_page:
-                out.append(f"<!-- seq:{seq_page[0]} page:{seq_page[1]} -->")
+        shot_page = parse_shot_page(marker, seq_info or content)
+        if shot_page:
+            flush_table_buffer(out, table_buffer)
+            out.append(f"<!-- shot:{shot_page[0]} page:{shot_page[1]} -->")
             continue
 
+        # keep seq/page marker at original position
         if seq_info:
             seq_page = parse_seq_page(seq_info)
             if seq_page:
+                flush_table_buffer(out, table_buffer)
                 out.append(f"<!-- seq:{seq_page[0]} page:{seq_page[1]} -->")
+                continue
+
+        if is_admin_line(marker) or is_admin_line(content):
+            seq_page = parse_seq_page(content)
+            if seq_page:
+                flush_table_buffer(out, table_buffer)
+                out.append(f"<!-- seq:{seq_page[0]} page:{seq_page[1]} -->")
+            continue
 
         row_color = dominant_row_fill(row, fill_rgb_by_fill_id, fill_id_by_style_id)
         row_hex = rgb_to_hex(row_color) if row_color else None
 
-        explicit_name = None
-        m = re.search(r"译者\s*[:：]\s*([^】\]]+)", raw_translator)
-        if m:
-            explicit_name = m.group(1)
+        explicit_name = extract_explicit_translator(raw_translator)
 
         if "标题原文" in marker:
-            title = content or marker
-            title = normalize_whitespace(title)
+            flush_table_buffer(out, table_buffer)
+            title = normalize_whitespace(content or marker)
             if title:
                 out.append(f"## {html_escape(title)}")
                 inited_section = True
             continue
 
         if "标题译文" in marker:
+            flush_table_buffer(out, table_buffer)
             if not content:
                 continue
-            translator = choose_translator(explicit_name, row_color, color_to_name, machine_names)
-            color = DEFAULT_TRANSLATOR_COLOR.get(translator) or row_hex or "#999999"
-            out.append(build_translation_line(content, translator, color))
-            translators.add(translator)
-            if row_hex:
-                detected_color_by_translator.setdefault(translator, row_hex)
+            # Keep translated heading in same level representation.
+            out.append(f"## {html_escape(content)}")
             continue
 
         if "正文原文" in marker or "原书脚注原文" in marker:
             if not inited_section:
                 out.append("## 内容")
                 inited_section = True
+
+            if is_subsection_title(content):
+                flush_table_buffer(out, table_buffer)
+                out.append(f"### {html_escape(content)}")
+                continue
+
+            if is_table_like_line(content):
+                table_buffer.append(content)
+                continue
+
+            flush_table_buffer(out, table_buffer)
             out.append(f"<div class='latin-text'>{html_escape(content)}</div>")
             continue
 
         if "正文译文" in marker or "原书脚注译文" in marker:
-            translator = choose_translator(explicit_name, row_color, color_to_name, machine_names)
+            flush_table_buffer(out, table_buffer)
+            translator = choose_translator(explicit_name, row_color, color_to_name)
             color = DEFAULT_TRANSLATOR_COLOR.get(translator) or row_hex or "#999999"
-            out.append(build_translation_line(content, translator, color))
             translators.add(translator)
             if row_hex:
                 detected_color_by_translator.setdefault(translator, row_hex)
+
+            if is_subsection_title(content):
+                out.append(f"### {html_escape(content)}")
+                continue
+
+            if is_translator_note(content, marker):
+                out.append(build_translator_note_line(content, translator))
+            else:
+                out.append(build_translation_line(content, translator, color))
             continue
 
-        # Fallback: classify by language.
+        # Fallback classification
         if is_section_title(content):
+            flush_table_buffer(out, table_buffer)
             out.append(f"## {html_escape(content)}")
             inited_section = True
+        elif is_subsection_title(content):
+            flush_table_buffer(out, table_buffer)
+            out.append(f"### {html_escape(content)}")
         elif contains_cjk(content):
-            translator = choose_translator(explicit_name, row_color, color_to_name, machine_names)
+            flush_table_buffer(out, table_buffer)
+            translator = choose_translator(explicit_name, row_color, color_to_name)
             color = DEFAULT_TRANSLATOR_COLOR.get(translator) or row_hex or "#999999"
-            out.append(build_translation_line(content, translator, color))
             translators.add(translator)
             if row_hex:
                 detected_color_by_translator.setdefault(translator, row_hex)
+            if is_translator_note(content, marker):
+                out.append(build_translator_note_line(content, translator))
+            else:
+                out.append(build_translation_line(content, translator, color))
         else:
             if not inited_section:
                 out.append("## 内容")
                 inited_section = True
-            out.append(f"<div class='latin-text'>{html_escape(content)}</div>")
+            if is_table_like_line(content):
+                table_buffer.append(content)
+            else:
+                flush_table_buffer(out, table_buffer)
+                out.append(f"<div class='latin-text'>{html_escape(content)}</div>")
 
+    flush_table_buffer(out, table_buffer)
     return out, translators, detected_color_by_translator
 
 
@@ -553,21 +663,21 @@ def generate_color_mode_lines(
     fill_rgb_by_fill_id: List[Optional[str]],
     fill_id_by_style_id: List[int],
     color_to_name: Dict[str, str],
-    machine_names: set[str],
 ) -> Tuple[List[str], set[str], Dict[str, str]]:
     out: List[str] = []
     translators: set[str] = set()
     detected_color_by_translator: Dict[str, str] = {}
     inited_section = False
+    table_buffer: List[str] = []
 
     for row in rows:
         text = normalize_whitespace(row.values.get(1, ""))
         if not text:
             continue
 
-        # Keep seq/page metadata comments.
         seq_page = parse_seq_page(text)
         if seq_page:
+            flush_table_buffer(out, table_buffer)
             out.append(f"<!-- seq:{seq_page[0]} page:{seq_page[1]} -->")
             continue
 
@@ -575,26 +685,43 @@ def generate_color_mode_lines(
             continue
 
         if is_section_title(text):
+            flush_table_buffer(out, table_buffer)
             out.append(f"## {html_escape(text)}")
             inited_section = True
+            continue
+
+        if is_subsection_title(text):
+            flush_table_buffer(out, table_buffer)
+            out.append(f"### {html_escape(text)}")
             continue
 
         row_color = dominant_row_fill(row, fill_rgb_by_fill_id, fill_id_by_style_id)
         row_hex = rgb_to_hex(row_color) if row_color else None
 
         if contains_cjk(text):
-            translator = choose_translator(None, row_color, color_to_name, machine_names)
+            flush_table_buffer(out, table_buffer)
+            translator = choose_translator(None, row_color, color_to_name)
             color = DEFAULT_TRANSLATOR_COLOR.get(translator) or row_hex or "#999999"
-            out.append(build_translation_line(text, translator, color))
             translators.add(translator)
             if row_hex:
                 detected_color_by_translator.setdefault(translator, row_hex)
+
+            if is_translator_note(text):
+                out.append(build_translator_note_line(text, translator))
+            else:
+                out.append(build_translation_line(text, translator, color))
         else:
             if not inited_section:
                 out.append("## 内容")
                 inited_section = True
-            out.append(f"<div class='latin-text'>{html_escape(text)}</div>")
 
+            if is_table_like_line(text):
+                table_buffer.append(text)
+            else:
+                flush_table_buffer(out, table_buffer)
+                out.append(f"<div class='latin-text'>{html_escape(text)}</div>")
+
+    flush_table_buffer(out, table_buffer)
     return out, translators, detected_color_by_translator
 
 
@@ -608,28 +735,11 @@ def generate_for_workbook(
         fill_rgb_by_fill_id, fill_id_by_style_id = parse_styles(zf)
         rows = parse_sheet_rows(zf, shared)
 
-    raw_lines_for_machine_parse = [
-        normalize_whitespace(r.values.get(1, "")) for r in rows[:120] if r.values.get(1)
-    ]
-    machine_names = set(parse_machine_names(raw_lines_for_machine_parse))
-
     color_to_name = detect_color_name_map(rows, fill_rgb_by_fill_id, fill_id_by_style_id)
-
-    # Mark machine owners as "机翻".
-    for color, name in list(color_to_name.items()):
-        if normalize_name(name) in machine_names:
-            color_to_name[color] = "机翻"
-        else:
-            color_to_name[color] = normalize_name(name)
-
-    for color, name in KNOWN_COLOR_NAME.items():
-        color_to_name.setdefault(color, name)
 
     marked_score = 0
     for r in rows[:120]:
         marker = normalize_whitespace(r.values.get(1, ""))
-        if marker.startswith("【") and marker.endswith("】"):
-            marked_score += 1
         if marker.startswith("【") and "】" in marker:
             marked_score += 1
     marked_mode = marked_score >= 10
@@ -640,7 +750,6 @@ def generate_for_workbook(
             fill_rgb_by_fill_id,
             fill_id_by_style_id,
             color_to_name,
-            machine_names,
         )
     else:
         body_lines, translators, detected_colors = generate_color_mode_lines(
@@ -648,10 +757,8 @@ def generate_for_workbook(
             fill_rgb_by_fill_id,
             fill_id_by_style_id,
             color_to_name,
-            machine_names,
         )
 
-    # Ensure non-empty body.
     if not body_lines:
         body_lines = ["## 内容"]
 
@@ -677,20 +784,18 @@ def update_config_translators(
     detected_colors: Dict[str, str],
 ) -> None:
     data = json.loads(config_path.read_text(encoding="utf-8"))
-
     existing = {t["id"]: t for t in data.get("translators", [])}
 
     ordered = [
         "Lanx",
         "簪花落梅",
         "Yancey",
-        "tuche",
+        "tuche est",
         "Mecius",
         "李勋",
         "机翻",
     ]
 
-    # Merge known translators and discovered translators.
     merged: List[str] = []
     for name in ordered:
         if name in translators_found or name in existing:

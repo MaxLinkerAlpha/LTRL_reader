@@ -30,8 +30,8 @@
       "description": "译者"
     },
     {
-      "id": "tuche",
-      "name": "tuche",
+      "id": "tuche est",
+      "name": "tuche est",
       "color": "#00A3F5",
       "is_primary": false,
       "description": "译者"
@@ -49,6 +49,20 @@
       "color": "#999999",
       "is_primary": false,
       "description": "待校订"
+    },
+    {
+      "id": "cyan",
+      "name": "cyan",
+      "color": "#EAFAF1",
+      "is_primary": false,
+      "description": "译者"
+    },
+    {
+      "id": "iambicus",
+      "name": "iambicus",
+      "color": "#D2FF70",
+      "is_primary": false,
+      "description": "译者"
     }
   ],
   "chapters": [

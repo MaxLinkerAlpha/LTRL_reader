@@ -247,7 +247,7 @@ translators: ["Lanx", "Yancey", "机翻"]
 <!-- seq:119 page:87 -->
 <div class='latin-text'>J40. The Perfect Active System</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>J40完美的主动系统 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='Lanx' style='border-color:#FFC000'>§40. 完成时主动态系统 <span class='tag' style='background:#FFC000'>Lanx</span></div>
+### §40. 完成时主动态系统
 <div class='latin-text'>Since the present, imperfect, and future active and passive indicative of all conjugations are formed with a stem taken from the second principal part, it is convenient to say that these tenses belong to the present system of the verb (58).</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>由于现在时、未完成时和将来时的主动和被动表示的所有动词变化都是由取自第二个主要部分的词干构成的，因此可以方便地说，这些时态属于动词的现在系统（58） <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>因为动词现在时、未完成时、将来时主动与被动态变位均基于自身第二主要部分的词干，所以方便起见，我们统称这些时态为动词现在时系统（58）。 <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
@@ -352,7 +352,7 @@ translators: ["Lanx", "Yancey", "机翻"]
 <!-- seq:121 page:89 -->
 <div class='latin-text'>J41. Perfect, Pluperfect, and Future Perfect Active Indicative of All Verbs</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>J41表示所有动词的完成时、过去完成时和将来完成时 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>§41 动词完成时、过去完成时、将来完成时主动态直陈式 <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
+### §41 动词完成时、过去完成时、将来完成时主动态直陈式
 <div class='latin-text'>89 Thus the pluperfect active indicative conjugation of, for example, regõ is:</div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>89 过去完成时主动态人称词尾如下，以rego为例： <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Perfect Active Stem:完成主动词干： <span class='tag' style='background:#999999'>机翻</span></div>
@@ -470,7 +470,7 @@ translators: ["Lanx", "Yancey", "机翻"]
 <div class='latin-text'>1 ferimus</div>
 <div class='latin-text'>2 fertis</div>
 <div class='latin-text'>3 ferunt</div>
-## DRILL 43, PAGE189, MAY NOW BE DONE.
+<div class='latin-text'>DRILL 43, PAGE189, MAY NOW BE DONE.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>现在可以进行第189页第43项练习。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>现在可以完成第189页第43项练习了。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>$44. Reflexive Pronouns</div>
@@ -487,27 +487,14 @@ translators: ["Lanx", "Yancey", "机翻"]
 <div class='latin-text'>In Latin, reflexive pronouns for the first and second persons borrow the forms of the personal pronouns.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>在拉丁语中，第一和第二人称的反身代词借用了人称代词的形式 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>拉丁语中，第一人称及第二人称的反身代词借用了人称代词的形式。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='latin-text'>Nom.</div>
-<div class='latin-text'>Gen.</div>
-<div class='latin-text'>Dat.</div>
-<div class='latin-text'>Acc.</div>
-<div class='latin-text'>Abl.</div>
-<div class='latin-text'>Nom.</div>
-<div class='latin-text'>Gen.</div>
-<div class='latin-text'>Dat.</div>
-<div class='latin-text'>Acc.</div>
-<div class='latin-text'>Abl.</div>
+<div class='table-content'>Nom.<br>Gen.<br>Dat.<br>Acc.<br>Abl.<br>Nom.<br>Gen.<br>Dat.<br>Acc.<br>Abl.</div>
 <!-- seq:124 page:92 -->
 <div class='latin-text'>For the third person one reflexive pronoun functions as both the singular and the plural.The third-person reflexive pronoun is not borrowed from the third-person personal pronoun and must be memorized.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>对于第三人称来说，一个反身代词同时充当单数和复数。第三人称反身代词不是从第三人称代词借用的，必须记住。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>反身代词的第三人称形式可同时表示单复数。谨记，它并非借自第三人称代词。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Third Person第三人称 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Singular/Plural单数/复数 <span class='tag' style='background:#999999'>机翻</span></div>
-<div class='latin-text'>Nom.</div>
-<div class='latin-text'>Gen.</div>
-<div class='latin-text'>Dat.</div>
-<div class='latin-text'>Acc.</div>
-<div class='latin-text'>Abl.</div>
+<div class='table-content'>Nom.<br>Gen.<br>Dat.<br>Acc.<br>Abl.</div>
 ## OBSERVATIONS
 ## 温馨提示
 <div class='latin-text'>1. There are no nominative forms of the reflexive pronouns because reflexive pronouns refer to but never are the subjects of clauses or sentences in which they appear.The alternate accusative and ablative forms sẽ and sẽsẽ are interchangeable, although originally sẽsẽ may have conveyed greater emphasis.</div>
@@ -573,9 +560,7 @@ translators: ["Lanx", "Yancey", "机翻"]
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>J46强化形容词ipse，ipsa，ipsum <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>Ipse, ipsa, ipsum is an intensive adjective.An intensive adjective emphasizes or intensifies the noun it modifies.?MEMORIZE ITS DECLENSION ACROSS THE SINGULAR AND THEN ACROSS THE PLURAL.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>是一个加强形容词。加强形容词强调或加强它所修饰的名词。记住它的衰落跨越单一，然后跨越多元 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='latin-text'>Nom.</div>
-<div class='latin-text'>Gen.</div>
-<div class='latin-text'>Dat.</div>
+<div class='table-content'>Nom.<br>Gen.<br>Dat.</div>
 <div class='latin-text'>Acс.</div>
 <div class='latin-text'>Abl.</div>
 ## OBSERVATIONS
@@ -795,7 +780,7 @@ translators: ["Lanx", "Yancey", "机翻"]
 <div class='latin-text'>Past Simple</div>
 <div class='latin-text'>Future More Vivid'</div>
 <div class='latin-text'>Future More Vivid with Emphatic Protasisl°</div>
-## DRILL 49, PAGE 207, MAY NOW BE DONE.
+<div class='latin-text'>DRILL 49, PAGE 207, MAY NOW BE DONE.</div>
 <div class='latin-text'>8. The model verb "do" is used in English translation formulas.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>8.情态动词do在英语翻译公式中的使用 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>9. This name is commonly abbreviated FMV.</div>

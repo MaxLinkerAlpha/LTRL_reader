@@ -15,7 +15,7 @@
 - 📖 多译者对比阅读
 - 🔍 术语提示（鼠标悬停查看）
 - 🔊 Forvo 发音链接
-- 💡 伴侣注释
+- 💡 梅老师小贴士
 - 💬 GitHub 评论
 
 ---
@@ -42,7 +42,7 @@ LTRL_reader/
 │   ├── config.json         # 站点配置
 │   ├── terminology.json    # 术语表
 │   ├── chapters/           # 章节内容
-│   └── companion/          # 伴侣注释
+│   └── companion/          # 梅老师小贴士
 ├── README.md               # 本文件
 └── DEPLOY.md               # 部署指南
 ```
@@ -65,7 +65,7 @@ python3 scripts/regenerate_chapters_from_excel.py --root .
 
 **LTRL翻译小组** - 感谢所有译者的辛勤工作和专业贡献。
 
-- 译者（按ID）：Lanx、簪花落梅、Yancey、tuche、Mecius
+- 译者（按ID）：Lanx、簪花落梅、Yancey、tuche est、Mecius
 - 特别感谢：所有参与审校、润色的贡献者
 
 本项目由 **Max Linker** 创建并维护，使用 **Kimi Code** 辅助开发。

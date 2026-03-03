@@ -1,7 +1,7 @@
 ---
 id: chapter_IV
 title: "Chapter IV - 动词时态"
-translators: ["Lanx", "Yancey", "机翻"]
+translators: ["Lanx", "Yancey", "cyan", "机翻"]
 ---
 
 <!-- seq:95 page:63 -->
@@ -98,32 +98,32 @@ translators: ["Lanx", "Yancey", "机翻"]
 <!-- seq:97 page:65 -->
 <div class='latin-text'>&gt; audio, audire, audivi, auditus is a transitive verb that may be used absolutely. When it takes a direct object, it may be translated either "hear" or "listen to." When it is used absolutely, it may be translated either "hear" or "listen."</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>audio，audire，audivi，audius是一个及物动词，可以绝对使用。当它接直接宾语时，可以翻译成“hear”或“listen to”。当它被绝对地使用时，它可以被翻译为“听到”或“听”。“ <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='机翻' style='border-color:#999999'>&gt; audiō，audīre，audīvī，audīus是一个及物动词，可以独立使用。当它接直接宾语时，可以翻译成“hear”或“listen to”。当它独立使用时，可翻为“hear”或“listen”。 <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; audiō，audīre，audīvī，audīus是一个及物动词，可以独立使用。当它接直接宾语时，可以翻译成“hear”或“listen to”。当它独立使用时，可翻为“hear”或“listen”。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
 <div class='latin-text'>Regina incolãs audit. The queen listens to/hears the inhabitants.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>里贾纳的审计。 女王倾听居民的声音 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Régina audit. The queen listens/hears.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Régina审计。 女王倾听/听到 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>• In the third principal part of sentio, sentire, sênsi, sênsus, the root vowel exhibits ablaut and changes to -ē-. The -e- in the fourth principal part is long before -ns-. A SHORT VOWEL BEFORE -nS- ALWAYS BECOMES LONG (e.g., insula).</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>·在sentio，sentire，sênsi，sênsus的第三个主要部分中，根元音显示出元音变化并变为-ē-。第四个主要部分中的-e-在-ns-之前很久。-nS-之前的短元音总是变长（例如，脑岛）。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='机翻' style='border-color:#999999'>&gt; 在sentiō，sentīre，sēnsī，sēnsus的第三个主要部分中，根元音显示出元音交替并变为-ē-。第四个主要部分中的-ē-在-ns-之前是长音。-ns-之前的短元音总是变长（例如，īnsula）。 <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; 在sentiō，sentīre，sēnsī，sēnsus的第三个主要部分中，根元音显示出元音交替并变为-ē-。第四个主要部分中的-ē-在-ns-之前是长音。-ns-之前的短元音总是变长（例如，īnsula）。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
 <div class='latin-text'>The basic meaning of sentio is "perceive through one of the senses." Thus it has an intellectual sense (perceive, observe, notice) and a more physical or emotional sense (experience, feel, suffer).</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>感觉的基本含义是“通过一种感官感知”。“因此，它有一种理智的感觉（感知，观察，注意）和一种更物理或情感的感觉（体验，感觉，受苦） <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='机翻' style='border-color:#999999'>sentiō的基本含义是“通过一种感官感知”。因此，它有一种理智的感觉（感知，观察，注意）和一种更物理性或情绪性的感觉（体验，感觉，受苦） <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>sentiō的基本含义是“通过一种感官感知”。因此，它有一种理智的感觉（感知，观察，注意）和一种更物理性或情绪性的感觉（体验，感觉，受苦） <span class='tag' style='background:#C3EAD5'>cyan</span></div>
 <div class='latin-text'>• In the third principal part of venio, venire, vêni, ventum, the root vowel exhibits ablaut and changes to -e-. venio is an intransitive verb.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>·在venio，venire，vêni，ventum的第三个主要部分中，根元音显示ablaut并变为-e-。venio是不及物动词 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='机翻' style='border-color:#999999'>&gt; 在veniō，venīre，vēnī，ventum的第三个主要部分中，根元音显示元音交替并变为-ē-。veniō是不及物动词。 <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; 在veniō，venīre，vēnī，ventum的第三个主要部分中，根元音显示元音交替并变为-ē-。veniō是不及物动词。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
 <div class='latin-text'>• The basic meaning of clãrus, -a, -um is the visual idea of "bright" or "clear." In this sense, it regularly describes such things as sky, color, or lightning. It has a transferred sense of "evident" or "manifest" when deiseribing more absiact concepts (plan,aflirs). When applied to peopl, it means "amous" or aisi</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>·clãrus，-a，-um的基本含义是“明亮”或“清晰”的视觉概念。从这个意义上说，它经常描述天空、颜色或闪电等事物。当描述更抽象的概念（计划，aflirs）时，它有一个转移的“明显”或“显现”的意义。当用于人时，意思是“amous”或aisi <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='机翻' style='border-color:#999999'>&gt; clārus，-a，-um的基本含义是表“明亮”或“清晰”的视觉概念。从这个意义上说，它经常描述天空、颜色或闪电等事物。当描述更抽象的概念（计划，事务）时，它存在词义转移: “明显”或“显现”。当用于人时，意思是“著名的”或“卓著的”。 <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; clārus，-a，-um的基本含义是表“明亮”或“清晰”的视觉概念。从这个意义上说，它经常描述天空、颜色或闪电等事物。当描述更抽象的概念（计划，事务）时，它存在词义转移: “明显”或“显现”。当用于人时，意思是“著名的”或“卓著的”。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
 <div class='latin-text'>&gt; cupidus, -a, -um is an adjective often found with an Objective Genitive (J36).</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>&gt; cupidus，-a，-um是一个形容词，常与宾语所有格连用（J36） <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='机翻' style='border-color:#999999'>&gt; cupidus，-a，-um是一个形容词，常与宾格属格连用（J36） <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; cupidus，-a，-um是一个形容词，常与宾格属格连用（J36） <span class='tag' style='background:#C3EAD5'>cyan</span></div>
 <div class='latin-text'>Because the adjective pauci, paucae, pauca means "few," it appears only in the plural, and its vocabulary entry includes the masculine, feminine, and neuter plural nominative forms. The stem is pauc-. This word often appears with a Partitive Genitive (J34).</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>因为形容词pauci，paucae，pauca的意思是“很少”，所以它只以复数形式出现，它的词条包括阳性、阴性和中性的复数主格形式。茎是pauc-。这个词经常与部分属格（J34）一起出现 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='机翻' style='border-color:#999999'>因为形容词pauci，paucae，pauca的意思是“很少”，所以它只以复数形式出现，它的词条包括阳性、阴性和中性的复数主格形式。它的词干是pauc-。这个词经常与部分属格（J34）一起出现。 <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>因为形容词pauci，paucae，pauca的意思是“很少”，所以它只以复数形式出现，它的词条包括阳性、阴性和中性的复数主格形式。它的词干是pauc-。这个词经常与部分属格（J34）一起出现。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
 <div class='latin-text'>&gt; per is a preposition that takes the accusative case and expresses motion "through" space or time. It may also be translated "throughout" or "along." per also expresses ideas of means or agency (often with personal pronouns) and may sometimes be translated "by."</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>&gt; per是一个介词，接受宾格，表示“通过”空间或时间的运动。它也可以被翻译为“贯穿”或“沿着”。“per”也表示手段或机构的意思（常与人称代词连用），有时可译为“by”。“ <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='机翻' style='border-color:#999999'>&gt; per是一个介词，后接宾格，表示“通过”空间或时间的运动。它也可以被翻译为“贯穿”或“沿着”。“per”也表示手段或机构的意思（常与人称代词连用），有时可译为“by”。 <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; per是一个介词，后接宾格，表示“通过”空间或时间的运动。它也可以被翻译为“贯穿”或“沿着”。“per”也表示手段或机构的意思（常与人称代词连用），有时可译为“by”。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
 <div class='latin-text'>Per viãs oppidi ambulabimus.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>We shall walk through the streets of the town.我们将穿过城镇的街道 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Sententia populi per bonõs mönsträtur.</div>
@@ -132,21 +132,21 @@ translators: ["Lanx", "Yancey", "机翻"]
 <div class='translation' data-translator='机翻' style='border-color:#999999'>They were holding the town through (by) arms.他们用武力保卫着这个城镇 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>&gt; quidem is a postpositive adverb that usually emphasizes (indeed, certainly) or limits (at least) the word immediately preceding it.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>&gt; quidem是一个后置副词，通常强调（确实，肯定）或限制（至少）紧接在它前面的词 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='机翻' style='border-color:#999999'>&gt; quidem是一个后置副词，通常强调（确实，肯定）或限制（至少）紧接在它前面的词。 <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; quidem是一个后置副词，通常强调（确实，肯定）或限制（至少）紧接在它前面的词。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Pulchrum quidem est amãre. Beautiful indeed it is to love. (emphasizes) 爱是美丽的。（强调） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Mihi quidem malum est bellum. To me at least war is bad. (limits) 至少对我来说，战争是不好的。(限制) <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>quidem can also emphasize or limit an entire sentence.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>quidem也可以强调或限制整个句子 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='机翻' style='border-color:#999999'>quidem也可以强调或限制整个句子。 <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>quidem也可以强调或限制整个句子。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
 <div class='latin-text'>&gt; equidem (the particle e- + quidem) is an adverb that usually occurs with a verb in the first person singular or plural. It is used to emphasize something about oneself or to affirm one's own opinion. equidem is not postpositive.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>&gt; equidem（e- + quidem）是一个副词，通常与第一人称单数或复数形式的动词一起出现。它用来强调自己的一些事情或肯定自己的观点。等式不是后置的 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='机翻' style='border-color:#999999'>&gt; equidem（e- + quidem）是一个副词，通常与第一人称单数或复数形式的动词一起出现。它用来强调自己的一些事情或肯定自己的观点。equidem不是后置的。 <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; equidem（e- + quidem）是一个副词，通常与第一人称单数或复数形式的动词一起出现。它用来强调自己的一些事情或肯定自己的观点。equidem不是后置的。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
 <div class='latin-text'>Equidem pro patriã pugnãbõ.I for my part shall fight for the country.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>我将为国家而战 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>Equidem pro patriã pugnãbõ.我是为了国家战斗。I for my part shall fight for the country.我就我而言将战斗为了国家。 就我而言，我是为了国家而战的。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>&gt; nẽ.. quidem is translated "not even" and surrounds the word or words being qualified.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>&gt; n.. quidem被翻译成“甚至”，并围绕着被限定的词或词 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='机翻' style='border-color:#999999'>&gt; ne.. quidem被翻译成“甚至不”，并围绕着被限定的词。 <span class='tag' style='background:#999999'>机翻</span></div>
+<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; ne.. quidem被翻译成“甚至不”，并围绕着被限定的词。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
 <div class='latin-text'>Régina nẽ filiõ quidem aurum dat. The queen is giving gold not even to (her) son.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>Régina nẽ filiõ quidem aurum dat. 女王甚至不给儿子金子 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>Régina nẽ filiõ quidem aurum dat. 女王不给儿子甚至不金子给 The queen is giving gold not even to (her) son.女王正在给金子甚至不给（她的）儿子。女王甚至连金子都不给她儿子。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
@@ -619,16 +619,7 @@ translators: ["Lanx", "Yancey", "机翻"]
 <div class='latin-text'>Like nouns, personal pronouns in Latin are declined, and their declensions must be memorized. For the first- and second-person personal pronouns, MEMORIZE DOWN THE SINGULAR AND DOWN THE PLURAL.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>和名词一样，拉丁语中的人称代词也是变格的，它们的变格必须记住。对于第一人称和第二人称代词，记住单数和复数。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>拉丁语的人称代词（与名词一样）都需要变格，因此必须牢记其变格。谨记，第一、二人称单复数需要专门记忆。 <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
-<div class='latin-text'>Nom.</div>
-<div class='latin-text'>Gen.</div>
-<div class='latin-text'>Dat.</div>
-<div class='latin-text'>Acc.</div>
-<div class='latin-text'>Abl.</div>
-<div class='latin-text'>Nom.</div>
-<div class='latin-text'>Gen.</div>
-<div class='latin-text'>Dat.</div>
-<div class='latin-text'>Acc.</div>
-<div class='latin-text'>Abl.</div>
+<div class='table-content'>Nom.<br>Gen.<br>Dat.<br>Acc.<br>Abl.<br>Nom.<br>Gen.<br>Dat.<br>Acc.<br>Abl.</div>
 ## OBSERVATION
 ## 温馨提示
 <div class='latin-text'>1. Personal pronouns do not have vocative forms.</div>
@@ -661,16 +652,7 @@ translators: ["Lanx", "Yancey", "机翻"]
 <div class='latin-text'>77 MEMORIZE THE DECLENSION OF THE THIRD-PERSON PERSONAL PRONOUN ACROSS THE SINGUIAR AND THEN ACROSS THE PLURAI (is, ea, id, eius, eius, eius).</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>77.记住第三人称人称代词的降调，先越过Singuiar，再越过Plurai（is，ea，id，eius，eius，eius）。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>77. 务必牢记第三人称代词的变格，先记单数变格，然后是复数变格。（后面半句没看懂什么意思，姑且认为是“先单数，后复数”） <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
-<div class='latin-text'>Nom.</div>
-<div class='latin-text'>Gen.</div>
-<div class='latin-text'>Dat.</div>
-<div class='latin-text'>Acc.</div>
-<div class='latin-text'>Abl.</div>
-<div class='latin-text'>Nom.</div>
-<div class='latin-text'>Gen.</div>
-<div class='latin-text'>Dat.</div>
-<div class='latin-text'>Acc.</div>
-<div class='latin-text'>Abl.</div>
+<div class='table-content'>Nom.<br>Gen.<br>Dat.<br>Acc.<br>Abl.<br>Nom.<br>Gen.<br>Dat.<br>Acc.<br>Abl.</div>
 ## OBSERVATION
 ## 温馨提示
 <div class='latin-text'>1. Eius is pronounced as if it were spelled *eiius. The first -i- combines with the preceding vowel to create a diphthong ei-. The second -i- is consonantal and is thus pronounced like English y.</div>
@@ -730,9 +712,7 @@ translators: ["Lanx", "Yancey", "机翻"]
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>书籍 他/她的 他的书籍 <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>女王 他们的 他们的女王 <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
 <div class='latin-text'>Summary of Possession</div>
-<div class='latin-text'>First Person</div>
-<div class='latin-text'>Second Person</div>
-<div class='latin-text'>Third Person</div>
+<div class='table-content'>First Person<br>Second Person<br>Third Person</div>
 <div class='latin-text'>• DRILL 38-39, PAGE 153, MAY NOW BE DONE</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>·现在可以进行练习38-39，第153页 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>·现在你可以做练习38-39了，请翻至书本第153页 <span class='tag' style='background:#FDEBFF'>Yancey</span></div>

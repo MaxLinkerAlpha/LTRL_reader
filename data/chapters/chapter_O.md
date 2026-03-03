@@ -1,36 +1,37 @@
 ---
 id: chapter_O
 title: "Chapter O - Introduction"
-translators: ["Lanx", "tuche", "机翻", "簪花落梅"]
+translators: ["Lanx", "tuche est", "机翻", "簪花落梅"]
 ---
 
+<!-- shot:33 page:1 -->
 ## INTRODUCTION
-<div class='translation' data-translator='机翻' style='border-color:#999999'>序言 <span class='tag' style='background:#999999'>机翻</span></div>
+## 序言
 ## The Latin Language
-<div class='translation' data-translator='机翻' style='border-color:#999999'>拉丁语 <span class='tag' style='background:#999999'>机翻</span></div>
-<div class='translation' data-translator='Lanx' style='border-color:#FFC000'>拉丁语这门语言 <span class='tag' style='background:#FFC000'>Lanx</span></div>
+## 拉丁语
+## 拉丁语这门语言
 <div class='latin-text'>The Latin language belongs to the Indo-European family of languages.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>拉丁语属于印欧语系。( the Indo-European family of languages) <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>The name "Indo-European"indicates the geographic area where these languages were originally spoken.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>“印欧”一词指明了最初使用这些语言的地理区域（地区？） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>The family includes most of the languages spoken in Europe,as well as those spoken as far east as ancient Persia,Afghanistan,and India.</div>
-<div class='translation' data-translator='tuche' style='border-color:#00A3F5'>该语系不仅包含了大多数在欧洲使用的语言，那些在遥远东方（这没有大写）——古波斯、阿富汗，和印度——使用的语言也囊括其中。 <span class='tag' style='background:#00A3F5'>tuche</span></div>
+<div class='translation' data-translator='tuche est' style='border-color:#00A3F5'>该语系不仅包含了大多数在欧洲使用的语言，那些在遥远东方（这没有大写）——古波斯、阿富汗，和印度——使用的语言也囊括其中。 <span class='tag' style='background:#00A3F5'>tuche est</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>该语系不仅包含了大多数欧洲语言，还囊括了那些东至古波斯、阿富汗和印度的语言 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>By the careful comparison of vocabulary,morphology,and syntax,scholars have shown that all these languages have descended from a common ancestor that is called either Indo- European(IE)or Proto-Indo-European(PIE),which was probably spoken some time in the fifth millennium B.c.E.(see figure 1).</div>
-<div class='translation' data-translator='tuche' style='border-color:#00A3F5'>通过对词汇、词法，以及句法的详细比较研究，学者们发现所有上述语言都源自一个被称为印欧语或原始印欧语的共同祖先，一门极有可能在公元前六千年某个时期被使用的语言。 <span class='tag' style='background:#00A3F5'>tuche</span></div>
+<div class='translation' data-translator='tuche est' style='border-color:#00A3F5'>通过对词汇、词法，以及句法的详细比较研究，学者们发现所有上述语言都源自一个被称为印欧语或原始印欧语的共同祖先，一门极有可能在公元前六千年某个时期被使用的语言。 <span class='tag' style='background:#00A3F5'>tuche est</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>学者们通过对词汇、词法，以及句法的详细比较研究，发现上述语言都源自一个称为印欧语或原始印欧语的共同祖先，而这门语言可能使用于公元前六千年的某个时期。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>Over time,it is supposed,the people who spoke this original language gradually dispersed throughout Europe,Asia,and India,and the language changed differently in different places until the variety of languages belonging to this family gradually appeared.</div>
-<div class='translation' data-translator='tuche' style='border-color:#00A3F5'>据推测，随时代变迁，这一原始语言的使用者逐渐分散开来，遍布于欧洲、亚洲，以及印度，这门语言也随地域变化而变化着，直至属于这一语系的多种语言渐渐形成。 <span class='tag' style='background:#00A3F5'>tuche</span></div>
+<div class='translation' data-translator='tuche est' style='border-color:#00A3F5'>据推测，随时代变迁，这一原始语言的使用者逐渐分散开来，遍布于欧洲、亚洲，以及印度，这门语言也随地域变化而变化着，直至属于这一语系的多种语言渐渐形成。 <span class='tag' style='background:#00A3F5'>tuche est</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>据推测，该原始语言的使用者随时间变化逐渐分散迁徙到欧洲、亚洲，以及印度，而这门语言也随地域渐渐变化为同一语系的不同语言。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>No direct evidence-that is,written or archaeological evidence-survives either for PIE or for the people who spoke it.</div>
-<div class='translation' data-translator='tuche' style='border-color:#00A3F5'>然而没有现存的直接证据，即书面或考古学上的证据，能够证明原始印欧语及其使用者的存在。 <span class='tag' style='background:#00A3F5'>tuche</span></div>
+<div class='translation' data-translator='tuche est' style='border-color:#00A3F5'>然而没有现存的直接证据，即书面或考古学上的证据，能够证明原始印欧语及其使用者的存在。 <span class='tag' style='background:#00A3F5'>tuche est</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>然而没有现存书面或考古上的证据，可以直接证明原始印欧语及其使用者的存在 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>What is known of the language comes from the comparative study of the languages that survive.</div>
-<div class='translation' data-translator='tuche' style='border-color:#00A3F5'>人们（只能）通过对现存语言的比较研究来了解它。 <span class='tag' style='background:#00A3F5'>tuche</span></div>
+<div class='translation' data-translator='tuche est' style='border-color:#00A3F5'>人们（只能）通过对现存语言的比较研究来了解它。 <span class='tag' style='background:#00A3F5'>tuche est</span></div>
 <div class='latin-text'>The study of these languages began at the end of the eighteenth century when Sir William Jones,a lawyer and student of eastern languages,first asserted publicly that Greek,Latin,and the language of ancient India,Sanskrit,were descended from a common source.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>对这些语言的研究始于18世纪末，彼时身为律师与东方语言学者的威廉-琼斯爵士首次指出，希腊语、拉丁语与古印度的梵语同源。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>The scientific study of the Indo-European languages commenced with the work of Franz Bopp in the early part of the nineteenth century. He compared the forms of the verb in Latin, Greek,Sanskrit,ancient Persian,and the Germanic languages,of which English is one.</div>
-<div class='translation' data-translator='tuche' style='border-color:#00A3F5'>19世纪初，弗朗茨-博普（Franz Bopp）对拉丁语、希腊语、梵语、古波斯语和日耳曼语族（ the Germanic languages，英语正是其中一员 ）中的动词形式进行了比较，印欧语系的科学研究由此发端。 <span class='tag' style='background:#00A3F5'>tuche</span></div>
+<div class='translation' data-translator='tuche est' style='border-color:#00A3F5'>19世纪初，弗朗茨-博普（Franz Bopp）对拉丁语、希腊语、梵语、古波斯语和日耳曼语族（ the Germanic languages，英语正是其中一员 ）中的动词形式进行了比较，印欧语系的科学研究由此发端。 <span class='tag' style='background:#00A3F5'>tuche est</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>19世纪初，弗朗茨-博普（Franz Bopp）比较了拉丁语、希腊语、梵语、古波斯语及日耳曼语族（ the Germanic languages，英语正是其中一员 ）中的动词形式，开启了印欧语系的科学研究。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>The Indo-European languages have been analyzed and divided into various subgroups,or dialects,and Latin belongs to one called Italic because the languages of this subgroup were all spoken on the Italian peninsula.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>通过分析，印欧语系被分为几个亚族，或称方言，而拉丁语属于其中因所属语言均在意大利半岛内使用而得名的意大利语族（Italic） <span class='tag' style='background:#999999'>机翻</span></div>
@@ -95,7 +96,7 @@ translators: ["Lanx", "tuche", "机翻", "簪花落梅"]
 <div class='latin-text'>OBSERVATIONS</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>注意 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>1.Vowels have both quantity and quality.</div>
-<div class='translation' data-translator='tuche' style='border-color:#00A3F5'>1.元音有音量和音质两个属性 <span class='tag' style='background:#00A3F5'>tuche</span></div>
+<div class='translation' data-translator='tuche est' style='border-color:#00A3F5'>1.元音有音量和音质两个属性 <span class='tag' style='background:#00A3F5'>tuche est</span></div>
 <div class='latin-text'>Ouantity refers to the length of a vowel.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>音量指元音长度。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>A Latin vowel marked with a macron or long mark is long and takes approximately twice as long to pronounce as a short vowel.Vowels not so marked are short.</div>
