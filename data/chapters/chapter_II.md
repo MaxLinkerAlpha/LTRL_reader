@@ -1,6 +1,5 @@
 ---
 title: "Chapter II"
-images: []
 ---
 
 <div class='translation' data-translator='机翻' style='border-color:#2972F4'>本文档仅供组内学习交流使用，严禁商用！严禁外传！ <span class='tag' style='background:#2972F4'>机翻</span></div>

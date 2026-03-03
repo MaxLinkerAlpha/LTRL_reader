@@ -656,67 +656,6 @@
     
     /* ========== v7 新版本 Block 样式 ========== */
     
-    /* 图片显示 */
-    .chapter-images {
-      margin: 1rem 0;
-      padding: 1rem;
-      background: rgba(255,255,255,0.6);
-      border: 1px solid rgba(184,134,11,0.3);
-      border-radius: 8px;
-    }
-    
-    .chapter-images h4 {
-      color: var(--wine);
-      margin-bottom: 0.75rem;
-      font-size: 0.9rem;
-    }
-    
-    .image-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 0.75rem;
-    }
-    
-    .image-gallery img {
-      width: 100%;
-      border: 1px solid rgba(184,134,11,0.3);
-      border-radius: 4px;
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
-    
-    .image-gallery img:hover {
-      transform: scale(1.02);
-    }
-    
-    .image-modal {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.9);
-      z-index: 2000;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .image-modal.show {
-      display: flex;
-    }
-    
-    .image-modal img {
-      max-width: 90%;
-      max-height: 90%;
-    }
-    
-    .image-modal .close-btn {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      color: white;
-      font-size: 2rem;
-      cursor: pointer;
-    }
-    
     /* 注释样式 */
     .note, .footnote {
       margin: 0.5rem 0;
@@ -1128,17 +1067,6 @@ Base Path: ${CONFIG.basePath}</pre>
       
       const allTranslators = Array.from(translatorMap.values());
       
-      // 准备图片画廊
-      const images = data.meta.images || [];
-      const imageGalleryHtml = images.length > 0 ? `
-        <div class="chapter-images">
-          <h4>📷 原书截图 (${images.length}张)</h4>
-          <div class="image-gallery">
-            ${images.map((img, i) => `<img src="data/images/${img}" alt="截图${i+1}" onclick="openImageModal('data/images/${img}')" loading="lazy">`).join('')}
-          </div>
-        </div>
-      ` : '';
-      
       document.getElementById('main-content').innerHTML = `
         <div class="chapter-header">
           <div class="chapter-number">${config.number}</div>
@@ -1149,8 +1077,6 @@ Base Path: ${CONFIG.basePath}</pre>
             ${data.meta.status === 'incomplete' ? '<span class="incomplete-badge">翻译中</span>' : ''}
           </div>
         </div>
-        
-        ${imageGalleryHtml}
         
         <div class="controls">
           <div class="control-group">
@@ -1170,12 +1096,6 @@ Base Path: ${CONFIG.basePath}</pre>
         <article id="chapter-content">
           ${data.sections.map(sec => renderSection(sec, companion[sec.id])).join('')}
         </article>
-        
-        <!-- 图片模态框 -->
-        <div class="image-modal" id="image-modal" onclick="closeImageModal()">
-          <span class="close-btn">&times;</span>
-          <img id="modal-img" src="" alt="大图">
-        </div>
         
         <nav class="chapter-nav">
           <a href="javascript:void(0)" onclick="prevChapter()" class="nav-btn ${config.number <= 0 ? 'disabled' : ''}">← 上一章</a>
@@ -1293,10 +1213,6 @@ Base Path: ${CONFIG.basePath}</pre>
         return `<div class="footnote">📌 ${escapeHtml(block.text)}</div>`;
       }
       
-      if (block.type === 'image') {
-        return `<div class="chapter-image"><img src="${block.src}" alt="${block.alt}" onclick="openImageModal('${block.src}')" loading="lazy"></div>`;
-      }
-      
       return '';
     }
     
@@ -1345,17 +1261,6 @@ Base Path: ${CONFIG.basePath}</pre>
             type: 'meta',
             seq: parseInt(commentMatch[1]),
             page: parseInt(commentMatch[2])
-          });
-          continue;
-        }
-        
-        // 图片 ![...](...)
-        const imgMatch = line.match(/!\[([^\]]*)\]\(([^)]+)\)/);
-        if (imgMatch && currentSection) {
-          currentSection.blocks.push({
-            type: 'image',
-            alt: imgMatch[1],
-            src: imgMatch[2]
           });
           continue;
         }
@@ -1565,18 +1470,6 @@ Base Path: ${CONFIG.basePath}</pre>
       content.classList.toggle('show');
       btn.querySelector('span:last-child').textContent = 
         content.classList.contains('show') ? '▲' : '▼';
-    }
-    
-    function openImageModal(src) {
-      const modal = document.getElementById('image-modal');
-      const img = document.getElementById('modal-img');
-      img.src = src;
-      modal.classList.add('show');
-    }
-    
-    function closeImageModal() {
-      const modal = document.getElementById('image-modal');
-      modal.classList.remove('show');
     }
     
     async function copyText(text) {

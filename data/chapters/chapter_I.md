@@ -1,6 +1,5 @@
 ---
 title: "Chapter I"
-images: []
 ---
 
 <div class='translation' data-translator='tuche' style='border-color:#C3EAD5'>本文档仅供组内学习交流使用，严禁商用！严禁外传！ <span class='tag' style='background:#C3EAD5'>tuche</span></div>

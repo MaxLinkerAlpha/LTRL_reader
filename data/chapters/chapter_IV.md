@@ -1,6 +1,5 @@
 ---
 title: "Chapter IV"
-images: []
 ---
 
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>本文档仅供组内学习交流使用，严禁商用！严禁外传！ <span class='tag' style='background:#FFC000'>Lanx</span></div>

@@ -1,6 +1,5 @@
 ---
 title: "Chapter O"
-images: []
 ---
 
 <div class='translation' data-translator='机翻' style='border-color:#999999'>【原书截图】 <span class='tag' style='background:#999999'>机翻</span></div>
