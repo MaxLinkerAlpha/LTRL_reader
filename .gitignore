@@ -1,10 +1,5 @@
-# 忽略原Excel文件（含版权问题图片）
-source/original/*.xlsx
-source/original/**/*.xlsx
-
 # 忽略标记文件备份（大文件）
 backup_marked/
-*.xlsx
 
 # 忽略转换脚本（已使用过）
 convert_to_md.py

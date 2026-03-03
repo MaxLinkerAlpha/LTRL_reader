@@ -18,28 +18,28 @@
     {
       "id": "簪花落梅",
       "name": "簪花落梅",
-      "color": "#9A38D7",
+      "color": "#C3EAD5",
       "is_primary": false,
       "description": "译者"
     },
     {
       "id": "Yancey",
       "name": "Yancey",
-      "color": "#D58EFF",
+      "color": "#FDEBFF",
       "is_primary": false,
       "description": "译者"
     },
     {
       "id": "tuche",
       "name": "tuche",
-      "color": "#C3EAD5",
+      "color": "#00A3F5",
       "is_primary": false,
       "description": "译者"
     },
     {
       "id": "Mecius",
       "name": "Mecius",
-      "color": "#FDEBFF",
+      "color": "#D58EFF",
       "is_primary": false,
       "description": "译者"
     },

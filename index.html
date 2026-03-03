@@ -833,11 +833,18 @@
     
     /* 术语表紧凑布局 */
     .terminology-list {
-      column-count: 2;
-      column-gap: 1rem;
+      column-count: 3;
+      column-gap: 0.75rem;
+      max-width: 1100px;
     }
     
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
+      .terminology-list {
+        column-count: 2;
+      }
+    }
+    
+    @media (max-width: 720px) {
       .terminology-list {
         column-count: 1;
       }
@@ -845,19 +852,19 @@
     
     .term-card {
       break-inside: avoid;
-      margin-bottom: 0.5rem;
-      padding: 0.5rem 0.75rem;
+      margin-bottom: 0.45rem;
+      padding: 0.45rem 0.65rem;
       background: rgba(255, 255, 255, 0.6);
       border: 1px solid rgba(184, 134, 11, 0.2);
       border-radius: 4px;
-      font-size: 0.85rem;
-      line-height: 1.3;
+      font-size: 0.82rem;
+      line-height: 1.25;
     }
     
     .term-card h3 {
       font-family: 'Crimson Text', serif;
       color: var(--wine);
-      font-size: 1rem;
+      font-size: 0.95rem;
       margin-bottom: 0.1rem;
     }
     
@@ -873,10 +880,10 @@
     }
     
     .term-card .desc {
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       color: var(--ink-light);
-      margin-top: 0.25rem;
-      line-height: 1.3;
+      margin-top: 0.2rem;
+      line-height: 1.25;
     }
     
     footer {
@@ -978,17 +985,16 @@
     };
     
     // ==================== 辅助函数 ====================
-    function getDataPath(path, useRaw = false) {
-      // 如果是 Markdown 文件，使用 raw.githubusercontent.com
-      if (useRaw || path.endsWith('.md')) {
-        // 使用 GitHub raw 内容代理
-        return `https://raw.githubusercontent.com/${CONFIG.repo}/main/${path}`;
-      }
-      // 其他文件（JSON等）使用相对路径
+    function getDataPath(path) {
+      // 使用相对路径，优先读取当前部署/分支下的数据
       const base = CONFIG.basePath;
       const fullPath = base ? `${base}/${path}` : path;
       log('获取路径:', fullPath);
       return fullPath;
+    }
+
+    function getRawDataPath(path) {
+      return `https://raw.githubusercontent.com/${CONFIG.repo}/main/${path}`;
     }
     
     // ==================== 初始化 ====================
@@ -1010,7 +1016,7 @@
         const hash = window.location.hash.slice(1);
         log('URL hash:', hash);
         
-        if (hash.startsWith('chapter-')) {
+        if (state.config.chapters?.some(c => c.id === hash)) {
           await loadChapter(hash);
         } else if (hash === 'terminology') {
           showTerminology();
@@ -1120,15 +1126,21 @@ Base Path: ${CONFIG.basePath}</pre>
       `;
       
       try {
-        const mdUrl = getDataPath(`data/chapters/${chapterId}.md`);
+        const chapterPath = `data/chapters/${chapterId}.md`;
+        const mdUrl = getDataPath(chapterPath);
         log('加载 Markdown:', mdUrl);
         
-        const res = await fetch(mdUrl);
+        let md = '';
+        let res = await fetch(mdUrl);
         if (!res.ok) {
-          throw new Error(`无法加载章节文件: HTTP ${res.status} - ${mdUrl}`);
+          const rawUrl = getRawDataPath(chapterPath);
+          log('本地章节加载失败，尝试 raw:', rawUrl);
+          res = await fetch(rawUrl);
+          if (!res.ok) {
+            throw new Error(`无法加载章节文件: HTTP ${res.status} - ${rawUrl}`);
+          }
         }
-        
-        const md = await res.text();
+        md = await res.text();
         log('Markdown 内容长度:', md.length);
         
         const parsed = parseChapterMarkdown(md);
@@ -1138,13 +1150,25 @@ Base Path: ${CONFIG.basePath}</pre>
         let companion = {};
         if (chapterConfig.has_companion) {
           try {
-            const compUrl = getDataPath(`data/companion/${chapterId}-companion.md`);
-            log('加载伴侣注释:', compUrl);
-            const compRes = await fetch(compUrl);
-            if (compRes.ok) {
-              const compMd = await compRes.text();
-              companion = parseCompanionMarkdown(compMd);
-              log('伴侣注释加载成功');
+            const candidates = [
+              `data/companion/${chapterId}-companion.md`,
+              `data/companion/chapter-${chapterConfig.number}-companion.md`
+            ];
+            for (const compPath of candidates) {
+              const compUrl = getDataPath(compPath);
+              log('加载伴侣注释:', compUrl);
+              let compRes = await fetch(compUrl);
+              if (!compRes.ok) {
+                const rawCompUrl = getRawDataPath(compPath);
+                log('本地伴侣加载失败，尝试 raw:', rawCompUrl);
+                compRes = await fetch(rawCompUrl);
+              }
+              if (compRes.ok) {
+                const compMd = await compRes.text();
+                companion = parseCompanionMarkdown(compMd);
+                log('伴侣注释加载成功:', compPath);
+                break;
+              }
             }
           } catch (e) {
             log('无伴侣注释或加载失败:', e);
@@ -1179,6 +1203,9 @@ Base Path: ${CONFIG.basePath}</pre>
       });
       
       const allTranslators = Array.from(translatorMap.values());
+      const availableChapters = state.config.chapters?.filter(c => c.available) || [];
+      const hasPrev = availableChapters.some(c => c.number === config.number - 1);
+      const hasNext = availableChapters.some(c => c.number === config.number + 1);
       
       document.getElementById('main-content').innerHTML = `
         <div class="chapter-header">
@@ -1211,9 +1238,9 @@ Base Path: ${CONFIG.basePath}</pre>
         </article>
         
         <nav class="chapter-nav">
-          <a href="javascript:void(0)" onclick="prevChapter()" class="nav-btn ${config.number <= 0 ? 'disabled' : ''}">← 上一章</a>
+          <a href="javascript:void(0)" onclick="prevChapter()" class="nav-btn ${hasPrev ? '' : 'disabled'}">← 上一章</a>
           <a href="#" onclick="showHome(); return false;" class="nav-btn" style="background: var(--ink-light);">返回目录</a>
-          <a href="javascript:void(0)" onclick="nextChapter()" class="nav-btn ${config.number >= 5 ? 'disabled' : ''}">下一章 →</a>
+          <a href="javascript:void(0)" onclick="nextChapter()" class="nav-btn ${hasNext ? '' : 'disabled'}">下一章 →</a>
         </nav>
         
         <div class="comments-section">
@@ -1664,14 +1691,18 @@ Base Path: ${CONFIG.basePath}</pre>
     function prevChapter() {
       const current = state.config.chapters.find(c => c.id === state.currentChapter);
       if (!current || current.number <= 0) return;
-      const prev = state.config.chapters.find(c => c.number === current.number - 1);
+      const prev = state.config.chapters
+        .filter(c => c.available)
+        .find(c => c.number === current.number - 1);
       if (prev) loadChapter(prev.id);
     }
     
     function nextChapter() {
       const current = state.config.chapters.find(c => c.id === state.currentChapter);
-      if (!current || current.number >= 5) return;
-      const next = state.config.chapters.find(c => c.number === current.number + 1);
+      if (!current) return;
+      const next = state.config.chapters
+        .filter(c => c.available)
+        .find(c => c.number === current.number + 1);
       if (next) loadChapter(next.id);
     }
     
