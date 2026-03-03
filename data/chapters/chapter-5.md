@@ -131,20 +131,20 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; —, mеї; —, nostrumstri; —, tui; —, vestrumestri; and —, sui are reflexive pronouns.Because they are reflexive pronouns, they do not have nominative forms.MEMORIZE A BIANK IN PLACE OF A NOMINATIVE SINGULAR.For the forms and meanings of these words see §44.
+    > —, mеї; —, nostrumstri; —, tui; —, vestrumestri; and —, sui are reflexive pronouns.Because they are reflexive pronouns, they do not have nominative forms.MEMORIZE A BIANK IN PLACE OF A NOMINATIVE SINGULAR.For the forms and meanings of these words see §44.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; —, mеї; —, nostrumstri; —, tui; —, vestrumestri; 及 —, sui是反身代词。因为它们是反身代词，所以它们没有主格形式。记住用空白代替主格单数。关于这些词的形式和意义，见§44</span>
+      <span class="translation-text">> —, mеї; —, nostrumstri; —, tui; —, vestrumestri; 及 —, sui是反身代词。因为它们是反身代词，所以它们没有主格形式。记住用空白代替主格单数。关于这些词的形式和意义，见§44</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; —, mеї; —, nostrumstri; —, tui; —, vestrumestri; 及—, sui均为反身代词，没有主格形式。谨记，我们用留空的形式来表达其主格形式。至于这些词的形式和含义，请见§44。</span>
+      <span class="translation-text">> —, mеї; —, nostrumstri; —, tui; —, vestrumestri; 及—, sui均为反身代词，没有主格形式。谨记，我们用留空的形式来表达其主格形式。至于这些词的形式和含义，请见§44。</span>
     </div>
   </div>
 </div>
@@ -269,40 +269,40 @@ status: incomplete
 
 <div class="content-block">
   <div class="original latin">
-    Assimilation (&lt; assimilö, make similar to) occurs when the prefix ends in a consonant and that consonant changes to become similar to or identical with the sound of the first consonant of the simple verb.For example: ad + cēdo &gt; accēdo.The -d at the end of ad assimilates to the c- at the beginning of cẽdo.
+    Assimilation (&lt; assimilö, make similar to) occurs when the prefix ends in a consonant and that consonant changes to become similar to or identical with the sound of the first consonant of the simple verb.For example: ad + cēdo > accēdo.The -d at the end of ad assimilates to the c- at the beginning of cẽdo.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">同化（&lt;assimilation，make similar to）发生在前缀以辅音结尾，并且该辅音变化为与简单动词的第一个辅音的声音相似或相同。例如: ad + cēdo &gt; accēdo. ad结尾的-d与c do开头的c-相似。</span>
+      <span class="translation-text">同化（&lt;assimilation，make similar to）发生在前缀以辅音结尾，并且该辅音变化为与简单动词的第一个辅音的声音相似或相同。例如: ad + cēdo > accēdo. ad结尾的-d与c do开头的c-相似。</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">同化现象(&lt; assimilö, make similar to使相似) 通常发生在单词前缀以辅音结尾时，该辅音将发生变化，与前缀后简单动词的首个辅音的发音相似或相同。例如: ad + cēdo &gt; accēdo. ad-结尾的-d被cedo词首的-c-同化。</span>
+      <span class="translation-text">同化现象(&lt; assimilö, make similar to使相似) 通常发生在单词前缀以辅音结尾时，该辅音将发生变化，与前缀后简单动词的首个辅音的发音相似或相同。例如: ad + cēdo > accēdo. ad-结尾的-d被cedo词首的-c-同化。</span>
     </div>
   </div>
 </div>
 
 <div class="content-block">
   <div class="original english">
-    Vowel weakening refers to the change in the quality of the vowel of a stem. For example: ad- + capiö &gt; accipiö.
+    Vowel weakening refers to the change in the quality of the vowel of a stem. For example: ad- + capiö > accipiö.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">元音弱化是指词干中元音的性质发生变化。例如：ad- + capiö &gt; accipiö。</span>
+      <span class="translation-text">元音弱化是指词干中元音的性质发生变化。例如：ad- + capiö > accipiö。</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">元音弱化现象是指，词干中的元音性质发生变化。例如：ad- + capiö &gt; accipiö。</span>
+      <span class="translation-text">元音弱化现象是指，词干中的元音性质发生变化。例如：ad- + capiö > accipiö。</span>
     </div>
   </div>
 </div>
@@ -455,55 +455,55 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    1. a → i before a single consonant except -r per- + faciõ &gt; perficio
+    1. a → i before a single consonant except -r per- + faciõ > perficio
   </div>
 </div>
 
 <div class="content-block">
   <div class="original english">
-    1. a → i在单个辅音之前，除了-r per- + facianci&gt; perficio
+    1. a → i在单个辅音之前，除了-r per- + facianci> perficio
   </div>
 </div>
 
 <div class="content-block">
   <div class="original english">
-    1.a → i，除-r per-+faciõ &gt; perficio的单辅音前
+    1.a → i，除-r per-+faciõ > perficio的单辅音前
   </div>
 </div>
 
 <div class="content-block">
   <div class="original english">
-    2. a → e before two consonants and before-r pеr- + factus &gt; perfectus
+    2. a → e before two consonants and before-r pеr- + factus > perfectus
   </div>
 </div>
 
 <div class="content-block">
   <div class="original english">
-    2.两个辅音前的a → e和-r pеr- + factus &gt; perfectus
+    2.两个辅音前的a → e和-r pеr- + factus > perfectus
   </div>
 </div>
 
 <div class="content-block">
   <div class="original english">
-    2.a → e 双辅音前，以及-r pеr- + factus &gt; perfectus前
+    2.a → e 双辅音前，以及-r pеr- + factus > perfectus前
   </div>
 </div>
 
 <div class="content-block">
   <div class="original english">
-    3. e → i before a single consonant except -r per- + teneõ &gt; pertineõ
+    3. e → i before a single consonant except -r per- + teneõ > pertineõ
   </div>
 </div>
 
 <div class="content-block">
   <div class="original english">
-    3. e → i在单个辅音之前，除了-r per- + teneguide&gt; pertineguide
+    3. e → i在单个辅音之前，除了-r per- + teneguide> pertineguide
   </div>
 </div>
 
 <div class="content-block">
   <div class="original english">
-    3. e → i 除-r per- + teneõ &gt; pertineõ 的单辅音前
+    3. e → i 除-r per- + teneõ > pertineõ 的单辅音前
   </div>
 </div>
 
@@ -672,20 +672,20 @@ status: incomplete
 
 <div class="content-block">
   <div class="original latin">
-    &gt; cêdo, cēdere, cessi, cessum is an intransitive verb.In addition to its basic meaning of "go" or "move," it may mean "yield" to a person or idea or "withdraw" from a place or activity.Compounds of cêdõ do not exhibit vowel weakening.
+    > cêdo, cēdere, cessi, cessum is an intransitive verb.In addition to its basic meaning of "go" or "move," it may mean "yield" to a person or idea or "withdraw" from a place or activity.Compounds of cêdõ do not exhibit vowel weakening.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; cêdo，cdere，i，cessum是一个不及物动词。除了“去”或“移动”的基本含义外，它还可以表示“屈服于”某人或某个想法，或“退出”某地或某项活动。cêdere的复合词没有元音弱化的现象</span>
+      <span class="translation-text">> cêdo，cdere，i，cessum是一个不及物动词。除了“去”或“移动”的基本含义外，它还可以表示“屈服于”某人或某个想法，或“退出”某地或某项活动。cêdere的复合词没有元音弱化的现象</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; cêdo, cēdere, cessi, cessum是不及物动词。除去“去”“去”（"go" ）或“移动”（"move"）的基本含义外，它还意为“屈服于”（"yield"）某人或某个想法，还意为“撤出”（"withdraw"）某地或某项活动。cedo的复合词未发生元音弱化现象</span>
+      <span class="translation-text">> cêdo, cēdere, cessi, cessum是不及物动词。除去“去”“去”（"go" ）或“移动”（"move"）的基本含义外，它还意为“屈服于”（"yield"）某人或某个想法，还意为“撤出”（"withdraw"）某地或某项活动。cedo的复合词未发生元音弱化现象</span>
     </div>
   </div>
 </div>
@@ -772,19 +772,19 @@ status: incomplete
 
 <div class="content-block">
   <div class="original latin">
-    &gt; discēdo, discēdere, discessi, discessum is a compound verb formed by the addition of the prefix dis- to cēdo.It is an intransitive verb.
+    > discēdo, discēdere, discessi, discessum is a compound verb formed by the addition of the prefix dis- to cēdo.It is an intransitive verb.
   </div>
 </div>
 
 <div class="content-block">
   <div class="original english">
-    &gt; disckendo，disckendere，disckini，discessum是一个复合动词，由前缀dis-加到ckendo上构成，是一个不及物动词。
+    > disckendo，disckendere，disckini，discessum是一个复合动词，由前缀dis-加到ckendo上构成，是一个不及物动词。
   </div>
 </div>
 
 <div class="content-block">
   <div class="original latin">
-    &gt; discēdo, discēdere, discessi, discessum是复合动词，由前缀dis-附加于cedo前构成，不及物。
+    > discēdo, discēdere, discessi, discessum是复合动词，由前缀dis-附加于cedo前构成，不及物。
   </div>
 </div>
 
@@ -870,7 +870,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; ferõ, ferre, tuli, lãtus is a third-conjugation verb with certain irregular forms in the present system ((43).ferõ derives from two PIE roots: bher- and telA..ferö may mean "bring," "bear," or "carry," and by extension "endure" (hardships, troubles).ferõ may also mean "say," "report," particularly when a common story or a myth is being reported.
+    > ferõ, ferre, tuli, lãtus is a third-conjugation verb with certain irregular forms in the present system ((43).ferõ derives from two PIE roots: bher- and telA..ferö may mean "bring," "bear," or "carry," and by extension "endure" (hardships, troubles).ferõ may also mean "say," "report," particularly when a common story or a myth is being reported.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
@@ -883,7 +883,7 @@ status: incomplete
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; ferõ, ferre, tuli, lãtus是第三变位法动词，其现在时态中有几个不规则形势。ferõ源于两个PIE词根bher- 和telA...fero既意为带来，承受或携带，并引申为忍受（苦痛，麻烦）。fero还意为“说”，“报告”，尤其是提及民间故事和神话时。</span>
+      <span class="translation-text">> ferõ, ferre, tuli, lãtus是第三变位法动词，其现在时态中有几个不规则形势。ferõ源于两个PIE词根bher- 和telA...fero既意为带来，承受或携带，并引申为忍受（苦痛，麻烦）。fero还意为“说”，“报告”，尤其是提及民间故事和神话时。</span>
     </div>
   </div>
 </div>
@@ -1175,14 +1175,14 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; odi, odisse is a defective verb. odi has forms of the perfect active system only (perfect, pluperfect, and future perfect).However, the perfect forms are translated as if they were present, the pluperfect forms as if they were imperfect, and the future perfect forms as if they were future.
+    > odi, odisse is a defective verb. odi has forms of the perfect active system only (perfect, pluperfect, and future perfect).However, the perfect forms are translated as if they were present, the pluperfect forms as if they were imperfect, and the future perfect forms as if they were future.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; odi，odisse是一个有缺陷的动词。odi只有完全主动系统的形式（完成式、过去完成式和将来完成式）。然而，完成时的形式被翻译成好像它们是现在的，过去完成时的形式被翻译成好像它们是不完全的，将来完成时的形式被翻译成好像它们是将来的。</span>
+      <span class="translation-text">> odi，odisse是一个有缺陷的动词。odi只有完全主动系统的形式（完成式、过去完成式和将来完成式）。然而，完成时的形式被翻译成好像它们是现在的，过去完成时的形式被翻译成好像它们是不完全的，将来完成时的形式被翻译成好像它们是将来的。</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
@@ -2668,20 +2668,20 @@ status: incomplete
 
 <div class="content-block">
   <div class="original latin">
-    1. In the first person singular, the -i- of the infix -eri- contracts with the ending -o (*rēxerio &gt; rēxerõ).
+    1. In the first person singular, the -i- of the infix -eri- contracts with the ending -o (*rēxerio > rēxerõ).
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">1.在第一人称单数中，中缀-eri-中的-i-与词尾-o（* rxerio&gt; rxerio）收缩。</span>
+      <span class="translation-text">1.在第一人称单数中，中缀-eri-中的-i-与词尾-o（* rxerio> rxerio）收缩。</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">1. 第一人称单数中，中缀-eri-的-i-与词尾-o缩合 (*rēxerio &gt; rēxerõ).</span>
+      <span class="translation-text">1. 第一人称单数中，中缀-eri-的-i-与词尾-o缩合 (*rēxerio > rēxerõ).</span>
     </div>
   </div>
 </div>

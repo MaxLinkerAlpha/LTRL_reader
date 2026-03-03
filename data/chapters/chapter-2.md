@@ -1017,14 +1017,14 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt;› iubeò, iubère, iussi, iussus frequently takes an Object Infinitive (S13), most often with a subject of the infinitive in the accusative case (f107).
+    >› iubeò, iubère, iussi, iussus frequently takes an Object Infinitive (S13), most often with a subject of the infinitive in the accusative case (f107).
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt;'iubeò、iubère、iussi、iussus'经常带宾语不定式（S13），最常见的情况是不定式的主语是状语（f107）。</span>
+      <span class="translation-text">>'iubeò、iubère、iussi、iussus'经常带宾语不定式（S13），最常见的情况是不定式的主语是状语（f107）。</span>
     </div>
   </div>
 </div>
@@ -1059,27 +1059,27 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; moveó, movére, mövi, môtus means "set (something or someone) in motion," either physically or emotionally.
+    > moveó, movére, mövi, môtus means "set (something or someone) in motion," either physically or emotionally.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt;moveó，movére，mövi，môtus 表示 "让（某事或某人）运动起来"，可以是身体上的，也可以是情感上的。</span>
+      <span class="translation-text">>moveó，movére，mövi，môtus 表示 "让（某事或某人）运动起来"，可以是身体上的，也可以是情感上的。</span>
     </div>
   </div>
 </div>
 
 <div class="content-block">
   <div class="original english">
-    &gt; respondeó, respondère, respondi, respönsus takes a Dative of Indirect Object to express the person whom one answers (to whom one responds).
+    > respondeó, respondère, respondi, respönsus takes a Dative of Indirect Object to express the person whom one answers (to whom one responds).
   </div>
 </div>
 
 <div class="content-block">
   <div class="original english">
-    &gt;respondeó、respondère、respondi、respondönsus 用间接宾语的助动词来表示回答（回应）的人。
+    >respondeó、respondère、respondi、respondönsus 用间接宾语的助动词来表示回答（回应）的人。
   </div>
 </div>
 
@@ -1524,13 +1524,13 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    Optäsne rêginam insulae videre？你想见岛上的女王吗？Reginamne insulae videre optäs？你想见岛上的女王吗？&gt;neque或nec同时是连词（和）和副词（不）
+    Optäsne rêginam insulae videre？你想见岛上的女王吗？Reginamne insulae videre optäs？你想见岛上的女王吗？>neque或nec同时是连词（和）和副词（不）
   </div>
 </div>
 
 <div class="content-block">
   <div class="original english">
-    &gt; neque or nec is a conjunction (and) and an adverb (not) at the same time.
+    > neque or nec is a conjunction (and) and an adverb (not) at the same time.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
@@ -3886,40 +3886,40 @@ E
 
 <div class="content-block">
   <div class="original latin">
-    2.In the first person singular of all first-conjugation verbs, the stem vowel -ā- contracts with the -ö of the ending (*vocão &gt; voco).11 THE FIRST PERSON SINGUIAR IS THE FIRSI PRINCIPAL PARI AND MUST BE MEMORIZED.
+    2.In the first person singular of all first-conjugation verbs, the stem vowel -ā- contracts with the -ö of the ending (*vocão > voco).11 THE FIRST PERSON SINGUIAR IS THE FIRSI PRINCIPAL PARI AND MUST BE MEMORIZED.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">2.In 所有第一变位动词的第一人称单数，词干元音 -ā- 与结尾的 -ö （*vocão &gt; voco）签约.11 第一人称单数是 FIRSI 主要 PARI，必须记住</span>
+      <span class="translation-text">2.In 所有第一变位动词的第一人称单数，词干元音 -ā- 与结尾的 -ö （*vocão > voco）签约.11 第一人称单数是 FIRSI 主要 PARI，必须记住</span>
     </div>
     <div class="translation" data-translator="Mecius" data-fallback="false">
       <span class="translator-tag" style="background: #FDEBFF20; color: #FDEBFF; border-color: #FDEBFF40;">
         Mecius
       </span>
-      <span class="translation-text">2.在所有第一变位法动词的第一人称单数中，构干元音-ā-与词尾的-ō 缩合（*vocāō &gt; vocō）。11 第一人称单数是第一个主要的部分，必须记住。</span>
+      <span class="translation-text">2.在所有第一变位法动词的第一人称单数中，构干元音-ā-与词尾的-ō 缩合（*vocāō > vocō）。11 第一人称单数是第一个主要的部分，必须记住。</span>
     </div>
   </div>
 </div>
 
 <div class="content-block">
   <div class="original english">
-    3.In the first person singular of all second-conjugation verbs, the stem vowel -ê- shortens before the -o of the ending (*moveo &gt; moved).THE FIRST PERSON SINGUIAR IS THE FIRST PRINCIPAL PART AND MUST BE MEMORIZED.
+    3.In the first person singular of all second-conjugation verbs, the stem vowel -ê- shortens before the -o of the ending (*moveo > moved).THE FIRST PERSON SINGUIAR IS THE FIRST PRINCIPAL PART AND MUST BE MEMORIZED.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">3.In 所有第二变位动词的第一人称单数，词干元音 -ê- 在结尾的 -o 之前缩短（*moveo &gt;移动）。第一人称 SINGUIAR 是第一主要部分，必须记住</span>
+      <span class="translation-text">3.In 所有第二变位动词的第一人称单数，词干元音 -ê- 在结尾的 -o 之前缩短（*moveo >移动）。第一人称 SINGUIAR 是第一主要部分，必须记住</span>
     </div>
     <div class="translation" data-translator="Mecius" data-fallback="false">
       <span class="translator-tag" style="background: #FDEBFF20; color: #FDEBFF; border-color: #FDEBFF40;">
         Mecius
       </span>
-      <span class="translation-text">3.在所有第二变位法动词的第一人称单数中，构干元音 -ē- 在词尾 -ō 之前缩短（*movēō &gt; moveō）。第一人称单数是第一个主要的部分，必须记住。</span>
+      <span class="translation-text">3.在所有第二变位法动词的第一人称单数中，构干元音 -ē- 在词尾 -ō 之前缩短（*movēō > moveō）。第一人称单数是第一个主要的部分，必须记住。</span>
     </div>
   </div>
 </div>
@@ -3931,20 +3931,20 @@ E
 
 <div class="content-block">
   <div class="original english">
-    11.The symbol &gt; means "becomes"
+    11.The symbol > means "becomes"
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">11.符号&gt;的意思是“成为”</span>
+      <span class="translation-text">11.符号>的意思是“成为”</span>
     </div>
     <div class="translation" data-translator="Mecius" data-fallback="false">
       <span class="translator-tag" style="background: #FDEBFF20; color: #FDEBFF; border-color: #FDEBFF40;">
         Mecius
       </span>
-      <span class="translation-text">11.符号 &gt; 表示 "变为"。</span>
+      <span class="translation-text">11.符号 > 表示 "变为"。</span>
     </div>
   </div>
 </div>
@@ -4549,20 +4549,20 @@ E
 
 <div class="content-block">
   <div class="original english">
-    1.In the first person singular, the -i- of the infix -bi- contracts with the ending -ö to give the resulting form (*vocabio &gt; vocabo; *movebio &gt; movebo). MEMORIZE THIS EXCEPTION TO THE RULES FOR FORMING THE FUTURE ACTIVE INDICATIVE.
+    1.In the first person singular, the -i- of the infix -bi- contracts with the ending -ö to give the resulting form (*vocabio > vocabo; *movebio > movebo). MEMORIZE THIS EXCEPTION TO THE RULES FOR FORMING THE FUTURE ACTIVE INDICATIVE.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">1.In 第一人称单数，中缀 -bi- 的 -i- 与结尾 -ö 收缩以给出结果形式（*vocabio &gt; vocabo; *movebio &gt; movebo）。记住形成未来主动指示的规则的这个例外。</span>
+      <span class="translation-text">1.In 第一人称单数，中缀 -bi- 的 -i- 与结尾 -ö 收缩以给出结果形式（*vocabio > vocabo; *movebio > movebo）。记住形成未来主动指示的规则的这个例外。</span>
     </div>
     <div class="translation" data-translator="Mecius" data-fallback="false">
       <span class="translator-tag" style="background: #FDEBFF20; color: #FDEBFF; border-color: #FDEBFF40;">
         Mecius
       </span>
-      <span class="translation-text">1.在第一人称单数中，中缀 -bi- 的 -i 与词尾 -ō 收缩，产生形式（*vocābiō &gt; vocābō；*movēbiō &gt; movēbō）。记住这个主动态直陈式将来时的例外规则。</span>
+      <span class="translation-text">1.在第一人称单数中，中缀 -bi- 的 -i 与词尾 -ō 收缩，产生形式（*vocābiō > vocābō；*movēbiō > movēbō）。记住这个主动态直陈式将来时的例外规则。</span>
     </div>
   </div>
 </div>
@@ -5211,14 +5211,14 @@ E
 
 <div class="content-block">
   <div class="original english">
-    In the first person singular, the stem vowel -i- contracts with the -o of the ending (*eriö &gt; ero).
+    In the first person singular, the stem vowel -i- contracts with the -o of the ending (*eriö > ero).
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">在第一人称单数中，词干元音-i-与词尾的-s收缩（*eriö&gt;ero）。</span>
+      <span class="translation-text">在第一人称单数中，词干元音-i-与词尾的-s收缩（*eriö>ero）。</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">

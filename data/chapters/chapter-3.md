@@ -3546,40 +3546,40 @@ LONG VOWELS SHORTEN BEFORE THE ENDINGS -M, -T, -NT, -R, AND -NTUR.
 
 <div class="content-block">
   <div class="original latin">
-    1. In the first person singular, the stem vowel -ā- contracts with the ending -or (*vocāor &gt; vocor).
+    1. In the first person singular, the stem vowel -ā- contracts with the ending -or (*vocāor > vocor).
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">1. 在第一人称单数中，词干元音-ā-与词尾-or收缩（*vocāor &gt; vocor）。</span>
+      <span class="translation-text">1. 在第一人称单数中，词干元音-ā-与词尾-or收缩（*vocāor > vocor）。</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">1. 在一单中，词干元音-ā-与词尾-or缩合（*vocāor &gt; vocor）。</span>
+      <span class="translation-text">1. 在一单中，词干元音-ā-与词尾-or缩合（*vocāor > vocor）。</span>
     </div>
   </div>
 </div>
 
 <div class="content-block">
   <div class="original latin">
-    In the first person singular of second-conjugation verbs, the stem vowel -ē- shortens before the ending -or (e.g., *movēor &gt; moveor).
+    In the first person singular of second-conjugation verbs, the stem vowel -ē- shortens before the ending -or (e.g., *movēor > moveor).
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">在第二变位动词的第一人称单数中，词干元音 -ē- 在词尾 -or 前缩短（如 *movēor &gt; moveor）。</span>
+      <span class="translation-text">在第二变位动词的第一人称单数中，词干元音 -ē- 在词尾 -or 前缩短（如 *movēor > moveor）。</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">在第二变位动词的一单中，词干元音 -ē- 在词尾 -or 前缩短（如 *movēor &gt; moveor）。</span>
+      <span class="translation-text">在第二变位动词的一单中，词干元音 -ē- 在词尾 -or 前缩短（如 *movēor > moveor）。</span>
     </div>
   </div>
 </div>
@@ -4176,20 +4176,20 @@ LONG VOWELS SHORTEN BEFORE THE ENDINGS -M, -T, -NT, -R, AND -NTUR.
 
 <div class="content-block">
   <div class="original latin">
-    1. In the first person singular, the -i- of the infix -bi- contracts with the ending -or to give the resulting form (*vocābior &gt; vocābor).
+    1. In the first person singular, the -i- of the infix -bi- contracts with the ending -or to give the resulting form (*vocābior > vocābor).
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">1. 在第一人称单数中，下位词-bi的-i与词尾-or收缩，从而产生形式（*vocābior &gt; vocābor）。</span>
+      <span class="translation-text">1. 在第一人称单数中，下位词-bi的-i与词尾-or收缩，从而产生形式（*vocābior > vocābor）。</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">1. 一单中，中缀-bi-的-i-与词尾-or缩合成新屈折形式（*vocābior &gt; vocābor）。</span>
+      <span class="translation-text">1. 一单中，中缀-bi-的-i-与词尾-or缩合成新屈折形式（*vocābior > vocābor）。</span>
     </div>
   </div>
 </div>

@@ -83,7 +83,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt;anima,animae f.has a physical meaning.the "breath"of the wind or of a human being.By extension,it may mean the breath of life,the force that gives an animate being life(life force).
+    >anima,animae f.has a physical meaning.the "breath"of the wind or of a human being.By extension,it may mean the breath of life,the force that gives an animate being life(life force).
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
@@ -102,7 +102,7 @@ status: incomplete
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt;anima, animae (f.)可指代实体概念，即“风或人的‘呼吸’”。*后来可能经过进一步的引申，而拥有了“生命的呼吸、赋予生命延续的力量（即生命力）”的意味。{*by extension翻译为“引申；再则”}</span>
+      <span class="translation-text">>anima, animae (f.)可指代实体概念，即“风或人的‘呼吸’”。*后来可能经过进一步的引申，而拥有了“生命的呼吸、赋予生命延续的力量（即生命力）”的意味。{*by extension翻译为“引申；再则”}</span>
     </div>
   </div>
 </div>
@@ -141,7 +141,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt;fama,famae f.derives from an Indo-European root that means"speak"(cf.Gk.phemi;Skt.bhash,speak).The word fama indicates primarily what is spoken publicly or by the people,and its basic meaning is"talk" or"rumor."
+    >fama,famae f.derives from an Indo-European root that means"speak"(cf.Gk.phemi;Skt.bhash,speak).The word fama indicates primarily what is spoken publicly or by the people,and its basic meaning is"talk" or"rumor."
   </div>
   <div class="translations">
     <div class="translation" data-translator="簪花落梅" data-fallback="true">
@@ -160,7 +160,7 @@ status: incomplete
       <span class="translator-tag" style="background: #D58EFF20; color: #D58EFF; border-color: #D58EFF40;">
         Yancey
       </span>
-      <span class="translation-text">&gt;fama, famae (f.)源自印欧语词根*bha-，意为“说话”（对比希腊语phemi和梵语bhash，均意指“说话”）。该单词最初是指面向群众或公开的言论，故其基本含义为“话语”或“谣言”。</span>
+      <span class="translation-text">>fama, famae (f.)源自印欧语词根*bha-，意为“说话”（对比希腊语phemi和梵语bhash，均意指“说话”）。该单词最初是指面向群众或公开的言论，故其基本含义为“话语”或“谣言”。</span>
     </div>
   </div>
 </div>
@@ -199,7 +199,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt;deus,dei m.has certain common irregular forms in the plural.
+    >deus,dei m.has certain common irregular forms in the plural.
   </div>
   <div class="translations">
     <div class="translation" data-translator="簪花落梅" data-fallback="true">
@@ -295,20 +295,20 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt;The noun dominus,domini m.is cognate with the Latin word for house(domus);that is,the two words dominus and domus are descended from the same linguistic root.The original meaning of dominus was "master of the house."
+    >The noun dominus,domini m.is cognate with the Latin word for house(domus);that is,the two words dominus and domus are descended from the same linguistic root.The original meaning of dominus was "master of the house."
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt;名词dominus，domini m与拉丁语单词house（domus）同源；也就是说，domus和domus这两个词来自同一个词根。domus的原意是“家里的主人”</span>
+      <span class="translation-text">>名词dominus，domini m与拉丁语单词house（domus）同源；也就是说，domus和domus这两个词来自同一个词根。domus的原意是“家里的主人”</span>
     </div>
     <div class="translation" data-translator="Yancey" data-fallback="false">
       <span class="translator-tag" style="background: #D58EFF20; color: #D58EFF; border-color: #D58EFF40;">
         Yancey
       </span>
-      <span class="translation-text">&gt;名词dominus, domini (m.)与拉丁语中表示“房屋（house）”的单词domus同源；换言之，dominus与domus均源自同一个词根。dominus本义为“*一家之主”&lt;master of the house&gt;{*尝试让译文更符合汉语风格}</span>
+      <span class="translation-text">>名词dominus, domini (m.)与拉丁语中表示“房屋（house）”的单词domus同源；换言之，dominus与domus均源自同一个词根。dominus本义为“*一家之主”&lt;master of the house>{*尝试让译文更符合汉语风格}</span>
     </div>
   </div>
 </div>
@@ -329,7 +329,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt;consilium,consilii n.may mean the act of deliberating about something(deliberation),or it may mean the "plan"or"intention"that results from deliberating.It may also mean the capacity to deliberate(judgment) Finally,it may refer to a group of people who deliberate,a"council."
+    >consilium,consilii n.may mean the act of deliberating about something(deliberation),or it may mean the "plan"or"intention"that results from deliberating.It may also mean the capacity to deliberate(judgment) Finally,it may refer to a group of people who deliberate,a"council."
   </div>
   <div class="translations">
     <div class="translation" data-translator="tuche" data-fallback="true">
@@ -343,7 +343,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt;ferrum,ferri n.means "iron."By the rhetorical device metonymy (change of name)it also means “sword”-that is,something made of iron.
+    >ferrum,ferri n.means "iron."By the rhetorical device metonymy (change of name)it also means “sword”-that is,something made of iron.
   </div>
   <div class="translations">
     <div class="translation" data-translator="tuche" data-fallback="true">
@@ -499,7 +499,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt;The prepositions a/ab,e/ex,and de all require a noun in the ablative case and express separation (from).
+    >The prepositions a/ab,e/ex,and de all require a noun in the ablative case and express separation (from).
   </div>
   <div class="translations">
     <div class="translation" data-translator="tuche" data-fallback="true">
@@ -545,7 +545,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt;ab is used before words beginning with vowels or h-.Both a and ab are used before words beginning with consonants,but a is more frequent.
+    >ab is used before words beginning with vowels or h-.Both a and ab are used before words beginning with consonants,but a is more frequent.
   </div>
   <div class="translations">
     <div class="translation" data-translator="tuche" data-fallback="true">
@@ -565,7 +565,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt;ex is used before words beginning with vowels or h-.Both e and ex are used before words beginning with consonants,but ex is more frequent.
+    >ex is used before words beginning with vowels or h-.Both e and ex are used before words beginning with consonants,but ex is more frequent.
   </div>
   <div class="translations">
     <div class="translation" data-translator="tuche" data-fallback="true">
@@ -585,7 +585,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt;ad takes the accusative and expresses motion to or toward a place. Compare the meaning of ad with that of in (+acc.)in the diagram that follows.
+    >ad takes the accusative and expresses motion to or toward a place. Compare the meaning of ad with that of in (+acc.)in the diagram that follows.
   </div>
   <div class="translations">
     <div class="translation" data-translator="tuche" data-fallback="true">
@@ -599,7 +599,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt;in may take either the accusative or the ablative case.When it takes the accusative,it means "into"or "onto."By extension of this meaning it may also mean"against,"especially when the noun in the accusative case refers to a person or people.
+    >in may take either the accusative or the ablative case.When it takes the accusative,it means "into"or "onto."By extension of this meaning it may also mean"against,"especially when the noun in the accusative case refers to a person or people.
   </div>
   <div class="translations">
     <div class="translation" data-translator="tuche" data-fallback="true">
@@ -658,7 +658,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original latin">
-    &gt; et is a coordinating conjunction. This means that it connects only parallel or grammatically balanced words, phrases, or clauses. When two nouns are connected, they must be in the same case: for example, nautārum et agricolarum (of the sailors and of the farmers (genitive]).
+    > et is a coordinating conjunction. This means that it connects only parallel or grammatically balanced words, phrases, or clauses. When two nouns are connected, they must be in the same case: for example, nautārum et agricolarum (of the sailors and of the farmers (genitive]).
   </div>
   <div class="translations">
     <div class="translation" data-translator="tuche" data-fallback="true">
@@ -758,14 +758,14 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt;-que is an enclitic conjunction. The word enclitic is derived from the Greek verb enklino (lean on), and an enclitic leans on or is directly attached to the word preceding it.
+    >-que is an enclitic conjunction. The word enclitic is derived from the Greek verb enklino (lean on), and an enclitic leans on or is directly attached to the word preceding it.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt;-que是一个斜合相。enclitic这个词来源于希腊语动词enklino（lean on），enclitic依靠或直接附加到它前面的单词上。</span>
+      <span class="translation-text">>-que是一个斜合相。enclitic这个词来源于希腊语动词enklino（lean on），enclitic依靠或直接附加到它前面的单词上。</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">

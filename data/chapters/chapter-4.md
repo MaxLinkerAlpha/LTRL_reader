@@ -90,20 +90,20 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; sententia, sententiae f. is derived from the verb sentio and refers to an opinion, either privately held (thought, feeling) or publicly given (vote, opinion).
+    > sententia, sententiae f. is derived from the verb sentio and refers to an opinion, either privately held (thought, feeling) or publicly given (vote, opinion).
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; sententia，sententiae f.是从动词sentio派生出来的，指的是一种观点，无论是私人持有的（思想，感觉）还是公开给出的（投票，意见）。</span>
+      <span class="translation-text">> sententia，sententiae f.是从动词sentio派生出来的，指的是一种观点，无论是私人持有的（思想，感觉）还是公开给出的（投票，意见）。</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; sententia, sententiae f. 由动词sentio派生而来，既能指（与思想、感觉有关的）个人观点，也能指（与投票、提议相关的）公众表决（或决议）（这里不太会翻译）。</span>
+      <span class="translation-text">> sententia, sententiae f. 由动词sentio派生而来，既能指（与思想、感觉有关的）个人观点，也能指（与投票、提议相关的）公众表决（或决议）（这里不太会翻译）。</span>
     </div>
   </div>
 </div>
@@ -190,20 +190,20 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; socius, socii m. is a substantive of the adjective socius, -a, -um. It is used both in personal contexts (comrade) and in legal and political ones (ally). It is often used of cities or peoples from outside Italy that were allies of Rome.
+    > socius, socii m. is a substantive of the adjective socius, -a, -um. It is used both in personal contexts (comrade) and in legal and political ones (ally). It is often used of cities or peoples from outside Italy that were allies of Rome.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; socius，socii m.是形容词socius的实义词-a-um它既用于个人背景（同志），也用于法律的和政治背景（盟友）。常用于意大利以外的城市或民族，这些城市或民族曾是罗马的盟友</span>
+      <span class="translation-text">> socius，socii m.是形容词socius的实义词-a-um它既用于个人背景（同志），也用于法律的和政治背景（盟友）。常用于意大利以外的城市或民族，这些城市或民族曾是罗马的盟友</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; socius，socii m.是形容词socius，-a，-um的名词化用法。既可以使用在个人语境（如同志(comrade) ），也可用于政治和法律语境（如盟友 (ally)）。经常用于意大利以外，与罗马结盟的城市或民族身上。</span>
+      <span class="translation-text">> socius，socii m.是形容词socius，-a，-um的名词化用法。既可以使用在个人语境（如同志(comrade) ），也可用于政治和法律语境（如盟友 (ally)）。经常用于意大利以外，与罗马结盟的城市或民族身上。</span>
     </div>
   </div>
 </div>
@@ -250,20 +250,20 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; cano, canere, cecini, cantus is a transitive verb and thus takes a direct object. The third principal part, cecini, is reduplicated (cf. dedi).
+    > cano, canere, cecini, cantus is a transitive verb and thus takes a direct object. The third principal part, cecini, is reduplicated (cf. dedi).
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; cano，canere，cecini，cantus是及物动词，因此带直接宾语。第三个主要部分，cecini，是重叠（参见。dedi）。</span>
+      <span class="translation-text">> cano，canere，cecini，cantus是及物动词，因此带直接宾语。第三个主要部分，cecini，是重叠（参见。dedi）。</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; cano, canere, cecini, cantus 是及物动词，因此后跟直接宾语。它的第三主要部分(cecini)运用了重叠构词法（reduplicated ）（试比较dedi）</span>
+      <span class="translation-text">> cano, canere, cecini, cantus 是及物动词，因此后跟直接宾语。它的第三主要部分(cecini)运用了重叠构词法（reduplicated ）（试比较dedi）</span>
     </div>
   </div>
 </div>
@@ -350,7 +350,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; dico, dicere, dixi, dictus is a verb of giving, showing, and telling and thus may take a direct object and an indirect object.
+    > dico, dicere, dixi, dictus is a verb of giving, showing, and telling and thus may take a direct object and an indirect object.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
@@ -364,7 +364,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; dico, dicere, dixi, dictus是表示给予（giving）、展示（showing）、讲述（telling）的动词，因此后跟直接或间接宾语。
+    > dico, dicere, dixi, dictus是表示给予（giving）、展示（showing）、讲述（telling）的动词，因此后跟直接或间接宾语。
   </div>
 </div>
 
@@ -430,7 +430,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; gerõ, gerere, gessi, gestus has three distinct meanings:  1. "bear" or "carry" (equipment, clothing); 2. "have" or "bear" as a permanent or temporary feature of body or mind (wounds, reputation, anger);
+    > gerõ, gerere, gessi, gestus has three distinct meanings:  1. "bear" or "carry" (equipment, clothing); 2. "have" or "bear" as a permanent or temporary feature of body or mind (wounds, reputation, anger);
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
@@ -444,7 +444,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; gerõ, gerere, gessi, gestus有三种截然不同的含义：1.“穿”或“带”（如装备、衣物）（"bear" or "carry" (equipment, clothing)）；2。“拥有”（have）或“承受”（bear）永久或暂时的身体或精神特征（如创伤、声誉、愤怒）(wounds, reputation, anger)；
+    > gerõ, gerere, gessi, gestus有三种截然不同的含义：1.“穿”或“带”（如装备、衣物）（"bear" or "carry" (equipment, clothing)）；2。“拥有”（have）或“承受”（bear）永久或暂时的身体或精神特征（如创伤、声誉、愤怒）(wounds, reputation, anger)；
   </div>
 </div>
 
@@ -570,7 +570,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; ponõ, ponere, posui, positus has two distinct meanings:  "put," "place," or "set aside." Compare the following sentences:
+    > ponõ, ponere, posui, positus has two distinct meanings:  "put," "place," or "set aside." Compare the following sentences:
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
@@ -584,7 +584,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; ponõ, ponere, posui, positus含义有二：“放”（put），“安放 ”（place）或“搁置”（set aside）。比较下列句子：
+    > ponõ, ponere, posui, positus含义有二：“放”（put），“安放 ”（place）或“搁置”（set aside）。比较下列句子：
   </div>
 </div>
 
@@ -655,7 +655,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; audio, audire, audivi, auditus is a transitive verb that may be used absolutely. When it takes a direct object, it may be translated either "hear" or "listen to." When it is used absolutely, it may be translated either "hear" or "listen."
+    > audio, audire, audivi, auditus is a transitive verb that may be used absolutely. When it takes a direct object, it may be translated either "hear" or "listen to." When it is used absolutely, it may be translated either "hear" or "listen."
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
@@ -668,7 +668,7 @@ status: incomplete
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; audiō，audīre，audīvī，audīus是一个及物动词，可以独立使用。当它接直接宾语时，可以翻译成“hear”或“listen to”。当它独立使用时，可翻为“hear”或“listen”。</span>
+      <span class="translation-text">> audiō，audīre，audīvī，audīus是一个及物动词，可以独立使用。当它接直接宾语时，可以翻译成“hear”或“listen to”。当它独立使用时，可翻为“hear”或“listen”。</span>
     </div>
   </div>
 </div>
@@ -716,7 +716,7 @@ status: incomplete
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; 在sentiō，sentīre，sēnsī，sēnsus的第三个主要部分中，根元音显示出元音交替并变为-ē-。第四个主要部分中的-ē-在-ns-之前是长音。-ns-之前的短元音总是变长（例如，īnsula）。</span>
+      <span class="translation-text">> 在sentiō，sentīre，sēnsī，sēnsus的第三个主要部分中，根元音显示出元音交替并变为-ē-。第四个主要部分中的-ē-在-ns-之前是长音。-ns-之前的短元音总是变长（例如，īnsula）。</span>
     </div>
   </div>
 </div>
@@ -756,7 +756,7 @@ status: incomplete
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; 在veniō，venīre，vēnī，ventum的第三个主要部分中，根元音显示元音交替并变为-ē-。veniō是不及物动词。</span>
+      <span class="translation-text">> 在veniō，venīre，vēnī，ventum的第三个主要部分中，根元音显示元音交替并变为-ē-。veniō是不及物动词。</span>
     </div>
   </div>
 </div>
@@ -776,27 +776,27 @@ status: incomplete
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; clārus，-a，-um的基本含义是表“明亮”或“清晰”的视觉概念。从这个意义上说，它经常描述天空、颜色或闪电等事物。当描述更抽象的概念（计划，事务）时，它存在词义转移: “明显”或“显现”。当用于人时，意思是“著名的”或“卓著的”。</span>
+      <span class="translation-text">> clārus，-a，-um的基本含义是表“明亮”或“清晰”的视觉概念。从这个意义上说，它经常描述天空、颜色或闪电等事物。当描述更抽象的概念（计划，事务）时，它存在词义转移: “明显”或“显现”。当用于人时，意思是“著名的”或“卓著的”。</span>
     </div>
   </div>
 </div>
 
 <div class="content-block">
   <div class="original english">
-    &gt; cupidus, -a, -um is an adjective often found with an Objective Genitive (J36).
+    > cupidus, -a, -um is an adjective often found with an Objective Genitive (J36).
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; cupidus，-a，-um是一个形容词，常与宾语所有格连用（J36）</span>
+      <span class="translation-text">> cupidus，-a，-um是一个形容词，常与宾语所有格连用（J36）</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; cupidus，-a，-um是一个形容词，常与宾格属格连用（J36）</span>
+      <span class="translation-text">> cupidus，-a，-um是一个形容词，常与宾格属格连用（J36）</span>
     </div>
   </div>
 </div>
@@ -823,20 +823,20 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; per is a preposition that takes the accusative case and expresses motion "through" space or time. It may also be translated "throughout" or "along." per also expresses ideas of means or agency (often with personal pronouns) and may sometimes be translated "by."
+    > per is a preposition that takes the accusative case and expresses motion "through" space or time. It may also be translated "throughout" or "along." per also expresses ideas of means or agency (often with personal pronouns) and may sometimes be translated "by."
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; per是一个介词，接受宾格，表示“通过”空间或时间的运动。它也可以被翻译为“贯穿”或“沿着”。“per”也表示手段或机构的意思（常与人称代词连用），有时可译为“by”。“</span>
+      <span class="translation-text">> per是一个介词，接受宾格，表示“通过”空间或时间的运动。它也可以被翻译为“贯穿”或“沿着”。“per”也表示手段或机构的意思（常与人称代词连用），有时可译为“by”。“</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; per是一个介词，后接宾格，表示“通过”空间或时间的运动。它也可以被翻译为“贯穿”或“沿着”。“per”也表示手段或机构的意思（常与人称代词连用），有时可译为“by”。</span>
+      <span class="translation-text">> per是一个介词，后接宾格，表示“通过”空间或时间的运动。它也可以被翻译为“贯穿”或“沿着”。“per”也表示手段或机构的意思（常与人称代词连用），有时可译为“by”。</span>
     </div>
   </div>
 </div>
@@ -879,20 +879,20 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; quidem is a postpositive adverb that usually emphasizes (indeed, certainly) or limits (at least) the word immediately preceding it.
+    > quidem is a postpositive adverb that usually emphasizes (indeed, certainly) or limits (at least) the word immediately preceding it.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; quidem是一个后置副词，通常强调（确实，肯定）或限制（至少）紧接在它前面的词</span>
+      <span class="translation-text">> quidem是一个后置副词，通常强调（确实，肯定）或限制（至少）紧接在它前面的词</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; quidem是一个后置副词，通常强调（确实，肯定）或限制（至少）紧接在它前面的词。</span>
+      <span class="translation-text">> quidem是一个后置副词，通常强调（确实，肯定）或限制（至少）紧接在它前面的词。</span>
     </div>
   </div>
 </div>
@@ -931,20 +931,20 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; equidem (the particle e- + quidem) is an adverb that usually occurs with a verb in the first person singular or plural. It is used to emphasize something about oneself or to affirm one's own opinion. equidem is not postpositive.
+    > equidem (the particle e- + quidem) is an adverb that usually occurs with a verb in the first person singular or plural. It is used to emphasize something about oneself or to affirm one's own opinion. equidem is not postpositive.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; equidem（e- + quidem）是一个副词，通常与第一人称单数或复数形式的动词一起出现。它用来强调自己的一些事情或肯定自己的观点。等式不是后置的</span>
+      <span class="translation-text">> equidem（e- + quidem）是一个副词，通常与第一人称单数或复数形式的动词一起出现。它用来强调自己的一些事情或肯定自己的观点。等式不是后置的</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; equidem（e- + quidem）是一个副词，通常与第一人称单数或复数形式的动词一起出现。它用来强调自己的一些事情或肯定自己的观点。equidem不是后置的。</span>
+      <span class="translation-text">> equidem（e- + quidem）是一个副词，通常与第一人称单数或复数形式的动词一起出现。它用来强调自己的一些事情或肯定自己的观点。equidem不是后置的。</span>
     </div>
   </div>
 </div>
@@ -971,20 +971,20 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    &gt; nẽ.. quidem is translated "not even" and surrounds the word or words being qualified.
+    > nẽ.. quidem is translated "not even" and surrounds the word or words being qualified.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; n.. quidem被翻译成“甚至”，并围绕着被限定的词或词</span>
+      <span class="translation-text">> n.. quidem被翻译成“甚至”，并围绕着被限定的词或词</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">&gt; ne.. quidem被翻译成“甚至不”，并围绕着被限定的词。</span>
+      <span class="translation-text">> ne.. quidem被翻译成“甚至不”，并围绕着被限定的词。</span>
     </div>
   </div>
 </div>
@@ -1532,20 +1532,20 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    1. In the first person singular of all third-conjugation verbs, the -i- at the end of the changed present stem contracts with the endings -o and -or (e.g., *regio &gt; rego; *regior &gt; regor). THE FIRST PERSON SINGULAR ACTIVE IS THE FIRST PRINCIPAL PART.
+    1. In the first person singular of all third-conjugation verbs, the -i- at the end of the changed present stem contracts with the endings -o and -or (e.g., *regio > rego; *regior > regor). THE FIRST PERSON SINGULAR ACTIVE IS THE FIRST PRINCIPAL PART.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">1.在所有第三变位法动词的第一人称单数中，变化的现在时词干末尾的-i-与词尾-o和-or收缩（例如，*regio &gt; rego;* regor&gt; regor）。奇异活动的第一人称是第一主部</span>
+      <span class="translation-text">1.在所有第三变位法动词的第一人称单数中，变化的现在时词干末尾的-i-与词尾-o和-or收缩（例如，*regio > rego;* regor> regor）。奇异活动的第一人称是第一主部</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">1.第三变位法动词的第一人称单数形式中，现在词干发生变化，末尾的-i-同词尾-o及-or缩合（例，*regio &gt; rego;* regor&gt; regor）。谨记，第一人称单数主动式使用第一主要部分。</span>
+      <span class="translation-text">1.第三变位法动词的第一人称单数形式中，现在词干发生变化，末尾的-i-同词尾-o及-or缩合（例，*regio > rego;* regor> regor）。谨记，第一人称单数主动式使用第一主要部分。</span>
     </div>
   </div>
 </div>
@@ -1672,20 +1672,20 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    7. In the first person singular of fourth-conjugation verbs, the -i- at the end of the present stem shortens before the endings -õ and -or (e.g., *audio &gt; audio; *audior &gt; audior). THE FIRST PERSON SINGUIAR ACTIVE IS THE FIRST PRINCIPAL PART.
+    7. In the first person singular of fourth-conjugation verbs, the -i- at the end of the present stem shortens before the endings -õ and -or (e.g., *audio > audio; *audior > audior). THE FIRST PERSON SINGUIAR ACTIVE IS THE FIRST PRINCIPAL PART.
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">7.在第四变位法动词的第一人称单数中，现在词干末尾的-i-在词尾-õ和-or之前缩短（例如，* 音频&gt;音频;*audior &gt; audior）。第一人称单数是第一主体</span>
+      <span class="translation-text">7.在第四变位法动词的第一人称单数中，现在词干末尾的-i-在词尾-õ和-or之前缩短（例如，* 音频>音频;*audior > audior）。第一人称单数是第一主体</span>
     </div>
     <div class="translation" data-translator="Lanx" data-fallback="false">
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">7.第四变位法动词的第一人称单数形式中，现在词干末尾的-i-在词尾-o及-or缩短 (例, *audio &gt; audio; *audior &gt; audior)。谨记，第一人称单数主动式使用第一主要部分。</span>
+      <span class="translation-text">7.第四变位法动词的第一人称单数形式中，现在词干末尾的-i-在词尾-o及-or缩短 (例, *audio > audio; *audior > audior)。谨记，第一人称单数主动式使用第一主要部分。</span>
     </div>
   </div>
 </div>
@@ -2756,7 +2756,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    Compare this stem vowel change to the change that occurs in the present active and passive indicative of third- and third-i-stem-conjugation verbs (e.g., rege- &gt; regi-).
+    Compare this stem vowel change to the change that occurs in the present active and passive indicative of third- and third-i-stem-conjugation verbs (e.g., rege- > regi-).
   </div>
   <div class="translations">
     <div class="translation" data-translator="Lanx" data-fallback="true">
@@ -2769,7 +2769,7 @@ status: incomplete
       <span class="translator-tag" style="background: #FFC00020; color: #FFC000; border-color: #FFC00040;">
         Lanx
       </span>
-      <span class="translation-text">试比较此词干元音变化与第三及第三i词干变位法动词的现在主动及被动式中的词干元音变化（如， rege- &gt; regi-）。</span>
+      <span class="translation-text">试比较此词干元音变化与第三及第三i词干变位法动词的现在主动及被动式中的词干元音变化（如， rege- > regi-）。</span>
     </div>
   </div>
 </div>

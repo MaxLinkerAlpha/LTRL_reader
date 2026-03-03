@@ -3483,7 +3483,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    walk &gt; walks    go &gt; goes
+    walk > walks    go > goes
   </div>
 </div>
 
@@ -3509,7 +3509,7 @@ status: incomplete
 
 <div class="content-block">
   <div class="original english">
-    walk &gt; walked
+    walk > walked
   </div>
 </div>
 
