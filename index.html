@@ -730,8 +730,8 @@
     // ==================== 配置 ====================
     const CONFIG = {
       repo: 'MaxLinkerAlpha/LTRL_reader',
-      // 自动检测基础路径（适配 GitHub Pages 子目录）
-      basePath: window.location.pathname.includes('/LTRL_reader') ? '/LTRL_reader' : ''
+      // 自动检测基础路径（适配 GitHub Pages 子目录，不区分大小写）
+      basePath: window.location.pathname.toLowerCase().includes('/ltrl_reader') ? '/LTRL_reader' : ''
     };
     
     // 调试模式 - 打开浏览器控制台可以看到日志
@@ -752,8 +752,13 @@
     };
     
     // ==================== 辅助函数 ====================
-    function getDataPath(path) {
-      // 确保路径正确，处理 GitHub Pages 子目录情况
+    function getDataPath(path, useRaw = false) {
+      // 如果是 Markdown 文件，使用 raw.githubusercontent.com
+      if (useRaw || path.endsWith('.md')) {
+        // 使用 GitHub raw 内容代理
+        return `https://raw.githubusercontent.com/${CONFIG.repo}/main/${path}`;
+      }
+      // 其他文件（JSON等）使用相对路径
       const base = CONFIG.basePath;
       const fullPath = base ? `${base}/${path}` : path;
       log('获取路径:', fullPath);
