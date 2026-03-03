@@ -1292,6 +1292,17 @@ Base Path: ${CONFIG.basePath}</pre>
           continue;
         }
         
+        // 新格式：原文 <div class='original english'>...</div>
+        const originalMatch = line.match(/<div class='original english'>(.+)<\/div>/);
+        if (originalMatch) {
+          ensureSection().blocks.push({
+            type: 'content',
+            original: { text: originalMatch[1], type: 'latin' },
+            translations: []
+          });
+          continue;
+        }
+        
         // 特殊拉丁文 <div class='latin-text latin-special'>...</div>
         const latinSpecialMatch = line.match(/<div class='latin-text latin-special'>(.+)<\/div>/);
         if (latinSpecialMatch) {
