@@ -9,58 +9,86 @@
   },
   "translators": [
     {
-      "id": "lanx",
+      "id": "Lanx",
       "name": "Lanx",
-      "color": "#722f37",
+      "color": "#FFC000",
       "is_primary": true,
       "description": "主译者"
     },
     {
-      "id": "cyan",
-      "name": "Cyan",
-      "color": "#2563eb",
+      "id": "簪花落梅",
+      "name": "簪花落梅",
+      "color": "#9A38D7",
       "is_primary": false,
-      "description": "校译者"
+      "description": "译者"
+    },
+    {
+      "id": "Yancey",
+      "name": "Yancey",
+      "color": "#D58EFF",
+      "is_primary": false,
+      "description": "译者"
+    },
+    {
+      "id": "tuche",
+      "name": "tuche",
+      "color": "#C3EAD5",
+      "is_primary": false,
+      "description": "译者"
+    },
+    {
+      "id": "Mecius",
+      "name": "Mecius",
+      "color": "#FDEBFF",
+      "is_primary": false,
+      "description": "译者"
+    },
+    {
+      "id": "机翻",
+      "name": "机翻",
+      "color": "#999999",
+      "is_primary": false,
+      "description": "待校订"
     }
   ],
   "chapters": [
     {
-      "id": "chapter-o",
+      "id": "chapter_O",
       "number": 0,
       "title": "Chapter O - Introduction",
       "has_companion": false,
       "available": true
     },
     {
-      "id": "chapter-1",
+      "id": "chapter_I",
       "number": 1,
       "title": "Chapter I - 名词与动词概述",
-      "has_companion": true,
+      "has_companion": false,
       "available": true
     },
     {
-      "id": "chapter-2",
+      "id": "chapter_II",
       "number": 2,
       "title": "Chapter II - 形容词与副词",
       "has_companion": false,
       "available": true
     },
     {
-      "id": "chapter-3",
+      "id": "chapter_III",
       "number": 3,
       "title": "Chapter III - 代词",
       "has_companion": false,
       "available": true
     },
     {
-      "id": "chapter-4",
+      "id": "chapter_IV",
       "number": 4,
       "title": "Chapter IV - 动词时态",
       "has_companion": false,
       "available": true
     },
     {
-      "id": "chapter-5",
+      "id": "chapter_V",
       "number": 5,
       "title": "Chapter V - 从句",
       "has_companion": false,
