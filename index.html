@@ -271,8 +271,19 @@
       border-bottom: 1px solid rgba(184, 134, 11, 0.2);
     }
     
-    .latin-text {
+    /* 原文样式 - 羊皮纸背景 */
+    .latin-text,
+    .original {
+      padding: 0.6rem 0.75rem;
+      background: linear-gradient(135deg, #faf6ed 0%, #f5f0e3 100%);
+      border-bottom: 1px solid rgba(184,134,11,0.2);
       font-family: 'Crimson Text', serif;
+      line-height: 1.5;
+      color: var(--ink);
+      font-size: 0.95rem;
+    }
+    
+    .latin-text {
       font-style: italic;
       font-size: 1.125rem;
       color: var(--wine);
@@ -716,9 +727,20 @@
       font-size: 0.95rem;
     }
     
-    .original.latin {
+    .original.latin,
+    .latin-text.latin-special {
       font-style: italic;
       color: var(--wine);
+    }
+    
+    /* 变格表特殊样式 */
+    .latin-text.latin-special {
+      font-family: 'Crimson Text', serif;
+      background: rgba(255,255,255,0.8);
+      padding: 0.5rem 0.75rem;
+      margin: 0.25rem 0;
+      border-left: 2px solid var(--gold);
+      font-size: 0.9rem;
     }
     
     /* 译文区域 - 压缩间距 */
@@ -758,13 +780,23 @@
     }
     
     /* 底漌显示的翻译 */
-    .translation.fallback .translator-tag {
+    .translation.fallback .translator-tag,
+    .translation[data-fallback='true'] .tag {
       opacity: 0.7;
     }
     
     .translation.fallback .translator-tag::after {
       content: ' (底漌)';
       font-size: 0.75em;
+    }
+    
+    /* 旧版格式的译者标签 */
+    .translation .tag {
+      font-size: 0.75em;
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+      margin-left: 0.5rem;
+      color: white;
     }
     
     /* 词汇表样式 */
