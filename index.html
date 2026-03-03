@@ -1546,6 +1546,17 @@ Base Path: ${CONFIG.basePath}</pre>
           <p style="color: var(--ink-light);">拉丁语语法术语与中文翻译对照</p>
         </div>
         
+        <!-- 术语来源说明 -->
+        <div style="background: rgba(184,134,11,0.1); border-left: 4px solid var(--gold); padding: 1rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
+          <h3 style="color: var(--wine); margin-bottom: 0.5rem; font-size: 1rem;">📚 术语来源</h3>
+          <p style="font-size: 0.9rem; color: var(--ink-light); margin-bottom: 0.5rem;">
+            本术语对照表参考自顾枝鹰、杨志城和张培均等翻译的《剑桥古典希腊语语法》（2021）和《拉丁语语法新编》（2017）中的两份术语对照表。
+          </p>
+          <p style="font-size: 0.85rem; color: var(--ink-light);">
+            原书链接：<a href="https://zhuanlan.zhihu.com/p/653809137" target="_blank" style="color: var(--wine);">https://zhuanlan.zhihu.com/p/653809137</a>
+          </p>
+        </div>
+        
         <div class="terminology-search">
           <input type="text" id="term-search" placeholder="搜索术语..." oninput="searchTerms(this.value)">
         </div>
@@ -1559,6 +1570,19 @@ Base Path: ${CONFIG.basePath}</pre>
               <div class="desc">${t.explanation}</div>
             </div>
           `).join('')}
+        </div>
+        
+        <!-- 术语表鸣谢 -->
+        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(184,134,11,0.3);">
+          <h3 style="color: var(--wine); margin-bottom: 1rem;">鸣谢</h3>
+          <div style="background: rgba(85,107,47,0.05); padding: 1rem; border-radius: 8px;">
+            <p style="font-size: 0.9rem; color: var(--ink-light); margin-bottom: 0.5rem;">
+              感谢<strong>顾枝鹰、杨志城和张培均</strong>等学者在《剑桥古典希腊语语法》和《拉丁语语法新编》中提供的术语对照表，为本项目奠定了坚实的术语基础。
+            </p>
+            <p style="font-size: 0.85rem; color: var(--ink-light);">
+              本术语表以原书以汉语译名顺序排列的对照表为基础，以原名为序重新整理，方便配合英语索引使用。
+            </p>
+          </div>
         </div>
       `;
     }

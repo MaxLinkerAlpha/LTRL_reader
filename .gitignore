@@ -1,45 +1,14 @@
-# 依赖
-node_modules/
-.pnpm-store/
+# 忽略原Excel文件（含版权问题图片）
+source/original/*.xlsx
+source/original/**/*.xlsx
 
-# 构建输出
-dist/
-.astro/
+# 忽略改动排查报告
+改动排查报告.md
 
-# 环境变量
-.env
-.env.local
-.env.*.local
-
-# 编辑器
-.vscode/*
-!.vscode/extensions.json
-!.vscode/settings.json
-.idea/
-*.swp
-*.swo
-*~
-
-# 操作系统
+# 忽略系统文件
 .DS_Store
-Thumbs.db
-
-# 日志
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
 
-# 测试
-coverage/
-
-# 临时文件
+# 忽略临时文件
 *.tmp
 *.temp
-.cache/
-
-# 本地数据（可选，如果不想提交转换后的JSON）
-# data/chapters/*.json
-# data/companion/*.json
-# data/terminology.json
