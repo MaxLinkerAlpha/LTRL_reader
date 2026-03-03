@@ -23,12 +23,12 @@ LTRL_reader/
 │   ├── config.json           ← 站点配置
 │   ├── terminology.json      ← 术语对照表
 │   ├── chapters/             ← 章节内容
-│   │   ├── chapter-o.md
-│   │   ├── chapter-1.md
-│   │   ├── chapter-2.md
-│   │   ├── chapter-3.md
-│   │   ├── chapter-4.md
-│   │   └── chapter-5.md
+│   │   ├── chapter_O.md
+│   │   ├── chapter_I.md
+│   │   ├── chapter_II.md
+│   │   ├── chapter_III.md
+│   │   ├── chapter_IV.md
+│   │   └── chapter_V.md
 │   └── companion/            ← 伴侣注释
 │       └── chapter-1-companion.md
 ├── README.md               ← 项目说明
@@ -87,8 +87,12 @@ git push -u origin main
 
 ### 修改章节内容
 
+0. 如需从 Excel 重新生成章节，先运行：
+```bash
+python3 scripts/regenerate_chapters_from_excel.py --root .
+```
 1. 访问 https://github.com/MaxLinkerAlpha/LTRL_reader/tree/main/data/chapters
-2. 点击要修改的 `.md` 文件（如 chapter-1.md）
+2. 点击要修改的 `.md` 文件（如 chapter_I.md）
 3. 点击右上角的 ✏️ 编辑按钮
 4. 修改 Markdown 内容
 5. 点击页面底部的 "Commit changes"
@@ -98,7 +102,7 @@ git push -u origin main
 
 ```markdown
 ---
-id: chapter-1
+id: chapter_I
 number: 1
 title: Chapter I - 名词概述
 translators: [Lanx, Cyan]
@@ -124,13 +128,13 @@ Rōma in Italiā est.
 
 ### 添加新章节
 
-1. 在 `data/chapters/` 下创建新文件（如 chapter-6.md）
+1. 在 `data/chapters/` 下创建新文件（如 chapter_VI.md）
 2. 按格式填写内容
 3. 编辑 `data/config.json`，在 chapters 数组中添加：
 
 ```json
 {
-  "id": "chapter-6",
+  "id": "chapter_VI",
   "number": 6,
   "title": "Chapter VI - 新章节",
   "has_companion": false,

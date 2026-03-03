@@ -1,7 +1,7 @@
 # Chapter I 伴侣注释
 
 ## 主格详解
-[ref:sec-2]
+[ref:vocabulary-notes]
 
 主格（Nominative Case）是拉丁语六大格之一。
 
@@ -26,7 +26,7 @@
 ---
 
 ## 属格详解
-[ref:sec-3]
+[ref:observations]
 
 属格（Genitive Case）表示所属关系。
 

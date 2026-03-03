@@ -49,11 +49,23 @@ LTRL_reader/
 
 ---
 
+## 数据生成
+
+章节 Markdown 由 Excel 源文件自动生成：
+
+```bash
+python3 scripts/regenerate_chapters_from_excel.py --root .
+```
+
+脚本会读取 `source/original/*.xlsx`，重建 `data/chapters/*.md`，并同步规范化 `data/config.json` 中的译者信息。
+
+---
+
 ## 鸣谢
 
 **LTRL翻译小组** - 感谢所有译者的辛勤工作和专业贡献。
 
-- 译者（按ID）：Lanx、簪花落梅、Yancey、tuche est、Mecius
+- 译者（按ID）：Lanx、簪花落梅、Yancey、tuche、Mecius
 - 特别感谢：所有参与审校、润色的贡献者
 
 本项目由 **Max Linker** 创建并维护，使用 **Kimi Code** 辅助开发。

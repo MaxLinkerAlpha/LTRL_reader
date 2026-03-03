@@ -1165,9 +1165,9 @@ Base Path: ${CONFIG.basePath}</pre>
               }
               if (compRes.ok) {
                 const compMd = await compRes.text();
-                companion = parseCompanionMarkdown(compMd);
-                log('伴侣注释加载成功:', compPath);
-                break;
+              companion = buildCompanionLookup(parseCompanionMarkdown(compMd), parsed.sections);
+              log('伴侣注释加载成功:', compPath);
+              break;
               }
             }
           } catch (e) {
@@ -1322,7 +1322,7 @@ Base Path: ${CONFIG.basePath}</pre>
           <div class="content-block">
             ${hasOriginal ? `
               <div class="original ${block.original.type}" data-type="original">
-                ${escapeHtml(block.original.text)}
+                ${highlightTerms(block.original.text)}
               </div>
             ` : ''}
             
@@ -1336,7 +1336,7 @@ Base Path: ${CONFIG.basePath}</pre>
                     <span class="translator-tag" style="background: ${t.color}20; color: ${t.color}; border-color: ${t.color}40;">
                       ${t.translator}
                     </span>
-                    <span class="translation-text">${escapeHtml(t.text)}</span>
+                    <span class="translation-text">${highlightTerms(t.text)}</span>
                   </div>
                 `).join('')}
               </div>
@@ -1346,15 +1346,15 @@ Base Path: ${CONFIG.basePath}</pre>
       }
       
       if (block.type === 'note') {
-        return `<div class="note">💡 ${escapeHtml(block.text)}</div>`;
+        return `<div class="note">💡 ${highlightTerms(block.text)}</div>`;
       }
       
       if (block.type === 'footnote') {
-        return `<div class="footnote">📌 ${escapeHtml(block.text)}</div>`;
+        return `<div class="footnote">📌 ${highlightTerms(block.text)}</div>`;
       }
       
       if (block.type === 'vocabulary') {
-        return `<div class="vocabulary">${escapeHtml(block.text)}</div>`;
+        return `<div class="vocabulary">${highlightTerms(block.text)}</div>`;
       }
       
       if (block.type === 'table') {
@@ -1365,6 +1365,41 @@ Base Path: ${CONFIG.basePath}</pre>
     }
     
     // ==================== Markdown 解析 (v7 格式) ====================
+    function slugifySectionTitle(title) {
+      return title
+        .toLowerCase()
+        .trim()
+        .replace(/[^a-z0-9\u4e00-\u9fff]+/g, '-')
+        .replace(/^-+|-+$/g, '') || 'section';
+    }
+
+    function buildCompanionLookup(rawNotes, sections) {
+      const resolved = {};
+      if (!rawNotes || !sections) return resolved;
+
+      const byId = new Map(sections.map(sec => [sec.id, sec.id]));
+      const bySlug = new Map(sections.map(sec => [slugifySectionTitle(sec.title), sec.id]));
+
+      for (const [rawKey, note] of Object.entries(rawNotes)) {
+        let targetId = null;
+
+        if (byId.has(rawKey)) {
+          targetId = byId.get(rawKey);
+        } else if (/^sec-\d+$/.test(rawKey)) {
+          const idx = parseInt(rawKey.replace('sec-', ''), 10) - 1;
+          if (idx >= 0 && idx < sections.length) targetId = sections[idx].id;
+        } else if (bySlug.has(rawKey)) {
+          targetId = bySlug.get(rawKey);
+        }
+
+        if (targetId) {
+          resolved[targetId] = note;
+        }
+      }
+
+      return resolved;
+    }
+
     function parseChapterMarkdown(md) {
       log('开始解析 Markdown (v7)');
       // 标准化换行符（处理CRLF）
@@ -1386,6 +1421,7 @@ Base Path: ${CONFIG.basePath}</pre>
       
       // 解析段落
       let currentSection = null;
+      const sectionIdCounter = {};
       let lastWasSectionTitle = false;
       
       // 创建默认章节，用于存放第一个##之前的内容
@@ -1407,9 +1443,13 @@ Base Path: ${CONFIG.basePath}</pre>
         // 段落标题 ## Section 1. xxx
         if (line.startsWith('## ')) {
           if (currentSection) result.sections.push(currentSection);
+          const title = line.replace('## ', '');
+          const baseId = slugifySectionTitle(title);
+          sectionIdCounter[baseId] = (sectionIdCounter[baseId] || 0) + 1;
+          const sectionId = sectionIdCounter[baseId] === 1 ? baseId : `${baseId}-${sectionIdCounter[baseId]}`;
           currentSection = {
-            id: `sec-${result.sections.length + 1}`,
-            title: line.replace('## ', ''),
+            id: sectionId,
+            title: title,
             blocks: []
           };
           lastWasSectionTitle = true;
@@ -1557,7 +1597,8 @@ Base Path: ${CONFIG.basePath}</pre>
         
         const refMatch = content.match(/\[ref:(.+?)\]/);
         if (refMatch) {
-          notes[refMatch[1]] = { title, content: content.replace(/\[ref:.+?\]/, '').trim() };
+          const key = refMatch[1].trim().toLowerCase();
+          notes[key] = { title, content: content.replace(/\[ref:.+?\]/, '').trim() };
         }
       }
       
@@ -1578,9 +1619,27 @@ Base Path: ${CONFIG.basePath}</pre>
     // ==================== 辅助功能 ====================
     function highlightTerms(text) {
       if (!text) return '';
-      return escapeHtml(text).replace(/<(\w+)>(.+?)<\/\1>/g, 
-        '<span class="term" data-term="$1">$2</span>'
-      );
+      const pattern = /<([a-zA-Z0-9_]+)>([\s\S]*?)<\/\1>/g;
+      let out = '';
+      let lastIndex = 0;
+      let match;
+      
+      while ((match = pattern.exec(text)) !== null) {
+        out += escapeHtml(text.slice(lastIndex, match.index));
+        const termId = match[1];
+        const label = match[2];
+        
+        if (state.terminology[termId]) {
+          out += `<span class="term" data-term="${escapeHtml(termId)}">${escapeHtml(label)}</span>`;
+        } else {
+          out += escapeHtml(match[0]);
+        }
+        
+        lastIndex = pattern.lastIndex;
+      }
+      
+      out += escapeHtml(text.slice(lastIndex));
+      return out;
     }
     
     function escapeHtml(text) {
