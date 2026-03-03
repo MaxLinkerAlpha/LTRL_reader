@@ -1,0 +1,38 @@
+{
+  "nominative": {
+    "term": "Nominative",
+    "translation": "主格",
+    "explanation": "表示句子主语的格，对应英语的主语位置",
+    "abbreviation": "Nom."
+  },
+  "genitive": {
+    "term": "Genitive",
+    "translation": "属格",
+    "explanation": "表示所属关系，相当于英语的 of 结构",
+    "abbreviation": "Gen."
+  },
+  "dative": {
+    "term": "Dative",
+    "translation": "与格",
+    "explanation": "表示间接宾语，相当于英语的 to/for",
+    "abbreviation": "Dat."
+  },
+  "accusative": {
+    "term": "Accusative",
+    "translation": "宾格",
+    "explanation": "表示直接宾语",
+    "abbreviation": "Acc."
+  },
+  "ablative": {
+    "term": "Ablative",
+    "translation": "夺格",
+    "explanation": "用途广泛的格，可表示手段、方式、分离等",
+    "abbreviation": "Abl."
+  },
+  "vocative": {
+    "term": "Vocative",
+    "translation": "呼格",
+    "explanation": "用于直接称呼某人",
+    "abbreviation": "Voc."
+  }
+}

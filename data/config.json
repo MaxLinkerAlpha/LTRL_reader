@@ -1,0 +1,70 @@
+{
+  "site": {
+    "title": "LTRL 拉丁语阅读器",
+    "subtitle": "Learn to Read Latin 中文翻译版",
+    "description": "LTRL (Learn to Read Latin) 的中文在线阅读器，支持多译者对比阅读",
+    "author": "民间翻译团队",
+    "license": "仅供学习使用，禁止商业用途",
+    "github": "https://github.com/MaxLinkerAlpha/LTRL_reader"
+  },
+  "translators": [
+    {
+      "id": "lanx",
+      "name": "Lanx",
+      "color": "#722f37",
+      "is_primary": true,
+      "description": "主译者"
+    },
+    {
+      "id": "cyan",
+      "name": "Cyan",
+      "color": "#2563eb",
+      "is_primary": false,
+      "description": "校译者"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "chapter-o",
+      "number": 0,
+      "title": "Chapter O - Introduction",
+      "has_companion": false,
+      "available": true
+    },
+    {
+      "id": "chapter-1",
+      "number": 1,
+      "title": "Chapter I - 名词与动词概述",
+      "has_companion": true,
+      "available": true
+    },
+    {
+      "id": "chapter-2",
+      "number": 2,
+      "title": "Chapter II - 形容词与副词",
+      "has_companion": false,
+      "available": true
+    },
+    {
+      "id": "chapter-3",
+      "number": 3,
+      "title": "Chapter III - 代词",
+      "has_companion": false,
+      "available": true
+    },
+    {
+      "id": "chapter-4",
+      "number": 4,
+      "title": "Chapter IV - 动词时态",
+      "has_companion": false,
+      "available": true
+    },
+    {
+      "id": "chapter-5",
+      "number": 5,
+      "title": "Chapter V - 从句",
+      "has_companion": false,
+      "available": true
+    }
+  ]
+}
