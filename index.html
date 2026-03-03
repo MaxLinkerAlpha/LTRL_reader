@@ -257,18 +257,18 @@
     .section {
       background: rgba(255,255,255,0.6);
       border: 1px solid rgba(184, 134, 11, 0.3);
-      border-radius: 8px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
+      border-radius: 6px;
+      padding: 0.75rem;
+      margin-bottom: 0.75rem;
     }
     
     .section-title {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       font-weight: 700;
       color: var(--ink);
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid rgba(184, 134, 11, 0.2);
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid rgba(184, 134, 11, 0.2);
     }
     
     .latin-text {
@@ -678,68 +678,64 @@
       color: var(--gold);
     }
     
-    /* 内容 block */
+    /* 内容 block - 压缩间距 */
     .content-block {
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.75rem;
       border: 1px solid rgba(184,134,11,0.2);
-      border-radius: 8px;
+      border-radius: 6px;
       overflow: hidden;
     }
     
     /* 原文样式 - 羊皮纸背景 */
     .original {
-      padding: 1rem 1.25rem;
+      padding: 0.6rem 0.75rem;
       background: linear-gradient(135deg, #faf6ed 0%, #f5f0e3 100%);
       border-bottom: 1px solid rgba(184,134,11,0.2);
       font-family: 'Crimson Text', serif;
-      line-height: 1.7;
+      line-height: 1.5;
       color: var(--ink);
-    }
-    
-    .original.english {
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
     
     .original.latin {
-      font-size: 1.05rem;
       font-style: italic;
       color: var(--wine);
     }
     
-    /* 译文区域 */
+    /* 译文区域 - 压缩间距 */
     .translations {
-      padding: 0.75rem 1rem;
+      padding: 0.3rem 0.5rem;
       background: rgba(255,255,255,0.6);
     }
     
     .translation {
       display: flex;
       align-items: flex-start;
-      gap: 0.75rem;
-      padding: 0.5rem 0;
-      border-bottom: 1px dashed rgba(184,134,11,0.15);
+      gap: 0.5rem;
+      padding: 0.25rem 0;
+      border-bottom: 1px dashed rgba(184,134,11,0.1);
     }
     
     .translation:last-child {
       border-bottom: none;
     }
     
-    /* 译者标签 */
+    /* 译者标签 - 更紧凑 */
     .translator-tag {
       flex-shrink: 0;
-      font-size: 0.75rem;
-      padding: 0.15rem 0.5rem;
-      border-radius: 4px;
+      font-size: 0.7rem;
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
       border: 1px solid;
       font-weight: 500;
       white-space: nowrap;
+      line-height: 1.3;
     }
     
     .translation-text {
-      font-size: 0.95rem;
-      line-height: 1.6;
+      font-size: 0.9rem;
+      line-height: 1.4;
       color: var(--ink);
-      padding-top: 0.1rem;
     }
     
     /* 底漌显示的翻译 */
@@ -1361,22 +1357,22 @@ Base Path: ${CONFIG.basePath}</pre>
           }
           
           // 译文 <div class="translation" data-translator="name">
-          const transMatch = line.match(/<div class="translation" data-translator="([^"]+)">/);
+          const transMatch = line.match(/<div class="translation" data-translator="([^"]+)"[^>]*>/);
           if (transMatch) {
             const translator = transMatch[1];
-            // 下一行是 translator-tag
-            i++; // 跳过 tag 行
-            // 再下一行是 translation-text
-            const textLine = lines[++i];
-            if (textLine) {
-              const textMatch = textLine.match(/<span class="translation-text">(.+)<\/span>/);
-              if (textMatch) {
-                currentBlock.translations.push({
-                  translator: translator,
-                  text: textMatch[1]
-                });
-              }
-            }
+            // 添加译者到block
+            currentBlock.translations.push({
+              translator: translator,
+              text: ''  // 暂时空文本，下面填充
+            });
+            continue;
+          }
+          
+          // 译文文本 <span class="translation-text">...</span>
+          const textMatch = line.match(/<span class="translation-text">\s*(.+?)\s*<\/span>/);
+          if (textMatch && currentBlock.translations.length > 0) {
+            // 填充最后一个译文的文本
+            currentBlock.translations[currentBlock.translations.length - 1].text = textMatch[1];
             continue;
           }
         }
