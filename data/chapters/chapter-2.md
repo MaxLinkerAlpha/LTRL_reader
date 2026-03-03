@@ -23,7 +23,10 @@ Puella bona est.
 
 ## Section 2. 形容词的比较级和最高级
 
-### Latin
 [status:incomplete]
 
+### Latin
+（待补充拉丁语原文）
+
+### Translation:Lanx
 本节内容待补充。

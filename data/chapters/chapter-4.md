@@ -36,7 +36,10 @@ Amābam amābās amābat.
 
 ## Section 3. 将来时
 
-### Latin
 [status:incomplete]
 
+### Latin
+（待补充）
+
+### Translation:Lanx
 将来时内容待补充。

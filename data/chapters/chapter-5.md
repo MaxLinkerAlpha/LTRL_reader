@@ -34,7 +34,10 @@ Veniō quia tē amō.
 
 ## Section 3. 目的从句
 
-### Latin
 [status:incomplete]
 
+### Latin
+（待补充）
+
+### Translation:Lanx
 目的从句内容待补充。
