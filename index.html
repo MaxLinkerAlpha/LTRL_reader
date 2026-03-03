@@ -655,6 +655,20 @@
     .hidden { display: none !important; }
     
     /* ========== 新版本 Block 样式 ========== */
+    
+    /* 底漌显示的翻译 - 使用灰色标签提示用户 */
+    .translation.fallback .translator-label {
+      background: #9ca3af20 !important;
+      color: #6b7280 !important;
+      border-color: #9ca3af40 !important;
+    }
+    
+    .translation.fallback .translator-label::after {
+      content: '(底漌)';
+      margin-left: 4px;
+      font-size: 0.75em;
+      opacity: 0.8;
+    }
     .block-list {
       display: flex;
       flex-direction: column;
@@ -1004,7 +1018,26 @@ Base Path: ${CONFIG.basePath}</pre>
     }
     
     function renderChapter(data, config, companion) {
-      const translators = state.config.translators || [];
+      // 合并配置中的译者和章节中的译者
+      const configTranslators = state.config.translators || [];
+      const chapterTranslators = data.meta.translators || [];
+      
+      // 创建译者映射表（合并配置和章节数据）
+      const translatorMap = new Map();
+      
+      // 先添加配置中的译者
+      configTranslators.forEach(t => {
+        translatorMap.set(t.id, { id: t.id, name: t.name, color: t.color, is_primary: t.is_primary });
+      });
+      
+      // 再添加章节中发现的译者（如果不在配置中）
+      chapterTranslators.forEach(name => {
+        if (!translatorMap.has(name)) {
+          translatorMap.set(name, { id: name, name: name, color: '#666', is_primary: false });
+        }
+      });
+      
+      const allTranslators = Array.from(translatorMap.values());
       
       document.getElementById('main-content').innerHTML = `
         <div class="chapter-header">
@@ -1027,8 +1060,8 @@ Base Path: ${CONFIG.basePath}</pre>
             <label>译者:</label>
             <select id="ctrl-translator">
               <option value="all">全部对比</option>
-              ${translators.map(t => `<option value="${t.id}">${t.name}</option>`).join('')}
               <option value="primary">仅主译者</option>
+              ${allTranslators.map(t => `<option value="${t.id}">${t.name}</option>`).join('')}
             </select>
           </div>
         </div>
@@ -1188,6 +1221,14 @@ Base Path: ${CONFIG.basePath}</pre>
       
       if (!hasOriginal && !hasLatin && !hasTranslations) return '';
       
+      // 为每个翻译标记是否是底漌显示
+      const translationsWithFallback = hasTranslations ? block.translations.map((t, i) => {
+        const info = getTranslatorInfo(t.translator);
+        // 如果是该block的第一个翻译，标记为fallback候选（用于当选中译者不存在时显示）
+        const isFallback = i === 0;
+        return { ...t, color: info.color, isPrimary: info.is_primary, isFallback };
+      }) : [];
+      
       return `
         <div class="content-block" data-block-id="${idx}">
           ${hasOriginal ? `
@@ -1210,19 +1251,17 @@ Base Path: ${CONFIG.basePath}</pre>
           
           ${hasTranslations ? `
             <div class="translations-block" data-type="translation">
-              ${block.translations.map(t => {
-                const translator = state.config.translators?.find(tr => tr.id === t.translator || tr.name === t.translator);
-                const color = translator?.color || '#666';
-                const isPrimary = translator?.is_primary;
-                return `
-                  <div class="translation" data-translator="${t.translator}" data-primary="${isPrimary || false}">
-                    <span class="translator-label" style="background: ${color}20; color: ${color}; border: 1px solid ${color}40;">
-                      ${t.translator} ${isPrimary ? '★' : ''}
-                    </span>
-                    <div class="translation-text">${escapeHtml(t.text)}</div>
-                  </div>
-                `;
-              }).join('')}
+              ${translationsWithFallback.map(t => `
+                <div class="translation" 
+                     data-translator="${t.translator}" 
+                     data-primary="${t.isPrimary || false}"
+                     data-fallback="${t.isFallback}">
+                  <span class="translator-label" style="background: ${t.color}20; color: ${t.color}; border: 1px solid ${t.color}40;">
+                    ${t.translator} ${t.isPrimary ? '★' : ''}
+                  </span>
+                  <div class="translation-text">${escapeHtml(t.text)}</div>
+                </div>
+              `).join('')}
             </div>
           ` : ''}
         </div>
@@ -1414,6 +1453,17 @@ Base Path: ${CONFIG.basePath}</pre>
       return notes;
     }
     
+    // 获取译者信息（合并配置和章节数据）
+    function getTranslatorInfo(name) {
+      // 先从配置中查找
+      const fromConfig = state.config.translators?.find(t => t.id === name || t.name === name);
+      if (fromConfig) {
+        return { color: fromConfig.color || '#666', is_primary: fromConfig.is_primary || false };
+      }
+      // 默认值
+      return { color: '#666', is_primary: false };
+    }
+    
     // ==================== 辅助功能 ====================
     function highlightTerms(text) {
       if (!text) return '';
@@ -1458,15 +1508,57 @@ Base Path: ${CONFIG.basePath}</pre>
     
     function filterTranslations() {
       const value = state.selectedTranslator;
-      document.querySelectorAll('.translation').forEach(el => {
-        const translator = el.getAttribute('data-translator');
-        const isPrimary = el.getAttribute('data-primary') === 'true';
+      
+      // 如果是全部显示，展示所有翻译
+      if (value === 'all') {
+        document.querySelectorAll('.translation').forEach(el => {
+          el.classList.remove('hidden', 'fallback');
+        });
+        return;
+      }
+      
+      // 如果是主译者模式
+      if (value === 'primary') {
+        document.querySelectorAll('.translation').forEach(el => {
+          const isPrimary = el.getAttribute('data-primary') === 'true';
+          el.classList.toggle('hidden', !isPrimary);
+          el.classList.remove('fallback');
+        });
+        return;
+      }
+      
+      // 特定译者模式 - 底漌逻辑
+      // 对于每个block（translations-block），检查是否有选中译者的翻译
+      document.querySelectorAll('.translations-block').forEach(block => {
+        const translations = block.querySelectorAll('.translation');
+        let hasSelectedTranslator = false;
         
-        let show = true;
-        if (value === 'primary') show = isPrimary;
-        else if (value !== 'all') show = translator === value;
+        // 检查是否有选中的译者
+        translations.forEach(el => {
+          const translator = el.getAttribute('data-translator');
+          if (translator === value) {
+            hasSelectedTranslator = true;
+          }
+        });
         
-        el.classList.toggle('hidden', !show);
+        // 应用显示逻辑
+        translations.forEach(el => {
+          const translator = el.getAttribute('data-translator');
+          const isFallback = el.getAttribute('data-fallback') === 'true';
+          
+          if (translator === value) {
+            // 选中的译者 - 正常显示
+            el.classList.remove('hidden', 'fallback');
+          } else if (!hasSelectedTranslator && isFallback) {
+            // 没有选中译者，使用底漌显示（第一个可用的翻译）
+            el.classList.remove('hidden');
+            el.classList.add('fallback');
+          } else {
+            // 隐藏其他翻译
+            el.classList.add('hidden');
+            el.classList.remove('fallback');
+          }
+        });
       });
     }
     
