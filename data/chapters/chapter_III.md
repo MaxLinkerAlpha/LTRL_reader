@@ -1,6 +1,7 @@
 ---
 id: chapter_III
 title: "Chapter III - 代词"
+version: "v2026.03.04.032346"
 translators: ["Lanx", "Yancey", "iambicus", "机翻"]
 ---
 
@@ -27,7 +28,7 @@ translators: ["Lanx", "Yancey", "iambicus", "机翻"]
 <div class='latin-text'>These and certain other common substantives require their own vocabulary entries.</div>
 <div class='translation' data-translator='iambicus' style='border-color:#92D050'>这些和其他一些常见的实体词需要有自己的词汇条目。 <span class='tag' style='background:#92D050'>iambicus</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>实体词都有自己的词汇条目。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='latin-text'>MEMORIZE SUBSTANTIVES AS VOOBULARY ENTRIES INDEPENDENT OF THEIR RESPECTIVE ADJECTIVES OF ORIGIN.</div>
+<div class='latin-text emphasis-note'>MEMORIZE SUBSTANTIVES AS VOOBULARY ENTRIES INDEPENDENT OF THEIR RESPECTIVE ADJECTIVES OF ORIGIN.</div>
 <div class='translation' data-translator='iambicus' style='border-color:#EAFAF1'>将实体词作为独立于各自原形容词的词汇条目来记忆。 <span class='tag' style='background:#EAFAF1'>iambicus</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>谨记，将实体词的词汇条目独立于原形容词的来记忆。（注意歧义规避 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>谨记，将实体词与原形容词当作两个不同的词来记忆。 <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
@@ -378,7 +379,7 @@ translators: ["Lanx", "Yancey", "iambicus", "机翻"]
 <div class='latin-text'>It has irregular forms in the present, imperfect, and future active indicative.</div>
 <div class='translation' data-translator='iambicus' style='border-color:#EAFAF1'>它有现在进行时、过去进行时和将来进行时的不规则形式。 <span class='tag' style='background:#EAFAF1'>iambicus</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>它有多个不规则形式，分别表达现在、未完成和将来主动直陈式 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='latin-text'>The conjugations of these three tenses of eō are presented below. MEMORIZE THESE FORMS.</div>
+<div class='latin-text emphasis-note'>The conjugations of these three tenses of eō are presented below. MEMORIZE THESE FORMS.</div>
 <div class='translation' data-translator='iambicus' style='border-color:#EAFAF1'>下面是 eō 的这三种时态的变位。记住这些形式。 <span class='tag' style='background:#EAFAF1'>iambicus</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>以下为 eō 的三种时态变位。谨记，牢牢记住它们。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>Adjective Indicative</div>
@@ -503,13 +504,13 @@ translators: ["Lanx", "Yancey", "iambicus", "机翻"]
 <div class='latin-text'>Thus, the complete LONG VOWEL RULE is: LONG VOWELS SHORTEN BEFORE THE ENDINGS -M, -T, -NT, -R, AND -NTUR.</div>
 <div class='translation' data-translator='iambicus' style='border-color:#EAFAF1'>因此，完整的长元音规则是： 长元音在词尾 -m、-t、-nt、-r 和 -ntur 前缩短。 <span class='tag' style='background:#EAFAF1'>iambicus</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>因此谨记，完整的长元音规则是： 长元音在词尾 -m、-t、-nt、-r 和 -ntur 前缩短。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-## MEMORIZE THIS RULE.
+<div class='latin-text emphasis-note'>MEMORIZE THIS RULE.</div>
 <div class='translation' data-translator='iambicus' style='border-color:#EAFAF1'>记住这条规则。 <span class='tag' style='background:#EAFAF1'>iambicus</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>牢记这条规则。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>4. The passive personal endings are used to form many tenses in Latin.</div>
 <div class='translation' data-translator='iambicus' style='border-color:#EAFAF1'>4. 在拉丁语中，被动人称词尾用于构成多种时态。 <span class='tag' style='background:#EAFAF1'>iambicus</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>4. 拉丁语的被动人称词尾常用于构成多种时态。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-## MEMORIZE THESE ENDINGS AND BE PREPARED TO RECITE THEM QUICKLY.
+<div class='latin-text emphasis-note'>MEMORIZE THESE ENDINGS AND BE PREPARED TO RECITE THEM QUICKLY.</div>
 <div class='translation' data-translator='iambicus' style='border-color:#EAFAF1'>记住这些词尾并准备快速背诵。 <span class='tag' style='background:#EAFAF1'>iambicus</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>谨记，牢记这些词尾并熟读成诵 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>Nearly every form of the present passive system may be formed by replacing the active personal ending of a particular form with the equivalent passive ending.</div>
@@ -651,7 +652,7 @@ translators: ["Lanx", "Yancey", "iambicus", "机翻"]
 <div class='latin-text'>3. In the third person plural, the -i- of the infix -bi- changes to -u-. The -u- is a remnant of an earlier form of the third person plural and is thus an exception to the rules for forming the future passive indicative.</div>
 <div class='translation' data-translator='iambicus' style='border-color:#EAFAF1'>3. 在第三人称复数中，下位词 -bi 的 -i- 变为 -u-。-u-是第三人称复数早期形式的残余，因此是构成将来被动指示代词规则的一个例外。 <span class='tag' style='background:#EAFAF1'>iambicus</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>3. 三复中，中缀 -bi 的 -i- 变为 -u-。-u-是三复早期屈折形式的残余，因此特殊 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-## MEMORIZE THIS EXCEPTION.
+<div class='latin-text emphasis-note'>MEMORIZE THIS EXCEPTION.</div>
 <div class='translation' data-translator='iambicus' style='border-color:#EAFAF1'>记住这个例外。 <span class='tag' style='background:#EAFAF1'>iambicus</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>谨记，牢记这个特殊变化。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 ### §24. Synopsis I: Present Active and Passive Indicative

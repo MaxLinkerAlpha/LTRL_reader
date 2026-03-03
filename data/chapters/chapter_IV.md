@@ -1,7 +1,8 @@
 ---
 id: chapter_IV
 title: "Chapter IV - 动词时态"
-translators: ["Lanx", "Yancey", "cyan", "机翻"]
+version: "v2026.03.04.032346"
+translators: ["Lanx", "Yancey", "机翻", "簪花落梅"]
 ---
 
 <!-- seq:95 page:63 -->
@@ -98,32 +99,32 @@ translators: ["Lanx", "Yancey", "cyan", "机翻"]
 <!-- seq:97 page:65 -->
 <div class='latin-text'>&gt; audio, audire, audivi, auditus is a transitive verb that may be used absolutely. When it takes a direct object, it may be translated either "hear" or "listen to." When it is used absolutely, it may be translated either "hear" or "listen."</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>audio，audire，audivi，audius是一个及物动词，可以绝对使用。当它接直接宾语时，可以翻译成“hear”或“listen to”。当它被绝对地使用时，它可以被翻译为“听到”或“听”。“ <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; audiō，audīre，audīvī，audīus是一个及物动词，可以独立使用。当它接直接宾语时，可以翻译成“hear”或“listen to”。当它独立使用时，可翻为“hear”或“listen”。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
+<div class='translation' data-translator='簪花落梅' style='border-color:#C3EAD5'>&gt; audiō，audīre，audīvī，audīus是一个及物动词，可以独立使用。当它接直接宾语时，可以翻译成“hear”或“listen to”。当它独立使用时，可翻为“hear”或“listen”。 <span class='tag' style='background:#C3EAD5'>簪花落梅</span></div>
 <div class='latin-text'>Regina incolãs audit. The queen listens to/hears the inhabitants.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>里贾纳的审计。 女王倾听居民的声音 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Régina audit. The queen listens/hears.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Régina审计。 女王倾听/听到 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>• In the third principal part of sentio, sentire, sênsi, sênsus, the root vowel exhibits ablaut and changes to -ē-. The -e- in the fourth principal part is long before -ns-. A SHORT VOWEL BEFORE -nS- ALWAYS BECOMES LONG (e.g., insula).</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>·在sentio，sentire，sênsi，sênsus的第三个主要部分中，根元音显示出元音变化并变为-ē-。第四个主要部分中的-e-在-ns-之前很久。-nS-之前的短元音总是变长（例如，脑岛）。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; 在sentiō，sentīre，sēnsī，sēnsus的第三个主要部分中，根元音显示出元音交替并变为-ē-。第四个主要部分中的-ē-在-ns-之前是长音。-ns-之前的短元音总是变长（例如，īnsula）。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
+<div class='translation' data-translator='簪花落梅' style='border-color:#C3EAD5'>&gt; 在sentiō，sentīre，sēnsī，sēnsus的第三个主要部分中，根元音显示出元音交替并变为-ē-。第四个主要部分中的-ē-在-ns-之前是长音。-ns-之前的短元音总是变长（例如，īnsula）。 <span class='tag' style='background:#C3EAD5'>簪花落梅</span></div>
 <div class='latin-text'>The basic meaning of sentio is "perceive through one of the senses." Thus it has an intellectual sense (perceive, observe, notice) and a more physical or emotional sense (experience, feel, suffer).</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>感觉的基本含义是“通过一种感官感知”。“因此，它有一种理智的感觉（感知，观察，注意）和一种更物理或情感的感觉（体验，感觉，受苦） <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>sentiō的基本含义是“通过一种感官感知”。因此，它有一种理智的感觉（感知，观察，注意）和一种更物理性或情绪性的感觉（体验，感觉，受苦） <span class='tag' style='background:#C3EAD5'>cyan</span></div>
+<div class='translation' data-translator='簪花落梅' style='border-color:#C3EAD5'>sentiō的基本含义是“通过一种感官感知”。因此，它有一种理智的感觉（感知，观察，注意）和一种更物理性或情绪性的感觉（体验，感觉，受苦） <span class='tag' style='background:#C3EAD5'>簪花落梅</span></div>
 <div class='latin-text'>• In the third principal part of venio, venire, vêni, ventum, the root vowel exhibits ablaut and changes to -e-. venio is an intransitive verb.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>·在venio，venire，vêni，ventum的第三个主要部分中，根元音显示ablaut并变为-e-。venio是不及物动词 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; 在veniō，venīre，vēnī，ventum的第三个主要部分中，根元音显示元音交替并变为-ē-。veniō是不及物动词。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
+<div class='translation' data-translator='簪花落梅' style='border-color:#C3EAD5'>&gt; 在veniō，venīre，vēnī，ventum的第三个主要部分中，根元音显示元音交替并变为-ē-。veniō是不及物动词。 <span class='tag' style='background:#C3EAD5'>簪花落梅</span></div>
 <div class='latin-text'>• The basic meaning of clãrus, -a, -um is the visual idea of "bright" or "clear." In this sense, it regularly describes such things as sky, color, or lightning. It has a transferred sense of "evident" or "manifest" when deiseribing more absiact concepts (plan,aflirs). When applied to peopl, it means "amous" or aisi</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>·clãrus，-a，-um的基本含义是“明亮”或“清晰”的视觉概念。从这个意义上说，它经常描述天空、颜色或闪电等事物。当描述更抽象的概念（计划，aflirs）时，它有一个转移的“明显”或“显现”的意义。当用于人时，意思是“amous”或aisi <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; clārus，-a，-um的基本含义是表“明亮”或“清晰”的视觉概念。从这个意义上说，它经常描述天空、颜色或闪电等事物。当描述更抽象的概念（计划，事务）时，它存在词义转移: “明显”或“显现”。当用于人时，意思是“著名的”或“卓著的”。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
+<div class='translation' data-translator='簪花落梅' style='border-color:#C3EAD5'>&gt; clārus，-a，-um的基本含义是表“明亮”或“清晰”的视觉概念。从这个意义上说，它经常描述天空、颜色或闪电等事物。当描述更抽象的概念（计划，事务）时，它存在词义转移: “明显”或“显现”。当用于人时，意思是“著名的”或“卓著的”。 <span class='tag' style='background:#C3EAD5'>簪花落梅</span></div>
 <div class='latin-text'>&gt; cupidus, -a, -um is an adjective often found with an Objective Genitive (J36).</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>&gt; cupidus，-a，-um是一个形容词，常与宾语所有格连用（J36） <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; cupidus，-a，-um是一个形容词，常与宾格属格连用（J36） <span class='tag' style='background:#C3EAD5'>cyan</span></div>
+<div class='translation' data-translator='簪花落梅' style='border-color:#C3EAD5'>&gt; cupidus，-a，-um是一个形容词，常与宾格属格连用（J36） <span class='tag' style='background:#C3EAD5'>簪花落梅</span></div>
 <div class='latin-text'>Because the adjective pauci, paucae, pauca means "few," it appears only in the plural, and its vocabulary entry includes the masculine, feminine, and neuter plural nominative forms. The stem is pauc-. This word often appears with a Partitive Genitive (J34).</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>因为形容词pauci，paucae，pauca的意思是“很少”，所以它只以复数形式出现，它的词条包括阳性、阴性和中性的复数主格形式。茎是pauc-。这个词经常与部分属格（J34）一起出现 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>因为形容词pauci，paucae，pauca的意思是“很少”，所以它只以复数形式出现，它的词条包括阳性、阴性和中性的复数主格形式。它的词干是pauc-。这个词经常与部分属格（J34）一起出现。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
+<div class='translation' data-translator='簪花落梅' style='border-color:#C3EAD5'>因为形容词pauci，paucae，pauca的意思是“很少”，所以它只以复数形式出现，它的词条包括阳性、阴性和中性的复数主格形式。它的词干是pauc-。这个词经常与部分属格（J34）一起出现。 <span class='tag' style='background:#C3EAD5'>簪花落梅</span></div>
 <div class='latin-text'>&gt; per is a preposition that takes the accusative case and expresses motion "through" space or time. It may also be translated "throughout" or "along." per also expresses ideas of means or agency (often with personal pronouns) and may sometimes be translated "by."</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>&gt; per是一个介词，接受宾格，表示“通过”空间或时间的运动。它也可以被翻译为“贯穿”或“沿着”。“per”也表示手段或机构的意思（常与人称代词连用），有时可译为“by”。“ <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; per是一个介词，后接宾格，表示“通过”空间或时间的运动。它也可以被翻译为“贯穿”或“沿着”。“per”也表示手段或机构的意思（常与人称代词连用），有时可译为“by”。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
+<div class='translation' data-translator='簪花落梅' style='border-color:#C3EAD5'>&gt; per是一个介词，后接宾格，表示“通过”空间或时间的运动。它也可以被翻译为“贯穿”或“沿着”。“per”也表示手段或机构的意思（常与人称代词连用），有时可译为“by”。 <span class='tag' style='background:#C3EAD5'>簪花落梅</span></div>
 <div class='latin-text'>Per viãs oppidi ambulabimus.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>We shall walk through the streets of the town.我们将穿过城镇的街道 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Sententia populi per bonõs mönsträtur.</div>
@@ -132,21 +133,21 @@ translators: ["Lanx", "Yancey", "cyan", "机翻"]
 <div class='translation' data-translator='机翻' style='border-color:#999999'>They were holding the town through (by) arms.他们用武力保卫着这个城镇 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>&gt; quidem is a postpositive adverb that usually emphasizes (indeed, certainly) or limits (at least) the word immediately preceding it.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>&gt; quidem是一个后置副词，通常强调（确实，肯定）或限制（至少）紧接在它前面的词 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; quidem是一个后置副词，通常强调（确实，肯定）或限制（至少）紧接在它前面的词。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
+<div class='translation' data-translator='簪花落梅' style='border-color:#C3EAD5'>&gt; quidem是一个后置副词，通常强调（确实，肯定）或限制（至少）紧接在它前面的词。 <span class='tag' style='background:#C3EAD5'>簪花落梅</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Pulchrum quidem est amãre. Beautiful indeed it is to love. (emphasizes) 爱是美丽的。（强调） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Mihi quidem malum est bellum. To me at least war is bad. (limits) 至少对我来说，战争是不好的。(限制) <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>quidem can also emphasize or limit an entire sentence.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>quidem也可以强调或限制整个句子 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>quidem也可以强调或限制整个句子。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
+<div class='translation' data-translator='簪花落梅' style='border-color:#C3EAD5'>quidem也可以强调或限制整个句子。 <span class='tag' style='background:#C3EAD5'>簪花落梅</span></div>
 <div class='latin-text'>&gt; equidem (the particle e- + quidem) is an adverb that usually occurs with a verb in the first person singular or plural. It is used to emphasize something about oneself or to affirm one's own opinion. equidem is not postpositive.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>&gt; equidem（e- + quidem）是一个副词，通常与第一人称单数或复数形式的动词一起出现。它用来强调自己的一些事情或肯定自己的观点。等式不是后置的 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; equidem（e- + quidem）是一个副词，通常与第一人称单数或复数形式的动词一起出现。它用来强调自己的一些事情或肯定自己的观点。equidem不是后置的。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
+<div class='translation' data-translator='簪花落梅' style='border-color:#C3EAD5'>&gt; equidem（e- + quidem）是一个副词，通常与第一人称单数或复数形式的动词一起出现。它用来强调自己的一些事情或肯定自己的观点。equidem不是后置的。 <span class='tag' style='background:#C3EAD5'>簪花落梅</span></div>
 <div class='latin-text'>Equidem pro patriã pugnãbõ.I for my part shall fight for the country.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>我将为国家而战 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>Equidem pro patriã pugnãbõ.我是为了国家战斗。I for my part shall fight for the country.我就我而言将战斗为了国家。 就我而言，我是为了国家而战的。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>&gt; nẽ.. quidem is translated "not even" and surrounds the word or words being qualified.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>&gt; n.. quidem被翻译成“甚至”，并围绕着被限定的词或词 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='translation' data-translator='cyan' style='border-color:#C3EAD5'>&gt; ne.. quidem被翻译成“甚至不”，并围绕着被限定的词。 <span class='tag' style='background:#C3EAD5'>cyan</span></div>
+<div class='translation' data-translator='簪花落梅' style='border-color:#C3EAD5'>&gt; ne.. quidem被翻译成“甚至不”，并围绕着被限定的词。 <span class='tag' style='background:#C3EAD5'>簪花落梅</span></div>
 <div class='latin-text'>Régina nẽ filiõ quidem aurum dat. The queen is giving gold not even to (her) son.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>Régina nẽ filiõ quidem aurum dat. 女王甚至不给儿子金子 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>Régina nẽ filiõ quidem aurum dat. 女王不给儿子甚至不金子给 The queen is giving gold not even to (her) son.女王正在给金子甚至不给（她的）儿子。女王甚至连金子都不给她儿子。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
@@ -239,16 +240,16 @@ translators: ["Lanx", "Yancey", "cyan", "机翻"]
 <div class='latin-text'>2. In the third person plural of all thirdconjugation verbs, the -i- changes to -u-.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>2.在所有第三变位法动词的第三人称复数中，-i-变为-u-。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>2.第三变位法动词的第三人称复数形式中，-i-变为-u-。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='latin-text'>The -u- is a remnant of an earlier form of the third person plural and is thus an exception to the rules for forming the present indicative. MEMORIZE THIS EXCEPTION.</div>
+<div class='latin-text emphasis-note'>The -u- is a remnant of an earlier form of the third person plural and is thus an exception to the rules for forming the present indicative. MEMORIZE THIS EXCEPTION.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>-u-是第三人称复数的早期形式的残余，因此是构成现在陈述句规则的例外。记住这个例外。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>-u-是第三人称复数早期形式的残留，因此不遵守现在直陈式的变化规则，谨记，牢记这个例外情况。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>3. In the first person singular of all third-i-stem-conjugation verbs, the -i- at the end of the changed present stem does not contract with the endings -o and -or. THE FIRST PERSON SINGULAR ACTIVE IS THE FIRST PRINCIPAL PART.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>3.在所有第三i词干变位法动词的第一人称单数中，现在词干变化后的词尾-i-不与词尾-o和-or收缩。奇异活动的第一人称是第一主部 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>3.第三i词干变位法动词的第一人称单数形式中，现在词干发生变化，但末尾的-i-同词尾不与-o及-or缩合。谨记，第一人称单数主动式使用第一主要部分。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='latin-text'>4. In the third person plural of all third-i-stem-conjugation verbs, the -i- is followed by -u-. The -u- is a remnant of an earlier form of the third person plural and is thus an exception to the rules for forming the present indicative. MEMORIZE THIS EXCEPTION.</div>
+<div class='latin-text emphasis-note'>4. In the third person plural of all third-i-stem-conjugation verbs, the -i- is followed by -u-. The -u- is a remnant of an earlier form of the third person plural and is thus an exception to the rules for forming the present indicative. MEMORIZE THIS EXCEPTION.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>4.在所有第三i词干变位法动词的第三人称复数中，-i-后跟-u-。-u-是第三人称复数的早期形式的残余，因此是构成现在陈述句规则的例外。记住这个例外 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>4.第三i词干变位法动词的第三人称复数形式中，-i-后加-u-。-u-是第三人称复数早期形式的残留，因此不遵守现在直陈式的变化规则，谨记，牢记这个例外情况。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='latin-text'>5. In the second person singular passive indicative of third- and third-i-stem-conjugation verbs, the -i- changes to an -e- before the endings -ris and -re. MEMORIZE THIS ExCEPTIOn.</div>
+<div class='latin-text emphasis-note'>5. In the second person singular passive indicative of third- and third-i-stem-conjugation verbs, the -i- changes to an -e- before the endings -ris and -re. MEMORIZE THIS ExCEPTIOn.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>5.在第二人称单数被动指示第三和第三i词干变化动词中，-i-在词尾-ris和-re之前变为-e-。记住这段注释 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>5.第三及第三i词干变位法动词的第二人称单数被动直陈形式中，，-i-在词尾-ris和-re前变为-e-。谨记，牢记这个例外情况。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>6. In the present indicative, third-i-stem-conjugation verbs differ from third-conjugation verbs only in the first person singular and the third person plural.</div>
@@ -260,7 +261,7 @@ translators: ["Lanx", "Yancey", "cyan", "机翻"]
 <div class='latin-text'>8. In the third person plural of all fourth-conjugation verbs, the -i- is shortened to -i- and is followed by -u-.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>8.在所有第四变位法动词的第三人称复数中，-i-被缩短为-i-，后面跟着-u-。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>8.第四变位法动词的第三人称复数形式中，-i-缩短为-i-而后加-u-。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='latin-text'>The -u- is a remnant of an earlier form of the third person plural and is thus an exception to the rules for forming the present active indicative. MEMORIZE THIS ExCEPTION.</div>
+<div class='latin-text emphasis-note'>The -u- is a remnant of an earlier form of the third person plural and is thus an exception to the rules for forming the present active indicative. MEMORIZE THIS ExCEPTION.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>-u-是第三人称复数的早期形式的残余，因此是构成现在主动陈述句规则的例外。记住这个例外 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>-u-是第三人称复数早期形式的残留，因此不遵守现在直陈式的变化规则，谨记，牢记这个例外情况。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>9. In the third person singular active of all fourth-conjugation verbs, the stem vowel -i- shortens according to the long vowel rule.</div>
@@ -347,7 +348,7 @@ translators: ["Lanx", "Yancey", "cyan", "机翻"]
 <div class='latin-text'>1. In the first person singular of third-conjugation verbs, -a- appears rather than -ē- before the endings -m and -r. Similarly, in the first person singular of third-i-stem- and fourth-conjugation verbs, -ia- rather than -ie- appears before the endings -m and -r.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>1.在第三变位法动词的第一人称单数中，-a-出现在词尾-m和-r之前，而不是-ē-。同样，在第三i词干和第四变位法动词的第一人称单数中，-ia-而不是-ie-出现在词尾-m和-r之前。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>1.第三变位法动词的第一人称单数中，词尾-m和-r之前为-a-而非-ē-。同样，第三i词干及第四变位法动词的第一人称单数中词尾-m和-r之前为-a-而非-ie。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='latin-text'>MEMORIZE THESE ExCEPTIONs. In all cases, -a- shortens before -m and -r according to the long vowel rule. In all other persons, the sign of the future is-ẽ-.</div>
+<div class='latin-text emphasis-note'>MEMORIZE THESE ExCEPTIONs. In all cases, -a- shortens before -m and -r according to the long vowel rule. In all other persons, the sign of the future is-ẽ-.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>记住这些注释。在所有情况下，根据长元音规则，-a-在-m和-r之前缩短。在所有其他人身上，未来的标志是-- <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>谨记，牢记这些例外情况。根据长元音规则，所有的格变化中，-m及-r之前的-a-都应缩短。而所有人称变化中，使用-e-表达将来。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>2. The infix -bi-, used to mark the future tense of first- and second-conjugation verbs, is not used in the third, third i-stem, and fourth conjugations. For these conjugations the sign of the future is -e-. The following mnemonic device may be useful:</div>
@@ -433,7 +434,7 @@ translators: ["Lanx", "Yancey", "cyan", "机翻"]
 <div class='latin-text'>4. Present imperatives are so called because they are formed with the present stem, but imperatives look to the future and are future in time. Some verbs have alternate imperative forms that are called future imperatives. Such forms are identified in the vocabulary notes and in readings.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>4.现在祈使句之所以被称为现在祈使句，是因为它们是以现在为词干形成的，但祈使句着眼于未来，在时间上是未来的。有些动词有交替的祈使句形式，称为将来祈使句。这些形式在词汇注释和阅读材料中有明确的说明 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>4.之所以称呼为现在命令式，是因为它基于现在词干构成，但在时态上命令式表示的是未来。有些动词还有其他命令式变化形式，称为未来命令式。我们将在词汇讲解（vocabulary notes）及短文阅读（readings）中学到。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='latin-text'>Four third-conjugation verbs (dicõ, ducõ, facio, fero*) have irregular present active imperative forms in the singular. MEMORIZE THESE IRREGUlAR FORMS.</div>
+<div class='latin-text emphasis-note'>Four third-conjugation verbs (dicõ, ducõ, facio, fero*) have irregular present active imperative forms in the singular. MEMORIZE THESE IRREGUlAR FORMS.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>四个第三变位法动词（dicõ、ducõ、facio、fero*）有单数形式的不规则现在主动祈使句。记住这些不规则的形式 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>四个第三变位法动词(dicõ, ducõ, facio, fero*) 的单数现在主动命令式都不规则。谨记，牢记这些不规则形式。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Present Active现在主动 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -487,7 +488,7 @@ translators: ["Lanx", "Yancey", "cyan", "机翻"]
 <div class='latin-text'>Context usually makes clear which form occurs in a particular sentence.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>语境通常能清楚地说明在特定的句子中出现了哪种形式 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>通常可以从语境判断动词使用的是哪种形式。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='latin-text'>Dico and duco have regular present passive imperatives. The present passive imperative singular of fero is ferre (be carried). MeMorize THIS IRReGUlar Form.The plural is regular (ferimini, be carried [pl.]). Facio does not have passive imperatives.</div>
+<div class='latin-text emphasis-note'>Dico and duco have regular present passive imperatives. The present passive imperative singular of fero is ferre (be carried). MeMorize THIS IRReGUlar Form.The plural is regular (ferimini, be carried [pl.]). Facio does not have passive imperatives.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>Dico和duco有固定的现在时被动祈使句。fero的现在被动祈使单数形式是ferre（被携带）。把这个不规则的形式改为规则形式。复数是规则的（ferimini，be carried [pl.]）。法西奥没有被动祈使句 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>dico及duco的现在被动命令式是规则变化的。fero的现在被动命令单数式是ferre (be carried被携带)。谨记，牢记这个不规则变化形式。它的复数是规则变化的(ferimini, be carried [pl.]被携带【复数】)。Facio没有被动命令式。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>The present active imperatives of agõ, agere, égi, actus, "drive," "do," age and agite, are often used in colloquial Latin to strengthen other commands. They may be translated "come on!" For example:</div>
@@ -616,7 +617,7 @@ translators: ["Lanx", "Yancey", "cyan", "机翻"]
 <div class='latin-text'>A pronoun is a word used instead of a noun, and a personal pronoun represents the speaker(s) or writer(s) (I, we), the one(s) spoken to (you, you [pl.]), or the one(s) spoken about (he, she, it, they).</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>代词是用来代替名词的词，人称代词代表说话者或作者（我，我们），说话的人（你，你[pl.]），或者说，他（她）（他）（她） <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>代词用于指代名词。人称代词可指代：言者、作者、听者，以及对话所谈及的第三者。 <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
-<div class='latin-text'>Like nouns, personal pronouns in Latin are declined, and their declensions must be memorized. For the first- and second-person personal pronouns, MEMORIZE DOWN THE SINGULAR AND DOWN THE PLURAL.</div>
+<div class='latin-text emphasis-note'>Like nouns, personal pronouns in Latin are declined, and their declensions must be memorized. For the first- and second-person personal pronouns, MEMORIZE DOWN THE SINGULAR AND DOWN THE PLURAL.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>和名词一样，拉丁语中的人称代词也是变格的，它们的变格必须记住。对于第一人称和第二人称代词，记住单数和复数。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>拉丁语的人称代词（与名词一样）都需要变格，因此必须牢记其变格。谨记，第一、二人称单复数需要专门记忆。 <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
 <div class='table-content'>Nom.<br>Gen.<br>Dat.<br>Acc.<br>Abl.<br>Nom.<br>Gen.<br>Dat.<br>Acc.<br>Abl.</div>
@@ -649,7 +650,7 @@ translators: ["Lanx", "Yancey", "cyan", "机翻"]
 <div class='latin-text'>J39. Possessive Adjectives</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>J39所有格形容词 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>∫ 39. 物主形容词 <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
-<div class='latin-text'>77 MEMORIZE THE DECLENSION OF THE THIRD-PERSON PERSONAL PRONOUN ACROSS THE SINGUIAR AND THEN ACROSS THE PLURAI (is, ea, id, eius, eius, eius).</div>
+<div class='latin-text emphasis-note'>77 MEMORIZE THE DECLENSION OF THE THIRD-PERSON PERSONAL PRONOUN ACROSS THE SINGUIAR AND THEN ACROSS THE PLURAI (is, ea, id, eius, eius, eius).</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>77.记住第三人称人称代词的降调，先越过Singuiar，再越过Plurai（is，ea，id，eius，eius，eius）。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>77. 务必牢记第三人称代词的变格，先记单数变格，然后是复数变格。（后面半句没看懂什么意思，姑且认为是“先单数，后复数”） <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
 <div class='table-content'>Nom.<br>Gen.<br>Dat.<br>Acc.<br>Abl.<br>Nom.<br>Gen.<br>Dat.<br>Acc.<br>Abl.</div>
@@ -698,7 +699,7 @@ translators: ["Lanx", "Yancey", "cyan", "机翻"]
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>3. 属格形容词可充当名词使用，例如： <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
 <div class='latin-text'>meörum of my men or of my things</div>
 <div class='latin-text'>tuõs your men (d.o.)</div>
-<div class='latin-text'>4. The masculine singular vocative form of meus is mi. MEMORIZE THIS IRREGUlAR VOCATIVE FORM.</div>
+<div class='latin-text emphasis-note'>4. The masculine singular vocative form of meus is mi. MEMORIZE THIS IRREGUlAR VOCATIVE FORM.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>4. meus的阳性单数呼格形式是mi。记住这个不规则的祈使句。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>4. meus阳性单数呼格为mi。务必记住这个不规则的呼格形式。 <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
 <div class='latin-text'>5. Possessive adjectives are often omitted if the meaning is clear without them, but they are used for added clarity, emphasis, or contrast.</div>

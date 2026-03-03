@@ -261,6 +261,26 @@
       padding: 0.75rem;
       margin-bottom: 0.75rem;
     }
+
+    .section.section-derivatives {
+      border-color: rgba(46, 93, 123, 0.45);
+      background: linear-gradient(180deg, rgba(46,93,123,0.09), rgba(255,255,255,0.62));
+    }
+
+    .section.section-short-readings {
+      border-color: rgba(114, 47, 55, 0.45);
+      background: linear-gradient(180deg, rgba(114,47,55,0.1), rgba(255,255,255,0.62));
+    }
+
+    .section.section-derivatives .content-block {
+      border-color: rgba(46, 93, 123, 0.35);
+      background: rgba(255,255,255,0.72);
+    }
+
+    .section.section-short-readings .content-block {
+      border-color: rgba(114, 47, 55, 0.32);
+      background: rgba(255,255,255,0.74);
+    }
     
     .section-title {
       font-size: 1.1rem;
@@ -269,6 +289,34 @@
       margin-bottom: 0.5rem;
       padding-bottom: 0.3rem;
       border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+    }
+
+    .section-marker {
+      display: inline-block;
+      margin-left: 0.55rem;
+      padding: 0.08rem 0.38rem;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      vertical-align: middle;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+    .section-marker.derivatives {
+      color: #20435a;
+      background: rgba(100, 169, 214, 0.25);
+      border-color: rgba(46, 93, 123, 0.4);
+    }
+
+    .section-marker.short-readings {
+      color: #5c2228;
+      background: rgba(173, 89, 101, 0.2);
+      border-color: rgba(114, 47, 55, 0.35);
+    }
+
+    .section-marker.observation {
+      color: #5e4a19;
+      background: rgba(184, 134, 11, 0.18);
+      border-color: rgba(184, 134, 11, 0.35);
     }
 
     .section-title-cn {
@@ -856,6 +904,35 @@
       background: rgba(47, 111, 137, 0.16);
       border: 1px solid rgba(47, 111, 137, 0.3);
     }
+
+    .content-block.emphasis-block {
+      border-color: rgba(114, 47, 55, 0.48);
+      box-shadow: inset 0 0 0 1px rgba(114, 47, 55, 0.08);
+      background: linear-gradient(90deg, rgba(114,47,55,0.09), rgba(184,134,11,0.06));
+    }
+
+    .original.emphasis {
+      color: #6a1f2a;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      font-style: normal;
+      border-left: 4px solid #8b2d3a;
+      position: relative;
+    }
+
+    .original.emphasis::before {
+      content: '强调注释';
+      display: inline-block;
+      margin-right: 0.55rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #8b2d3a;
+      border: 1px solid rgba(139, 45, 58, 0.35);
+      background: rgba(139, 45, 58, 0.12);
+      border-radius: 4px;
+      padding: 0.03rem 0.36rem;
+      vertical-align: middle;
+    }
     
     .table-wrapper {
       margin: 0.6rem 0;
@@ -878,21 +955,47 @@
     /* 表格样式 */
     .table-content {
       background: rgba(255, 255, 255, 0.8);
-      padding: 0.15rem 0.4rem;
+      padding: 0.15rem 0.4rem 0.35rem;
       font-size: 0.9rem;
       overflow-x: auto;
     }
 
-    .table-row {
-      font-family: 'Crimson Text', serif;
-      color: var(--ink);
-      line-height: 1.35;
-      padding: 0.28rem 0.4rem;
-      border-bottom: 1px dashed rgba(184, 134, 11, 0.18);
+    .table-grid {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: auto;
+      min-width: 280px;
     }
 
-    .table-row:last-child {
+    .table-grid th,
+    .table-grid td {
+      padding: 0.32rem 0.45rem;
+      border-bottom: 1px dashed rgba(184, 134, 11, 0.2);
+      vertical-align: top;
+      font-family: 'Crimson Text', serif;
+      color: var(--ink);
+      line-height: 1.3;
+      text-align: left;
+    }
+
+    .table-grid th {
+      width: 24%;
+      white-space: nowrap;
+      color: #593313;
+      font-weight: 700;
+    }
+
+    .table-grid tr:last-child th,
+    .table-grid tr:last-child td {
       border-bottom: none;
+    }
+
+    .table-grid tr.table-subhead th {
+      width: auto;
+      color: var(--wine);
+      background: rgba(184, 134, 11, 0.12);
+      border-bottom: 1px solid rgba(184, 134, 11, 0.25);
+      font-weight: 700;
     }
 
     .subsection-title {
@@ -1340,26 +1443,53 @@ Base Path: ${CONFIG.basePath}</pre>
       loadUtterances();
     }
     
+    function classifySection(title) {
+      const t = (title || '').toLowerCase();
+      const normalized = t.replace(/\s+/g, ' ').trim();
+      if (normalized.includes('derivatives and cognates') || normalized.includes('派生词和同源词')) {
+        return { cls: 'section-derivatives', marker: '专项词汇', markerClass: 'derivatives' };
+      }
+      if (normalized.includes('short readings') || normalized.includes('short reading') || normalized.includes('短篇阅读')) {
+        return { cls: 'section-short-readings', marker: '短文阅读', markerClass: 'short-readings' };
+      }
+      if (/\bobservations?\b/.test(normalized) || normalized === '观察' || normalized === '温馨提示' || normalized === '注意') {
+        return { cls: '', marker: '观察提示', markerClass: 'observation' };
+      }
+      return { cls: '', marker: '', markerClass: '' };
+    }
+
+    function pickObservationCn(blocks) {
+      if (!blocks?.length) return '';
+      const first = blocks[0];
+      const firstTextRaw = (first?.translations?.[0]?.text || '').trim();
+      const firstText = firstTextRaw.replace(/[：:。.!]+$/g, '');
+      const candidates = new Set(['注意', '观察', '温馨提示']);
+      if (first && first.type === 'content' && !first.original && candidates.has(firstText)) {
+        return firstText;
+      }
+      return '';
+    }
+
     // 渲染段落 (v7 格式)
     function renderSection(section, companionNote) {
       let blocks = section.blocks || [];
       let sectionTitleCn = '';
+      const secMeta = classifySection(section.title);
 
-      // Keep heading hierarchy aligned for paired titles such as OBSERVATIONS / 注意.
-      if (/\bOBSERVATIONS\b/i.test(section.title) && blocks.length > 0) {
-        const first = blocks[0];
-        const firstText = first?.translations?.[0]?.text?.trim();
-        if (first && first.type === 'content' && !first.original && firstText === '注意') {
-          sectionTitleCn = firstText;
+      // Keep heading hierarchy aligned for paired titles such as OBSERVATION(S) / 注意|观察|温馨提示.
+      if (/\bOBSERVATIONS?\b/i.test(section.title) && blocks.length > 0) {
+        sectionTitleCn = pickObservationCn(blocks);
+        if (sectionTitleCn) {
           blocks = blocks.slice(1);
         }
       }
 
       return `
-        <section class="section" id="${section.id}">
+        <section class="section ${secMeta.cls}" id="${section.id}">
           <h2 class="section-title">
             ${escapeHtml(section.title)}
             ${sectionTitleCn ? `<span class="section-title-cn">${escapeHtml(sectionTitleCn)}</span>` : ''}
+            ${secMeta.marker ? `<span class="section-marker ${secMeta.markerClass}">${secMeta.marker}</span>` : ''}
           </h2>
           
           ${blocks.map(block => renderBlockV7(block)).join('')}
@@ -1418,9 +1548,10 @@ Base Path: ${CONFIG.basePath}</pre>
             isFallback: i === 0  // 第一个作为底漌
           };
         });
+        const isEmphasis = block.original?.type === 'emphasis';
         
         return `
-          <div class="content-block">
+          <div class="content-block ${isEmphasis ? 'emphasis-block' : ''}">
             ${hasOriginal ? `
               <div class="original ${block.original.type}" data-type="original">
                 ${highlightTerms(block.original.text)}
@@ -1463,11 +1594,36 @@ Base Path: ${CONFIG.basePath}</pre>
           .split(/<br\s*\/?>/i)
           .map(line => line.trim())
           .filter(Boolean);
+        const parsed = rows.map(line => {
+          const m = line.match(/^((?:Nom|Gen|Dat|Acc|Abl|Voc)(?:\s*\/\s*(?:Nom|Gen|Dat|Acc|Abl|Voc))?\.?)\s+(.+)$/i);
+          if (m) return { type: 'pair', head: m[1], body: m[2] };
+          const h = line.match(/^(Singular|Plural)$/i);
+          if (h) return { type: 'heading', head: h[1], body: '' };
+          return { type: 'text', head: '', body: line };
+        });
         return `
           <div class="table-wrapper">
             <div class="table-label">变格/变位表</div>
             <div class="table-content">
-              ${rows.map(line => `<div class="table-row">${highlightTerms(line)}</div>`).join('')}
+              <table class="table-grid">
+                <tbody>
+                  ${parsed.map(row => {
+                    if (row.type === 'heading') {
+                      return `
+                        <tr class="table-subhead">
+                          <th colspan="2">${highlightTerms(row.head)}</th>
+                        </tr>
+                      `;
+                    }
+                    return `
+                      <tr>
+                        <th>${row.head ? highlightTerms(row.head) : ''}</th>
+                        <td>${highlightTerms(row.body)}</td>
+                      </tr>
+                    `;
+                  }).join('')}
+                </tbody>
+              </table>
             </div>
           </div>
         `;
@@ -1625,6 +1781,17 @@ Base Path: ${CONFIG.basePath}</pre>
           continue;
         }
         
+        // 强调注释原文 <div class='latin-text emphasis-note'>...</div>
+        const emphasisLatinMatch = line.match(/<div class='latin-text emphasis-note'>([\s\S]+)<\/div>/);
+        if (emphasisLatinMatch) {
+          ensureSection().blocks.push({
+            type: 'content',
+            original: { text: decodeHtmlEntities(emphasisLatinMatch[1]), type: 'emphasis' },
+            translations: []
+          });
+          continue;
+        }
+
         // 拉丁文 <div class='latin-text'>...</div>
         const latinMatch = line.match(/<div class='latin-text'>([\s\S]+)<\/div>/);
         if (latinMatch) {

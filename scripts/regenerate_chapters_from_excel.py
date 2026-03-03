@@ -20,6 +20,7 @@ import re
 import zipfile
 from collections import Counter
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 import xml.etree.ElementTree as ET
@@ -134,6 +135,13 @@ TABLE_KEYWORDS = [
     "Declension",
     "Person",
     "Perfect Active Stem",
+]
+
+EMPHASIS_PATTERNS = [
+    r"\bMEMORIZE\b",
+    r"\bBE PREPARED TO RECITE\b",
+    r"\bTHOROUGHLY\b",
+    r"\bMUST BE MEMORIZED\b",
 ]
 
 
@@ -343,6 +351,13 @@ def is_table_like_line(text: str) -> bool:
     return False
 
 
+def is_emphasis_note_line(text: str) -> bool:
+    t = normalize_whitespace(text)
+    if not t or contains_cjk(t):
+        return False
+    return any(re.search(pat, t, flags=re.IGNORECASE) for pat in EMPHASIS_PATTERNS)
+
+
 def is_subsection_title(text: str) -> bool:
     t = normalize_whitespace(text)
     # Only explicit subsection labels should be elevated as headings.
@@ -370,6 +385,8 @@ def extract_explicit_translator(raw_translator: str) -> Optional[str]:
 def is_section_title(text: str) -> bool:
     t = normalize_whitespace(text)
     if not t:
+        return False
+    if is_emphasis_note_line(t):
         return False
 
     low = t.lower()
@@ -473,7 +490,8 @@ def detect_color_name_map(
         out[color] = normalize_name(votes.most_common(1)[0][0])
 
     for color, name in KNOWN_COLOR_NAME.items():
-        out.setdefault(color, normalize_name(name))
+        # Known legend colors are authoritative and should override vote noise.
+        out[color] = normalize_name(name)
 
     return out
 
@@ -492,6 +510,10 @@ def build_translator_note_line(text: str, translator: str) -> str:
         f"<div class='translator-note' data-translator='{html_escape(translator)}'>"
         f"【译者注释】{html_escape(text)}</div>"
     )
+
+
+def build_emphasis_note_line(text: str) -> str:
+    return f"<div class='latin-text emphasis-note'>{html_escape(text)}</div>"
 
 
 def choose_translator(
@@ -594,6 +616,12 @@ def generate_marked_mode_lines(
                 out.append("## 内容")
                 inited_section = True
 
+            if is_section_title(content):
+                flush_table_buffer(out, table_buffer)
+                out.append(f"## {html_escape(content)}")
+                inited_section = True
+                continue
+
             if is_subsection_title(content):
                 flush_table_buffer(out, table_buffer)
                 out.append(f"### {html_escape(content)}")
@@ -604,7 +632,10 @@ def generate_marked_mode_lines(
                 continue
 
             flush_table_buffer(out, table_buffer)
-            out.append(f"<div class='latin-text'>{html_escape(content)}</div>")
+            if is_emphasis_note_line(content):
+                out.append(build_emphasis_note_line(content))
+            else:
+                out.append(f"<div class='latin-text'>{html_escape(content)}</div>")
             continue
 
         if "正文译文" in marker or "原书脚注译文" in marker:
@@ -614,6 +645,11 @@ def generate_marked_mode_lines(
             translators.add(translator)
             if row_hex:
                 detected_color_by_translator.setdefault(translator, row_hex)
+
+            if is_section_title(content):
+                out.append(f"## {html_escape(content)}")
+                inited_section = True
+                continue
 
             if is_subsection_title(content):
                 out.append(f"### {html_escape(content)}")
@@ -652,7 +688,10 @@ def generate_marked_mode_lines(
                 table_buffer.append(content)
             else:
                 flush_table_buffer(out, table_buffer)
-                out.append(f"<div class='latin-text'>{html_escape(content)}</div>")
+                if is_emphasis_note_line(content):
+                    out.append(build_emphasis_note_line(content))
+                else:
+                    out.append(f"<div class='latin-text'>{html_escape(content)}</div>")
 
     flush_table_buffer(out, table_buffer)
     return out, translators, detected_color_by_translator
@@ -719,7 +758,10 @@ def generate_color_mode_lines(
                 table_buffer.append(text)
             else:
                 flush_table_buffer(out, table_buffer)
-                out.append(f"<div class='latin-text'>{html_escape(text)}</div>")
+                if is_emphasis_note_line(text):
+                    out.append(build_emphasis_note_line(text))
+                else:
+                    out.append(f"<div class='latin-text'>{html_escape(text)}</div>")
 
     flush_table_buffer(out, table_buffer)
     return out, translators, detected_color_by_translator
@@ -729,6 +771,7 @@ def generate_for_workbook(
     workbook_path: Path,
     chapter_id: str,
     chapter_title: str,
+    iteration_version: str,
 ) -> Tuple[str, set[str], Dict[str, str]]:
     with zipfile.ZipFile(workbook_path) as zf:
         shared = parse_shared_strings(zf)
@@ -769,6 +812,7 @@ def generate_for_workbook(
         "---",
         f"id: chapter_{chapter_id}",
         f'title: "{title}"',
+        f'version: "{iteration_version}"',
         "translators: [" + ", ".join(f'\"{t}\"' for t in trans_list) + "]",
         "---",
         "",
@@ -782,6 +826,7 @@ def update_config_translators(
     config_path: Path,
     translators_found: set[str],
     detected_colors: Dict[str, str],
+    iteration_version: str,
 ) -> None:
     data = json.loads(config_path.read_text(encoding="utf-8"))
     existing = {t["id"]: t for t in data.get("translators", [])}
@@ -826,15 +871,23 @@ def update_config_translators(
         )
 
     data["translators"] = new_translators
+    data.setdefault("site", {})
+    data["site"]["iteration_version"] = iteration_version
     config_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", default=".", help="Project root")
+    parser.add_argument(
+        "--iteration-version",
+        default="",
+        help="Override iteration version. Default: auto timestamp.",
+    )
     args = parser.parse_args()
 
     root = Path(args.root).resolve()
+    iteration_version = args.iteration_version or f"v{datetime.now().strftime('%Y.%m.%d.%H%M%S')}"
     config_path = root / "data/config.json"
     config = json.loads(config_path.read_text(encoding="utf-8"))
     chapter_titles = {c["id"]: c.get("title", c["id"]) for c in config.get("chapters", [])}
@@ -848,7 +901,7 @@ def main() -> None:
         chapter_id = f"chapter_{chapter_roman}"
         title = chapter_titles.get(chapter_id, chapter_id)
 
-        md, translators, detected = generate_for_workbook(src, chapter_roman, title)
+        md, translators, detected = generate_for_workbook(src, chapter_roman, title, iteration_version)
         dst.write_text(md, encoding="utf-8")
 
         all_translators.update(translators)
@@ -857,7 +910,7 @@ def main() -> None:
 
         print(f"generated {dst_rel}: translators={sorted(translators)}")
 
-    update_config_translators(config_path, all_translators, merged_detected_colors)
+    update_config_translators(config_path, all_translators, merged_detected_colors, iteration_version)
     print("updated data/config.json translators")
 
 

@@ -1,6 +1,7 @@
 ---
 id: chapter_I
 title: "Chapter I - 名词与动词概述"
+version: "v2026.03.04.032346"
 translators: ["Lanx", "Mecius", "Yancey", "tuche est", "机翻", "簪花落梅"]
 ---
 
@@ -191,7 +192,7 @@ translators: ["Lanx", "Mecius", "Yancey", "tuche est", "机翻", "簪花落梅"]
 <div class='translation' data-translator='机翻' style='border-color:#999999'>性别-拉丁名词的性别为男性或女性。既不是男性也不是女性的名词被称为中性（&lt;中性，中性，中性，两者都不是）。在每个名词的词汇条目中，性别用 m.、f 或 n 表示。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>性别——拉丁语名词的性分为阳性(m.)、阴性(f.)，若“两者皆非”(neither)，则称为中性(neuter)(n.)（译注：英文中neither源于拉丁语neuter，即使ne(非)+uter(两者之一)组成两者皆非，所以原文处会提到neither与neuter的关系）。在单词表里的词汇条目中，性别使用缩写表示。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>性属——拉丁语名词区分三种性属：阳性、阴性、中性。【二者皆非（neuter = ne + uter，既不是阳性，也不是阴性），即为中性】 <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
-## THIS INFORMATION MUST BE MEMORIZED FOR EACH NOUN.
+<div class='latin-text emphasis-note'>THIS INFORMATION MUST BE MEMORIZED FOR EACH NOUN.</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>谨记，必须为每个名词记住此信息 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>谨记，必须记住每个名词的性。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>NUMBER-Latin nouns appear in the singular when referring to one and in the plural when referring to more than one.</div>
@@ -453,7 +454,7 @@ translators: ["Lanx", "Mecius", "Yancey", "tuche est", "机翻", "簪花落梅"]
 <div class='latin-text'>2. a complete set of forms for an individual noun.</div>
 <div class='translation' data-translator='tuche est' style='border-color:#00A3F5'>2.一个名词成套的形式 <span class='tag' style='background:#00A3F5'>tuche est</span></div>
 <!-- seq:52 page:20 -->
-<div class='latin-text'>MEMORIZE THESE ENDINGS THOROUGHIY, PROCEEDING FIRST DOWN THE SINGULAR COLUMN AND THEN DOWN THE PIURAL COIUMN. BE PREPARED TO RECITE THE ENDINGS QUICKIY.</div>
+<div class='latin-text emphasis-note'>MEMORIZE THESE ENDINGS THOROUGHIY, PROCEEDING FIRST DOWN THE SINGULAR COLUMN AND THEN DOWN THE PIURAL COIUMN. BE PREPARED TO RECITE THE ENDINGS QUICKIY.</div>
 <div class='translation' data-translator='tuche est' style='border-color:#00A3F5'>谨记，牢记这些词尾，按列先后记住单数与复数。要能够快速复述它们。 <span class='tag' style='background:#00A3F5'>tuche est</span></div>
 <div class='latin-text'>To decline a noun of the first declension, add these endings to the stem. For example:</div>
 <div class='translation' data-translator='tuche est' style='border-color:#00A3F5'>通过在词干上添加下列词尾来对第一变格名词进行变格。例如： <span class='tag' style='background:#00A3F5'>tuche est</span></div>
@@ -516,7 +517,7 @@ translators: ["Lanx", "Mecius", "Yancey", "tuche est", "机翻", "簪花落梅"]
 <div class='latin-text'>Accusative -um -ōs</div>
 <div class='latin-text'>Ablative -ō -īs</div>
 <div class='latin-text'>Vocative -e -ī</div>
-<div class='latin-text'>MEMORIZE THESE ENDINGS THROUGHLY, PROCEEDING FIRST DOWN THE SINGULAR COLUMN AND THEN DOWN THE PLURAL COLUMN。 BE PREPARED TO RECITE THE ENDINGS QUICKLY.</div>
+<div class='latin-text emphasis-note'>MEMORIZE THESE ENDINGS THROUGHLY, PROCEEDING FIRST DOWN THE SINGULAR COLUMN AND THEN DOWN THE PLURAL COLUMN。 BE PREPARED TO RECITE THE ENDINGS QUICKLY.</div>
 <div class='translation' data-translator='tuche est' style='border-color:#00A3F5'>谨记，牢记这些词尾，按列先后记住单数与复数。要能够快速复述它们。 <span class='tag' style='background:#00A3F5'>tuche est</span></div>
 <div class='latin-text'>To decline a masculine or feminine noun of the second declension, add these endings to the stem. For example:</div>
 <div class='translation' data-translator='tuche est' style='border-color:#00A3F5'>通过在词干上添加下列词尾来对第二变格阳性/阴性名词进行变格。例如： <span class='tag' style='background:#00A3F5'>tuche est</span></div>
@@ -570,7 +571,7 @@ translators: ["Lanx", "Mecius", "Yancey", "tuche est", "机翻", "簪花落梅"]
 <div class='latin-text'>Dative -ō -īs</div>
 <div class='latin-text'>Accusative -um -a</div>
 <div class='latin-text'>Ablative -ō -īs</div>
-<div class='latin-text'>MEMORIZE THESE ENDINGS THOROUGHIY, PROCEEDING FIRST DOWN THE SINGULAR COLUMN AND THEN DOWN THE PLURAL COLUMN. BE PREPARED TO RECITE THE ENDINGS QUICKLY</div>
+<div class='latin-text emphasis-note'>MEMORIZE THESE ENDINGS THOROUGHIY, PROCEEDING FIRST DOWN THE SINGULAR COLUMN AND THEN DOWN THE PLURAL COLUMN. BE PREPARED TO RECITE THE ENDINGS QUICKLY</div>
 <div class='translation' data-translator='tuche est' style='border-color:#00A3F5'>谨记，牢记这些词尾，按列先后记住单数与复数。要能够快速复述它们。 <span class='tag' style='background:#00A3F5'>tuche est</span></div>
 <!-- seq:55 page:23 -->
 <div class='latin-text'>To decline a neuter noun of the second declension, add these endings to the stem. For example:</div>

@@ -1,6 +1,7 @@
 ---
 id: chapter_O
 title: "Chapter O - Introduction"
+version: "v2026.03.04.032346"
 translators: ["Lanx", "tuche est", "机翻", "簪花落梅"]
 ---
 
@@ -64,13 +65,13 @@ translators: ["Lanx", "tuche est", "机翻", "簪花落梅"]
 <div class='translation' data-translator='簪花落梅' style='border-color:#C3EAD5'>4. 大写的C源于希腊字母（Γ）的大写形式，由不区分英语中硬g（hard g）和硬c（hard c）的伊特鲁里亚人最先使用。*加注释 以及后面几行应该不需要修改？ <span class='tag' style='background:#C3EAD5'>簪花落梅</span></div>
 <div class='latin-text'>Even after Latin developed a separate new letter to represent hard g, capital C continued to represent hard g in abbreviations for certain first names (e.g., C. = Gaius).</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>即使拉丁语后来发展了单独的新字母来表示硬 g，大写字母 C依然在某些名字缩写中表硬 g（如 C. = Gaius）。 <span class='tag' style='background:#999999'>机翻</span></div>
-<div class='latin-text'>OBSERVATION</div>
+## OBSERVATION
 <div class='translation' data-translator='机翻' style='border-color:#999999'>注意 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>h represents the expelling of air (aspiration).</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>h代表排出气体（即送气音）。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>i, as consonant, as the y of yawn</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>i作辅音时，同yawn 的 y <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='latin-text'>OBSERVATIONS</div>
+## OBSERVATIONS
 <div class='translation' data-translator='机翻' style='border-color:#999999'>注意 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>1. i is consonantal at the beginning of a word when followed by a vowel (lüno, pronounced "Yuno") and in the middle of a word when it falls between vowels (biiugis, pronounced "biyugis").</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>1. i 在词首后跟元音时为辅音（Iūnō，读作 "Yūnō"），在词中且位于两元音之间时为辅音（biiugis，读作 "biyugis"）。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
@@ -83,9 +84,9 @@ translators: ["Lanx", "tuche est", "机翻", "簪花落梅"]
 <div class='latin-text'>qu as the qu of quit</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>qu读作quit 的 qu <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <!-- seq:37 page:5 -->
-<div class='latin-text'>OBSERVATION</div>
+## OBSERVATION
 <div class='translation' data-translator='机翻' style='border-color:#999999'>注意 <span class='tag' style='background:#999999'>机翻</span></div>
-<div class='latin-text'>OBSERVATION</div>
+## OBSERVATION
 <div class='translation' data-translator='机翻' style='border-color:#999999'>注意 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>短元音 长元音 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>a ā</div>
@@ -93,7 +94,7 @@ translators: ["Lanx", "tuche est", "机翻", "簪花落梅"]
 <div class='latin-text'>i ī</div>
 <div class='latin-text'>o ō</div>
 <div class='latin-text'>u ū</div>
-<div class='latin-text'>OBSERVATIONS</div>
+## OBSERVATIONS
 <div class='translation' data-translator='机翻' style='border-color:#999999'>注意 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>1.Vowels have both quantity and quality.</div>
 <div class='translation' data-translator='tuche est' style='border-color:#00A3F5'>1.元音有音量和音质两个属性 <span class='tag' style='background:#00A3F5'>tuche est</span></div>

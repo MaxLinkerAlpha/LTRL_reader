@@ -1,6 +1,7 @@
 ---
 id: chapter_V
 title: "Chapter V - 从句"
+version: "v2026.03.04.032346"
 translators: ["Lanx", "Yancey", "机翻"]
 ---
 
@@ -19,7 +20,7 @@ translators: ["Lanx", "Yancey", "机翻"]
 <div class='latin-text'>fatum, fati n. is derived from a verb that means "utter"; hence, its basic meaning is an "utterance"(cf. fama). Trough the meaning of "prophetic utterance" or "oracle" it came to mean "destiny" or "fate." With reference to an individual the plural often means "ill fate" and thus "death." When capitalized in the plural, Fata refers to the divine "Fates."</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>法图姆，法蒂;是从一个动词，意思是“发出”;因此，其基本含义是一个“话语”（参见。法马）。通过“预言话语”或“神谕”的意义，它来意味着“命运”或“命运”。提到一个人，复数通常意味着“不幸的命运”，因此“死亡”。当法塔以复数形式大写时，它指的是神圣的“命运”。“ <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>fatum, fati n. 由一个意为“说话”的动词派生而来，因此基本含义是“一段言语”（注意对比 fama），再由“预言”“神谕”等含义引申为“命运”。复数形式的 fata 偏指“厄运”“宿命（造化弄人）”甚至意指“死亡”，首字母大写的 Fata 表示“命运女神”。 <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
-<div class='latin-text'>&gt; —, mеї; —, nostrumstri; —, tui; —, vestrumestri; and —, sui are reflexive pronouns.Because they are reflexive pronouns, they do not have nominative forms.MEMORIZE A BIANK IN PLACE OF A NOMINATIVE SINGULAR.For the forms and meanings of these words see §44.</div>
+<div class='latin-text emphasis-note'>&gt; —, mеї; —, nostrumstri; —, tui; —, vestrumestri; and —, sui are reflexive pronouns.Because they are reflexive pronouns, they do not have nominative forms.MEMORIZE A BIANK IN PLACE OF A NOMINATIVE SINGULAR.For the forms and meanings of these words see §44.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>&gt; —, mеї; —, nostrumstri; —, tui; —, vestrumestri; 及 —, sui是反身代词。因为它们是反身代词，所以它们没有主格形式。记住用空白代替主格单数。关于这些词的形式和意义，见§44 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>&gt; —, mеї; —, nostrumstri; —, tui; —, vestrumestri; 及—, sui均为反身代词，没有主格形式。谨记，我们用留空的形式来表达其主格形式。至于这些词的形式和含义，请见§44。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 ## Compound Verbs, Prefixes, Assimilation, and Vowel Weakening
@@ -175,7 +176,7 @@ translators: ["Lanx", "Yancey", "机翻"]
 <div class='latin-text'>Semper tui meminerõ. I shall always remember you. (Objective Genitive)</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>永远记得你 我会永远记得你的。（客观属格） <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>Semper tui meminerõ. 永远你的我将记得。 I shall always remember you. 我将永远记得你。 我将永远记得你。 (宾语属格) <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='latin-text'>memini has no present active imperative forms, but it uses instead the future active imperative forms mementö (singular) and mementöte (plural) with present meanings.MEMORIZE THESE FORMS.</div>
+<div class='latin-text emphasis-note'>memini has no present active imperative forms, but it uses instead the future active imperative forms mementö (singular) and mementöte (plural) with present meanings.MEMORIZE THESE FORMS.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>memini没有现在主动祈使句形式，但它使用了将来主动祈使句形式mementö（单数）和mementöte（复数），并具有现在意义。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>memini没有现在主动祈使形式，但可使用将来主动祈使式mementö（单数）和mementöte（复数）来表示现在意义。谨记，牢记这些形式。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='latin-text'>&gt; odi, odisse is a defective verb. odi has forms of the perfect active system only (perfect, pluperfect, and future perfect).However, the perfect forms are translated as if they were present, the pluperfect forms as if they were imperfect, and the future perfect forms as if they were future.</div>
@@ -296,10 +297,10 @@ translators: ["Lanx", "Yancey", "机翻"]
 <!-- seq:120 page:88 -->
 ## 88 OBSERVATIONS
 ## 温馨提示
-<div class='latin-text'>1. The perfect active personal endings are used to form the perfect active indicative of all verbs in Latin. MEMORIZE THESE ENDINGS AND BE PREPARED TO RECITE THEM QUICKLY.</div>
+<div class='latin-text emphasis-note'>1. The perfect active personal endings are used to form the perfect active indicative of all verbs in Latin. MEMORIZE THESE ENDINGS AND BE PREPARED TO RECITE THEM QUICKLY.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>1.在拉丁语中，完成主动人称词尾用于构成所有动词的完成主动所指。记住这些结尾，并准备好快速复述 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>1. 拉丁语完成时主动态人称词尾适用于任一动词的完成时主动态直陈式变位。因此务必牢记以上人称词尾，直至能熟练背诵。 <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
-<div class='latin-text'>2. There are two possible endings in the third person plural, -ērunt or -ẽre is the older ending, and certain authors in all periods preferred it to -ērunt.There is no distinction in meaning.MEMORIZE BOTH ENDINGS.</div>
+<div class='latin-text emphasis-note'>2. There are two possible endings in the third person plural, -ērunt or -ẽre is the older ending, and certain authors in all periods preferred it to -ērunt.There is no distinction in meaning.MEMORIZE BOTH ENDINGS.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>2.在第三人称复数中有两种可能的结尾，-runt或-re是较早的结尾，并且在所有时期的某些作者都喜欢它而不是-runt。在意义上没有区别。记住两种结尾 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>2. 第三人称复数词尾有两种：-erunt与更古老的-ere，二者含义并无区别，但长期以来总有一些作者热衷于使用-ere而非-erunt。谨记，两种词尾均需掌握。 <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
 <div class='latin-text'>Thus the perfect active indicative conjugation of, for example, regõ is:</div>
@@ -322,7 +323,7 @@ translators: ["Lanx", "Yancey", "机翻"]
 <div class='latin-text'>2. The perfect is the only tense of the indicative that has two different times with two different aspects (see (6).It is therefore important always to keep in mind two translations.For example, rẽxi may be translated "I ruled" (past time, simple aspect) or "I have ruled" (present time, completed aspect).Context usually makes clear which translation is correct.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>2.完成时是陈述句中唯一一个有两个不同时和两个不同体的时态（见（6））。因此，记住两个注意事项是很重要的。例如，r Xi可以翻译成“I ruled”（过去的时间，简单体）或“I have ruled”（现在的时间，完成体）。语境通常会表明哪种翻译是正确的。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Yancey' style='border-color:#FDEBFF'>2. 完成时是唯一同时拥有两种不同时间与两种状态的直陈式时态（参见(6)）。因此翻译时很有必要留心，完成时主动态直陈式有两种可能的翻译，例如，rexi既可译作“I ruled”（一般过去时）又可翻译成“I have ruled”（现在完成时）。 <span class='tag' style='background:#FDEBFF'>Yancey</span></div>
-<div class='latin-text'>Eo has two third principal parts, ii and ivi, with two corresponding perfect active stems, i- and iv..The perfect active indicative conjugation formed from iv- is regular, but the conjugation formed from i- displays certain irregularities.MEMORIZE THIS CONJUGATION.</div>
+<div class='latin-text emphasis-note'>Eo has two third principal parts, ii and ivi, with two corresponding perfect active stems, i- and iv..The perfect active indicative conjugation formed from iv- is regular, but the conjugation formed from i- displays certain irregularities.MEMORIZE THIS CONJUGATION.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>Eo有两个第三主语部分，即ii和ivi，以及两个相应的完成时主动词干，即i和iv。由iv-构成的完成时主动指示性连接词是有规律的，但由i-构成的连接词则表现出某些不规则性。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>Eo有两个第三主要部分，ii和ivi。还有两个相对应的完成主动词干，i-和iv-。iv-构成的完成主动直陈变位形式十分规律，但i-构成的变位形式则有部分不规律。谨记，牢记这个变位形式。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Singular单数 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -457,7 +458,7 @@ translators: ["Lanx", "Yancey", "机翻"]
 <div class='latin-text'>The verb ferö, ferre, tuli, lātus, "bring, bear, carry; endure," is a third-conjugation verb with certain irregular forms in the present indicative, present infinitive, and present imperative, which are italicized below.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>动词fero，ferre，tuli，lātus，“bring，bear，carry; endure，”是第三变位动词，在现在时直陈式、现在时不定式和现在时祈使式中具有某些不规则形式，下面用斜体表示 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>动词fero，ferre，tuli，latus，意为“带来（bring），携带（bear），载运（carry）；忍受（endure）”，是第三变位动词，在现在时直陈式、现在时不定式和现在时祈使式中具有某些不规则形式，以下将用斜体表示。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='latin-text'>These irregular forms lack the stem vowel, but the remaining forms of the present system are conjugated regularly as if the present stem were fere-.All the forms of the perfect active system are regular.MEMORIZE THE FOLLOWING FORMS.</div>
+<div class='latin-text emphasis-note'>These irregular forms lack the stem vowel, but the remaining forms of the present system are conjugated regularly as if the present stem were fere-.All the forms of the perfect active system are regular.MEMORIZE THE FOLLOWING FORMS.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>这些不规则的形式缺少词干元音，但是本系统的其余形式是规则的，就好像本系统的词干是元音一样。完全主动系统的所有形式都是规则的。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>这些不规则形式缺乏词干元音，但现在时态下的其他形式是以fere-为现在词干而规则变化的，不过fero完成主动时态的所有形式都是规则变化的。谨记，牢记以下形式。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Present Indicative 现在直陈式 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -489,7 +490,7 @@ translators: ["Lanx", "Yancey", "机翻"]
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>拉丁语中，第一人称及第二人称的反身代词借用了人称代词的形式。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='table-content'>Nom.<br>Gen.<br>Dat.<br>Acc.<br>Abl.<br>Nom.<br>Gen.<br>Dat.<br>Acc.<br>Abl.</div>
 <!-- seq:124 page:92 -->
-<div class='latin-text'>For the third person one reflexive pronoun functions as both the singular and the plural.The third-person reflexive pronoun is not borrowed from the third-person personal pronoun and must be memorized.</div>
+<div class='latin-text emphasis-note'>For the third person one reflexive pronoun functions as both the singular and the plural.The third-person reflexive pronoun is not borrowed from the third-person personal pronoun and must be memorized.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>对于第三人称来说，一个反身代词同时充当单数和复数。第三人称反身代词不是从第三人称代词借用的，必须记住。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>反身代词的第三人称形式可同时表示单复数。谨记，它并非借自第三人称代词。 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>Third Person第三人称 <span class='tag' style='background:#999999'>机翻</span></div>
@@ -558,7 +559,7 @@ translators: ["Lanx", "Yancey", "机翻"]
 <div class='latin-text'>Suam patriam laudant. They praise their (own) homeland.</div>
 <div class='latin-text'>J46. The Intensive Adjective ipse, ipsa, ipsum</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>J46强化形容词ipse，ipsa，ipsum <span class='tag' style='background:#FFC000'>Lanx</span></div>
-<div class='latin-text'>Ipse, ipsa, ipsum is an intensive adjective.An intensive adjective emphasizes or intensifies the noun it modifies.?MEMORIZE ITS DECLENSION ACROSS THE SINGULAR AND THEN ACROSS THE PLURAL.</div>
+<div class='latin-text emphasis-note'>Ipse, ipsa, ipsum is an intensive adjective.An intensive adjective emphasizes or intensifies the noun it modifies.?MEMORIZE ITS DECLENSION ACROSS THE SINGULAR AND THEN ACROSS THE PLURAL.</div>
 <div class='translation' data-translator='Lanx' style='border-color:#FFC000'>是一个加强形容词。加强形容词强调或加强它所修饰的名词。记住它的衰落跨越单一，然后跨越多元 <span class='tag' style='background:#FFC000'>Lanx</span></div>
 <div class='table-content'>Nom.<br>Gen.<br>Dat.</div>
 <div class='latin-text'>Acс.</div>
@@ -601,7 +602,7 @@ translators: ["Lanx", "Yancey", "机翻"]
 <div class='latin-text'>Adjective</div>
 <div class='latin-text'>altus, alta, altum</div>
 <div class='latin-text'>pulcher, pulchra, pulchrum</div>
-<div class='latin-text'>Some first-second-declension adjectives do not have corresponding adverbs, and some have irregularly formed adverbs.MEMoRIZE THESE COMMOn IRrEGUlAr ADVERBS:</div>
+<div class='latin-text emphasis-note'>Some first-second-declension adjectives do not have corresponding adverbs, and some have irregularly formed adverbs.MEMoRIZE THESE COMMOn IRrEGUlAr ADVERBS:</div>
 <div class='translation' data-translator='机翻' style='border-color:#999999'>有些第一、第二变格形容词没有相应的副词，有些则有不规则的副词。 <span class='tag' style='background:#999999'>机翻</span></div>
 <div class='latin-text'>Adjective</div>
 <div class='latin-text'>multus, -a, -um</div>
