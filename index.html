@@ -1219,6 +1219,8 @@ Base Path: ${CONFIG.basePath}</pre>
     // ==================== Markdown 解析 (v7 格式) ====================
     function parseChapterMarkdown(md) {
       log('开始解析 Markdown (v7)');
+      // 标准化换行符（处理CRLF）
+      md = md.replace(/\r\n/g, '\n');
       const lines = md.split('\n');
       const result = { meta: {}, sections: [] };
       const translators = new Set();
@@ -1238,6 +1240,19 @@ Base Path: ${CONFIG.basePath}</pre>
       let currentSection = null;
       let lastWasSectionTitle = false;
       
+      // 创建默认章节，用于存放第一个##之前的内容
+      function ensureSection() {
+        if (!currentSection) {
+          currentSection = {
+            id: 'sec-0',
+            title: '导言',
+            blocks: []
+          };
+          log('创建默认章节: 导言');
+        }
+        return currentSection;
+      }
+      
       for (let i = 0; i < lines.length; i++) {
         let line = lines[i];
         
@@ -1256,8 +1271,8 @@ Base Path: ${CONFIG.basePath}</pre>
         
         // HTML 注释 <!-- seq:43 page:11 -->
         const commentMatch = line.match(/<!--\s*seq:(\d+)\s+page:(\d+)\s*-->/);
-        if (commentMatch && currentSection) {
-          currentSection.blocks.push({
+        if (commentMatch) {
+          ensureSection().blocks.push({
             type: 'meta',
             seq: parseInt(commentMatch[1]),
             page: parseInt(commentMatch[2])
@@ -1267,8 +1282,8 @@ Base Path: ${CONFIG.basePath}</pre>
         
         // 拉丁文 <div class='latin-text'>...</div>
         const latinMatch = line.match(/<div class='latin-text'>(.+)<\/div>/);
-        if (latinMatch && currentSection) {
-          currentSection.blocks.push({
+        if (latinMatch) {
+          ensureSection().blocks.push({
             type: 'content',
             original: { text: latinMatch[1], type: 'latin' },
             translations: []
@@ -1278,8 +1293,8 @@ Base Path: ${CONFIG.basePath}</pre>
         
         // 特殊拉丁文 <div class='latin-text latin-special'>...</div>
         const latinSpecialMatch = line.match(/<div class='latin-text latin-special'>(.+)<\/div>/);
-        if (latinSpecialMatch && currentSection) {
-          currentSection.blocks.push({
+        if (latinSpecialMatch) {
+          ensureSection().blocks.push({
             type: 'content',
             original: { text: latinSpecialMatch[1], type: 'latin' },
             translations: [],
@@ -1290,7 +1305,7 @@ Base Path: ${CONFIG.basePath}</pre>
         
         // 译文 <div class='translation' data-translator='...' ...>...</div>
         const transMatch = line.match(/<div class='translation' data-translator='([^']+)'[^>]*>(.+)<\/div>/);
-        if (transMatch && currentSection) {
+        if (transMatch) {
           const translator = transMatch[1];
           translators.add(translator);
           const content = transMatch[2];
@@ -1299,11 +1314,22 @@ Base Path: ${CONFIG.basePath}</pre>
           const text = textMatch ? textMatch[1] : content;
           
           // 检查是否已经有当前block
-          const lastBlock = currentSection.blocks[currentSection.blocks.length - 1];
+          const section = ensureSection();
+          const lastBlock = section.blocks[section.blocks.length - 1];
           if (lastBlock && lastBlock.type === 'content') {
             lastBlock.translations.push({
               translator: translator,
               text: text
+            });
+          } else {
+            // 如果没有原文block，创建一个只有译文的block
+            section.blocks.push({
+              type: 'content',
+              original: null,
+              translations: [{
+                translator: translator,
+                text: text
+              }]
             });
           }
           continue;
@@ -1311,8 +1337,8 @@ Base Path: ${CONFIG.basePath}</pre>
         
         // 注释 <div class='note'>...</div>
         const noteMatch = line.match(/<div class='note'>(.+)<\/div>/);
-        if (noteMatch && currentSection) {
-          currentSection.blocks.push({
+        if (noteMatch) {
+          ensureSection().blocks.push({
             type: 'note',
             text: noteMatch[1]
           });
@@ -1321,8 +1347,8 @@ Base Path: ${CONFIG.basePath}</pre>
         
         // 脚注 <div class='footnote'>...</div>
         const footnoteMatch = line.match(/<div class='footnote'>(.+)<\/div>/);
-        if (footnoteMatch && currentSection) {
-          currentSection.blocks.push({
+        if (footnoteMatch) {
+          ensureSection().blocks.push({
             type: 'footnote',
             text: footnoteMatch[1]
           });
@@ -1340,6 +1366,8 @@ Base Path: ${CONFIG.basePath}</pre>
     }
     
     function parseCompanionMarkdown(md) {
+      // 标准化换行符（处理CRLF）
+      md = md.replace(/\r\n/g, '\n');
       const notes = {};
       const sections = md.split('## ').slice(1);
       
