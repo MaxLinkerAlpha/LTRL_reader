@@ -656,6 +656,86 @@
     
     /* ========== v7 新版本 Block 样式 ========== */
     
+    /* 图片显示 */
+    .chapter-images {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: rgba(255,255,255,0.6);
+      border: 1px solid rgba(184,134,11,0.3);
+      border-radius: 8px;
+    }
+    
+    .chapter-images h4 {
+      color: var(--wine);
+      margin-bottom: 0.75rem;
+      font-size: 0.9rem;
+    }
+    
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.75rem;
+    }
+    
+    .image-gallery img {
+      width: 100%;
+      border: 1px solid rgba(184,134,11,0.3);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    
+    .image-gallery img:hover {
+      transform: scale(1.02);
+    }
+    
+    .image-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      z-index: 2000;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .image-modal.show {
+      display: flex;
+    }
+    
+    .image-modal img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+    
+    .image-modal .close-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    
+    /* 注释样式 */
+    .note, .footnote {
+      margin: 0.5rem 0;
+      padding: 0.5rem 0.75rem;
+      border-left: 3px solid #999;
+      background: rgba(0,0,0,0.03);
+      font-size: 0.9rem;
+      color: var(--ink-light);
+    }
+    
+    .note {
+      border-color: #666;
+    }
+    
+    .footnote {
+      border-color: var(--gold);
+      font-style: italic;
+    }
+    
     /* 元信息行（序号/页数） */
     .meta-line {
       display: flex;
@@ -1048,6 +1128,17 @@ Base Path: ${CONFIG.basePath}</pre>
       
       const allTranslators = Array.from(translatorMap.values());
       
+      // 准备图片画廊
+      const images = data.meta.images || [];
+      const imageGalleryHtml = images.length > 0 ? `
+        <div class="chapter-images">
+          <h4>📷 原书截图 (${images.length}张)</h4>
+          <div class="image-gallery">
+            ${images.map((img, i) => `<img src="data/images/${img}" alt="截图${i+1}" onclick="openImageModal('data/images/${img}')" loading="lazy">`).join('')}
+          </div>
+        </div>
+      ` : '';
+      
       document.getElementById('main-content').innerHTML = `
         <div class="chapter-header">
           <div class="chapter-number">${config.number}</div>
@@ -1058,6 +1149,8 @@ Base Path: ${CONFIG.basePath}</pre>
             ${data.meta.status === 'incomplete' ? '<span class="incomplete-badge">翻译中</span>' : ''}
           </div>
         </div>
+        
+        ${imageGalleryHtml}
         
         <div class="controls">
           <div class="control-group">
@@ -1077,6 +1170,12 @@ Base Path: ${CONFIG.basePath}</pre>
         <article id="chapter-content">
           ${data.sections.map(sec => renderSection(sec, companion[sec.id])).join('')}
         </article>
+        
+        <!-- 图片模态框 -->
+        <div class="image-modal" id="image-modal" onclick="closeImageModal()">
+          <span class="close-btn">&times;</span>
+          <img id="modal-img" src="" alt="大图">
+        </div>
         
         <nav class="chapter-nav">
           <a href="javascript:void(0)" onclick="prevChapter()" class="nav-btn ${config.number <= 0 ? 'disabled' : ''}">← 上一章</a>
@@ -1103,83 +1202,6 @@ Base Path: ${CONFIG.basePath}</pre>
       
       bindControls();
       loadUtterances();
-    }
-    
-    function renderSection(section, idx, companionNote) {
-      // 新版本格式: 使用 blocks (每个Excel行)
-      if (section.blocks && section.blocks.length > 0) {
-        return renderSectionBlocks(section, companionNote);
-      }
-      
-      // 旧版本格式兼容
-      const isIncomplete = section.incomplete || (!section.latin && !section.translations?.length);
-      
-      return `
-        <section class="section" id="${section.id}">
-          <h2 class="section-title">
-            ${section.title}
-            ${isIncomplete ? '<span class="incomplete-badge">待补充</span>' : ''}
-          </h2>
-          
-          ${isIncomplete ? `
-            <div class="incomplete-notice">
-              <p>⚠️ 此段落内容尚未完成翻译或原文缺失</p>
-            </div>
-          ` : ''}
-          
-          ${section.latin ? `
-            <div class="latin-section" data-type="latin">
-              <div class="latin-text">
-                <div class="latin-meta">
-                  <span class="latin-label">Latin</span>
-                  ${section.forvo?.map(f => `
-                    <a href="https://forvo.com/word/${encodeURIComponent(f)}/" target="_blank" rel="noopener" class="forvo-link">
-                      🔊 ${f}
-                    </a>
-                  `).join('') || ''}
-                  <button class="copy-btn" onclick="copyText('${escapeHtml(section.latin).replace(/'/g, "\\'")}')" title="复制">
-                    📋
-                  </button>
-                </div>
-                ${highlightTerms(section.latin)}
-              </div>
-            </div>
-          ` : ''}
-          
-          ${section.translations?.length ? `
-            <div class="translations" data-type="translation">
-              ${section.translations.map(t => {
-                const translator = state.config.translators?.find(tr => tr.id === t.translator || tr.name === t.translator);
-                const color = translator?.color || '#666';
-                const isPrimary = translator?.is_primary || t.is_primary;
-                return `
-                  <div class="translation" data-translator="${t.translator}" data-primary="${isPrimary}">
-                    <span class="translator-label" style="background: ${color}20; color: ${color}; border: 1px solid ${color}40;">
-                      ${t.translator} ${isPrimary ? '★' : ''}
-                    </span>
-                    <div class="translation-text">${highlightTerms(t.text)}</div>
-                  </div>
-                `;
-              }).join('')}
-            </div>
-          ` : ''}
-          
-          ${companionNote ? `
-            <div class="companion-section" data-type="companion">
-              <div class="companion-note">
-                <button class="companion-toggle" onclick="toggleCompanion(this)">
-                  <span>💡</span>
-                  <span>伴侣注释: ${companionNote.title}</span>
-                  <span style="margin-left: auto;">▼</span>
-                </button>
-                <div class="companion-content">
-                  ${marked.parse(companionNote.content)}
-                </div>
-              </div>
-            </div>
-          ` : ''}
-        </section>
-      `;
     }
     
     // 渲染段落 (v7 格式)
@@ -1263,6 +1285,18 @@ Base Path: ${CONFIG.basePath}</pre>
         `;
       }
       
+      if (block.type === 'note') {
+        return `<div class="note">💡 译者注: ${escapeHtml(block.text)}</div>`;
+      }
+      
+      if (block.type === 'footnote') {
+        return `<div class="footnote">📌 ${escapeHtml(block.text)}</div>`;
+      }
+      
+      if (block.type === 'image') {
+        return `<div class="chapter-image"><img src="${block.src}" alt="${block.alt}" onclick="openImageModal('${block.src}')" loading="lazy"></div>`;
+      }
+      
       return '';
     }
     
@@ -1271,6 +1305,7 @@ Base Path: ${CONFIG.basePath}</pre>
       log('开始解析 Markdown (v7)');
       const lines = md.split('\n');
       const result = { meta: {}, sections: [] };
+      const translators = new Set();
       
       // 解析 YAML frontmatter
       if (lines[0] === '---') {
@@ -1285,9 +1320,7 @@ Base Path: ${CONFIG.basePath}</pre>
       
       // 解析段落
       let currentSection = null;
-      let inContentBlock = false;
-      let currentBlock = null;
-      let blockDepth = 0;
+      let lastWasSectionTitle = false;
       
       for (let i = 0; i < lines.length; i++) {
         let line = lines[i];
@@ -1300,87 +1333,104 @@ Base Path: ${CONFIG.basePath}</pre>
             title: line.replace('## ', ''),
             blocks: []
           };
+          lastWasSectionTitle = true;
           log('发现段落:', currentSection.title);
           continue;
         }
         
-        // 元信息行 <div class="meta-line">
-        const metaLineMatch = line.match(/<div class="meta-line" data-seq="(\d+)" data-page="(\d+)">/);
-        if (metaLineMatch && currentSection) {
+        // HTML 注释 <!-- seq:43 page:11 -->
+        const commentMatch = line.match(/<!--\s*seq:(\d+)\s+page:(\d+)\s*-->/);
+        if (commentMatch && currentSection) {
           currentSection.blocks.push({
             type: 'meta',
-            seq: metaLineMatch[1],
-            page: metaLineMatch[2]
+            seq: parseInt(commentMatch[1]),
+            page: parseInt(commentMatch[2])
           });
           continue;
         }
         
-        // 开始内容 block
-        if (line === '<div class="content-block">') {
-          inContentBlock = true;
-          currentBlock = { type: 'content', original: null, translations: [] };
-          blockDepth = 1;
+        // 图片 ![...](...)
+        const imgMatch = line.match(/!\[([^\]]*)\]\(([^)]+)\)/);
+        if (imgMatch && currentSection) {
+          currentSection.blocks.push({
+            type: 'image',
+            alt: imgMatch[1],
+            src: imgMatch[2]
+          });
           continue;
         }
         
-        // 结束内容 block
-        if (line === '</div>' && inContentBlock) {
-          blockDepth--;
-          if (blockDepth === 0) {
-            inContentBlock = false;
-            if (currentSection && currentBlock) {
-              currentSection.blocks.push(currentBlock);
-            }
-            currentBlock = null;
-          }
+        // 拉丁文 <div class='latin-text'>...</div>
+        const latinMatch = line.match(/<div class='latin-text'>(.+)<\/div>/);
+        if (latinMatch && currentSection) {
+          currentSection.blocks.push({
+            type: 'content',
+            original: { text: latinMatch[1], type: 'latin' },
+            translations: []
+          });
           continue;
         }
         
-        // 在 block 内部
-        if (inContentBlock && currentBlock) {
-          // 计算嵌套深度
-          blockDepth += (line.match(/<div/g) || []).length;
-          blockDepth -= (line.match(/<\/div>/g) || []).length;
+        // 特殊拉丁文 <div class='latin-text latin-special'>...</div>
+        const latinSpecialMatch = line.match(/<div class='latin-text latin-special'>(.+)<\/div>/);
+        if (latinSpecialMatch && currentSection) {
+          currentSection.blocks.push({
+            type: 'content',
+            original: { text: latinSpecialMatch[1], type: 'latin' },
+            translations: [],
+            isSpecial: true
+          });
+          continue;
+        }
+        
+        // 译文 <div class='translation' data-translator='...' ...>...</div>
+        const transMatch = line.match(/<div class='translation' data-translator='([^']+)'[^>]*>(.+)<\/div>/);
+        if (transMatch && currentSection) {
+          const translator = transMatch[1];
+          translators.add(translator);
+          const content = transMatch[2];
+          // 提取文本（去掉span标签）
+          const textMatch = content.match(/^(.+?)\s*<span/);
+          const text = textMatch ? textMatch[1] : content;
           
-          // 原文 <div class="original english|latin">
-          const originalMatch = line.match(/<div class="original (english|latin)">\s*$/);
-          if (originalMatch) {
-            // 下一行是内容
-            const contentLine = lines[++i];
-            if (contentLine) {
-              currentBlock.original = {
-                text: contentLine.trim(),
-                type: originalMatch[1]
-              };
-            }
-            continue;
-          }
-          
-          // 译文 <div class="translation" data-translator="name">
-          const transMatch = line.match(/<div class="translation" data-translator="([^"]+)"[^>]*>/);
-          if (transMatch) {
-            const translator = transMatch[1];
-            // 添加译者到block
-            currentBlock.translations.push({
+          // 检查是否已经有当前block
+          const lastBlock = currentSection.blocks[currentSection.blocks.length - 1];
+          if (lastBlock && lastBlock.type === 'content') {
+            lastBlock.translations.push({
               translator: translator,
-              text: ''  // 暂时空文本，下面填充
+              text: text
             });
-            continue;
           }
-          
-          // 译文文本 <span class="translation-text">...</span>
-          const textMatch = line.match(/<span class="translation-text">\s*(.+?)\s*<\/span>/);
-          if (textMatch && currentBlock.translations.length > 0) {
-            // 填充最后一个译文的文本
-            currentBlock.translations[currentBlock.translations.length - 1].text = textMatch[1];
-            continue;
-          }
+          continue;
+        }
+        
+        // 注释 <div class='note'>...</div>
+        const noteMatch = line.match(/<div class='note'>(.+)<\/div>/);
+        if (noteMatch && currentSection) {
+          currentSection.blocks.push({
+            type: 'note',
+            text: noteMatch[1]
+          });
+          continue;
+        }
+        
+        // 脚注 <div class='footnote'>...</div>
+        const footnoteMatch = line.match(/<div class='footnote'>(.+)<\/div>/);
+        if (footnoteMatch && currentSection) {
+          currentSection.blocks.push({
+            type: 'footnote',
+            text: footnoteMatch[1]
+          });
+          continue;
         }
       }
       
       if (currentSection) result.sections.push(currentSection);
       
-      log('解析完成，共', result.sections.length, '个段落');
+      // 收集译者信息
+      result.meta.translators = Array.from(translators);
+      
+      log('解析完成，共', result.sections.length, '个段落, 译者:', result.meta.translators);
       return result;
     }
     
@@ -1515,6 +1565,18 @@ Base Path: ${CONFIG.basePath}</pre>
       content.classList.toggle('show');
       btn.querySelector('span:last-child').textContent = 
         content.classList.contains('show') ? '▲' : '▼';
+    }
+    
+    function openImageModal(src) {
+      const modal = document.getElementById('image-modal');
+      const img = document.getElementById('modal-img');
+      img.src = src;
+      modal.classList.add('show');
+    }
+    
+    function closeImageModal() {
+      const modal = document.getElementById('image-modal');
+      modal.classList.remove('show');
     }
     
     async function copyText(text) {
