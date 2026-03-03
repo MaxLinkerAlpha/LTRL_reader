@@ -1065,7 +1065,6 @@ Base Path: ${CONFIG.basePath}</pre>
         
         <div class="controls">
           <div class="control-group">
-            <label><input type="checkbox" id="ctrl-latin" ${state.showLatin ? 'checked' : ''}> 拉丁语</label>
             <label><input type="checkbox" id="ctrl-translation" ${state.showTranslation ? 'checked' : ''}> 译文</label>
             <label><input type="checkbox" id="ctrl-companion" ${state.showCompanion ? 'checked' : ''}> 伴侣注释</label>
           </div>
@@ -1074,7 +1073,6 @@ Base Path: ${CONFIG.basePath}</pre>
             <select id="ctrl-translator">
               <option value="all">全部对比</option>
               <option value="original-only">仅显示原文</option>
-              <option value="primary">仅主译者</option>
               ${allTranslators.map(t => `<option value="${t.id}">${t.name}</option>`).join('')}
             </select>
           </div>
@@ -1434,16 +1432,9 @@ Base Path: ${CONFIG.basePath}</pre>
     }
     
     function bindControls() {
-      document.getElementById('ctrl-latin')?.addEventListener('change', (e) => {
-        state.showLatin = e.target.checked;
-        document.querySelectorAll('[data-type="latin"]').forEach(el => {
-          el.style.display = state.showLatin ? 'block' : 'none';
-        });
-      });
-      
       document.getElementById('ctrl-translation')?.addEventListener('change', (e) => {
         state.showTranslation = e.target.checked;
-        document.querySelectorAll('[data-type="translation"]').forEach(el => {
+        document.querySelectorAll('.translations').forEach(el => {
           el.style.display = state.showTranslation ? 'block' : 'none';
         });
       });
