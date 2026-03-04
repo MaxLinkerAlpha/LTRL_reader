@@ -1,4 +1,28 @@
 {
+  "see_also_specific_parts_of_speech_and_specific_parts_of_the_verb_mute_liquid_rule": {
+    "term": ". See also specific parts of speech and specific parts of the verb Mute/liquid rule",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "see_also_specific_parts_of_speech_specific_cases_and_specific_moods_tricolon": {
+    "term": ". See also specific parts of speech, specific cases, and specific moods Tricolon",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "a": {
+    "term": "A",
+    "translation": "物主",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "abbreviations_of_common_praen_mina": {
+    "term": "abbreviations of common praenômina",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "ablative_of_accompaniment": {
     "term": "Ablative of Accompaniment",
     "translation": "伴随夺格",
@@ -25,7 +49,7 @@
   },
   "ablative_of_description": {
     "term": "Ablative of Description",
-    "translation": "描述",
+    "translation": "(程度)差异",
     "explanation": "",
     "abbreviation": ""
   },
@@ -36,32 +60,32 @@
     "abbreviation": ""
   },
   "ablative_of_means_instrument": {
-    "term": "Ablative of Means/Instrument",
-    "translation": "手段/工具",
+    "term": "Ablative of Means/Instrunent",
+    "translation": "方式夺格",
     "explanation": "",
     "abbreviation": ""
   },
   "ablative_of_origin": {
     "term": "Ablative of Origin",
-    "translation": "起源",
+    "translation": "手段/工具",
     "explanation": "",
     "abbreviation": ""
   },
   "ablative_of_personal_agent": {
     "term": "Ablative of Personal Agent",
-    "translation": "(被动态)施事者（或者叫施事夺格）",
+    "translation": "人称施动者夺格",
     "explanation": "",
     "abbreviation": ""
   },
   "ablative_of_place_from_which": {
     "term": "Ablative of Place From Which",
-    "translation": "离开",
+    "translation": "(被动态)施事者（或者叫施事夺格）",
     "explanation": "",
     "abbreviation": ""
   },
   "ablative_of_place_where": {
     "term": "Ablative of Place Where",
-    "translation": "地点",
+    "translation": "离开",
     "explanation": "",
     "abbreviation": ""
   },
@@ -73,7 +97,7 @@
   },
   "ablative_of_respect": {
     "term": "Ablative of Respect",
-    "translation": "限定",
+    "translation": "价格/价值",
     "explanation": "",
     "abbreviation": ""
   },
@@ -85,117 +109,135 @@
   },
   "ablative_of_time_when": {
     "term": "Ablative of Time When",
-    "translation": "时间(点）",
+    "translation": "分离",
     "explanation": "",
     "abbreviation": ""
   },
   "ablative_of_time_within_which": {
     "term": "Ablative of Time Within Which",
-    "translation": "时段(内)",
+    "translation": "时间(点）",
     "explanation": "",
     "abbreviation": ""
   },
   "absolute": {
     "term": "Absolute",
-    "translation": "独立夺格",
+    "translation": "夺格",
     "explanation": "",
     "abbreviation": ""
   },
   "accentuation": {
     "term": "Accentuation",
-    "translation": "重读",
+    "translation": "时段(内)",
     "explanation": "",
     "abbreviation": ""
   },
   "accusative_case_introduction": {
     "term": "Accusative case,introduction",
-    "translation": "宾格",
+    "translation": "末音节",
     "explanation": "",
     "abbreviation": ""
   },
   "accusative_of_duration_of_time": {
     "term": "Accusative of Duration of Time",
-    "translation": "(持续)时间",
+    "translation": "双宾格",
     "explanation": "",
     "abbreviation": ""
   },
   "accusative_of_exclamation": {
     "term": "Accusative of Exclamation",
-    "translation": "感叹",
+    "translation": "随现在时的时间宾格",
     "explanation": "",
     "abbreviation": ""
   },
   "accusative_of_irregular_verbs": {
     "term": "Accusative of irregular verbs",
-    "translation": "不规则动词",
+    "translation": "分词",
     "explanation": "",
     "abbreviation": ""
   },
   "accusative_of_place": {
     "term": "Accusative of place",
-    "translation": "地点",
+    "translation": "不规则",
     "explanation": "",
     "abbreviation": ""
   },
   "accusative_of_place_to_which": {
     "term": "Accusative of Place To Which",
-    "translation": "去向",
+    "translation": "感叹",
     "explanation": "",
     "abbreviation": ""
   },
   "accusative_of_respect": {
     "term": "Accusative of Respect",
-    "translation": "限定",
-    "explanation": "",
+    "translation": "关涉宾格",
+    "explanation": "备选译名：趋向",
     "abbreviation": ""
   },
   "accusative_with_emphatic_protasis": {
     "term": "Accusative with emphatic protasis",
-    "translation": "带强调的前提分句",
+    "translation": "可能性较大未来",
     "explanation": "",
     "abbreviation": ""
   },
   "accusative_with_imperfect_tense": {
     "term": "Accusative with imperfect tense",
-    "translation": "随未完成时的时间宾格",
+    "translation": "(持续)时间",
     "explanation": "",
     "abbreviation": ""
   },
   "accusative_with_present_tense": {
     "term": "Accusative with present tense",
-    "translation": "随现在时的时间宾格",
+    "translation": "随未完成时的时间宾格",
     "explanation": "",
     "abbreviation": ""
   },
   "active_periphrastics": {
     "term": "Active periphrastics",
-    "translation": "主动迂说法",
+    "translation": "间接陈述主语",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "active_periphrastics_2": {
+    "term": "active periphrastics",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "adjective_morphology": {
     "term": "Adjective morphology",
-    "translation": "形容词词法",
+    "translation": "主动迂说法",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "adjectives": {
+    "term": "Adjectives (continued)",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "adjectives_introduction": {
     "term": "Adjectives,introduction",
-    "translation": "形容词介绍",
+    "translation": "第三变格法",
     "explanation": "",
     "abbreviation": ""
   },
   "adverbial": {
     "term": "Adverbial",
-    "translation": "副词/状语",
+    "translation": "宾格",
     "explanation": "",
     "abbreviation": ""
   },
   "adverbs_comparative_of": {
     "term": "Adverbs comparative of (irregular)",
-    "translation": "副词比较级",
+    "translation": "名词化用法",
     "explanation": "",
-    "abbreviation": "irregular"
+    "abbreviation": ""
+  },
+  "alcaic_strophe": {
+    "term": "Alcaic strophe",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
   },
   "alliteration": {
     "term": "Alliteration",
@@ -203,8 +245,26 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "alliteration_2": {
+    "term": "alliteration",
+    "translation": "头韵法",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "alphabet": {
+    "term": "Alphabet",
+    "translation": "字母表",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "anaphora": {
     "term": "Anaphora",
+    "translation": "首语重复",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "anaphora_2": {
+    "term": "anaphora",
     "translation": "首语重复",
     "explanation": "",
     "abbreviation": ""
@@ -221,9 +281,87 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "antithesis_2": {
+    "term": "antithesis",
+    "translation": "对偶",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "apodosis_definition": {
+    "term": "Apodosis, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "apposition": {
+    "term": "Apposition",
+    "translation": "同位",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "archaic_spellings": {
+    "term": "Archaic spellings",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "archaic_verb_forms": {
+    "term": "Archaic verb forms",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "archilochian": {
     "term": "Archilochian",
     "translation": "阿尔奇洛科斯体",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "archilochian_meter": {
+    "term": "Archilochian meter",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "as_negative_command": {
+    "term": "as negative command",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "asclepiadean": {
+    "term": "Asclepiadean",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "asclepiadean_meters": {
+    "term": "Asclepiadean meters",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "aspect": {
+    "term": "aspect",
+    "translation": "体",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "assimilation": {
+    "term": "Assimilation (in compound verbs)",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "assonance": {
+    "term": "Assonance",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "assonance_2": {
+    "term": "assonance",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
@@ -233,8 +371,20 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "attributive_and_circumstantial": {
+    "term": "attributive and circumstantial",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "caesura": {
     "term": "Caesura",
+    "translation": "异步停顿",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "caesura_2": {
+    "term": "caesura",
     "translation": "异步停顿",
     "explanation": "",
     "abbreviation": ""
@@ -257,75 +407,177 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "chiasmus_2": {
+    "term": "chiasmus",
+    "translation": "十字配列",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "choliambic": {
+    "term": "Choliambic (limping iambic)",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "circumstantial": {
+    "term": "circumstantial",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "cognates_introduction": {
     "term": "Cognates, introduction",
-    "translation": "同源词",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "common_terms": {
+    "term": "common terms",
+    "translation": "长元音规则",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "comparative_of_3": {
+    "term": "comparative of (regular)",
+    "translation": "副词比较级",
     "explanation": "",
     "abbreviation": ""
   },
   "comparative_of": {
     "term": "comparative of(irregular)",
-    "translation": "比较级（不规则）",
+    "translation": "形容词词法",
     "explanation": "",
-    "abbreviation": "irregular"
+    "abbreviation": ""
   },
   "comparative_of_2": {
     "term": "comparative of(regular)",
-    "translation": "比较级(规则)",
+    "translation": "比较级（不规则）",
     "explanation": "",
-    "abbreviation": "regular"
+    "abbreviation": ""
+  },
+  "complementary": {
+    "term": "Complementary",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "completed": {
+    "term": "completed",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
   },
   "compound_verbs_introduction": {
     "term": "Compound verbs, introduction",
-    "translation": "复合动词",
+    "translation": "同源词",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "compound_introduction": {
+    "term": "compound, introduction",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "conditional_sentences_definition": {
     "term": "Conditional sentences, definition",
-    "translation": "条件(状语)从句",
+    "translation": "复合动词",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "coniunctions_coordinating": {
+    "term": "Coniunctions coordinating",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "conjugations_introduction": {
+    "term": "conjugations, introduction",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "connective": {
+    "term": "connective",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "consonantal_i": {
+    "term": "Consonantal i",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "coordination_definition": {
+    "term": "Coordination, definition",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "copulative_verbs": {
     "term": "copulative verbs",
-    "translation": "(连)系动词",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "copulative_definition": {
+    "term": "copulative, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "correlatives": {
+    "term": "Correlatives",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "dactylic_hexameter": {
+    "term": "Dactylic hexameter",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "dactylic_hexameter_2": {
+    "term": "dactylic hexameter",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "dative_case_introduction": {
     "term": "Dative case, introduction",
-    "translation": "与格",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "dative_of_advantage": {
     "term": "Dative of Advantage",
-    "translation": "利，利益",
+    "translation": "双与格结构",
     "explanation": "",
     "abbreviation": ""
   },
   "dative_of_agent_with_a_passive_periphrastic": {
     "term": "Dative of Agent with a Passive Periphrastic",
-    "translation": "随被动迂说法的施事者",
+    "translation": "利，利益",
     "explanation": "",
     "abbreviation": ""
   },
   "dative_of_disadvantage": {
     "term": "Dative of Disadvantage",
-    "translation": "弊，不利",
+    "translation": "随被动迂说法的施事者",
     "explanation": "",
     "abbreviation": ""
   },
   "dative_of_indirect_object": {
     "term": "Dative of Indirect Object",
-    "translation": "间接宾语，间宾",
+    "translation": "弊，不利",
     "explanation": "",
     "abbreviation": ""
   },
   "dative_of_purpose": {
     "term": "Dative of Purpose",
-    "translation": "目的",
+    "translation": "间接宾语，间宾",
     "explanation": "",
     "abbreviation": ""
   },
@@ -337,31 +589,37 @@
   },
   "dative_of_the_possessor": {
     "term": "Dative of the Possessor",
-    "translation": "物主",
+    "translation": "属有[者]与格",
     "explanation": "",
     "abbreviation": ""
   },
   "dative_with_a_compound_verb": {
     "term": "Dative with a Compound Verb",
-    "translation": "随复合动词",
+    "translation": "物主",
     "explanation": "",
     "abbreviation": ""
   },
   "dative_with_an_intransitive_verb": {
     "term": "Dative with an Intransitive Verb",
-    "translation": "随不及物动词",
+    "translation": "随复合动词",
     "explanation": "",
     "abbreviation": ""
   },
   "declension_definition": {
     "term": "Declension, definition",
-    "translation": "变格/变格法",
+    "translation": "随不及物动词",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "defective": {
+    "term": "defective",
+    "translation": "(连)系动词",
     "explanation": "",
     "abbreviation": ""
   },
   "defective_verbs": {
     "term": "Defective verbs",
-    "translation": "残缺动词",
+    "translation": "变格/变格法",
     "explanation": "",
     "abbreviation": ""
   },
@@ -371,15 +629,21 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "deliberative_subjunctive_in": {
+    "term": "deliberative subjunctive in",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "demonstrative": {
     "term": "demonstrative",
-    "translation": "指示",
+    "translation": "形容词介绍",
     "explanation": "",
     "abbreviation": ""
   },
   "demonstrative_adjectives_pronouns_hic_haec_hoc": {
     "term": "Demonstrative adjectives/pronouns hic, haec, hoc",
-    "translation": "指示形容词/代词",
+    "translation": "间接问句",
     "explanation": "",
     "abbreviation": ""
   },
@@ -391,35 +655,53 @@
   },
   "deponent_verbs": {
     "term": "Deponent verbs",
-    "translation": "异态动词",
+    "translation": "特殊用途",
     "explanation": "",
     "abbreviation": ""
   },
   "derivatives_introduction": {
     "term": "Derivatives, introduction",
-    "translation": "衍生词",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "derived_from_first_second_declension_adiectives": {
     "term": "derived from first-second declension adiectives",
-    "translation": "源自第一二变格法形容词",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "derived_from_third_declension_adjectives": {
     "term": "derived from third-declension adjectives",
-    "translation": "源自第三变格法形容词",
+    "translation": "源自第一二变格法形容词",
     "explanation": "",
     "abbreviation": ""
   },
   "diaeresis": {
     "term": "Diaeresis",
-    "translation": "同步停顿",
+    "translation": "分音符",
     "explanation": "",
     "abbreviation": ""
   },
-  "direct_object_2": {
+  "diaeresis_2": {
+    "term": "diaeresis",
+    "translation": "分音符",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "diphthongs": {
+    "term": "Diphthongs",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "direct_and_indirect": {
+    "term": "direct and indirect",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "direct_object": {
     "term": "Direct Object",
     "translation": "直接宾语",
     "explanation": "",
@@ -427,7 +709,19 @@
   },
   "direct_object_of_a_middle_voice_verb": {
     "term": "Direct Object of a Middle Voice Verb",
-    "translation": "中动态直接宾语，中动直宾",
+    "translation": "直接宾语，直宾",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "direct_questions": {
+    "term": "Direct questions",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "double": {
+    "term": "double",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
@@ -439,7 +733,13 @@
   },
   "double_with_oro_with_rogo": {
     "term": "Double with oro, with rogo",
-    "translation": "双宾格",
+    "translation": "中动态直接宾语，中动直宾",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "doubting_clauses": {
+    "term": "Doubting clauses",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
@@ -449,20 +749,32 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "elegiac_couplet_2": {
+    "term": "elegiac couplet",
+    "translation": "诉歌体双行诗",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "element": {
     "term": "element",
-    "translation": "成分",
+    "translation": "句子成分，",
     "explanation": "",
     "abbreviation": ""
   },
   "element_of_sentence": {
     "term": "element of sentence",
-    "translation": "句子成分",
+    "translation": "副词/状语",
     "explanation": "",
     "abbreviation": ""
   },
   "elision": {
     "term": "Elision",
+    "translation": "词末省音",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "elision_2": {
+    "term": "elision",
     "translation": "词末省音",
     "explanation": "",
     "abbreviation": ""
@@ -473,21 +785,81 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "ellipsis_2": {
+    "term": "ellipsis",
+    "translation": "省略",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "enclitic": {
     "term": "Enclitic",
     "translation": "前倾词",
     "explanation": "",
     "abbreviation": ""
   },
+  "expressing_purpose": {
+    "term": "expressing purpose",
+    "translation": "动形词",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "expressions_of_compared": {
+    "term": "Expressions of, compared",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "fear_clauses": {
+    "term": "Fear clauses",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "fifth_declension": {
+    "term": "fifth declension",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "finding_the_stem_of": {
+    "term": "finding the stem of",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "first_person_singular_passive": {
     "term": "first person singular passive",
     "translation": "第一人称单数被动式",
-    "explanation": "备选：一单被动式",
-    "abbreviation": ""
+    "explanation": "",
+    "abbreviation": "一单被动式"
   },
   "first_second_declension": {
     "term": "first-second declension",
-    "translation": "第一二变格法（形容词）",
+    "translation": "比较级(规则)",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "for_noun_syntax_see_specific_noun_cases_numbers_cardinal_and_ordinal": {
+    "term": "For noun syntax see specific noun cases Numbers, cardinal and ordinal",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "fore_ut_construction": {
+    "term": "fore ut construction",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "fourth_declension": {
+    "term": "fourth declension",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "fricative": {
+    "term": "fricative",
+    "translation": "擦音",
     "explanation": "",
     "abbreviation": ""
   },
@@ -497,15 +869,57 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "future_active_of_third_third_i_stem_and_fourth_conjugations": {
+    "term": "future active of third, third i-stem and fourth conjugations",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "future_less_vivid": {
     "term": "future less vivid",
-    "translation": "可能性较小未来",
+    "translation": "条件(状语)从句",
     "explanation": "",
     "abbreviation": ""
   },
   "future_more_vivid": {
     "term": "future more vivid",
-    "translation": "可能性较大未来",
+    "translation": "可能性较小未来",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "future_passive_of_first_and_second_conjugations": {
+    "term": "future passive of first and second conjugations",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "future_passive_of_third_third_i_stem_and_fourth_conjugations": {
+    "term": "future passive of third, third i-stem and fourth conjugations",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "future_perfect_active_of_all_verbs": {
+    "term": "future perfect active of all verbs",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "future_perfect_passive_of_all_verbs": {
+    "term": "future perfect passive of all verbs",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "future_memini": {
+    "term": "future, memini",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "future_scio": {
+    "term": "future, scio",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
@@ -515,27 +929,81 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "general_index_a": {
+    "term": "General Index A",
+    "translation": "特征",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "general_index_consonants": {
+    "term": "General Index Consonants",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "general_index_nominative_case_introduction": {
+    "term": "General Index Nominative case, introduction",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "general_index_subordination_definition": {
+    "term": "General Index Subordination, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "genitive_case_introduction": {
     "term": "Genitive case, introduction",
-    "translation": "属格",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "genitive_of_characteristic": {
     "term": "Genitive of Characteristic",
-    "translation": "特征",
+    "translation": "宾语",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "genitive_of_characteristic_2": {
+    "term": "Genitive of characteristic",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "genitive_of_deponent_and_semideponent_verbs": {
+    "term": "Genitive of deponent and semideponent verbs",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "genitive_of_description": {
     "term": "Genitive of Description",
-    "translation": "描述",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "genitive_of_indefinite_value": {
     "term": "Genitive of Indefinite Value",
-    "translation": "不定价值",
+    "translation": "描述",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "genitive_of_irregular_verbs": {
+    "term": "Genitive of irregular verbs",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "genitive_of_memini": {
+    "term": "Genitive of memini",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "genitive_of_perception": {
+    "term": "Genitive of perception",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
@@ -545,15 +1013,69 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "genitive_of_purpose": {
+    "term": "Genitive of purpose",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "genitive_of_result": {
+    "term": "Genitive of result",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "genitive_of_the_indicative_mood_overview": {
+    "term": "Genitive of the indicative mood, overview",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "genitive_with_miseret_paenitet_piget_pudet_taedet_r_fert_interest": {
+    "term": "Genitive with miseret, paenitet, piget, pudet, taedet, rēfert, interest",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "genitive_with_superlatives": {
     "term": "Genitive with superlatives",
-    "translation": "随最高级",
+    "translation": "部分",
     "explanation": "",
     "abbreviation": ""
   },
   "gerundives_introduction": {
     "term": "Gerundives, introduction",
-    "translation": "动形词",
+    "translation": "主语",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "gerunds_introduction": {
+    "term": "Gerunds, introduction",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "greetings_in_latin": {
+    "term": "Greetings in Latin",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "hendecasyllable": {
+    "term": "Hendecasyllable",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "hendecasyllable_2": {
+    "term": "hendecasyllable",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "hendiadys": {
+    "term": "Hendiadys",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
@@ -563,9 +1085,63 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "hiatus_2": {
+    "term": "hiatus",
+    "translation": "元音连续",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "historical": {
+    "term": "Historical",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "hortatory_subiunctive": {
+    "term": "Hortatory subiunctive",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "hyperbaton": {
     "term": "Hyperbaton",
     "translation": "移位",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "hypotaxis_definition": {
+    "term": "Hypotaxis, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "i_present_active_and_passive_indicative": {
+    "term": "I. present active and passive indicative",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "idiom_definition": {
+    "term": "Idiom, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "ii_present_active_and_passive_indicative_infinitive_and_imperative": {
+    "term": "II. present active and passive indicative, infinitive, and imperative",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "iii_present_indicative_system_perfect_active_system_infinitive_and_imperative": {
+    "term": "III. present indicative system, perfect active system, infinitive, and imperative",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "ille_illa_illud": {
+    "term": "ille, illa, illud",
+    "translation": "指示形容词/代词",
     "explanation": "",
     "abbreviation": ""
   },
@@ -575,39 +1151,249 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "imperative_irregular_forms": {
+    "term": "imperative irregular forms",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "imperfect_active_of_first_and_second_conjugations": {
+    "term": "imperfect active of first and second conjugations",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "imperfect_active_of_third_third_i_stem_and_fourth_conjugations": {
+    "term": "imperfect active of third, third i-stem, and fourth conjugations",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "imperfect_passive_indicative_of_first_and_second_conjugations": {
+    "term": "imperfect passive indicative of first and second conjugations",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "imperfect_passive_of_third_third_i_stem_and_fourth_conjugations": {
+    "term": "imperfect passive of third, third i-stem, and fourth conjugations",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "impersonal_constructions_with_licet_necesse_est_oportet": {
+    "term": "Impersonal constructions with licet, necesse est, oportet",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "impersonal_passive": {
+    "term": "Impersonal passive",
+    "translation": "无人称被动态",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "impersonal_passive_2": {
+    "term": "impersonal passive",
+    "translation": "无人称被动态",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "in_indirect_question": {
     "term": "in indirect question",
-    "translation": "间接问句",
+    "translation": "考量虚拟式，考量式",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "in_indirect_statement": {
+    "term": "in indirect statement",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "in_parataxis_with_licet_necesse_est_or_oportet": {
+    "term": "in parataxis with licet, necesse est, or oportet",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "in_subordinate_clauses_in_indirect_statement": {
+    "term": "in subordinate clauses in indirect statement",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "inceptive_or_inchoative": {
+    "term": "inceptive or inchoative",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "indefinite": {
     "term": "indefinite",
-    "translation": "不定",
+    "translation": "指示",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "indefinite_or_generic_antecedent_of": {
+    "term": "indefinite or generic antecedent of",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "indicative_future_active_of_first_and_second_conjugations": {
+    "term": "indicative future active of first and second conjugations",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "indicative_introduction": {
+    "term": "Indicative, introduction",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "indirect_commands": {
+    "term": "Indirect commands",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "indirect_questions": {
+    "term": "Indirect questions",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "indirect_reflexives": {
+    "term": "Indirect reflexives",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "indirect_statement": {
+    "term": "Indirect statement",
+    "translation": "间接陈述",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "infinitive_future_active": {
+    "term": "infinitive future active",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "infinitive_definition": {
+    "term": "Infinitive, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "infinitive_definition_2": {
+    "term": "infinitive, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "infinitives_and": {
+    "term": "infinitives and",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "infix_definition": {
+    "term": "Infix, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "infix_definition_2": {
+    "term": "infix, definition",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "intensive": {
     "term": "intensive",
-    "translation": "强调",
+    "translation": "不定",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "intensive_adjective_ipse_ipsa_ipsum": {
+    "term": "Intensive adjective ipse, ipsa, ipsum",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "interjections_in_latin": {
+    "term": "Interjections in Latin",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "interrogative": {
     "term": "interrogative",
-    "translation": "疑问",
+    "translation": "疑问的",
     "explanation": "",
     "abbreviation": ""
   },
-  "irregular": {
-    "term": "irregular",
-    "translation": "不规则",
+  "interrogative_adjective_qui_quae_quod": {
+    "term": "Interrogative adjective qui, quae, quod",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "interrogative_pronoun_quis_quid": {
+    "term": "Interrogative pronoun quis, quid",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "intransitive_definition": {
+    "term": "intransitive, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "introduced_by_qu_with_comparatives": {
+    "term": "introduced by quö with comparatives",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "introduction": {
+    "term": "introduction",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "irregular_2": {
+    "term": "irregular",
+    "translation": "源自第三变格法形容词",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "irregular": {
     "term": "irregular (gen.sing.in-ius)",
-    "translation": "不规则（...)",
+    "translation": "第一二变格法（形容词）",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "is_ea_id": {
+    "term": "is, ea, id",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "iste_ista_istud": {
+    "term": "iste, ista, istud",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "iv_indicative_infinitive_imperative": {
+    "term": "IV. indicative, infinitive, imperative",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
@@ -617,9 +1403,15 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "jussive_subjunctive_in_parataxis_with_licet_necesse_est_or_oportet": {
+    "term": "jussive subjunctive in parataxis with licet, necesse est, or oportet",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "law_of_the_penult": {
     "term": "Law of the Penult",
-    "translation": "倒二音节法则",
+    "translation": "倒三音节",
     "explanation": "",
     "abbreviation": ""
   },
@@ -629,21 +1421,57 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "locative_case_introduction": {
+    "term": "Locative case, introduction",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "locative_of_gods": {
+    "term": "Locative of gods",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "locative_with_noli_or_n_lite": {
+    "term": "Locative with noli or nölite",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "long_by_nature": {
     "term": "long by nature",
-    "translation": "自然长",
+    "translation": "倒二音节法则",
     "explanation": "",
     "abbreviation": ""
   },
   "long_by_position": {
     "term": "long by position",
     "translation": "凭借位置为长",
-    "explanation": "",
+    "explanation": "备选译名：自然长音",
     "abbreviation": ""
   },
   "long_vowel_rule": {
+    "term": "Long Vowel Rule",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "long_vowel_rule_2": {
     "term": "long vowel rule",
-    "translation": "长元音规则",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "memini": {
+    "term": "memini",
+    "translation": "残缺动词",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "meter_introduction": {
+    "term": "Meter, introduction",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
@@ -655,13 +1483,13 @@
   },
   "mixed_contrary_to_fact": {
     "term": "mixed contrary-to-fact",
-    "translation": "混合的悖于事实",
+    "translation": "带强调的前提分句",
     "explanation": "",
     "abbreviation": ""
   },
   "mixed_future": {
     "term": "mixed future",
-    "translation": "混合未来",
+    "translation": "混合的悖于事实",
     "explanation": "",
     "abbreviation": ""
   },
@@ -677,15 +1505,51 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "morphology_definition": {
+    "term": "Morphology, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "mute": {
     "term": "mute",
     "translation": "塞音",
     "explanation": "",
     "abbreviation": ""
   },
+  "names": {
+    "term": "Names",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "negative_commands_with_iussive_subjunctive": {
+    "term": "Negative commands, with iussive subjunctive",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "neuter_endings": {
+    "term": "neuter endings",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "noun_morphology_first_declension": {
+    "term": "Noun Morphology first declension",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "noun_adjective_agreement": {
     "term": "noun-adjective agreement",
-    "translation": "名词—形容词一致",
+    "translation": "疑问",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "nouns_introduction": {
+    "term": "Nouns, introduction",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
@@ -695,9 +1559,15 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "object": {
+    "term": "Object",
+    "translation": "宾语",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "objective": {
     "term": "Objective",
-    "translation": "宾语",
+    "translation": "属格",
     "explanation": "",
     "abbreviation": ""
   },
@@ -713,39 +1583,213 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "parataxis_definition": {
+    "term": "Parataxis, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "participle_definition": {
+    "term": "Participle, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "participle_definition_2": {
+    "term": "participle, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "participles": {
     "term": "participles",
-    "translation": "分词",
+    "translation": "名词—形容词一致",
+    "explanation": "备选译名：定（语）中（心词）一致/偏正一致",
+    "abbreviation": ""
+  },
+  "participles_and": {
+    "term": "participles and",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "participles_of": {
+    "term": "participles of",
+    "translation": "异态动词",
     "explanation": "",
     "abbreviation": ""
   },
   "partitive": {
     "term": "Partitive",
-    "translation": "部分",
+    "translation": "物主",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "passive_periphrastics": {
+    "term": "Passive periphrastics",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "passive_periphrastics_2": {
+    "term": "passive periphrastics",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "passive_personal": {
+    "term": "passive personal",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "passive_introduction": {
+    "term": "passive, introduction",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "past_contrary_to_fact": {
     "term": "past contrary-to-fact",
-    "translation": "悖于过去事实/与过去事实相悖",
+    "translation": "混合未来",
     "explanation": "",
     "abbreviation": ""
   },
   "past_simple": {
     "term": "past simple",
-    "translation": "过去一般",
+    "translation": "悖于过去事实/与过去事实相悖",
     "explanation": "",
     "abbreviation": ""
   },
   "penult": {
     "term": "penult",
     "translation": "次音节",
+    "explanation": "备选译名：结构长音",
+    "abbreviation": ""
+  },
+  "perfect_active": {
+    "term": "perfect active",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "perfect_active_of_all_verbs": {
+    "term": "perfect active of all verbs",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "perfect_active_of_ed": {
+    "term": "perfect active of ed",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "perfect_active_stem": {
+    "term": "perfect active stem",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "perfect_active_stems_ending_in_i_second_singular_plural_of": {
+    "term": "perfect active stems ending in i-, second singular/plural of",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "perfect_active_system": {
+    "term": "perfect active system",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "perfect_passive": {
+    "term": "perfect passive",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "perfect_passive_as_adjective_substantive": {
+    "term": "perfect passive as adjective/substantive",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "perfect_passive_of_all_verbs": {
+    "term": "perfect passive of all verbs",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "perfect_passive_system": {
+    "term": "perfect passive system",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "period_periodic_sentence": {
+    "term": "Period, periodic sentence",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "periphrastic": {
+    "term": "periphrastic",
+    "translation": "迂说的",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "periphrastics": {
+    "term": "periphrastics",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "person": {
     "term": "person",
     "translation": "人称",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "personal": {
+    "term": "personal",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "personal_construction_of": {
+    "term": "personal construction of",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "place_expressions_summary": {
+    "term": "Place expressions, summary",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "placement_of_antecedent_in_and_after": {
+    "term": "placement of antecedent in and after",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "pluperfect_active_of_all_verbs": {
+    "term": "pluperfect active of all verbs",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "pluperfect_passive_of_all_verbs": {
+    "term": "pluperfect passive of all verbs",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "possession_dative_of_the_possessor": {
+    "term": "Possession Dative of the Possessor",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
@@ -761,8 +1805,26 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "potential_subjunctive_in": {
+    "term": "potential subjunctive in",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "praen_men_nomen_and_cogn_men": {
+    "term": "praenômen, nomen, and cognômen",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "predicate": {
     "term": "predicate",
+    "translation": "谓语",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "predicate_2": {
+    "term": "Predicate",
     "translation": "谓语",
     "explanation": "",
     "abbreviation": ""
@@ -775,25 +1837,181 @@
   },
   "predicate_adjective": {
     "term": "Predicate adjective",
-    "translation": "谓语[性]形容词",
+    "translation": "谓语形容词",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "predicate_adjective_in_the_accusative": {
+    "term": "Predicate adjective in the accusative",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "prefix": {
+    "term": "Prefix",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "present_active_and_passive": {
+    "term": "present active and passive",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "present_active_and_passive_of_all_verbs": {
+    "term": "present active and passive of all verbs",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "present_active_of_eo": {
+    "term": "present active of eo",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "present_active_of_first_and_second_coniugations": {
+    "term": "present active of first and second coniugations",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "present_active_of_possum": {
+    "term": "present active of possum",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "present_active_of_sum": {
+    "term": "present active of sum",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "present_active_of_third_third_i_stem_and_fourth_conjugations": {
+    "term": "present active of third, third i-stem, and fourth conjugations",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "present_contrary_to_fact": {
     "term": "present contrary-to-fact",
-    "translation": "悖于现在事实/",
+    "translation": "过去一般",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "present_passive": {
+    "term": "present passive",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "present_passive_of_first_and_second_conjugations": {
+    "term": "present passive of first and second conjugations",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "present_passive_of_third_third_i_stem_and_fourth_conjugations": {
+    "term": "present passive of third, third i-stem, and fourth conjugations",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "present_simple": {
     "term": "present simple",
-    "translation": "现在一般",
+    "translation": "悖于现在事实/...",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "present_stem_finding": {
+    "term": "present stem, finding",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "present_imperfect_and_future_active_of_ed": {
+    "term": "present, imperfect, and future active of ed",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "present_imperfect_and_future_active_of_possum": {
+    "term": "present, imperfect, and future active of possum",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "present_imperfect_and_future_active_of_sum": {
+    "term": "present, imperfect, and future active of sum",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "present_imperfect_and_future_of_fero": {
+    "term": "present, imperfect, and future of fero",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "prevention_clauses": {
+    "term": "Prevention clauses",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "primary": {
+    "term": "primary",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "principal_parts_in_this_textbook": {
     "term": "Principal parts, in this textbook",
-    "translation": "动词主要部分",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "progressive": {
+    "term": "progressive",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "pronouns_demonstrative": {
+    "term": "Pronouns demonstrative",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "pronunciation": {
+    "term": "Pronunciation",
+    "translation": "发音",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "prose_word_order_introduction": {
+    "term": "Prose Word Order, Introduction",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "protasis_definition": {
+    "term": "Protasis, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "proviso_clauses": {
+    "term": "Proviso clauses",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "purpose_clauses": {
+    "term": "Purpose clauses",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
@@ -809,9 +2027,39 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "reduplicated_stem_definition": {
+    "term": "Reduplicated stem, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "reflexive": {
+    "term": "reflexive",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "reflexive_possessive": {
     "term": "reflexive-possessive",
-    "translation": "反身物主",
+    "translation": "谓语",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "relative": {
+    "term": "relative",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "relative_clauses": {
+    "term": "Relative clauses",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "relative_clauses_of": {
+    "term": "relative clauses of",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
@@ -821,21 +2069,123 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "relative_time_in_indirect_statement": {
+    "term": "relative time in indirect statement",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "relative_time_in_sequence_of_tenses": {
+    "term": "Relative time in sequence of tenses",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "relative_time_of": {
+    "term": "relative time of",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "repeated": {
+    "term": "repeated",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "restrictive_and_nonrestrictive": {
+    "term": "restrictive and nonrestrictive",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "result_clauses": {
+    "term": "Result clauses",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "rhetorical_terms_introduction": {
+    "term": "Rhetorical terms, introduction",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "rhotacism_definition": {
+    "term": "rhotacism, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "root_vowel": {
     "term": "root vowel",
     "translation": "词根元音",
     "explanation": "",
     "abbreviation": ""
   },
+  "sapphic_strophe": {
+    "term": "Sapphic strophe",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "second_declension_masculine_feminine": {
+    "term": "second declension, masculine/feminine",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "second_declension_neuter": {
+    "term": "second declension, neuter",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "secondary": {
+    "term": "secondary",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "semideponent": {
+    "term": "semideponent",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "simple": {
+    "term": "simple",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "special_uses_of": {
     "term": "special uses of",
-    "translation": "特殊用途",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "stichic_verse": {
+    "term": "stichic verse",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "strophic_or_stanzaic_verse": {
+    "term": "strophic or stanzaic verse",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "subgroup": {
     "term": "subgroup",
     "translation": "变体",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "subiunctive_imperfect_active_and_passive_of_all_verbs": {
+    "term": "subiunctive imperfect active and passive of all verbs",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
@@ -847,33 +2197,81 @@
   },
   "subject_of_an_indirect_statement": {
     "term": "Subject of an Indirect Statement",
-    "translation": "间接陈述主语",
+    "translation": "主语",
     "explanation": "",
     "abbreviation": ""
   },
   "subjective": {
     "term": "Subjective",
-    "translation": "主语",
+    "translation": "随最高级",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "subjunctive_introduction": {
+    "term": "subjunctive, introduction",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "subordinate_clauses_in": {
+    "term": "subordinate clauses in",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "subordinating": {
+    "term": "subordinating",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "substantive_use": {
     "term": "substantive use",
-    "translation": "名词化用法",
+    "translation": "反身物主",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "substantive_ut_clauses": {
+    "term": "Substantive ut clauses",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "summary": {
+    "term": "summary",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "summary_of_2": {
+    "term": "summary of",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "summary_of": {
+    "term": "summary of (using indicative)",
+    "translation": "现在一般",
     "explanation": "",
     "abbreviation": ""
   },
   "superlative_of": {
     "term": "superlative of (irregular)",
-    "translation": "最高级",
+    "translation": "不规则（...)",
     "explanation": "",
-    "abbreviation": "irregular"
+    "abbreviation": ""
+  },
+  "superlative_of_3": {
+    "term": "superlative of (regular)",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
   },
   "superlative_of_2": {
     "term": "superlative of(regular)",
     "translation": "最高级",
     "explanation": "",
-    "abbreviation": "regular"
+    "abbreviation": ""
   },
   "supine": {
     "term": "Supine",
@@ -881,9 +2279,39 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "syllabification": {
+    "term": "Syllabification",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "syncopated_forms": {
+    "term": "Syncopated forms",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "syncopation_of_forms_in_the_perfect_active_system": {
+    "term": "Syncopation of forms in the perfect active system",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "synopsis": {
     "term": "Synopsis",
     "translation": "总览",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "synopsis_introduction": {
+    "term": "Synopsis, introduction",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "syntax_definition": {
+    "term": "Syntax, definition",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
@@ -894,26 +2322,86 @@
     "abbreviation": ""
   },
   "the_second_principal_part": {
-    "term": "the second principal part，",
-    "translation": "第二主要部分（其他类推）",
+    "term": "the second principal part",
+    "translation": "动词主要部分",
     "explanation": "",
     "abbreviation": ""
   },
   "third_declension": {
     "term": "third declension",
-    "translation": "第三变格法",
+    "translation": "最高级",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "third_declension_i_stem_masculine_feminine": {
+    "term": "third declension i-stem masculine/ feminine",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "third_declension_i_stem_neuter": {
+    "term": "third declension i-stem neuter",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "third_declension_masculine_feminine": {
+    "term": "third declension masculine/feminine",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "third_declension_neuter": {
+    "term": "third declension neuter",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
   "third_person_singular_present_active_indicative": {
     "term": "third person singular present active indicative",
     "translation": "第三人称单数现在主动直陈式",
-    "explanation": "备选：三单现在主动直陈式",
+    "explanation": "",
+    "abbreviation": "三单现在主动直陈式"
+  },
+  "third_declension_noun_vis": {
+    "term": "third-declension noun vis (irregular)",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "transitive_definition": {
+    "term": "transitive, definition",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "two_endings_of_genitive_singular": {
+    "term": "two endings of genitive singular",
+    "translation": "",
+    "explanation": "",
     "abbreviation": ""
   },
   "ultima": {
     "term": "ultima",
-    "translation": "末音节",
+    "translation": "尾音节",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "unassimilated_forms": {
+    "term": "Unassimilated forms",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "v_indicative_subjunctive_infinitive_imperative": {
+    "term": "V. indicative, subjunctive, infinitive, imperative",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "verb_morphology_endings_active_personal": {
+    "term": "Verb Morphology endings active personal",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
@@ -923,9 +2411,57 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "verbs_introduction": {
+    "term": "Verbs, introduction",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "vi_indicative_subjunctive_participle_infinitive_imperative": {
+    "term": "VI. indicative, subjunctive, participle, infinitive, imperative",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "vii_complete": {
+    "term": "VII. complete",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "vocabulary_entry_for_a_verb": {
+    "term": "vocabulary entry for a verb",
+    "translation": "第二主要部分（其他类推）",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "vocabulary_notes": {
     "term": "vocabulary notes",
     "translation": "词汇讲解",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "vocative_case_introduction": {
+    "term": "Vocative case, introduction",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "vocative_forms_of": {
+    "term": "Vocative forms of",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "vocative_of_deponent_and_semideponent_verbs": {
+    "term": "Vocative of deponent and semideponent verbs",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "vocative_of_irregular_verbs": {
+    "term": "Vocative of irregular verbs",
+    "translation": "",
     "explanation": "",
     "abbreviation": ""
   },
@@ -935,10 +2471,34 @@
     "explanation": "",
     "abbreviation": ""
   },
+  "vowel_triangle": {
+    "term": "Vowel triangle",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "vowel_weakening": {
+    "term": "Vowel weakening (in compound verbs)",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
+  "vowels": {
+    "term": "Vowels",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
+  },
   "word_order_introduction": {
     "term": "Word Order (Prose), introduction",
-    "translation": "【学术译名】",
+    "translation": "",
     "explanation": "",
-    "abbreviation": "Prose"
+    "abbreviation": ""
+  },
+  "di": {
+    "term": "ödi",
+    "translation": "",
+    "explanation": "",
+    "abbreviation": ""
   }
 }

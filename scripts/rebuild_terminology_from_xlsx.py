@@ -1,326 +1,247 @@
 #!/usr/bin/env python3
-from __future__ import annotations
-
 import json
 import re
-import xml.etree.ElementTree as ET
-from collections import OrderedDict, defaultdict
-from dataclasses import dataclass, field
+from collections import OrderedDict
 from pathlib import Path
-from zipfile import ZipFile
+
+import openpyxl
 
 ROOT = Path(__file__).resolve().parents[1]
-XLSX = ROOT / 'source' / 'reference' / '疑问汇总及术语对照表.xlsx'
-OUT_MD = ROOT / '术语对照表整理.md'
-OUT_JSON = ROOT / 'data' / 'terminology.json'
+SRC_XLSX = ROOT / "source" / "reference" / "疑问汇总及术语对照表.xlsx"
+OUT_MD = ROOT / "术语对照表整理.md"
+OUT_JSON = ROOT / "data" / "terminology.json"
 
-NS = '{http://schemas.openxmlformats.org/spreadsheetml/2006/main}'
+SHEET = "综合术语表"
+SECTION1_HEADER_ROW = 3
+SECTION1_START_ROW = 4
+SECTION2_HEADER_ROW = 462
+SECTION2_START_ROW = 463
 
-CASE_FAMILIES = {'Ablative', 'Accusative', 'Dative', 'Genitive', 'Nominative', 'Vocative', 'Locative'}
-
-
-@dataclass
-class TermEntry:
-    term: str
-    primary: str
-    alternatives: list[str] = field(default_factory=list)
-    abbreviation: str = ''
-
-    def add_alt(self, text: str):
-        t = normalize_cn(text)
-        if not t or t == self.primary:
-            return
-        if t not in self.alternatives:
-            self.alternatives.append(t)
+CASE_PREFIXES = (
+    "Ablative",
+    "Accusative",
+    "Dative",
+    "Genitive",
+    "Nominative",
+    "Vocative",
+    "Locative",
+)
 
 
-def normalize_space(s: str) -> str:
-    return re.sub(r'\s+', ' ', (s or '').replace('\u00a0', ' ').replace('\u200b', ' ')).strip()
+def clean_text(v):
+    if v is None:
+        return ""
+    t = str(v).replace("\xa0", " ").strip()
+    t = re.sub(r"\s+", " ", t)
+    return t
 
 
-def normalize_term(s: str) -> str:
-    s = normalize_space(s)
-    s = s.replace('Instrunent', 'Instrument')
-    s = s.strip(' ,;.')
-    return s
+def normalize_term(t):
+    t = clean_text(t).lower()
+    t = t.replace("instrunent", "instrument")
+    t = re.sub(r"[，。；;:,.]+$", "", t)
+    t = re.sub(r"\s+", " ", t)
+    return t
 
 
-def normalize_cn(s: str) -> str:
-    return normalize_space(s).strip('，,；;。. ')
+def slugify(text):
+    s = normalize_term(text)
+    s = re.sub(r"\([^)]*\)", "", s)
+    s = re.sub(r"[^a-z0-9]+", "_", s)
+    s = re.sub(r"_+", "_", s).strip("_")
+    return s or "term"
 
 
-def has_cjk(s: str) -> bool:
-    return bool(re.search(r'[\u4e00-\u9fff]', s or ''))
-
-
-def key_term(s: str) -> str:
-    s = normalize_term(s).lower()
-    s = re.sub(r'[^a-z0-9]+', ' ', s)
-    return re.sub(r'\s+', ' ', s).strip()
-
-
-def split_alts(text: str) -> list[str]:
-    t = normalize_cn(text)
+def extract_english_from_mixed(text):
+    t = clean_text(text)
     if not t:
-        return []
-    parts = re.split(r'[、；;]|(?<!\w)/(?!\w)|\s*\|\s*', t)
-    out = []
-    for p in parts:
-        pp = normalize_cn(p)
-        if pp and pp not in out:
-            out.append(pp)
+        return ""
+    # If CJK exists, keep trailing Latin segment as the term.
+    if re.search(r"[\u4e00-\u9fff]", t):
+        m = re.search(r"([A-Za-zÀ-ÖØ-öø-ÿĀ-ž][A-Za-zÀ-ÖØ-öø-ÿĀ-ž0-9 \-_/(),.'’]*)$", t)
+        if m:
+            return clean_text(m.group(1))
+    return t
+
+
+def maybe_restore_prefix(term, current_prefix):
+    t = clean_text(term)
+    if not t:
+        return t, current_prefix
+
+    t = re.sub(r"[，。；;:,.]+$", "", t)
+    low = t.lower()
+    if low.startswith("of ") and current_prefix:
+        t = f"{current_prefix} {t}"
+    elif low.startswith("with ") and current_prefix:
+        t = f"{current_prefix} {t}"
+
+    for prefix in CASE_PREFIXES:
+        if re.match(rf"^{re.escape(prefix)}\b", t, flags=re.IGNORECASE):
+            t = prefix + t[len(prefix):]
+            current_prefix = prefix
+            break
+
+    return t, current_prefix
+
+
+def build_academic_map(ws):
+    out = {}
+    for r in range(SECTION2_START_ROW, ws.max_row + 1):
+        col_b = clean_text(ws.cell(r, 2).value)
+        col_c = clean_text(ws.cell(r, 3).value)
+        if not col_b and not col_c:
+            continue
+        if "【" in col_b or "【" in col_c:
+            continue
+        if len(col_b) == 1 and col_b.isalpha() and col_b.upper() == col_b and col_b == col_c:
+            continue
+        term = extract_english_from_mixed(col_b)
+        if not term or not re.search(r"[A-Za-zÀ-ÖØ-öø-ÿĀ-ž]", term):
+            continue
+        if not col_c:
+            continue
+        out[normalize_term(term)] = col_c
     return out
 
 
-def split_primary_and_alts(text: str) -> tuple[str, list[str]]:
-    parts = split_alts(text)
-    if not parts:
-        return '', []
-    return parts[0], parts[1:]
+def parse_section1_rows(ws, academic_map):
+    rows = []
+    current_prefix = ""
 
-
-def slugify(term: str) -> str:
-    s = term.lower()
-    s = re.sub(r'\([^)]*\)', '', s)
-    s = re.sub(r'[^a-z0-9]+', '_', s)
-    return re.sub(r'_+', '_', s).strip('_') or 'term'
-
-
-class WorkbookXml:
-    def __init__(self, path: Path):
-        self.z = ZipFile(path)
-        self.shared_strings = self._load_shared_strings()
-        self.sheet_targets = self._load_sheet_targets()
-
-    def _load_shared_strings(self) -> list[str]:
-        if 'xl/sharedStrings.xml' not in self.z.namelist():
-            return []
-        root = ET.fromstring(self.z.read('xl/sharedStrings.xml'))
-        out = []
-        for si in root.findall(f'{NS}si'):
-            out.append(''.join(t.text or '' for t in si.iter(f'{NS}t')))
-        return out
-
-    def _load_sheet_targets(self) -> dict[str, str]:
-        wb = ET.fromstring(self.z.read('xl/workbook.xml'))
-        rels = ET.fromstring(self.z.read('xl/_rels/workbook.xml.rels'))
-        rns = {'r': 'http://schemas.openxmlformats.org/package/2006/relationships'}
-        rid_to_target = {r.attrib['Id']: r.attrib['Target'] for r in rels.findall('r:Relationship', rns)}
-        out = {}
-        for s in wb.findall(f'.//{NS}sheet'):
-            name = s.attrib['name']
-            rid = s.attrib['{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id']
-            out[name] = 'xl/' + rid_to_target[rid]
-        return out
-
-    def iter_rows(self, sheet_name: str, max_col: int = 8):
-        sh = ET.fromstring(self.z.read(self.sheet_targets[sheet_name]))
-        col_map = {chr(ord('A') + i): i for i in range(max_col)}
-
-        def cval(c) -> str:
-            t = c.attrib.get('t')
-            v = c.find(f'{NS}v')
-            if v is None:
-                isel = c.find(f'{NS}is')
-                if isel is None:
-                    return ''
-                return ''.join(x.text or '' for x in isel.iter(f'{NS}t'))
-            raw = v.text or ''
-            if t == 's' and raw.isdigit():
-                idx = int(raw)
-                if idx < len(self.shared_strings):
-                    return self.shared_strings[idx]
-            return raw
-
-        for r in sh.findall(f'.//{NS}row'):
-            rn = int(r.attrib.get('r', '0'))
-            vals = [''] * max_col
-            for c in r.findall(f'{NS}c'):
-                ref = c.attrib.get('r', 'A1')
-                col = ''.join(ch for ch in ref if ch.isalpha())
-                if col in col_map:
-                    vals[col_map[col]] = normalize_space(cval(c))
-            yield rn, vals
-
-
-def parse_scholar_map(wb: WorkbookXml) -> dict[str, str]:
-    # 顾枝鹰术语表作为“主译名优先”来源
-    m = {}
-    for _, vals in wb.iter_rows('顾枝鹰《拉丁语语法新编》术语表', max_col=3):
-        cell = vals[1] if len(vals) > 1 else vals[0]
-        if not cell:
-            continue
-        mm = re.match(r'^(?P<cn>[\u4e00-\u9fff\[\]（）()、，。·\-—\s]+?)\s*(?P<en>[A-Za-zÀ-ž][A-Za-zÀ-ž\-’\' /]+)$', cell)
-        if not mm:
-            continue
-        cn = normalize_cn(mm.group('cn'))
-        en = normalize_term(mm.group('en'))
-        if has_cjk(cn) and en:
-            m[key_term(en)] = cn
-    return m
-
-
-def compose_term(raw_term: str, current_family: str) -> tuple[str, str]:
-    term = normalize_term(raw_term)
-    # 还原 "of Accompaniment" -> "Ablative of Accompaniment"
-    if current_family and re.match(r'^(of|with)\b', term, re.IGNORECASE):
-        term = f'{current_family} {term}'
-
-    first = term.split(' ', 1)[0]
-    if first in CASE_FAMILIES:
-        current_family = first
-    return term, current_family
-
-
-def parse_comprehensive_terms(wb: WorkbookXml) -> OrderedDict[str, TermEntry]:
-    scholar = parse_scholar_map(wb)
-    entries: OrderedDict[str, TermEntry] = OrderedDict()
-    in_table = False
-    current_family = ''
-    raw_rows = []
-
-    for _, vals in wb.iter_rows('综合术语表', max_col=6):
-        a, b, c, d = vals[0], vals[1], vals[2], vals[3]
-
-        if not in_table:
-            if a == '【拉丁文/希腊文术语】' and b == '【英文术语】':
-                in_table = True
+    for r in range(SECTION1_START_ROW, SECTION2_HEADER_ROW):
+        raw = [clean_text(ws.cell(r, c).value) for c in range(1, 7)]
+        if not any(raw):
             continue
 
-        raw_rows.append({'term_raw': normalize_term(b), 'cn': normalize_cn(c), 'alt': normalize_cn(d)})
+        latin_greek, english, tentative, abbr, alternatives, example = raw
+        if "【" in english or english == "术语对照表":
+            continue
+        if not english:
+            continue
 
-    # 部分表格存在“术语列与中文列错一行”的情况：如 Accentuation -> 时段(内), 下一行才是重读。
-    # 使用锚点识别后，对后续行执行一次前移校正。
-    anchors = {
-        'Absolute': '独立夺格',
-        'Accentuation': '重读',
-        'antepenult': '倒三音节',
-        'penult': '倒二音节',
-    }
-    anchor_hits = 0
-    shift_start = None
-    for i in range(len(raw_rows) - 1):
-        t = raw_rows[i]['term_raw']
-        if t in anchors and raw_rows[i]['cn'] != anchors[t] and raw_rows[i + 1]['cn'] == anchors[t]:
-            anchor_hits += 1
-            shift_start = i if shift_start is None else min(shift_start, i)
-    if anchor_hits >= 2 and shift_start is not None:
-        for i in range(shift_start, len(raw_rows) - 1):
-            raw_rows[i]['cn'] = raw_rows[i + 1]['cn']
+        english, current_prefix = maybe_restore_prefix(english, current_prefix)
+        academic = academic_map.get(normalize_term(english), "")
+        primary = academic or tentative
 
-    for row in raw_rows:
-        term = row['term_raw']
-        cn = row['cn']
-        alt = row['alt']
+        rows.append(
+            {
+                "latin_greek": latin_greek,
+                "term": english,
+                "academic_translation": academic,
+                "tentative_translation": tentative,
+                "abbreviation": abbr,
+                "alternative_translation": alternatives,
+                "example": example,
+                "primary_translation": primary,
+            }
+        )
+    return rows
+
+
+def build_json(rows):
+    out = OrderedDict()
+    alt_bucket = {}
+    for row in rows:
+        term = row["term"]
         if not term:
             continue
+        key_base = slugify(term)
+        key = key_base
+        idx = 2
+        while key in out and out[key]["term"] != term:
+            key = f"{key_base}_{idx}"
+            idx += 1
 
-        term, current_family = compose_term(term, current_family)
-        if has_cjk(term):
+        translation = row["primary_translation"]
+        if key in out:
+            # Merge duplicate rows for same term.
+            if not out[key]["translation"] and translation:
+                out[key]["translation"] = translation
+            if not out[key]["abbreviation"] and row["abbreviation"]:
+                out[key]["abbreviation"] = row["abbreviation"]
+            if row["alternative_translation"]:
+                alt_bucket.setdefault(key, set()).add(row["alternative_translation"])
+            if (
+                translation
+                and out[key]["translation"]
+                and translation != out[key]["translation"]
+                and row["academic_translation"]
+            ):
+                alt_bucket.setdefault(key, set()).add(translation)
             continue
-        if re.fullmatch(r'[A-Z]', term):
-            continue
-        if key_term(term) in {'general index', 'english index'}:
-            continue
-        if not re.search(r'[A-Za-zÀ-ž]{3,}', term):
-            continue
 
-        cn_primary, cn_alts = split_primary_and_alts(cn)
-        d_alts = split_alts(alt)
-
-        scholar_primary = scholar.get(key_term(term), '')
-        primary = scholar_primary or cn_primary
-        if not primary:
-            continue
-
-        k = key_term(term)
-        if k not in entries:
-            entries[k] = TermEntry(term=term, primary=primary)
-        e = entries[k]
-
-        if scholar_primary:
-            e.primary = scholar_primary
-            # scholar 主译名存在时，避免把“暂定中文”误差带入备选（保守策略）
-        else:
-            e.primary = primary
-
-        for a0 in cn_alts:
-            e.add_alt(a0)
-        for a0 in d_alts:
-            e.add_alt(a0)
-
-    return entries
-
-
-def write_md(entries: OrderedDict[str, TermEntry]):
-    groups = defaultdict(list)
-    for e in entries.values():
-        initial = e.term[0].upper() if e.term and e.term[0].isalpha() else '#'
-        groups[initial].append(e)
-
-    lines = []
-    lines.append('# LTRL 术语对照表')
-    lines.append('')
-    lines.append('> 数据源：`source/reference/疑问汇总及术语对照表.xlsx`（综合术语表）')
-    lines.append('> 主译名优先：顾枝鹰等学者术语；同一术语的其他译法保留在“备选术语译文”。')
-    lines.append('')
-
-    ordered_keys = [k for k in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' if k in groups]
-    if '#' in groups:
-        ordered_keys.append('#')
-
-    for g in ordered_keys:
-        lines.append(f'## {g}')
-        lines.append('')
-        lines.append('| 英文/拉丁语 | 主要术语译文 | 备选术语译文 |')
-        lines.append('|------------|-------------|-------------|')
-        for e in sorted(groups[g], key=lambda x: x.term.lower()):
-            alt = ' / '.join(e.alternatives)
-            lines.append(f'| {e.term} | {e.primary} | {alt} |')
-        lines.append('')
-
-    OUT_MD.write_text('\n'.join(lines), encoding='utf-8')
-
-
-def write_json(entries: OrderedDict[str, TermEntry]):
-    old = json.loads(OUT_JSON.read_text(encoding='utf-8')) if OUT_JSON.exists() else {}
-    term_to_key = {v.get('term', '').strip(): k for k, v in old.items() if v.get('term')}
-
-    out = {}
-    used = set()
-    for e in sorted(entries.values(), key=lambda x: x.term.lower()):
-        key = term_to_key.get(e.term) or slugify(e.term)
-        base = key
-        i = 2
-        while key in used:
-            key = f'{base}_{i}'
-            i += 1
-        used.add(key)
-
-        explanation = '备选：' + ' / '.join(e.alternatives) if e.alternatives else ''
-        abbr = old.get(key, {}).get('abbreviation', '')
-        if not abbr:
-            m = re.search(r'\(([^)]+)\)', e.term)
-            if m and len(m.group(1)) <= 12:
-                abbr = m.group(1)
+        explanation_parts = []
+        if row["alternative_translation"]:
+            explanation_parts.append(f"备选译名：{row['alternative_translation']}")
+        explanation = "；".join(explanation_parts)
 
         out[key] = {
-            'term': e.term,
-            'translation': e.primary,
-            'explanation': explanation,
-            'abbreviation': abbr,
+            "term": term,
+            "translation": translation,
+            "explanation": explanation,
+            "abbreviation": row["abbreviation"],
         }
 
-    OUT_JSON.write_text(json.dumps(out, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    for key, alts in alt_bucket.items():
+        alts = [a for a in sorted(alts) if a and a != out[key]["translation"]]
+        if not alts:
+            continue
+        alt_text = " / ".join(alts)
+        if out[key]["explanation"]:
+            if alt_text not in out[key]["explanation"]:
+                out[key]["explanation"] = f"{out[key]['explanation']}；备选译名：{alt_text}"
+        else:
+            out[key]["explanation"] = f"备选译名：{alt_text}"
+
+    # Stable sort by term.
+    ordered_items = sorted(out.items(), key=lambda kv: kv[1]["term"].lower())
+    return OrderedDict(ordered_items)
+
+
+def write_md(rows):
+    lines = [
+        "# LTRL 术语对照表（结构化重建）",
+        "",
+        "> 数据源：`source/reference/疑问汇总及术语对照表.xlsx`（工作表：`综合术语表`）",
+        "> 列结构依据源表 `【】` 标注解析；空列按原样保留。",
+        "",
+        "| 拉丁文/希腊文术语 | 英文术语 | 学术译名 | 术语暂定译名 | 术语简称 | 术语备选译名 | 术语例句 | 主要术语译文 |",
+        "|---|---|---|---|---|---|---|---|",
+    ]
+
+    for row in rows:
+        fields = [
+            row["latin_greek"],
+            row["term"],
+            row["academic_translation"],
+            row["tentative_translation"],
+            row["abbreviation"],
+            row["alternative_translation"],
+            row["example"],
+            row["primary_translation"],
+        ]
+        escaped = [f.replace("|", "\\|") for f in fields]
+        lines.append("| " + " | ".join(escaped) + " |")
+
+    OUT_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def main():
-    wb = WorkbookXml(XLSX)
-    entries = parse_comprehensive_terms(wb)
-    write_md(entries)
-    write_json(entries)
-    print('entries:', len(entries))
+    wb = openpyxl.load_workbook(SRC_XLSX, data_only=True)
+    ws = wb[SHEET]
+
+    academic_map = build_academic_map(ws)
+    rows = parse_section1_rows(ws, academic_map)
+    data = build_json(rows)
+
+    write_md(rows)
+    OUT_JSON.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    print(f"section1_rows={len(rows)}")
+    print(f"academic_map={len(academic_map)}")
+    print(f"json_terms={len(data)}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
