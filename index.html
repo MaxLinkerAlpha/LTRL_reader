@@ -1169,39 +1169,41 @@
       text-align: center;
     }
 
-    .docx-content {
+    .reference-content {
       color: var(--ink);
     }
 
-    .docx-content h1,
-    .docx-content h2,
-    .docx-content h3 {
+    .reference-content h1,
+    .reference-content h2,
+    .reference-content h3 {
       color: var(--wine);
       font-family: 'Crimson Text', serif;
       margin: 0.9rem 0 0.35rem;
     }
 
-    .docx-content p,
-    .docx-content li {
+    .reference-content p,
+    .reference-content li {
       margin: 0.3rem 0;
       line-height: 1.7;
       font-size: 0.96rem;
       word-break: break-word;
     }
 
-    .docx-content ul {
+    .reference-content ul,
+    .reference-content ol {
       margin: 0.2rem 0 0.6rem 1.2rem;
     }
 
-    .docx-content img {
+    .reference-content img {
       width: 100%;
-      max-width: 720px;
+      max-width: 920px;
       height: auto;
       object-fit: contain;
       border: 1px solid rgba(184, 134, 11, 0.28);
       border-radius: 8px;
       background: #fff;
-      margin: 0.4rem 0;
+      margin: 0.55rem 0;
+      display: block;
     }
 
     .model-layout {
@@ -2382,66 +2384,22 @@ Base Path: ${CONFIG.basePath}</pre>
       return await res.text();
     }
 
-    async function fetchDocxHtmlWithFallback(path) {
-      let res = await fetch(getDataPath(path));
-      if (!res.ok) res = await fetch(getRawDataPath(path));
-      if (!res.ok) throw new Error(`无法加载文件: ${path} (HTTP ${res.status})`);
-      return await res.text();
-    }
-
-    function normalizeDocxBody(htmlText) {
-      const doc = new DOMParser().parseFromString(htmlText, 'text/html');
-      const body = doc.body;
-      if (!body) return htmlText;
-      body.querySelectorAll('script,style,meta,title,link').forEach(el => el.remove());
-      body.querySelectorAll('*').forEach(el => {
-        el.removeAttribute('class');
-        el.removeAttribute('style');
-      });
-      body.querySelectorAll('p').forEach(p => {
-        const text = (p.textContent || '').trim();
-        if (!text) p.remove();
-      });
-      return body.innerHTML;
-    }
-
-    function renderBookGallery(baseDir, imageNames) {
-      return `
-        <section class="guide-gallery">
-          <h3>教材书影总览</h3>
-          <div class="book-gallery">
-            ${imageNames.map((name, idx) => {
-              const src = getDataPath(`${baseDir}/${name}`);
-              return `
-                <a class="gallery-item" href="${src}" target="_blank" rel="noopener">
-                  <img loading="lazy" src="${src}" alt="书影 ${idx + 1}">
-                  <span>书影 ${idx + 1}</span>
-                </a>
-              `;
-            }).join('')}
-          </div>
-        </section>
-      `;
-    }
-
     async function showLatinGuide() {
       window.location.hash = 'latin-guide';
       document.getElementById('main-content').innerHTML = `
         <div style="text-align:center; padding: 2rem;"><p>正在加载拉丁语入门指南...</p></div>
       `;
       try {
-        const raw = await fetchDocxHtmlWithFallback('data/reference/latin_guide_docx.html');
-        const bodyHtml = normalizeDocxBody(raw);
-        const imageNames = ['image1.png','image2.png','image3.png','image4.png','image5.png','image6.png','image7.png','image8.png','image9.png','image10.png','image11.jpg'];
+        const md = await fetchMarkdownWithFallback('data/reference/latin_guide.md');
+        const html = marked.parse(md);
 
         document.getElementById('main-content').innerHTML = `
           <section class="ref-page">
             <div class="ref-header">
               <h1>拉丁语入门指南</h1>
-              <p>教材路线、学习建议与书影资料（来自文档整理）</p>
+              <p>文档已由 DOCX 通过 Pandoc 转换为 Markdown 后渲染</p>
             </div>
-            <article class="guide-content docx-content">${bodyHtml}</article>
-            ${renderBookGallery('assets/reference/latin-guide', imageNames)}
+            <article class="guide-content reference-content markdown-body">${html}</article>
           </section>
         `;
       } catch (e) {
@@ -2455,9 +2413,8 @@ Base Path: ${CONFIG.basePath}</pre>
         <div style="text-align:center; padding: 2rem;"><p>正在加载终极语言学习模型...</p></div>
       `;
       try {
-        const raw = await fetchDocxHtmlWithFallback('data/reference/ultimate_model_docx.html');
-        const bodyHtml = normalizeDocxBody(raw);
-        const modelImage = getDataPath('assets/reference/language-model/image1.jpg');
+        const md = await fetchMarkdownWithFallback('data/reference/ultimate_model.md');
+        const html = marked.parse(md);
         document.getElementById('main-content').innerHTML = `
           <section class="ref-page">
             <div class="ref-header">
@@ -2467,11 +2424,8 @@ Base Path: ${CONFIG.basePath}</pre>
             <div class="model-layout">
               <div class="model-hero">
                 <p>这份页面将原文档整理为在线可读版本，便于在章节学习之外快速查阅学习方法论。</p>
-                <div class="model-cover">
-                  <img loading="lazy" src="${modelImage}" alt="终极语言学习模型配图">
-                </div>
               </div>
-              <article class="model-content docx-content">${bodyHtml}</article>
+              <article class="model-content reference-content markdown-body">${html}</article>
             </div>
           </section>
         `;
