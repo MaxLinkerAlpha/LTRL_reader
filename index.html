@@ -294,6 +294,16 @@
       background: linear-gradient(180deg, rgba(114,47,55,0.1), rgba(255,255,255,0.62));
     }
 
+    .section.section-observation {
+      border-color: rgba(136, 102, 30, 0.48);
+      background: linear-gradient(180deg, rgba(184,134,11,0.13), rgba(255,255,255,0.62));
+    }
+
+    .section.section-drill {
+      border-color: rgba(79, 97, 45, 0.52);
+      background: linear-gradient(180deg, rgba(85,107,47,0.16), rgba(255,255,255,0.64));
+    }
+
     .section.section-derivatives .content-block {
       border-color: rgba(46, 93, 123, 0.35);
       background: rgba(255,255,255,0.72);
@@ -301,6 +311,16 @@
 
     .section.section-short-readings .content-block {
       border-color: rgba(114, 47, 55, 0.32);
+      background: rgba(255,255,255,0.74);
+    }
+
+    .section.section-observation .content-block {
+      border-color: rgba(184,134,11,0.3);
+      background: rgba(255,255,255,0.76);
+    }
+
+    .section.section-drill .content-block {
+      border-color: rgba(79,97,45,0.35);
       background: rgba(255,255,255,0.74);
     }
     
@@ -354,6 +374,12 @@
       color: #5e4a19;
       background: rgba(184, 134, 11, 0.18);
       border-color: rgba(184, 134, 11, 0.35);
+    }
+
+    .section-marker.drill {
+      color: #30401f;
+      background: rgba(85, 107, 47, 0.2);
+      border-color: rgba(79, 97, 45, 0.42);
     }
 
     .section-title-cn {
@@ -976,27 +1002,30 @@
     }
     
     .table-wrapper {
-      margin: 0.6rem 0;
-      border: 1px solid rgba(184, 134, 11, 0.35);
-      border-radius: 8px;
+      margin: 0.7rem 0;
+      border: 1px solid rgba(123, 91, 47, 0.42);
+      border-radius: 10px;
       overflow: hidden;
-      background: #fffdf8;
-      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+      background: linear-gradient(180deg, #f8f4ea, #f2ebdd);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.75), 0 2px 8px rgba(50, 33, 13, 0.08);
     }
 
     .table-label {
-      padding: 0.3rem 0.6rem;
-      font-size: 0.78rem;
-      letter-spacing: 0.03em;
-      color: var(--wine);
-      background: linear-gradient(90deg, rgba(184, 134, 11, 0.13), rgba(114, 47, 55, 0.08));
-      border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+      padding: 0.38rem 0.75rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      color: #5b3920;
+      background: linear-gradient(90deg, rgba(184, 134, 11, 0.2), rgba(114, 47, 55, 0.12));
+      border-bottom: 1px solid rgba(123, 91, 47, 0.35);
+      font-weight: 700;
     }
 
     /* 表格样式 */
     .table-content {
-      background: rgba(255, 255, 255, 0.8);
-      padding: 0.15rem 0.4rem 0.35rem;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.68), rgba(255,255,255,0.6)),
+        repeating-linear-gradient(0deg, rgba(123,91,47,0.03) 0px, rgba(123,91,47,0.03) 1px, transparent 1px, transparent 9px);
+      padding: 0.2rem 0.46rem 0.45rem;
       font-size: 0.9rem;
       overflow-x: auto;
     }
@@ -1010,20 +1039,22 @@
 
     .table-grid th,
     .table-grid td {
-      padding: 0.32rem 0.45rem;
-      border-bottom: 1px dashed rgba(184, 134, 11, 0.2);
+      padding: 0.38rem 0.5rem;
+      border-bottom: 1px dashed rgba(123, 91, 47, 0.26);
       vertical-align: top;
       font-family: 'Crimson Text', serif;
       color: var(--ink);
-      line-height: 1.3;
+      line-height: 1.34;
       text-align: left;
     }
 
     .table-grid th {
-      width: 24%;
+      width: 26%;
       white-space: nowrap;
-      color: #593313;
+      color: #513118;
       font-weight: 700;
+      background: rgba(184,134,11,0.11);
+      border-right: 1px solid rgba(123, 91, 47, 0.2);
     }
 
     .table-grid tr:last-child th,
@@ -1033,10 +1064,14 @@
 
     .table-grid tr.table-subhead th {
       width: auto;
-      color: var(--wine);
-      background: rgba(184, 134, 11, 0.12);
-      border-bottom: 1px solid rgba(184, 134, 11, 0.25);
+      color: #5f232a;
+      background: linear-gradient(90deg, rgba(184, 134, 11, 0.16), rgba(114, 47, 55, 0.1));
+      border-bottom: 1px solid rgba(123, 91, 47, 0.34);
       font-weight: 700;
+    }
+
+    .table-grid tr:nth-child(odd):not(.table-subhead) td {
+      background: rgba(255,255,255,0.36);
     }
 
     .subsection-title {
@@ -1683,8 +1718,11 @@ Base Path: ${CONFIG.basePath}</pre>
       if (normalized.includes('short readings') || normalized.includes('short reading') || normalized.includes('短篇阅读')) {
         return { cls: 'section-short-readings', marker: '短文阅读', markerClass: 'short-readings' };
       }
+      if (/\bdrill\b/.test(normalized) || normalized.includes('操练') || normalized.includes('训练')) {
+        return { cls: 'section-drill', marker: '操练区', markerClass: 'drill' };
+      }
       if (/\bobservations?\b/.test(normalized) || normalized === '观察' || normalized === '温馨提示' || normalized === '注意') {
-        return { cls: '', marker: '观察提示', markerClass: 'observation' };
+        return { cls: 'section-observation', marker: '观察提示', markerClass: 'observation' };
       }
       return { cls: '', marker: '', markerClass: '' };
     }
