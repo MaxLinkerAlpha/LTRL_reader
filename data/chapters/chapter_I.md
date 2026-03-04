@@ -4,6 +4,7 @@ title: "Chapter I - 名词与动词概述"
 version: "v2026.03.04.032346"
 translators: ["Lanx", "Mecius", "Yancey", "tuche est", "机翻", "簪花落梅"]
 ---
+<!-- 分工: （拆分：1，Lanx）（机翻：1，Lanx）（人翻：2, 簪花落梅, tuche）（润色：？，？）（校对：？，？） -->
 
 <!-- seq:43 page:11 -->
 ## Vocabulary

@@ -4,6 +4,7 @@ title: "Chapter III - 代词"
 version: "v2026.03.04.032346"
 translators: ["Lanx", "Yancey", "iambicus", "机翻"]
 ---
+<!-- 分工: （拆分：1，Lanx）（机翻：1，Lanx）（人翻：？，？）（润色：？，？）（校对：？，？） -->
 
 <div class='translation' data-translator='iambicus' style='border-color:#92D050'>iambicus(OCR校正) <span class='tag' style='background:#92D050'>iambicus</span></div>
 <!-- seq:79 page:47 -->

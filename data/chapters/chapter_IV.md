@@ -4,6 +4,7 @@ title: "Chapter IV - 动词时态"
 version: "v2026.03.04.032346"
 translators: ["Lanx", "Yancey", "机翻", "簪花落梅"]
 ---
+<!-- 分工: （拆分：1，Lanx）（机翻：1，Lanx）（人翻：？，？）（润色：？，？）（校对：？，？） -->
 
 <!-- seq:95 page:63 -->
 ## Vocabulary

@@ -4,6 +4,7 @@ title: "Chapter O - Introduction"
 version: "v2026.03.04.032346"
 translators: ["Lanx", "tuche est", "机翻", "簪花落梅"]
 ---
+<!-- 分工: （拆分：1，Lanx）（机翻：1，Lanx）（人翻：1，Lanx）（第一次润色：1，Lanx）（第二次润色：1，Πλατών）（附加评论：3，北邙Ælfræd，北邙Ælfræd，ΑΝΘΡΩΠΟ） -->
 
 <!-- shot:33 page:1 -->
 ## INTRODUCTION

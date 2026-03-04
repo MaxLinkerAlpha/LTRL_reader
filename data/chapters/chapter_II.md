@@ -4,6 +4,7 @@ title: "Chapter II - 形容词与副词"
 version: "v2026.03.04.032346"
 translators: ["Lanx", "Yancey", "cyan", "iambicus", "tuche est", "机翻", "簪花落梅"]
 ---
+<!-- 分工: （拆分：1，Lanx）（机翻：1，Lanx）（人翻：？，？）（润色：？，？）（校对：？，？） -->
 
 <div class='translation' data-translator='簪花落梅' style='border-color:#C3EAD5'>簪花落梅 不翻的就空着，表示这行看过了 <span class='tag' style='background:#C3EAD5'>簪花落梅</span></div>
 <!-- seq:57 page:25 -->
