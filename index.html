@@ -20,6 +20,9 @@
       --gold: #b8860b;
       --gold-light: #daa520;
       --olive: #556b2f;
+      --bronze: #7b5b2f;
+      --marble: #fbf8f1;
+      --roman-shadow: rgba(61, 39, 14, 0.12);
     }
     
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -225,6 +228,8 @@
     .chapter-header {
       text-align: center;
       margin-bottom: 2rem;
+      padding: 1rem 0 0.2rem;
+      position: relative;
     }
     
     .chapter-number {
@@ -244,22 +249,39 @@
     
     .chapter-title {
       font-family: 'Crimson Text', serif;
-      font-size: 2rem;
-      color: var(--wine);
+      font-size: 2.15rem;
+      color: #5f232a;
       margin-bottom: 0.5rem;
+      letter-spacing: 0.02em;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.5);
     }
     
     .chapter-meta {
       color: var(--ink-light);
       font-size: 0.9rem;
+      background: rgba(255,255,255,0.55);
+      border: 1px solid rgba(184,134,11,0.22);
+      border-radius: 999px;
+      display: inline-block;
+      padding: 0.2rem 0.75rem;
+    }
+
+    .chapter-header::after {
+      content: '';
+      display: block;
+      width: min(480px, 86%);
+      margin: 0.9rem auto 0;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(184,134,11,0.05), rgba(184,134,11,0.75), rgba(184,134,11,0.05));
     }
     
     .section {
-      background: rgba(255,255,255,0.6);
-      border: 1px solid rgba(184, 134, 11, 0.3);
-      border-radius: 6px;
-      padding: 0.75rem;
-      margin-bottom: 0.75rem;
+      background: linear-gradient(180deg, rgba(255,255,255,0.72), rgba(255,255,255,0.56));
+      border: 1px solid rgba(123, 91, 47, 0.32);
+      border-radius: 10px;
+      padding: 0.85rem 0.85rem 0.75rem;
+      margin-bottom: 0.95rem;
+      box-shadow: 0 2px 10px var(--roman-shadow);
     }
 
     .section.section-derivatives {
@@ -283,12 +305,27 @@
     }
     
     .section-title {
-      font-size: 1.1rem;
+      position: relative;
+      font-size: 1.22rem;
       font-weight: 700;
-      color: var(--ink);
-      margin-bottom: 0.5rem;
-      padding-bottom: 0.3rem;
-      border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+      color: #3f2c1d;
+      margin-bottom: 0.6rem;
+      padding: 0.35rem 0.7rem 0.42rem;
+      border: 1px solid rgba(184, 134, 11, 0.28);
+      border-radius: 8px;
+      background: linear-gradient(90deg, rgba(184,134,11,0.12), rgba(114,47,55,0.08));
+      letter-spacing: 0.02em;
+      line-height: 1.3;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      left: 0.75rem;
+      right: 0.75rem;
+      bottom: -7px;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(184,134,11,0.06), rgba(184,134,11,0.6), rgba(184,134,11,0.06));
     }
 
     .section-marker {
@@ -321,8 +358,8 @@
 
     .section-title-cn {
       margin-left: 0.45rem;
-      color: var(--wine);
-      font-weight: 600;
+      color: #8a5a1d;
+      font-weight: 700;
       font-size: 0.95em;
     }
     
@@ -773,21 +810,22 @@
     
     /* 内容 block - 压缩间距 */
     .content-block {
-      margin-bottom: 0.75rem;
-      border: 1px solid rgba(184,134,11,0.2);
-      border-radius: 6px;
+      margin-bottom: 0.82rem;
+      border: 1px solid rgba(184,134,11,0.24);
+      border-radius: 8px;
       overflow: hidden;
+      background: rgba(255,255,255,0.62);
     }
     
     /* 原文样式 - 羊皮纸背景 */
     .original {
-      padding: 0.6rem 0.75rem;
-      background: linear-gradient(135deg, #faf6ed 0%, #f5f0e3 100%);
+      padding: 0.68rem 0.82rem;
+      background: linear-gradient(135deg, #faf6ed 0%, #f8f3e8 70%, #f2eadb 100%);
       border-bottom: 1px solid rgba(184,134,11,0.2);
       font-family: 'Crimson Text', serif;
-      line-height: 1.5;
+      line-height: 1.56;
       color: var(--ink);
-      font-size: 0.95rem;
+      font-size: 1rem;
     }
     
     .original.latin,
@@ -808,15 +846,15 @@
     
     /* 译文区域 - 压缩间距 */
     .translations {
-      padding: 0.3rem 0.5rem;
-      background: rgba(255,255,255,0.6);
+      padding: 0.38rem 0.58rem;
+      background: linear-gradient(180deg, rgba(255,255,255,0.74), rgba(255,255,255,0.58));
     }
     
     .translation {
       display: flex;
       align-items: flex-start;
       gap: 0.5rem;
-      padding: 0.25rem 0;
+      padding: 0.28rem 0;
       border-bottom: 1px dashed rgba(184,134,11,0.1);
     }
     
@@ -827,13 +865,16 @@
     /* 译者标签 - 更紧凑 */
     .translator-tag {
       flex-shrink: 0;
-      font-size: 0.7rem;
-      padding: 0.1rem 0.35rem;
-      border-radius: 3px;
+      font-size: 0.72rem;
+      padding: 0.11rem 0.46rem;
+      border-radius: 999px;
       border: 1px solid;
-      font-weight: 500;
+      font-weight: 600;
       white-space: nowrap;
       line-height: 1.3;
+      letter-spacing: 0.02em;
+      font-family: 'Noto Serif SC', serif;
+      text-transform: none;
     }
     
     .translation-text {
@@ -999,14 +1040,15 @@
     }
 
     .subsection-title {
-      margin: 0.7rem 0 0.4rem;
-      padding: 0.25rem 0.55rem;
-      border-left: 3px solid var(--olive);
-      background: rgba(85, 107, 47, 0.08);
-      font-size: 0.95rem;
-      color: var(--olive);
+      margin: 0.82rem 0 0.46rem;
+      padding: 0.35rem 0.65rem;
+      border-left: 4px solid #6f5a2d;
+      background: linear-gradient(90deg, rgba(85,107,47,0.1), rgba(85,107,47,0.04));
+      font-size: 1rem;
+      color: #4f612d;
       font-weight: 700;
-      border-radius: 0 5px 5px 0;
+      border-radius: 0 7px 7px 0;
+      box-shadow: inset 0 0 0 1px rgba(85,107,47,0.14);
     }
     
     /* 术语表紧凑布局 */
@@ -1558,13 +1600,15 @@ Base Path: ${CONFIG.basePath}</pre>
       
       // 先添加配置中的译者
       configTranslators.forEach(t => {
-        translatorMap.set(t.id, { id: t.id, name: t.name, color: t.color, is_primary: t.is_primary });
+        const id = normalizeTranslatorName(t.id);
+        translatorMap.set(id, { id, name: normalizeTranslatorName(t.name || t.id), color: t.color, is_primary: t.is_primary });
       });
       
       // 再添加章节中发现的译者（如果不在配置中）
       chapterTranslators.forEach(name => {
-        if (!translatorMap.has(name)) {
-          translatorMap.set(name, { id: name, name: name, color: '#666', is_primary: false });
+        const normalized = normalizeTranslatorName(name);
+        if (normalized && !translatorMap.has(normalized)) {
+          translatorMap.set(normalized, { id: normalized, name: normalized, color: '#666', is_primary: false });
         }
       });
       
@@ -1594,7 +1638,7 @@ Base Path: ${CONFIG.basePath}</pre>
             <select id="ctrl-translator">
               <option value="all">全部对比</option>
               <option value="original-only">仅显示原文</option>
-              ${allTranslators.map(t => `<option value="${t.id}">${t.name}</option>`).join('')}
+              ${allTranslators.map(t => `<option value="${escapeHtml(normalizeTranslatorName(t.id))}">${escapeHtml(normalizeTranslatorName(t.name))}</option>`).join('')}
             </select>
           </div>
         </div>
@@ -1727,9 +1771,11 @@ Base Path: ${CONFIG.basePath}</pre>
         
         // 为翻译添加颜色和fallback标记
         const translations = block.translations.map((t, i) => {
-          const info = getTranslatorInfo(t.translator);
+          const safeTranslator = normalizeTranslatorName(t.translator);
+          const info = getTranslatorInfo(safeTranslator);
           return {
             ...t,
+            translator: safeTranslator,
             color: info.color,
             isPrimary: info.is_primary,
             isFallback: i === 0  // 第一个作为底漌
@@ -1749,11 +1795,11 @@ Base Path: ${CONFIG.basePath}</pre>
               <div class="translations" data-type="translation">
                 ${translations.map(t => `
                   <div class="translation" 
-                       data-translator="${t.translator}"
+                       data-translator="${escapeHtml(t.translator)}"
                        data-primary="${t.isPrimary}"
                        data-fallback="${t.isFallback}">
                     <span class="translator-tag" style="background: ${t.color}20; color: ${t.color}; border-color: ${t.color}40;">
-                      ${t.translator}
+                      ${escapeHtml(t.translator)}
                     </span>
                     <span class="translation-text">${highlightTerms(t.text)}</span>
                   </div>
@@ -2016,7 +2062,7 @@ Base Path: ${CONFIG.basePath}</pre>
         // 译者注释 <div class='translator-note' data-translator='...'>...</div>
         const translatorNoteMatch = line.match(/<div class='translator-note' data-translator='([^']+)'>([\s\S]+)<\/div>/);
         if (translatorNoteMatch) {
-          const translator = decodeHtmlEntities(translatorNoteMatch[1]);
+          const translator = normalizeTranslatorName(translatorNoteMatch[1]);
           translators.add(translator);
           ensureSection().blocks.push({
             type: 'translator-note',
@@ -2029,7 +2075,7 @@ Base Path: ${CONFIG.basePath}</pre>
         // 译文 <div class='translation' data-translator='...' ...>...</div>
         const transMatch = line.match(/<div class='translation' data-translator='([^']+)'[^>]*>([\s\S]+)<\/div>/);
         if (transMatch) {
-          const translator = decodeHtmlEntities(transMatch[1]);
+          const translator = normalizeTranslatorName(transMatch[1]);
           translators.add(translator);
           const content = transMatch[2];
           // 提取文本（去掉span标签）
@@ -2131,8 +2177,9 @@ Base Path: ${CONFIG.basePath}</pre>
     
     // 获取译者信息（合并配置和章节数据）
     function getTranslatorInfo(name) {
+      const normalized = normalizeTranslatorName(name);
       // 先从配置中查找
-      const fromConfig = state.config.translators?.find(t => t.id === name || t.name === name);
+      const fromConfig = state.config.translators?.find(t => normalizeTranslatorName(t.id) === normalized || normalizeTranslatorName(t.name) === normalized);
       if (fromConfig) {
         return { color: fromConfig.color || '#666', is_primary: fromConfig.is_primary || false };
       }
@@ -2146,6 +2193,13 @@ Base Path: ${CONFIG.basePath}</pre>
       const textarea = document.createElement('textarea');
       textarea.innerHTML = String(text);
       return textarea.value;
+    }
+
+    function normalizeTranslatorName(name) {
+      return decodeHtmlEntities(name || '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
     }
 
     function highlightTerms(text) {
