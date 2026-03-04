@@ -4,7 +4,7 @@ from __future__ import annotations
 import json
 import re
 import xml.etree.ElementTree as ET
-from collections import OrderedDict
+from collections import OrderedDict, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
 from zipfile import ZipFile
@@ -16,36 +16,41 @@ OUT_JSON = ROOT / 'data' / 'terminology.json'
 
 NS = '{http://schemas.openxmlformats.org/spreadsheetml/2006/main}'
 
+CASE_FAMILIES = {'Ablative', 'Accusative', 'Dative', 'Genitive', 'Nominative', 'Vocative', 'Locative'}
+
 
 @dataclass
 class TermEntry:
     term: str
-    primary: str = ''
+    primary: str
     alternatives: list[str] = field(default_factory=list)
+    abbreviation: str = ''
 
     def add_alt(self, text: str):
         t = normalize_cn(text)
-        if t and t != self.primary and t not in self.alternatives:
+        if not t or t == self.primary:
+            return
+        if t not in self.alternatives:
             self.alternatives.append(t)
 
 
 def normalize_space(s: str) -> str:
-    return re.sub(r'\s+', ' ', s.replace('\u00a0', ' ').replace('\u200b', ' ')).strip()
+    return re.sub(r'\s+', ' ', (s or '').replace('\u00a0', ' ').replace('\u200b', ' ')).strip()
 
 
 def normalize_term(s: str) -> str:
     s = normalize_space(s)
     s = s.replace('Instrunent', 'Instrument')
-    s = re.sub(r'\s*,\s*$', '', s)
-    s = re.sub(r'\s*\.$', '', s)
-    s = s.strip(' ,;')
+    s = s.strip(' ,;.')
     return s
 
 
 def normalize_cn(s: str) -> str:
-    s = normalize_space(s)
-    s = s.strip('，,；;。.')
-    return s
+    return normalize_space(s).strip('，,；;。. ')
+
+
+def has_cjk(s: str) -> bool:
+    return bool(re.search(r'[\u4e00-\u9fff]', s or ''))
 
 
 def key_term(s: str) -> str:
@@ -54,21 +59,24 @@ def key_term(s: str) -> str:
     return re.sub(r'\s+', ' ', s).strip()
 
 
-def has_cjk(s: str) -> bool:
-    return bool(re.search(r'[\u4e00-\u9fff]', s or ''))
-
-
 def split_alts(text: str) -> list[str]:
     t = normalize_cn(text)
     if not t:
         return []
-    parts = re.split(r'[、；;]|\s+/\s+|\s*\|\s*', t)
+    parts = re.split(r'[、；;]|(?<!\w)/(?!\w)|\s*\|\s*', t)
     out = []
     for p in parts:
         pp = normalize_cn(p)
         if pp and pp not in out:
             out.append(pp)
     return out
+
+
+def split_primary_and_alts(text: str) -> tuple[str, list[str]]:
+    parts = split_alts(text)
+    if not parts:
+        return '', []
+    return parts[0], parts[1:]
 
 
 def slugify(term: str) -> str:
@@ -136,92 +144,142 @@ class WorkbookXml:
 
 
 def parse_scholar_map(wb: WorkbookXml) -> dict[str, str]:
-    # 主要取顾枝鹰术语表，作为主译名优先源
-    m: dict[str, str] = {}
+    # 顾枝鹰术语表作为“主译名优先”来源
+    m = {}
     for _, vals in wb.iter_rows('顾枝鹰《拉丁语语法新编》术语表', max_col=3):
-        cell = vals[0]
+        cell = vals[1] if len(vals) > 1 else vals[0]
         if not cell:
             continue
-        # 格式通常为: 中文 + 空格 + English/Latin
         mm = re.match(r'^(?P<cn>[\u4e00-\u9fff\[\]（）()、，。·\-—\s]+?)\s*(?P<en>[A-Za-zÀ-ž][A-Za-zÀ-ž\-’\' /]+)$', cell)
         if not mm:
             continue
         cn = normalize_cn(mm.group('cn'))
         en = normalize_term(mm.group('en'))
-        if not has_cjk(cn):
-            continue
-        if en and cn:
+        if has_cjk(cn) and en:
             m[key_term(en)] = cn
     return m
+
+
+def compose_term(raw_term: str, current_family: str) -> tuple[str, str]:
+    term = normalize_term(raw_term)
+    # 还原 "of Accompaniment" -> "Ablative of Accompaniment"
+    if current_family and re.match(r'^(of|with)\b', term, re.IGNORECASE):
+        term = f'{current_family} {term}'
+
+    first = term.split(' ', 1)[0]
+    if first in CASE_FAMILIES:
+        current_family = first
+    return term, current_family
 
 
 def parse_comprehensive_terms(wb: WorkbookXml) -> OrderedDict[str, TermEntry]:
     scholar = parse_scholar_map(wb)
     entries: OrderedDict[str, TermEntry] = OrderedDict()
-    table_started = False
+    in_table = False
+    current_family = ''
+    raw_rows = []
 
-    for rn, vals in wb.iter_rows('综合术语表', max_col=6):
+    for _, vals in wb.iter_rows('综合术语表', max_col=6):
         a, b, c, d = vals[0], vals[1], vals[2], vals[3]
-        if not table_started:
-            if a == '拉丁语' and b == '英语' and c.startswith('暂定中文'):
-                table_started = True
+
+        if not in_table:
+            if a == '【拉丁文/希腊文术语】' and b == '【英文术语】':
+                in_table = True
             continue
 
-        term = normalize_term(b)
-        cn = normalize_cn(c)
-        alt = normalize_cn(d)
+        raw_rows.append({'term_raw': normalize_term(b), 'cn': normalize_cn(c), 'alt': normalize_cn(d)})
 
+    # 部分表格存在“术语列与中文列错一行”的情况：如 Accentuation -> 时段(内), 下一行才是重读。
+    # 使用锚点识别后，对后续行执行一次前移校正。
+    anchors = {
+        'Absolute': '独立夺格',
+        'Accentuation': '重读',
+        'antepenult': '倒三音节',
+        'penult': '倒二音节',
+    }
+    anchor_hits = 0
+    shift_start = None
+    for i in range(len(raw_rows) - 1):
+        t = raw_rows[i]['term_raw']
+        if t in anchors and raw_rows[i]['cn'] != anchors[t] and raw_rows[i + 1]['cn'] == anchors[t]:
+            anchor_hits += 1
+            shift_start = i if shift_start is None else min(shift_start, i)
+    if anchor_hits >= 2 and shift_start is not None:
+        for i in range(shift_start, len(raw_rows) - 1):
+            raw_rows[i]['cn'] = raw_rows[i + 1]['cn']
+
+    for row in raw_rows:
+        term = row['term_raw']
+        cn = row['cn']
+        alt = row['alt']
         if not term:
             continue
-        # 术语项仅保留英/拉术语，过滤混入的中文说明行
+
+        term, current_family = compose_term(term, current_family)
         if has_cjk(term):
-            continue
-        if not re.search(r'[A-Za-zÀ-ž]{3,}', term):
-            continue
-        # skip index headers/noise
-        if key_term(term) in {'general index', 'english index'}:
             continue
         if re.fullmatch(r'[A-Z]', term):
             continue
+        if key_term(term) in {'general index', 'english index'}:
+            continue
+        if not re.search(r'[A-Za-zÀ-ž]{3,}', term):
+            continue
 
-        k = key_term(term)
-        scholar_cn = scholar.get(k, '')
+        cn_primary, cn_alts = split_primary_and_alts(cn)
+        d_alts = split_alts(alt)
 
-        primary = scholar_cn or cn
+        scholar_primary = scholar.get(key_term(term), '')
+        primary = scholar_primary or cn_primary
         if not primary:
             continue
 
+        k = key_term(term)
         if k not in entries:
             entries[k] = TermEntry(term=term, primary=primary)
         e = entries[k]
 
-        # prefer scholar terminology as primary if available
-        if scholar_cn:
-            e.primary = scholar_cn
-        elif not e.primary:
+        if scholar_primary:
+            e.primary = scholar_primary
+            # scholar 主译名存在时，避免把“暂定中文”误差带入备选（保守策略）
+        else:
             e.primary = primary
 
-        if cn and cn != e.primary:
-            e.add_alt(cn)
-        for p in split_alts(alt):
-            e.add_alt(p)
+        for a0 in cn_alts:
+            e.add_alt(a0)
+        for a0 in d_alts:
+            e.add_alt(a0)
 
     return entries
 
 
 def write_md(entries: OrderedDict[str, TermEntry]):
+    groups = defaultdict(list)
+    for e in entries.values():
+        initial = e.term[0].upper() if e.term and e.term[0].isalpha() else '#'
+        groups[initial].append(e)
+
     lines = []
     lines.append('# LTRL 术语对照表')
     lines.append('')
     lines.append('> 数据源：`source/reference/疑问汇总及术语对照表.xlsx`（综合术语表）')
-    lines.append('> 主译名优先策略：优先采用顾枝鹰等学者确定术语；其余保留为备选。')
+    lines.append('> 主译名优先：顾枝鹰等学者术语；同一术语的其他译法保留在“备选术语译文”。')
     lines.append('')
-    lines.append('| 英文/拉丁语 | 主要术语译文 | 备选术语译文 |')
-    lines.append('|------------|-------------|-------------|')
-    for e in sorted(entries.values(), key=lambda x: x.term.lower()):
-        alts = ' / '.join(e.alternatives)
-        lines.append(f'| {e.term} | {e.primary} | {alts} |')
-    OUT_MD.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+
+    ordered_keys = [k for k in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' if k in groups]
+    if '#' in groups:
+        ordered_keys.append('#')
+
+    for g in ordered_keys:
+        lines.append(f'## {g}')
+        lines.append('')
+        lines.append('| 英文/拉丁语 | 主要术语译文 | 备选术语译文 |')
+        lines.append('|------------|-------------|-------------|')
+        for e in sorted(groups[g], key=lambda x: x.term.lower()):
+            alt = ' / '.join(e.alternatives)
+            lines.append(f'| {e.term} | {e.primary} | {alt} |')
+        lines.append('')
+
+    OUT_MD.write_text('\n'.join(lines), encoding='utf-8')
 
 
 def write_json(entries: OrderedDict[str, TermEntry]):
@@ -239,14 +297,12 @@ def write_json(entries: OrderedDict[str, TermEntry]):
             i += 1
         used.add(key)
 
-        explanation = ''
-        if e.alternatives:
-            explanation = '备选：' + ' / '.join(e.alternatives)
-
+        explanation = '备选：' + ' / '.join(e.alternatives) if e.alternatives else ''
         abbr = old.get(key, {}).get('abbreviation', '')
-        m = re.search(r'\(([^)]+)\)', e.term)
-        if not abbr and m and len(m.group(1)) <= 12:
-            abbr = m.group(1)
+        if not abbr:
+            m = re.search(r'\(([^)]+)\)', e.term)
+            if m and len(m.group(1)) <= 12:
+                abbr = m.group(1)
 
         out[key] = {
             'term': e.term,

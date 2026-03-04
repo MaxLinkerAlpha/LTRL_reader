@@ -1775,6 +1775,12 @@ Base Path: ${CONFIG.basePath}</pre>
         .replace(/[^\u4e00-\u9fffa-z]/g, '');
     }
 
+    function isObservationHeadingTitle(title) {
+      const compact = compactSectionKey(title);
+      if (compact === '观察' || compact === '温馨提示' || compact === '注意') return true;
+      return compact.includes('observation');
+    }
+
     function isRuleHeadingTitle(title) {
       const raw = decodeHtmlEntities(title || '').trim();
       if (!raw) return false;
@@ -1805,7 +1811,7 @@ Base Path: ${CONFIG.basePath}</pre>
       if (compact.includes('drill') || compact.includes('操练') || compact.includes('训练')) {
         return { cls: 'section-drill', marker: '操练区', markerClass: 'drill', titleClass: 'title-main' };
       }
-      if (compact.includes('observation') || compact === '观察' || compact === '温馨提示' || compact === '注意') {
+      if (isObservationHeadingTitle(raw)) {
         return { cls: 'section-observation', marker: '观察提示', markerClass: 'observation', titleClass: 'title-compact' };
       }
       if (isRuleHeadingTitle(raw)) {
@@ -1833,11 +1839,10 @@ Base Path: ${CONFIG.basePath}</pre>
       const secMeta = classifySection(section.title);
 
       // Keep heading hierarchy aligned for paired titles such as OBSERVATION(S) / 注意|观察|温馨提示.
-      if (/^\s*\d*\s*o\s*b\s*s\s*e\s*r\s*v\s*a\s*t\s*i\s*o\s*n\s*s?\s*$/i.test(section.title.replace(/[^a-zA-Z0-9\s]/g, '')) && blocks.length > 0) {
-        sectionTitleCn = pickObservationCn(blocks);
-        if (sectionTitleCn) {
-          blocks = blocks.slice(1);
-        }
+      if (isObservationHeadingTitle(section.title)) {
+        sectionTitleCn = '温馨提示';
+        const picked = pickObservationCn(blocks);
+        if (picked) blocks = blocks.slice(1);
       }
 
       return `
