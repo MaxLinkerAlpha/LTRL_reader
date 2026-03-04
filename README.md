@@ -72,4 +72,4 @@ python3 scripts/regenerate_chapters_from_excel.py --root .
 
 ---
 
-**Lingua Latina per se illustrata** 🏛️
+**Learn to Read Laitn** 🏛️

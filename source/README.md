@@ -61,4 +61,4 @@ source/
 
 ---
 
-**Lingua Latina per se illustrata** 🏛️
+**Learn to Read Laitn** 🏛️

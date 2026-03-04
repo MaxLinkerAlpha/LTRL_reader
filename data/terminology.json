@@ -1,3506 +1,680 @@
 {
-  "ablative": {
-    "term": "Ablative",
-    "translation": "夺格",
-    "explanation": "夺格",
-    "abbreviation": ""
-  },
-  "ablative_absolute": {
-    "term": "Ablative Absolute",
-    "translation": "独立夺格",
-    "explanation": "独立夺格",
-    "abbreviation": ""
-  },
-  "ablative_of_accompaniment": {
-    "term": "Ablative of Accompaniment",
-    "translation": "伴随夺格",
-    "explanation": "伴随夺格（备选：陪同）",
-    "abbreviation": ""
-  },
-  "ablative_of_cause": {
-    "term": "Ablative of Cause",
-    "translation": "原因夺格",
-    "explanation": "原因夺格",
-    "abbreviation": ""
-  },
-  "ablative_of_comparison": {
-    "term": "Ablative of Comparison",
-    "translation": "比较夺格",
-    "explanation": "比较夺格",
-    "abbreviation": ""
-  },
-  "ablative_of_degree_of_difference": {
-    "term": "Ablative of Degree of Difference",
-    "translation": "差异程度夺格",
-    "explanation": "差异程度夺格（备选：(程度)差异）",
-    "abbreviation": ""
-  },
-  "ablative_of_description": {
-    "term": "Ablative of Description",
-    "translation": "描述夺格",
-    "explanation": "描述夺格",
+  "ablative_case_introduction": {
+    "term": "Ablative case,introduction",
+    "translation": "夺格介绍",
+    "explanation": "",
     "abbreviation": ""
   },
   "ablative_of_manner": {
     "term": "Ablative of Manner",
     "translation": "方式夺格",
-    "explanation": "方式夺格",
+    "explanation": "",
     "abbreviation": ""
   },
-  "ablative_of_meansinstrument": {
-    "term": "Ablative of Means/Instrument",
-    "translation": "手段夺格",
-    "explanation": "手段夺格（备选：工具夺格）",
+  "absolute": {
+    "term": "Absolute",
+    "translation": "独立夺格",
+    "explanation": "",
     "abbreviation": ""
   },
-  "ablative_of_origin": {
-    "term": "Ablative of Origin",
-    "translation": "来源夺格",
-    "explanation": "来源夺格（备选：起源）",
+  "accentuation": {
+    "term": "Accentuation",
+    "translation": "重读",
+    "explanation": "",
     "abbreviation": ""
   },
-  "ablative_of_penalty": {
-    "term": "Ablative of Penalty",
-    "translation": "惩罚夺格",
-    "explanation": "惩罚夺格",
-    "abbreviation": ""
-  },
-  "ablative_of_personal_agent": {
-    "term": "Ablative of Personal Agent",
-    "translation": "人称施动者夺格",
-    "explanation": "人称施动者夺格（备选：施事夺格）",
-    "abbreviation": ""
-  },
-  "ablative_of_place_from_which": {
-    "term": "Ablative of Place From Which",
-    "translation": "分离夺格",
-    "explanation": "分离夺格（备选：离开）",
-    "abbreviation": ""
-  },
-  "ablative_of_place_where": {
-    "term": "Ablative of Place Where",
-    "translation": "地点夺格",
-    "explanation": "地点夺格",
-    "abbreviation": ""
-  },
-  "ablative_of_price": {
-    "term": "Ablative of Price",
-    "translation": "价值夺格",
-    "explanation": "价值夺格（备选：价格/价值）",
-    "abbreviation": ""
-  },
-  "ablative_of_quality": {
-    "term": "Ablative of Quality",
-    "translation": "品质夺格",
-    "explanation": "品质夺格",
-    "abbreviation": ""
-  },
-  "ablative_of_respect": {
-    "term": "Ablative of Respect",
-    "translation": "限定夺格",
-    "explanation": "限定夺格（备选：指定夺格）",
-    "abbreviation": ""
-  },
-  "ablative_of_separation": {
-    "term": "Ablative of Separation",
-    "translation": "分离夺格",
-    "explanation": "分离夺格",
-    "abbreviation": ""
-  },
-  "ablative_of_specification": {
-    "term": "Ablative of Specification",
-    "translation": "指定夺格",
-    "explanation": "指定夺格（备选：Ablative of Respect）",
-    "abbreviation": ""
-  },
-  "ablative_of_time_when": {
-    "term": "Ablative of Time When",
-    "translation": "时间夺格(点)",
-    "explanation": "时间夺格(点)",
-    "abbreviation": ""
-  },
-  "ablative_of_time_within_which": {
-    "term": "Ablative of Time Within Which",
-    "translation": "时段夺格",
-    "explanation": "时段夺格（备选：时段(内)）",
-    "abbreviation": ""
-  },
-  "ablaut": {
-    "term": "Ablaut",
-    "translation": "元音交替",
-    "explanation": "元音交替（备选：换音）",
-    "abbreviation": ""
-  },
-  "abstract_noun": {
-    "term": "Abstract Noun",
-    "translation": "抽象名词",
-    "explanation": "抽象名词",
-    "abbreviation": ""
-  },
-  "acatalectic": {
-    "term": "Acatalectic",
-    "translation": "行末无停顿",
-    "explanation": "行末无停顿",
-    "abbreviation": ""
-  },
-  "accent": {
-    "term": "Accent",
-    "translation": "重音",
-    "explanation": "重音",
-    "abbreviation": ""
-  },
-  "accentual_verse": {
-    "term": "Accentual Verse",
-    "translation": "重音格律诗",
-    "explanation": "重音格律诗",
-    "abbreviation": ""
-  },
-  "accusative": {
-    "term": "Accusative",
+  "accusative_case_introduction": {
+    "term": "Accusative case,introduction",
     "translation": "宾格",
-    "explanation": "宾格",
+    "explanation": "",
     "abbreviation": ""
   },
-  "accusative_of_anticipation": {
-    "term": "Accusative of Anticipation",
-    "translation": "预期宾格",
-    "explanation": "预期宾格",
-    "abbreviation": ""
-  },
-  "accusative_of_duration_of_time": {
-    "term": "Accusative of Duration of Time",
-    "translation": "(持续)时间宾格",
-    "explanation": "(持续)时间宾格",
-    "abbreviation": ""
-  },
-  "accusative_of_exclamation": {
-    "term": "Accusative of Exclamation",
-    "translation": "感叹宾格",
-    "explanation": "感叹宾格",
-    "abbreviation": ""
-  },
-  "accusative_of_kindred_signification": {
-    "term": "Accusative of Kindred Signification",
-    "translation": "近义宾格",
-    "explanation": "近义宾格",
-    "abbreviation": ""
-  },
-  "accusative_of_place_to_which": {
-    "term": "Accusative of Place To Which",
-    "translation": "趋向宾格",
-    "explanation": "趋向宾格（备选：去向）",
-    "abbreviation": ""
-  },
-  "accusative_of_respect": {
-    "term": "Accusative of Respect",
-    "translation": "限定宾格",
-    "explanation": "限定宾格",
-    "abbreviation": ""
-  },
-  "accusativeandinfinitive_aci": {
-    "term": "Accusative-and-Infinitive (AcI)",
-    "translation": "宾格与不定式结构",
-    "explanation": "宾格与不定式结构",
-    "abbreviation": "AcI"
-  },
-  "accusativeandparticiple": {
-    "term": "Accusative-and-Participle",
-    "translation": "宾格与分词结构",
-    "explanation": "宾格与分词结构",
-    "abbreviation": ""
-  },
-  "acephalous": {
-    "term": "Acephalous",
-    "translation": "无头",
-    "explanation": "无头",
-    "abbreviation": ""
-  },
-  "active_periphrastic": {
-    "term": "Active Periphrastic",
+  "active_periphrastics": {
+    "term": "Active periphrastics",
     "translation": "主动迂说法",
-    "explanation": "主动迂说法",
+    "explanation": "",
     "abbreviation": ""
   },
-  "active_voice": {
-    "term": "Active Voice",
-    "translation": "主动态",
-    "explanation": "主动态",
+  "adjective_morphology": {
+    "term": "Adjective morphology",
+    "translation": "形容词词法",
+    "explanation": "",
     "abbreviation": ""
   },
-  "adjective_interrogative_pronoun": {
-    "term": "Adjective Interrogative Pronoun",
-    "translation": "形容词性疑问代词",
-    "explanation": "形容词性疑问代词",
+  "adjectives_introduction": {
+    "term": "Adjectives,introduction",
+    "translation": "形容词介绍",
+    "explanation": "",
     "abbreviation": ""
   },
-  "adonic": {
-    "term": "Adonic",
-    "translation": "阿多尼斯体",
-    "explanation": "阿多尼斯体",
+  "adverbial": {
+    "term": "Adverbial",
+    "translation": "副词/状语",
+    "explanation": "",
     "abbreviation": ""
   },
-  "adverbial_accusative": {
-    "term": "Adverbial Accusative",
-    "translation": "副词性宾格",
-    "explanation": "副词性宾格",
-    "abbreviation": ""
-  },
-  "adverbial_conjunction": {
-    "term": "Adverbial Conjunction",
-    "translation": "副词性连词",
-    "explanation": "副词性连词",
-    "abbreviation": ""
-  },
-  "adversative_conjunction": {
-    "term": "Adversative Conjunction",
-    "translation": "转折连词",
-    "explanation": "转折连词",
-    "abbreviation": ""
-  },
-  "aeolic_verse": {
-    "term": "Aeolic Verse",
-    "translation": "埃奥利斯诗行",
-    "explanation": "埃奥利斯诗行",
-    "abbreviation": ""
-  },
-  "affix": {
-    "term": "Affix",
-    "translation": "词缀",
-    "explanation": "词缀",
-    "abbreviation": ""
-  },
-  "agreement": {
-    "term": "Agreement",
-    "translation": "一致",
-    "explanation": "一致（备选：一致关系）",
-    "abbreviation": ""
-  },
-  "alcaic": {
-    "term": "Alcaic",
-    "translation": "阿珥凯欧斯体",
-    "explanation": "阿珥凯欧斯体",
-    "abbreviation": ""
-  },
-  "allegory": {
-    "term": "Allegory",
-    "translation": "譬喻",
-    "explanation": "譬喻",
-    "abbreviation": ""
+  "adverbs_comparative_of": {
+    "term": "Adverbs comparative of (irregular)",
+    "translation": "副词比较级",
+    "explanation": "",
+    "abbreviation": "irregular"
   },
   "alliteration": {
     "term": "Alliteration",
     "translation": "头韵",
-    "explanation": "头韵（备选：头韵法）",
-    "abbreviation": ""
-  },
-  "alliterative_meter": {
-    "term": "Alliterative Meter",
-    "translation": "头韵格律",
-    "explanation": "头韵格律",
-    "abbreviation": ""
-  },
-  "anaclasis": {
-    "term": "Anaclasis",
-    "translation": "节拍替换",
-    "explanation": "节拍替换",
-    "abbreviation": ""
-  },
-  "anacoluthon": {
-    "term": "Anacoluthon",
-    "translation": "错格",
-    "explanation": "错格",
-    "abbreviation": ""
-  },
-  "anacrusis": {
-    "term": "Anacrusis",
-    "translation": "行首额外音节",
-    "explanation": "行首额外音节",
-    "abbreviation": ""
-  },
-  "analogy": {
-    "term": "Analogy",
-    "translation": "类推",
-    "explanation": "类推",
-    "abbreviation": ""
-  },
-  "anapaest": {
-    "term": "Anapaest",
-    "translation": "短短长格",
-    "explanation": "短短长格",
-    "abbreviation": ""
-  },
-  "anaphora": {
-    "term": "Anaphora",
-    "translation": "首语重复",
-    "explanation": "首语重复",
-    "abbreviation": ""
-  },
-  "anastrophe": {
-    "term": "Anastrophe",
-    "translation": "倒装",
-    "explanation": "倒装",
-    "abbreviation": ""
-  },
-  "anceps_position": {
-    "term": "Anceps Position",
-    "translation": "两可位置",
-    "explanation": "两可位置",
-    "abbreviation": ""
-  },
-  "annalistic_present": {
-    "term": "Annalistic Present",
-    "translation": "编年现在时",
-    "explanation": "编年现在时",
+    "explanation": "",
     "abbreviation": ""
   },
   "antepenult": {
-    "term": "Antepenult",
-    "translation": "前音节",
-    "explanation": "前音节（备选：倒三音节）",
-    "abbreviation": ""
-  },
-  "antibacchiac": {
-    "term": "Antibacchiac",
-    "translation": "长长短格",
-    "explanation": "长长短格",
-    "abbreviation": ""
-  },
-  "anticipatory_subjunctive": {
-    "term": "Anticipatory Subjunctive",
-    "translation": "前在虚拟式",
-    "explanation": "前在虚拟式",
-    "abbreviation": ""
-  },
-  "antispast": {
-    "term": "Antispast",
-    "translation": "短长长短格",
-    "explanation": "短长长短格",
-    "abbreviation": ""
-  },
-  "antistrophe": {
-    "term": "Antistrophe",
-    "translation": "对照诗节",
-    "explanation": "对照诗节",
-    "abbreviation": ""
-  },
-  "antithesis": {
-    "term": "Antithesis",
-    "translation": "对偶",
-    "explanation": "对偶（备选：对照）",
-    "abbreviation": ""
-  },
-  "aorist": {
-    "term": "Aorist",
-    "translation": "不定过去时",
-    "explanation": "不定过去时",
-    "abbreviation": ""
-  },
-  "apex": {
-    "term": "Apex",
-    "translation": "尖顶",
-    "explanation": "尖顶",
-    "abbreviation": ""
-  },
-  "aphaeresis": {
-    "term": "Aphaeresis",
-    "translation": "词首省略",
-    "explanation": "词首省略",
-    "abbreviation": ""
-  },
-  "aposiopesis": {
-    "term": "Aposiopesis",
-    "translation": "顿绝",
-    "explanation": "顿绝（备选：话语中断）",
-    "abbreviation": ""
-  },
-  "apostrophe": {
-    "term": "Apostrophe",
-    "translation": "顿呼",
-    "explanation": "顿呼",
-    "abbreviation": ""
-  },
-  "apposition": {
-    "term": "Apposition",
-    "translation": "同位",
-    "explanation": "同位",
-    "abbreviation": ""
-  },
-  "appositional_genitive": {
-    "term": "Appositional Genitive",
-    "translation": "同位语属格",
-    "explanation": "同位语属格",
-    "abbreviation": ""
-  },
-  "appositive": {
-    "term": "Appositive",
-    "translation": "同位语",
-    "explanation": "同位语",
-    "abbreviation": ""
-  },
-  "archilochian": {
-    "term": "Archilochian",
-    "translation": "阿尔奇洛科斯体",
-    "explanation": "阿尔奇洛科斯体",
-    "abbreviation": ""
-  },
-  "arsis": {
-    "term": "Arsis",
-    "translation": "弱拍",
-    "explanation": "弱拍",
-    "abbreviation": ""
-  },
-  "articular_infinitive": {
-    "term": "Articular Infinitive",
-    "translation": "带冠词的不定式",
-    "explanation": "带冠词的不定式",
-    "abbreviation": ""
-  },
-  "asclepiadean": {
-    "term": "Asclepiadean",
-    "translation": "阿斯克勒皮阿得斯体",
-    "explanation": "阿斯克勒皮阿得斯体",
-    "abbreviation": ""
-  },
-  "aspirate": {
-    "term": "Aspirate",
-    "translation": "送气音",
-    "explanation": "送气音",
-    "abbreviation": ""
-  },
-  "aspirate_2": {
-    "term": "Aspirate",
-    "translation": "送气符",
-    "explanation": "送气符",
-    "abbreviation": ""
-  },
-  "assimilation": {
-    "term": "Assimilation",
-    "translation": "同化",
-    "explanation": "同化（备选：趋同）",
-    "abbreviation": ""
-  },
-  "assimilation_in_compound_verbs": {
-    "term": "Assimilation (in compound verbs)",
-    "translation": "同化",
-    "explanation": "同化",
-    "abbreviation": ""
-  },
-  "assonance": {
-    "term": "Assonance",
-    "translation": "谐音",
-    "explanation": "谐音",
-    "abbreviation": ""
-  },
-  "asyndeton": {
-    "term": "Asyndeton",
-    "translation": "散珠格",
-    "explanation": "散珠格",
-    "abbreviation": ""
-  },
-  "athematic_verb": {
-    "term": "Athematic Verb",
-    "translation": "无构干元音型动词",
-    "explanation": "无构干元音型动词",
-    "abbreviation": ""
-  },
-  "attic_future": {
-    "term": "Attic Future",
-    "translation": "阿提卡型将来时",
-    "explanation": "阿提卡型将来时",
-    "abbreviation": ""
-  },
-  "attic_second_declension": {
-    "term": "Attic Second Declension",
-    "translation": "阿提卡型第二变格法",
-    "explanation": "阿提卡型第二变格法",
-    "abbreviation": ""
-  },
-  "attraction": {
-    "term": "Attraction",
-    "translation": "形态同化",
-    "explanation": "形态同化（备选：趋同）",
-    "abbreviation": ""
-  },
-  "attributive_adjective": {
-    "term": "Attributive Adjective",
-    "translation": "定语形容词",
-    "explanation": "定语形容词",
-    "abbreviation": ""
-  },
-  "attributive_participle": {
-    "term": "Attributive Participle",
-    "translation": "定语分词",
-    "explanation": "定语分词",
-    "abbreviation": ""
-  },
-  "bacchius": {
-    "term": "Bacchius",
-    "translation": "短长长格",
-    "explanation": "短长长格（备选：酒神格）",
-    "abbreviation": ""
-  },
-  "background": {
-    "term": "Background",
-    "translation": "背景",
-    "explanation": "背景",
-    "abbreviation": ""
-  },
-  "base": {
-    "term": "Base",
-    "translation": "词基",
-    "explanation": "词基",
-    "abbreviation": ""
-  },
-  "biceps_position": {
-    "term": "Biceps Position",
-    "translation": "双头位置",
-    "explanation": "双头位置",
-    "abbreviation": ""
-  },
-  "brachylogy": {
-    "term": "Brachylogy",
-    "translation": "精简",
-    "explanation": "精简",
-    "abbreviation": ""
-  },
-  "breve": {
-    "term": "Breve",
-    "translation": "短音符",
-    "explanation": "短音符",
-    "abbreviation": ""
-  },
-  "brevis_brevians": {
-    "term": "Brevis Brevians",
-    "translation": "使其他长音节短化的短音节",
-    "explanation": "使其他长音节短化的短音节",
-    "abbreviation": ""
-  },
-  "bridge": {
-    "term": "Bridge",
-    "translation": "诗行桥",
-    "explanation": "诗行桥",
-    "abbreviation": ""
-  },
-  "bucolic_diaeresis": {
-    "term": "Bucolic Diaeresis",
-    "translation": "牧歌式同步停顿",
-    "explanation": "牧歌式同步停顿",
-    "abbreviation": ""
-  },
-  "caesura": {
-    "term": "Caesura",
-    "translation": "异步停顿",
-    "explanation": "异步停顿（备选：停顿）",
-    "abbreviation": ""
-  },
-  "catalectic": {
-    "term": "Catalectic",
-    "translation": "行末停顿",
-    "explanation": "行末停顿",
-    "abbreviation": ""
-  },
-  "catalexis": {
-    "term": "Catalexis",
-    "translation": "行末缺失音节",
-    "explanation": "行末缺失音节",
-    "abbreviation": ""
-  },
-  "causal_clause": {
-    "term": "Causal Clause",
-    "translation": "原因从句",
-    "explanation": "原因从句",
-    "abbreviation": ""
-  },
-  "causal_conjunction": {
-    "term": "Causal Conjunction",
-    "translation": "原因连词",
-    "explanation": "原因连词",
-    "abbreviation": ""
-  },
-  "characteristic_vowel": {
-    "term": "Characteristic Vowel",
-    "translation": "特征元音",
-    "explanation": "特征元音",
+    "term": "antepenult",
+    "translation": "倒三音节",
+    "explanation": "",
     "abbreviation": ""
   },
   "chiasmus": {
     "term": "Chiasmus",
     "translation": "交错配列",
-    "explanation": "交错配列（备选：十字配列）",
+    "explanation": "",
     "abbreviation": ""
   },
-  "choliambic": {
-    "term": "Choliambic",
-    "translation": "跛足短长格",
-    "explanation": "跛足短长格",
+  "cognates_introduction": {
+    "term": "Cognates, introduction",
+    "translation": "同源词",
+    "explanation": "",
     "abbreviation": ""
   },
-  "choriamb": {
-    "term": "Choriamb",
-    "translation": "长短短长格",
-    "explanation": "长短短长格（备选：丙颂格）",
-    "abbreviation": ""
+  "comparative_of": {
+    "term": "comparative of(irregular)",
+    "translation": "比较级（不规则）",
+    "explanation": "",
+    "abbreviation": "irregular"
   },
-  "circumflex": {
-    "term": "Circumflex",
-    "translation": "扬抑符",
-    "explanation": "扬抑符",
-    "abbreviation": ""
+  "comparative_of_2": {
+    "term": "comparative of(regular)",
+    "translation": "比较级(规则)",
+    "explanation": "",
+    "abbreviation": "regular"
   },
-  "circumstantial_participle": {
-    "term": "Circumstantial Participle",
-    "translation": "情状分词",
-    "explanation": "情状分词",
-    "abbreviation": ""
-  },
-  "classical_latin": {
-    "term": "Classical Latin",
-    "translation": "古典拉丁语",
-    "explanation": "古典拉丁语",
-    "abbreviation": ""
-  },
-  "clause": {
-    "term": "Clause",
-    "translation": "分句",
-    "explanation": "分句（备选：从句）",
-    "abbreviation": ""
-  },
-  "clause_of_accompanying_circumstance": {
-    "term": "Clause of Accompanying Circumstance",
-    "translation": "伴随情状从句",
-    "explanation": "伴随情状从句",
-    "abbreviation": ""
-  },
-  "climax": {
-    "term": "Climax",
-    "translation": "层进",
-    "explanation": "层进",
-    "abbreviation": ""
-  },
-  "close_syllable": {
-    "term": "Close Syllable",
-    "translation": "闭音节",
-    "explanation": "闭音节",
-    "abbreviation": ""
-  },
-  "coordinated": {
-    "term": "Co-ordinated",
-    "translation": "并列的",
-    "explanation": "并列的",
-    "abbreviation": ""
-  },
-  "cognate_accusative": {
-    "term": "Cognate Accusative",
-    "translation": "同源宾格",
-    "explanation": "同源宾格",
-    "abbreviation": ""
-  },
-  "cognomen": {
-    "term": "Cognomen",
-    "translation": "家族名",
-    "explanation": "家族名（备选：姓）",
-    "abbreviation": ""
-  },
-  "collective_noun": {
-    "term": "Collective Noun",
-    "translation": "集合名词",
-    "explanation": "集合名词",
-    "abbreviation": ""
-  },
-  "common_noun": {
-    "term": "Common Noun",
-    "translation": "普通名词",
-    "explanation": "普通名词",
-    "abbreviation": ""
-  },
-  "common_syllable": {
-    "term": "Common Syllable",
-    "translation": "通音节",
-    "explanation": "通音节",
-    "abbreviation": ""
-  },
-  "comparative": {
-    "term": "Comparative",
-    "translation": "比较级",
-    "explanation": "比较级",
-    "abbreviation": ""
-  },
-  "comparative_conditional_clause": {
-    "term": "Comparative Conditional Clause",
-    "translation": "比较条件从句",
-    "explanation": "比较条件从句",
-    "abbreviation": ""
-  },
-  "comparative_conjunction": {
-    "term": "Comparative Conjunction",
-    "translation": "比较连词",
-    "explanation": "比较连词",
-    "abbreviation": ""
-  },
-  "comparative_grammar": {
-    "term": "Comparative Grammar",
-    "translation": "比较语法学",
-    "explanation": "比较语法学",
-    "abbreviation": ""
-  },
-  "compensatory_lengthening": {
-    "term": "Compensatory Lengthening",
-    "translation": "补偿性延长",
-    "explanation": "补偿性延长",
-    "abbreviation": ""
-  },
-  "complement": {
-    "term": "Complement",
-    "translation": "补语",
-    "explanation": "补语",
-    "abbreviation": ""
-  },
-  "complementary_infinitive": {
-    "term": "Complementary Infinitive",
-    "translation": "补充不定式",
-    "explanation": "补充不定式",
-    "abbreviation": ""
-  },
-  "complex_sentence": {
-    "term": "Complex Sentence",
-    "translation": "复杂句",
-    "explanation": "复杂句",
-    "abbreviation": ""
-  },
-  "composition": {
-    "term": "Composition",
-    "translation": "复合",
-    "explanation": "复合",
-    "abbreviation": ""
-  },
-  "compound_sentence": {
-    "term": "Compound Sentence",
-    "translation": "复合句",
-    "explanation": "复合句",
-    "abbreviation": ""
-  },
-  "compound_suffix": {
-    "term": "Compound Suffix",
-    "translation": "复合后缀",
-    "explanation": "复合后缀",
-    "abbreviation": ""
-  },
-  "compound_verb": {
-    "term": "Compound Verb",
+  "compound_verbs_introduction": {
+    "term": "Compound verbs, introduction",
     "translation": "复合动词",
-    "explanation": "复合动词",
+    "explanation": "",
     "abbreviation": ""
   },
-  "compound_word": {
-    "term": "Compound Word",
-    "translation": "复合词",
-    "explanation": "复合词",
+  "conditional_sentences_definition": {
+    "term": "Conditional sentences, definition",
+    "translation": "条件(状语)从句",
+    "explanation": "",
     "abbreviation": ""
   },
-  "compoundcomplex_sentence": {
-    "term": "Compound-Complex Sentence",
-    "translation": "复合复杂句",
-    "explanation": "复合复杂句",
+  "copulative_verbs": {
+    "term": "copulative verbs",
+    "translation": "(连)系动词",
+    "explanation": "",
     "abbreviation": ""
   },
-  "conative_imperfect": {
-    "term": "Conative Imperfect",
-    "translation": "意动未完成时",
-    "explanation": "意动未完成时",
-    "abbreviation": ""
-  },
-  "conative_present": {
-    "term": "Conative Present",
-    "translation": "意动现在时",
-    "explanation": "意动现在时",
-    "abbreviation": ""
-  },
-  "concessive_clause": {
-    "term": "Concessive Clause",
-    "translation": "让步从句",
-    "explanation": "让步从句",
-    "abbreviation": ""
-  },
-  "concessive_conjunction": {
-    "term": "Concessive Conjunction",
-    "translation": "让步连词",
-    "explanation": "让步连词",
-    "abbreviation": ""
-  },
-  "concessive_subjunctive": {
-    "term": "Concessive Subjunctive",
-    "translation": "让步虚拟式",
-    "explanation": "让步虚拟式",
-    "abbreviation": ""
-  },
-  "concord": {
-    "term": "Concord",
-    "translation": "一致",
-    "explanation": "一致",
-    "abbreviation": ""
-  },
-  "concrete_noun": {
-    "term": "Concrete Noun",
-    "translation": "具体名词",
-    "explanation": "具体名词",
-    "abbreviation": ""
-  },
-  "conditional_clause": {
-    "term": "Conditional Clause",
-    "translation": "条件从句",
-    "explanation": "条件从句",
-    "abbreviation": ""
-  },
-  "conditional_conjunction": {
-    "term": "Conditional Conjunction",
-    "translation": "条件连词",
-    "explanation": "条件连词",
-    "abbreviation": ""
-  },
-  "conditional_relative_clause": {
-    "term": "Conditional Relative Clause",
-    "translation": "条件关系从句",
-    "explanation": "条件关系从句",
-    "abbreviation": ""
-  },
-  "conjugation": {
-    "term": "Conjugation",
-    "translation": "变位[法]",
-    "explanation": "变位[法]",
-    "abbreviation": ""
-  },
-  "conjunctive_relative_adverb": {
-    "term": "Conjunctive (Relative) Adverb",
-    "translation": "连词性[关系]副词",
-    "explanation": "连词性[关系]副词",
-    "abbreviation": "Relative"
-  },
-  "connecting_word": {
-    "term": "Connecting Word",
-    "translation": "表示连接的单词",
-    "explanation": "表示连接的单词",
-    "abbreviation": ""
-  },
-  "consecutive_conjunction": {
-    "term": "Consecutive Conjunction",
-    "translation": "结果连词",
-    "explanation": "结果连词",
-    "abbreviation": ""
-  },
-  "consonant": {
-    "term": "Consonant",
-    "translation": "辅音",
-    "explanation": "辅音",
-    "abbreviation": ""
-  },
-  "consonant_stem": {
-    "term": "Consonant Stem",
-    "translation": "辅音词干",
-    "explanation": "辅音词干",
-    "abbreviation": ""
-  },
-  "constructio_ad_sensum": {
-    "term": "Constructio ad Sensum",
-    "translation": "根据意思而来的结构",
-    "explanation": "根据意思而来的结构（备选：含义上的一致）",
-    "abbreviation": ""
-  },
-  "contraction": {
-    "term": "Contraction",
-    "translation": "缩合",
-    "explanation": "缩合",
-    "abbreviation": ""
-  },
-  "coordinate_clause": {
-    "term": "Coordinate Clause",
-    "translation": "并列分句",
-    "explanation": "并列分句",
-    "abbreviation": ""
-  },
-  "coordinating_conjunction": {
-    "term": "Coordinating Conjunction",
-    "translation": "并列连词",
-    "explanation": "并列连词",
-    "abbreviation": ""
-  },
-  "coordination": {
-    "term": "Coordination",
-    "translation": "并列",
-    "explanation": "并列",
-    "abbreviation": ""
-  },
-  "copulative_conjunction": {
-    "term": "Copulative Conjunction",
-    "translation": "同意连词",
-    "explanation": "同意连词",
-    "abbreviation": ""
-  },
-  "copulative_verb": {
-    "term": "Copulative Verb",
-    "translation": "系动词",
-    "explanation": "系动词（备选：连系动词）",
-    "abbreviation": ""
-  },
-  "correlatives": {
-    "term": "Correlatives",
-    "translation": "关联形式",
-    "explanation": "关联形式",
-    "abbreviation": ""
-  },
-  "correption": {
-    "term": "Correption",
-    "translation": "元音短化",
-    "explanation": "元音短化",
-    "abbreviation": ""
-  },
-  "crasis": {
-    "term": "Crasis",
-    "translation": "融音",
-    "explanation": "融音（备选：异词元音融合）",
-    "abbreviation": ""
-  },
-  "cretic": {
-    "term": "Cretic",
-    "translation": "长短长格",
-    "explanation": "长短长格（备选：克里特格）",
-    "abbreviation": ""
-  },
-  "dactyl": {
-    "term": "Dactyl",
-    "translation": "长短短格",
-    "explanation": "长短短格",
-    "abbreviation": ""
-  },
-  "dative": {
-    "term": "Dative",
+  "dative_case_introduction": {
+    "term": "Dative case, introduction",
     "translation": "与格",
-    "explanation": "与格",
+    "explanation": "",
     "abbreviation": ""
   },
-  "dative_of_advantage": {
-    "term": "Dative of Advantage",
-    "translation": "利害与格",
-    "explanation": "利害与格（备选：利益）",
+  "declension_definition": {
+    "term": "Declension, definition",
+    "translation": "变格/变格法",
+    "explanation": "",
     "abbreviation": ""
   },
-  "dative_of_agent": {
-    "term": "Dative of Agent",
-    "translation": "施事者与格",
-    "explanation": "施事者与格",
-    "abbreviation": ""
-  },
-  "dative_of_disadvantage": {
-    "term": "Dative of Disadvantage",
-    "translation": "不利与格",
-    "explanation": "不利与格（备选：弊）",
-    "abbreviation": ""
-  },
-  "dative_of_indirect_object": {
-    "term": "Dative of Indirect Object",
-    "translation": "间接宾语",
-    "explanation": "间接宾语（备选：间宾）",
-    "abbreviation": ""
-  },
-  "dative_of_possession": {
-    "term": "Dative of Possession",
-    "translation": "属有与格",
-    "explanation": "属有与格（备选：物主）",
-    "abbreviation": ""
-  },
-  "dative_of_purposeend": {
-    "term": "Dative of Purpose/End",
-    "translation": "目的与格",
-    "explanation": "目的与格",
-    "abbreviation": ""
-  },
-  "dative_of_reference": {
-    "term": "Dative of Reference",
-    "translation": "指涉与格",
-    "explanation": "指涉与格（备选：关系）",
-    "abbreviation": ""
-  },
-  "dative_of_service": {
-    "term": "Dative of Service",
-    "translation": "服务与格",
-    "explanation": "服务与格",
-    "abbreviation": ""
-  },
-  "dative_of_the_possessor": {
-    "term": "Dative of the Possessor",
-    "translation": "物主与格",
-    "explanation": "物主与格",
-    "abbreviation": ""
-  },
-  "declarative_utterance_verb": {
-    "term": "Declarative Utterance Verb",
-    "translation": "陈言动词",
-    "explanation": "陈言动词",
-    "abbreviation": ""
-  },
-  "declension": {
-    "term": "Declension",
-    "translation": "变格[法]",
-    "explanation": "变格[法]",
-    "abbreviation": ""
-  },
-  "defective_noun": {
-    "term": "Defective Noun",
-    "translation": "残缺名词",
-    "explanation": "残缺名词",
-    "abbreviation": ""
-  },
-  "defective_verb": {
-    "term": "Defective Verb",
+  "defective_verbs": {
+    "term": "Defective verbs",
     "translation": "残缺动词",
-    "explanation": "残缺动词",
+    "explanation": "",
     "abbreviation": ""
   },
   "deliberative_subjunctive": {
-    "term": "Deliberative Subjunctive",
-    "translation": "考量虚拟式",
-    "explanation": "考量虚拟式（备选：考量式）",
+    "term": "Deliberative subjunctive",
+    "translation": "考量虚拟式，考量式",
+    "explanation": "",
     "abbreviation": ""
   },
-  "demonstrative_pronoun": {
-    "term": "Demonstrative Pronoun",
-    "translation": "指示代词",
-    "explanation": "指示代词",
+  "demonstrative": {
+    "term": "demonstrative",
+    "translation": "指示",
+    "explanation": "",
     "abbreviation": ""
   },
-  "denominative_verb": {
-    "term": "Denominative Verb",
-    "translation": "派生自名词的动词",
-    "explanation": "派生自名词的动词",
+  "demonstrative_adjectives_pronouns_hic_haec_hoc": {
+    "term": "Demonstrative adjectives/pronouns hic, haec, hoc",
+    "translation": "指示形容词/代词",
+    "explanation": "",
     "abbreviation": ""
   },
-  "dental": {
-    "term": "Dental",
-    "translation": "齿音",
-    "explanation": "齿音",
-    "abbreviation": ""
-  },
-  "deponent_verb": {
-    "term": "Deponent Verb",
+  "deponent_verbs": {
+    "term": "Deponent verbs",
     "translation": "异态动词",
-    "explanation": "异态动词（备选：冒被动词）",
+    "explanation": "",
     "abbreviation": ""
   },
-  "derivation": {
-    "term": "Derivation",
-    "translation": "派生",
-    "explanation": "派生",
+  "derivatives_introduction": {
+    "term": "Derivatives, introduction",
+    "translation": "衍生词",
+    "explanation": "",
     "abbreviation": ""
   },
-  "derivative_verb": {
-    "term": "Derivative Verb",
-    "translation": "派生动词",
-    "explanation": "派生动词",
+  "derived_from_first_second_declension_adiectives": {
+    "term": "derived from first-second declension adiectives",
+    "translation": "源自第一二变格法形容词",
+    "explanation": "",
     "abbreviation": ""
   },
-  "descriptive_clause_of_time": {
-    "term": "Descriptive Clause of Time",
-    "translation": "描述性时间从句",
-    "explanation": "描述性时间从句",
-    "abbreviation": ""
-  },
-  "desiderative_verb": {
-    "term": "Desiderative Verb",
-    "translation": "愿望动词",
-    "explanation": "愿望动词",
-    "abbreviation": ""
-  },
-  "determinative_compound": {
-    "term": "Determinative Compound",
-    "translation": "限定性复合词",
-    "explanation": "限定性复合词",
-    "abbreviation": ""
-  },
-  "diaeresis": {
-    "term": "Diaeresis",
-    "translation": "分音符",
-    "explanation": "分音符（备选：同步停顿）",
-    "abbreviation": ""
-  },
-  "diaeresis_2": {
-    "term": "Diaeresis",
-    "translation": "分音符",
-    "explanation": "分音符（备选：同步停顿）",
-    "abbreviation": ""
-  },
-  "dimeter": {
-    "term": "Dimeter",
-    "translation": "双拍",
-    "explanation": "双拍",
-    "abbreviation": ""
-  },
-  "diminutive_noun": {
-    "term": "Diminutive Noun",
-    "translation": "指小名词",
-    "explanation": "指小名词",
-    "abbreviation": ""
-  },
-  "diphthong": {
-    "term": "Diphthong",
-    "translation": "双元音",
-    "explanation": "双元音",
-    "abbreviation": ""
-  },
-  "dipody": {
-    "term": "Dipody",
-    "translation": "双音步",
-    "explanation": "双音步",
-    "abbreviation": ""
-  },
-  "direct_object": {
-    "term": "Direct Object",
-    "translation": "直接宾语",
-    "explanation": "直接宾语（备选：直宾）",
+  "derived_from_third_declension_adjectives": {
+    "term": "derived from third-declension adjectives",
+    "translation": "源自第三变格法形容词",
+    "explanation": "",
     "abbreviation": ""
   },
   "direct_object_2": {
     "term": "Direct Object",
-    "translation": "直接宾语",
-    "explanation": "直接宾语",
+    "translation": "直接宾语，直宾",
+    "explanation": "",
     "abbreviation": ""
   },
-  "direct_reflexive": {
-    "term": "Direct Reflexive",
-    "translation": "直接反身代词",
-    "explanation": "直接反身代词",
-    "abbreviation": ""
-  },
-  "disjunctive_conjunction": {
-    "term": "Disjunctive Conjunction",
-    "translation": "反意连词",
-    "explanation": "反意连词",
-    "abbreviation": ""
-  },
-  "dislocated": {
-    "term": "Dislocated",
-    "translation": "错位的",
-    "explanation": "错位的",
-    "abbreviation": ""
-  },
-  "dissimilation": {
-    "term": "Dissimilation",
-    "translation": "异化",
-    "explanation": "异化",
-    "abbreviation": ""
-  },
-  "distributive_pronoun": {
-    "term": "Distributive Pronoun",
-    "translation": "分配代词",
-    "explanation": "分配代词",
-    "abbreviation": ""
-  },
-  "double_accusative": {
-    "term": "Double Accusative",
-    "translation": "双宾格",
-    "explanation": "双宾格",
+  "direct_object_of_a_middle_voice_verb": {
+    "term": "Direct Object of a Middle Voice Verb",
+    "translation": "中动态直接宾语，中动直宾",
+    "explanation": "",
     "abbreviation": ""
   },
   "double_dative_construction": {
-    "term": "Double Dative Construction",
+    "term": "Double Dative construction",
     "translation": "双与格结构",
-    "explanation": "双与格结构",
+    "explanation": "",
     "abbreviation": ""
   },
-  "doubting_clause": {
-    "term": "Doubting Clause",
-    "translation": "怀疑从句",
-    "explanation": "怀疑从句",
-    "abbreviation": ""
-  },
-  "early_latin": {
-    "term": "Early Latin",
-    "translation": "早期拉丁语",
-    "explanation": "早期拉丁语",
-    "abbreviation": ""
-  },
-  "elaborated": {
-    "term": "Elaborated",
-    "translation": "增饰的",
-    "explanation": "增饰的",
-    "abbreviation": ""
-  },
-  "elegiac_couplet": {
-    "term": "Elegiac Couplet",
-    "translation": "诉歌体双行诗",
-    "explanation": "诉歌体双行诗（备选：哀歌对句）",
+  "double_with_oro_with_rogo": {
+    "term": "Double with oro, with rogo",
+    "translation": "双宾格",
+    "explanation": "",
     "abbreviation": ""
   },
   "element": {
-    "term": "Element",
+    "term": "element",
     "translation": "成分",
-    "explanation": "成分（备选：要素）",
+    "explanation": "",
     "abbreviation": ""
   },
   "element_of_sentence": {
-    "term": "Element of Sentence",
+    "term": "element of sentence",
     "translation": "句子成分",
-    "explanation": "句子成分",
+    "explanation": "",
     "abbreviation": ""
   },
-  "elision": {
-    "term": "Elision",
-    "translation": "词末省音",
-    "explanation": "词末省音",
-    "abbreviation": ""
-  },
-  "elision_2": {
-    "term": "Elision",
-    "translation": "词末省音",
-    "explanation": "词末省音",
-    "abbreviation": ""
-  },
-  "ellipsis": {
-    "term": "Ellipsis",
-    "translation": "省略",
-    "explanation": "省略",
-    "abbreviation": ""
-  },
-  "enallage": {
-    "term": "Enallage",
-    "translation": "换用",
-    "explanation": "换用",
-    "abbreviation": ""
-  },
-  "ending": {
-    "term": "Ending",
-    "translation": "词尾",
-    "explanation": "词尾",
-    "abbreviation": ""
-  },
-  "epenthesis": {
-    "term": "Epenthesis",
-    "translation": "词中增音",
-    "explanation": "词中增音",
-    "abbreviation": ""
-  },
-  "epexegetic_infinitive": {
-    "term": "Epexegetic Infinitive",
-    "translation": "补说不定式",
-    "explanation": "补说不定式",
-    "abbreviation": ""
-  },
-  "epicene": {
-    "term": "Epicene",
-    "translation": "共性名词",
-    "explanation": "共性名词（备选：通性名词）",
-    "abbreviation": ""
-  },
-  "epistolary_tense": {
-    "term": "Epistolary Tense",
-    "translation": "书信时态",
-    "explanation": "书信时态",
-    "abbreviation": ""
-  },
-  "epitritus": {
-    "term": "Epitritus",
-    "translation": "长短长长格",
-    "explanation": "长短长长格（备选：甲颂格）",
-    "abbreviation": ""
-  },
-  "ethical_dative": {
-    "term": "Ethical Dative",
-    "translation": "特征与格",
-    "explanation": "特征与格（备选：泛称与格）",
-    "abbreviation": ""
-  },
-  "etymology": {
-    "term": "Etymology",
-    "translation": "词源学",
-    "explanation": "词源学",
-    "abbreviation": ""
-  },
-  "euphemism": {
-    "term": "Euphemism",
-    "translation": "委婉语",
-    "explanation": "委婉语",
-    "abbreviation": ""
-  },
-  "exclamatory_infinitive": {
-    "term": "Exclamatory Infinitive",
-    "translation": "感叹不定式",
-    "explanation": "感叹不定式",
-    "abbreviation": ""
-  },
-  "factitive_verb": {
-    "term": "Factitive Verb",
-    "translation": "使役动词",
-    "explanation": "使役动词",
-    "abbreviation": ""
-  },
-  "fear_clause": {
-    "term": "Fear Clause",
-    "translation": "担忧从句",
-    "explanation": "担忧从句",
-    "abbreviation": ""
-  },
-  "feminine_caesura": {
-    "term": "Feminine Caesura",
-    "translation": "阴性异步停顿",
-    "explanation": "阴性异步停顿",
-    "abbreviation": ""
-  },
-  "fescennine_verse": {
-    "term": "Fescennine Verse",
-    "translation": "斐斯肯尼阿诗行",
-    "explanation": "斐斯肯尼阿诗行",
-    "abbreviation": ""
-  },
-  "fifth_declension": {
-    "term": "Fifth Declension",
-    "translation": "第五变格法",
-    "explanation": "第五变格法",
-    "abbreviation": ""
-  },
-  "final_conjunction": {
-    "term": "Final Conjunction",
-    "translation": "目的连词",
-    "explanation": "目的连词",
-    "abbreviation": ""
-  },
-  "first_conjugation": {
-    "term": "First Conjugation",
-    "translation": "第一变位法",
-    "explanation": "第一变位法",
-    "abbreviation": ""
-  },
-  "first_declension": {
-    "term": "First Declension",
-    "translation": "第一变格法",
-    "explanation": "第一变格法",
-    "abbreviation": ""
-  },
-  "first_second_declension_adjective": {
-    "term": "First-Second Declension Adjective",
-    "translation": "第一二变格法形容词",
-    "explanation": "第一二变格法形容词",
-    "abbreviation": ""
-  },
-  "first_active_periphrastic_conjugation": {
-    "term": "First/Active Periphrastic Conjugation",
-    "translation": "主动迂说变位",
-    "explanation": "主动迂说变位",
-    "abbreviation": ""
-  },
-  "foot": {
-    "term": "Foot",
-    "translation": "音步",
-    "explanation": "音步（备选：拍）",
-    "abbreviation": ""
-  },
-  "foreground": {
-    "term": "Foreground",
-    "translation": "前景",
-    "explanation": "前景",
-    "abbreviation": ""
-  },
-  "four_concords": {
-    "term": "Four Concords",
-    "translation": "四种一致",
-    "explanation": "四种一致",
-    "abbreviation": ""
-  },
-  "fourth_conjugation": {
-    "term": "Fourth Conjugation",
-    "translation": "第四变位法",
-    "explanation": "第四变位法",
-    "abbreviation": ""
-  },
-  "fourth_declension": {
-    "term": "Fourth Declension",
-    "translation": "第四变格法",
-    "explanation": "第四变格法",
-    "abbreviation": ""
-  },
-  "fricative": {
-    "term": "Fricative",
-    "translation": "擦音",
-    "explanation": "擦音",
-    "abbreviation": ""
-  },
-  "future_active_participle": {
-    "term": "Future Active Participle",
-    "translation": "将来主动分词",
-    "explanation": "将来主动分词",
-    "abbreviation": ""
-  },
-  "future_in_praeterito": {
-    "term": "Future in Praeterito",
-    "translation": "过去时间中的将来",
-    "explanation": "过去时间中的将来",
+  "first_second_declension": {
+    "term": "first-second declension",
+    "translation": "第一二变格法（形容词）",
+    "explanation": "",
     "abbreviation": ""
   },
   "future_less_vivid": {
-    "term": "Future Less Vivid",
-    "translation": "可能性较小未来条件",
-    "explanation": "可能性较小未来条件（备选：更小可能性）",
+    "term": "future less vivid",
+    "translation": "可能性较小未来",
+    "explanation": "",
     "abbreviation": ""
   },
   "future_more_vivid": {
-    "term": "Future More Vivid",
-    "translation": "可能性较大未来条件",
-    "explanation": "可能性较大未来条件（备选：更大可能性）",
+    "term": "future more vivid",
+    "translation": "可能性较大未来",
+    "explanation": "",
     "abbreviation": ""
   },
-  "future_passive_participle": {
-    "term": "Future Passive Participle",
-    "translation": "将来被动分词",
-    "explanation": "将来被动分词（备选：动形词）",
-    "abbreviation": ""
-  },
-  "future_perfect": {
-    "term": "Future Perfect",
-    "translation": "将来完成时",
-    "explanation": "将来完成时",
-    "abbreviation": ""
-  },
-  "future_tense": {
-    "term": "Future Tense",
-    "translation": "将来时",
-    "explanation": "将来时",
-    "abbreviation": ""
-  },
-  "galliambic": {
-    "term": "Galliambic",
-    "translation": "高卢短长格",
-    "explanation": "高卢短长格",
-    "abbreviation": ""
-  },
-  "general_condition": {
-    "term": "General Condition",
-    "translation": "一般条件",
-    "explanation": "一般条件",
-    "abbreviation": ""
-  },
-  "general_grammar": {
-    "term": "General Grammar",
-    "translation": "一般语法",
-    "explanation": "一般语法（备选：普通语法）",
-    "abbreviation": ""
-  },
-  "genitive": {
-    "term": "Genitive",
+  "genitive_case_introduction": {
+    "term": "Genitive case, introduction",
     "translation": "属格",
-    "explanation": "属格",
+    "explanation": "",
     "abbreviation": ""
   },
-  "genitive_of_characteristic": {
-    "term": "Genitive of Characteristic",
-    "translation": "特征属格",
-    "explanation": "特征属格",
-    "abbreviation": ""
-  },
-  "genitive_of_description": {
-    "term": "Genitive of Description",
-    "translation": "描述属格",
-    "explanation": "描述属格",
-    "abbreviation": ""
-  },
-  "genitive_of_exclamation": {
-    "term": "Genitive of Exclamation",
-    "translation": "感叹属格",
-    "explanation": "感叹属格",
-    "abbreviation": ""
-  },
-  "genitive_of_indefinite_value": {
-    "term": "Genitive of Indefinite Value",
-    "translation": "不定价值属格",
-    "explanation": "不定价值属格",
-    "abbreviation": ""
-  },
-  "genitive_of_material": {
-    "term": "Genitive of Material",
-    "translation": "材料属格",
-    "explanation": "材料属格",
-    "abbreviation": ""
-  },
-  "genitive_of_measure": {
-    "term": "Genitive of Measure",
-    "translation": "度量属格",
-    "explanation": "度量属格",
-    "abbreviation": ""
-  },
-  "genitive_of_possession": {
-    "term": "Genitive of Possession",
-    "translation": "属有属格",
-    "explanation": "属有属格（备选：物主）",
-    "abbreviation": ""
-  },
-  "genitive_of_quality": {
-    "term": "Genitive of Quality",
-    "translation": "品质属格",
-    "explanation": "品质属格",
-    "abbreviation": ""
-  },
-  "genitive_of_the_charge": {
-    "term": "Genitive of the Charge",
-    "translation": "控告属格",
-    "explanation": "控告属格",
-    "abbreviation": ""
-  },
-  "genitive_of_the_penalty": {
-    "term": "Genitive of the Penalty",
-    "translation": "惩罚属格",
-    "explanation": "惩罚属格",
-    "abbreviation": ""
-  },
-  "genitive_of_the_whole": {
-    "term": "Genitive of the Whole",
-    "translation": "整体属格",
-    "explanation": "整体属格（备选：部分属格）",
-    "abbreviation": ""
-  },
-  "genitive_of_value": {
-    "term": "Genitive of Value",
-    "translation": "价值属格",
-    "explanation": "价值属格",
-    "abbreviation": ""
-  },
-  "gerund": {
-    "term": "Gerund",
-    "translation": "动名词",
-    "explanation": "动名词",
-    "abbreviation": ""
-  },
-  "gerundive": {
-    "term": "Gerundive",
+  "gerundives_introduction": {
+    "term": "Gerundives, introduction",
     "translation": "动形词",
-    "explanation": "动形词",
+    "explanation": "",
     "abbreviation": ""
   },
-  "glyconic": {
-    "term": "Glyconic",
-    "translation": "格吕孔体",
-    "explanation": "格吕孔体",
+  "in_indirect_question": {
+    "term": "in indirect question",
+    "translation": "间接问句",
+    "explanation": "",
     "abbreviation": ""
   },
-  "gnomic_present": {
-    "term": "Gnomic Present",
-    "translation": "格言现在时",
-    "explanation": "格言现在时",
+  "indefinite": {
+    "term": "indefinite",
+    "translation": "不定",
+    "explanation": "",
     "abbreviation": ""
   },
-  "golden_age_latin": {
-    "term": "Golden Age Latin",
-    "translation": "黄金时代拉丁语",
-    "explanation": "黄金时代拉丁语",
+  "intensive": {
+    "term": "intensive",
+    "translation": "强调",
+    "explanation": "",
     "abbreviation": ""
   },
-  "grapheme": {
-    "term": "Grapheme",
-    "translation": "字素",
-    "explanation": "字素",
+  "interrogative": {
+    "term": "interrogative",
+    "translation": "疑问",
+    "explanation": "",
     "abbreviation": ""
   },
-  "gregorian_calendar": {
-    "term": "Gregorian Calendar",
-    "translation": "格历",
-    "explanation": "格历",
+  "irregular": {
+    "term": "irregular",
+    "translation": "不规则",
+    "explanation": "",
     "abbreviation": ""
   },
-  "heavy_modifier": {
-    "term": "Heavy Modifier",
-    "translation": "大型修饰语",
-    "explanation": "大型修饰语",
-    "abbreviation": ""
-  },
-  "hellenism": {
-    "term": "Hellenism",
-    "translation": "希腊式表达",
-    "explanation": "希腊式表达",
-    "abbreviation": ""
-  },
-  "hendiadys": {
-    "term": "Hendiadys",
-    "translation": "重言",
-    "explanation": "重言",
-    "abbreviation": ""
-  },
-  "heptameter": {
-    "term": "Heptameter",
-    "translation": "七拍",
-    "explanation": "七拍",
-    "abbreviation": ""
-  },
-  "heroic_verse": {
-    "term": "Heroic Verse",
-    "translation": "英雄体诗行",
-    "explanation": "英雄体诗行",
-    "abbreviation": ""
-  },
-  "heteroclite_noun": {
-    "term": "Heteroclite Noun",
-    "translation": "异干名词",
-    "explanation": "异干名词",
-    "abbreviation": ""
-  },
-  "heterogeneous_noun": {
-    "term": "Heterogeneous Noun",
-    "translation": "异性名词",
-    "explanation": "异性名词",
-    "abbreviation": ""
-  },
-  "hexameter": {
-    "term": "Hexameter",
-    "translation": "六拍",
-    "explanation": "六拍",
-    "abbreviation": ""
-  },
-  "hiatus": {
-    "term": "Hiatus",
-    "translation": "元音连续",
-    "explanation": "元音连续",
-    "abbreviation": ""
-  },
-  "hidden_quantity": {
-    "term": "Hidden Quantity",
-    "translation": "隐藏音量",
-    "explanation": "隐藏音量",
-    "abbreviation": ""
-  },
-  "hierarchy": {
-    "term": "Hierarchy",
-    "translation": "层级结构",
-    "explanation": "层级结构",
-    "abbreviation": ""
-  },
-  "historical_and_comparative_syntax": {
-    "term": "Historical and Comparative Syntax",
-    "translation": "历史和比较句法学",
-    "explanation": "历史和比较句法学",
-    "abbreviation": ""
-  },
-  "historical_infinitive": {
-    "term": "Historical Infinitive",
-    "translation": "历史不定式",
-    "explanation": "历史不定式",
-    "abbreviation": ""
-  },
-  "historical_perfect": {
-    "term": "Historical Perfect",
-    "translation": "历史完成时",
-    "explanation": "历史完成时",
-    "abbreviation": ""
-  },
-  "historical_present": {
-    "term": "Historical Present",
-    "translation": "历史现在时",
-    "explanation": "历史现在时",
-    "abbreviation": ""
-  },
-  "historical_sequence": {
-    "term": "Historical Sequence",
-    "translation": "历史序列",
-    "explanation": "历史序列（备选：次级序列）",
-    "abbreviation": ""
-  },
-  "hortatory_subjunctive": {
-    "term": "Hortatory Subjunctive",
-    "translation": "劝勉虚拟式",
-    "explanation": "劝勉虚拟式",
-    "abbreviation": ""
-  },
-  "hypallage": {
-    "term": "Hypallage",
-    "translation": "换置",
-    "explanation": "换置",
-    "abbreviation": ""
-  },
-  "hyperbaton": {
-    "term": "Hyperbaton",
-    "translation": "移位",
-    "explanation": "移位",
-    "abbreviation": ""
-  },
-  "hyperbole": {
-    "term": "Hyperbole",
-    "translation": "夸张",
-    "explanation": "夸张",
-    "abbreviation": ""
-  },
-  "hypercatalectic": {
-    "term": "Hypercatalectic",
-    "translation": "超行末停顿变体",
-    "explanation": "超行末停顿变体",
-    "abbreviation": ""
-  },
-  "hypermetric": {
-    "term": "Hypermetric",
-    "translation": "超律诗行",
-    "explanation": "超律诗行",
-    "abbreviation": ""
-  },
-  "hyphaeresis": {
-    "term": "Hyphaeresis",
-    "translation": "省音",
-    "explanation": "省音",
-    "abbreviation": ""
-  },
-  "hypotaxis": {
-    "term": "Hypotaxis",
-    "translation": "从属结构",
-    "explanation": "从属结构",
-    "abbreviation": ""
-  },
-  "hysteron_proteron": {
-    "term": "Hysteron Proteron",
-    "translation": "逆序",
-    "explanation": "逆序（备选：倒置）",
-    "abbreviation": ""
-  },
-  "i_stem": {
-    "term": "I-stem",
-    "translation": "i词干",
-    "explanation": "i词干",
-    "abbreviation": ""
-  },
-  "iambic_shortening": {
-    "term": "Iambic Shortening",
-    "translation": "短长式短化",
-    "explanation": "短长式短化",
-    "abbreviation": ""
-  },
-  "iambus": {
-    "term": "Iambus",
-    "translation": "短长格",
-    "explanation": "短长格",
-    "abbreviation": ""
-  },
-  "ictus": {
-    "term": "Ictus",
-    "translation": "拍子",
-    "explanation": "拍子",
-    "abbreviation": ""
-  },
-  "idus": {
-    "term": "Idus",
-    "translation": "望日",
-    "explanation": "望日",
-    "abbreviation": ""
-  },
-  "illative_conjunction": {
-    "term": "Illative Conjunction",
-    "translation": "推论连词",
-    "explanation": "推论连词",
-    "abbreviation": ""
-  },
-  "imperative": {
-    "term": "Imperative",
-    "translation": "命令式",
-    "explanation": "命令式",
-    "abbreviation": ""
-  },
-  "imperfect_infinitive": {
-    "term": "Imperfect Infinitive",
-    "translation": "未完成不定式",
-    "explanation": "未完成不定式",
-    "abbreviation": ""
-  },
-  "imperfect_tense": {
-    "term": "Imperfect Tense",
-    "translation": "未完成时",
-    "explanation": "未完成时",
-    "abbreviation": ""
-  },
-  "impersonal_passive": {
-    "term": "Impersonal Passive",
-    "translation": "无人称被动",
-    "explanation": "无人称被动",
-    "abbreviation": ""
-  },
-  "impersonal_verb": {
-    "term": "Impersonal Verb",
-    "translation": "无人称动词",
-    "explanation": "无人称动词",
-    "abbreviation": ""
-  },
-  "inceptive_inchoative_verb": {
-    "term": "Inceptive/Inchoative Verb",
-    "translation": "表始动词",
-    "explanation": "表始动词",
-    "abbreviation": ""
-  },
-  "indefinite_pronoun": {
-    "term": "Indefinite Pronoun",
-    "translation": "不定代词",
-    "explanation": "不定代词",
-    "abbreviation": ""
-  },
-  "indicative": {
-    "term": "Indicative",
-    "translation": "直陈式",
-    "explanation": "直陈式",
-    "abbreviation": ""
-  },
-  "indirect_command": {
-    "term": "Indirect Command",
-    "translation": "间接命令",
-    "explanation": "间接命令",
-    "abbreviation": ""
-  },
-  "indirect_object": {
-    "term": "Indirect Object",
-    "translation": "间接宾语",
-    "explanation": "间接宾语",
-    "abbreviation": ""
-  },
-  "indirect_question": {
-    "term": "Indirect Question",
-    "translation": "间接疑问",
-    "explanation": "间接疑问",
-    "abbreviation": ""
-  },
-  "indirect_reflexive": {
-    "term": "Indirect Reflexive",
-    "translation": "间接反身代词",
-    "explanation": "间接反身代词",
-    "abbreviation": ""
-  },
-  "indirect_statement": {
-    "term": "Indirect Statement",
-    "translation": "间接陈述",
-    "explanation": "间接陈述",
-    "abbreviation": ""
-  },
-  "indo_european": {
-    "term": "Indo-European",
-    "translation": "印欧语",
-    "explanation": "印欧语（备选：原始印欧语）",
-    "abbreviation": ""
-  },
-  "infinitive": {
-    "term": "Infinitive",
-    "translation": "不定式",
-    "explanation": "不定式",
-    "abbreviation": ""
-  },
-  "infinitive_of_purpose": {
-    "term": "Infinitive of Purpose",
-    "translation": "目的不定式",
-    "explanation": "目的不定式",
-    "abbreviation": ""
-  },
-  "infix": {
-    "term": "Infix",
-    "translation": "中缀",
-    "explanation": "中缀",
-    "abbreviation": ""
-  },
-  "inflection": {
-    "term": "Inflection",
-    "translation": "屈折变化",
-    "explanation": "屈折变化（备选：词态变化）",
-    "abbreviation": ""
-  },
-  "intensive_pronoun": {
-    "term": "Intensive Pronoun",
-    "translation": "强调代词",
-    "explanation": "强调代词（备选：强势代词）",
-    "abbreviation": ""
-  },
-  "intensive_verb": {
-    "term": "Intensive Verb",
-    "translation": "强调动词",
-    "explanation": "强调动词",
-    "abbreviation": ""
-  },
-  "interlocked_order": {
-    "term": "Interlocked Order",
-    "translation": "锁链词序",
-    "explanation": "锁链词序",
-    "abbreviation": ""
-  },
-  "intermediate_clause": {
-    "term": "Intermediate Clause",
-    "translation": "中间从句",
-    "explanation": "中间从句",
-    "abbreviation": ""
-  },
-  "interrogative_pronoun": {
-    "term": "Interrogative Pronoun",
-    "translation": "疑问代词",
-    "explanation": "疑问代词",
-    "abbreviation": ""
-  },
-  "intransitive_verb": {
-    "term": "Intransitive Verb",
-    "translation": "不及物动词",
-    "explanation": "不及物动词",
-    "abbreviation": ""
-  },
-  "ionic": {
-    "term": "Ionic",
-    "translation": "伊奥尼亚格",
-    "explanation": "伊奥尼亚格",
-    "abbreviation": ""
-  },
-  "irony": {
-    "term": "Irony",
-    "translation": "反语",
-    "explanation": "反语（备选：讽刺）",
-    "abbreviation": ""
-  },
-  "irregular_noun": {
-    "term": "Irregular Noun",
-    "translation": "不规则名词",
-    "explanation": "不规则名词",
-    "abbreviation": ""
-  },
-  "irregular_verb": {
-    "term": "Irregular Verb",
-    "translation": "不规则动词",
-    "explanation": "不规则动词",
-    "abbreviation": ""
-  },
-  "italic": {
-    "term": "Italic",
-    "translation": "意大利语族",
-    "explanation": "意大利语族",
-    "abbreviation": ""
-  },
-  "iterative_subjunctive": {
-    "term": "Iterative Subjunctive",
-    "translation": "反复虚拟式",
-    "explanation": "反复虚拟式",
-    "abbreviation": ""
-  },
-  "iterative_suffix": {
-    "term": "Iterative Suffix",
-    "translation": "表达反复性的后缀",
-    "explanation": "表达反复性的后缀",
-    "abbreviation": ""
-  },
-  "iterative_verb": {
-    "term": "Iterative Verb",
-    "translation": "反复动词",
-    "explanation": "反复动词",
-    "abbreviation": ""
-  },
-  "iugerum": {
-    "term": "Iugerum",
-    "translation": "罗马亩",
-    "explanation": "罗马亩",
-    "abbreviation": ""
-  },
-  "julian_year": {
-    "term": "Julian Year",
-    "translation": "儒略年",
-    "explanation": "儒略年",
-    "abbreviation": ""
-  },
-  "jussive_subjunctive": {
-    "term": "Jussive Subjunctive",
-    "translation": "命令虚拟式",
-    "explanation": "命令虚拟式",
-    "abbreviation": ""
-  },
-  "juxtaposed": {
-    "term": "Juxtaposed",
-    "translation": "并置的",
-    "explanation": "并置的",
-    "abbreviation": ""
-  },
-  "juxtaposition": {
-    "term": "Juxtaposition",
-    "translation": "并置",
-    "explanation": "并置",
-    "abbreviation": ""
-  },
-  "kalendae": {
-    "term": "Kalendae",
-    "translation": "朔日",
-    "explanation": "朔日",
-    "abbreviation": ""
-  },
-  "labial": {
-    "term": "Labial",
-    "translation": "唇音",
-    "explanation": "唇音",
+  "irregular_2": {
+    "term": "irregular (gen.sing.in-ius)",
+    "translation": "不规则（...)",
+    "explanation": "",
     "abbreviation": ""
   },
   "law_of_the_penult": {
     "term": "Law of the Penult",
     "translation": "倒二音节法则",
-    "explanation": "倒二音节法则",
-    "abbreviation": ""
-  },
-  "lexeme": {
-    "term": "Lexeme",
-    "translation": "词位",
-    "explanation": "词位",
-    "abbreviation": ""
-  },
-  "libra": {
-    "term": "Libra",
-    "translation": "罗马斤",
-    "explanation": "罗马斤",
-    "abbreviation": ""
-  },
-  "liquid": {
-    "term": "Liquid",
-    "translation": "流音",
-    "explanation": "流音",
-    "abbreviation": ""
-  },
-  "litotes": {
-    "term": "Litotes",
-    "translation": "间接肯定",
-    "explanation": "间接肯定（备选：曲言）",
-    "abbreviation": ""
-  },
-  "locative": {
-    "term": "Locative",
-    "translation": "位格",
-    "explanation": "位格",
-    "abbreviation": ""
-  },
-  "logaoedic": {
-    "term": "Logaoedic",
-    "translation": "散文歌[体]",
-    "explanation": "散文歌[体]",
+    "explanation": "",
     "abbreviation": ""
   },
   "long_by_nature": {
-    "term": "Long by Nature",
+    "term": "long by nature",
     "translation": "自然长",
-    "explanation": "自然长（备选：自然为长/自然长音）",
+    "explanation": "备选：自然为长",
     "abbreviation": ""
   },
   "long_by_position": {
-    "term": "Long by Position",
+    "term": "long by position",
     "translation": "位置长",
-    "explanation": "位置长（备选：凭借位置为长/结构长音）",
+    "explanation": "备选：凭借位置为长",
     "abbreviation": ""
   },
-  "lyric_poetry": {
-    "term": "Lyric Poetry",
-    "translation": "琴歌",
-    "explanation": "琴歌（备选：抒情诗）",
-    "abbreviation": ""
-  },
-  "macron": {
-    "term": "Macron",
-    "translation": "长音符",
-    "explanation": "长音符",
-    "abbreviation": ""
-  },
-  "main_clause": {
-    "term": "Main Clause",
-    "translation": "主句",
-    "explanation": "主句",
-    "abbreviation": ""
-  },
-  "majuscule": {
-    "term": "Majuscule",
-    "translation": "大楷",
-    "explanation": "大楷",
-    "abbreviation": ""
-  },
-  "manipulative_verb": {
-    "term": "Manipulative Verb",
-    "translation": "操控动词",
-    "explanation": "操控动词",
-    "abbreviation": ""
-  },
-  "manuscript": {
-    "term": "Manuscript",
-    "translation": "抄本",
-    "explanation": "抄本",
-    "abbreviation": ""
-  },
-  "masculine_caesura": {
-    "term": "Masculine Caesura",
-    "translation": "阳性异步停顿",
-    "explanation": "阳性异步停顿",
-    "abbreviation": ""
-  },
-  "media": {
-    "term": "Media",
-    "translation": "浊辅音",
-    "explanation": "浊辅音",
-    "abbreviation": ""
-  },
-  "metaphor": {
-    "term": "Metaphor",
-    "translation": "暗喻",
-    "explanation": "暗喻",
-    "abbreviation": ""
-  },
-  "metathesis": {
-    "term": "Metathesis",
-    "translation": "音位变化",
-    "explanation": "音位变化",
-    "abbreviation": ""
-  },
-  "meter": {
-    "term": "Meter",
-    "translation": "格律",
-    "explanation": "格律（备选：诗律）",
-    "abbreviation": ""
-  },
-  "metonymy": {
-    "term": "Metonymy",
-    "translation": "换喻",
-    "explanation": "换喻（备选：转喻）",
-    "abbreviation": ""
-  },
-  "middle_voice": {
-    "term": "Middle Voice",
-    "translation": "中动态",
-    "explanation": "中动态",
-    "abbreviation": ""
-  },
-  "mile": {
-    "term": "Mile",
-    "translation": "罗马里",
-    "explanation": "罗马里",
+  "long_vowel_rule": {
+    "term": "long vowel rule",
+    "translation": "长元音规则",
+    "explanation": "",
     "abbreviation": ""
   },
   "mixed_contrary_to_fact": {
-    "term": "Mixed Contrary-to-Fact",
+    "term": "mixed contrary-to-fact",
     "translation": "混合的悖于事实",
-    "explanation": "混合的悖于事实",
+    "explanation": "",
     "abbreviation": ""
   },
-  "mixed_i_stem": {
-    "term": "Mixed I-stem",
-    "translation": "混合i词干",
-    "explanation": "混合i词干",
+  "mixed_future": {
+    "term": "mixed future",
+    "translation": "混合未来",
+    "explanation": "",
     "abbreviation": ""
   },
-  "modifier": {
-    "term": "Modifier",
-    "translation": "修饰语",
-    "explanation": "修饰语",
+  "noun_adjective_agreement": {
+    "term": "noun-adjective agreement",
+    "translation": "名词—形容词一致",
+    "explanation": "备选：定（语）中（心词）一致",
     "abbreviation": ""
   },
-  "molossus": {
-    "term": "Molossus",
-    "translation": "三长格",
-    "explanation": "三长格",
+  "objective": {
+    "term": "Objective",
+    "translation": "宾语",
+    "explanation": "",
     "abbreviation": ""
   },
-  "morpheme": {
-    "term": "Morpheme",
-    "translation": "语素",
-    "explanation": "语素",
+  "of_accompaniment": {
+    "term": "of Accompaniment",
+    "translation": "伴随/陪同",
+    "explanation": "",
     "abbreviation": ""
   },
-  "morphology": {
-    "term": "Morphology",
-    "translation": "词法",
-    "explanation": "词法（备选：词态学）",
+  "of_advantage": {
+    "term": "of Advantage",
+    "translation": "利，利益",
+    "explanation": "",
     "abbreviation": ""
   },
-  "mute": {
-    "term": "Mute",
-    "translation": "塞音",
-    "explanation": "塞音（备选：爆破音）",
+  "of_agent_with_a_passive_periphrastic": {
+    "term": "of Agent with a Passive Periphrastic",
+    "translation": "随被动迂说法的施事者",
+    "explanation": "",
     "abbreviation": ""
   },
-  "nasal": {
-    "term": "Nasal",
-    "translation": "鼻音",
-    "explanation": "鼻音",
+  "of_cause": {
+    "term": "of Cause",
+    "translation": "原因",
+    "explanation": "",
     "abbreviation": ""
   },
-  "natural_quantity": {
-    "term": "Natural Quantity",
-    "translation": "自然音量",
-    "explanation": "自然音量",
+  "of_characteristic": {
+    "term": "of Characteristic",
+    "translation": "特征",
+    "explanation": "",
     "abbreviation": ""
   },
-  "neutral_passive": {
-    "term": "Neutral Passive",
-    "translation": "中性被动态",
-    "explanation": "中性被动态",
+  "of_comparison": {
+    "term": "of Comparison",
+    "translation": "比较",
+    "explanation": "",
     "abbreviation": ""
   },
-  "nomen": {
-    "term": "Nomen",
-    "translation": "氏族名",
-    "explanation": "氏族名",
+  "of_degree_of_difference": {
+    "term": "of Degree of Difference",
+    "translation": "(程度)差异",
+    "explanation": "",
     "abbreviation": ""
   },
-  "nominative": {
-    "term": "Nominative",
-    "translation": "主格",
-    "explanation": "主格",
+  "of_description": {
+    "term": "of Description",
+    "translation": "描述",
+    "explanation": "",
     "abbreviation": ""
   },
-  "nonae": {
-    "term": "Nonae",
-    "translation": "望前九日",
-    "explanation": "望前九日",
+  "of_disadvantage": {
+    "term": "of Disadvantage",
+    "translation": "弊，不利",
+    "explanation": "",
     "abbreviation": ""
   },
-  "noun_of_agency": {
-    "term": "Noun of Agency",
-    "translation": "施事名词",
-    "explanation": "施事名词",
+  "of_duration_of_time": {
+    "term": "of Duration of Time",
+    "translation": "(持续)时间",
+    "explanation": "",
     "abbreviation": ""
   },
-  "numeral_adjective": {
-    "term": "Numeral Adjective",
-    "translation": "数词性形容词",
-    "explanation": "数词性形容词（备选：形数词）",
+  "of_exclamation": {
+    "term": "of Exclamation",
+    "translation": "感叹",
+    "explanation": "",
     "abbreviation": ""
   },
-  "object_complement": {
-    "term": "Object Complement",
-    "translation": "宾语补语",
-    "explanation": "宾语补语",
+  "of_indefinite_value": {
+    "term": "of Indefinite Value",
+    "translation": "不定价值",
+    "explanation": "",
     "abbreviation": ""
   },
-  "object_infinitive": {
-    "term": "Object Infinitive",
-    "translation": "宾语不定式",
-    "explanation": "宾语不定式",
+  "of_indirect_object": {
+    "term": "of Indirect Object",
+    "translation": "间接宾语，间宾",
+    "explanation": "",
     "abbreviation": ""
   },
-  "objective_compound": {
-    "term": "Objective Compound",
-    "translation": "宾语性复合词",
-    "explanation": "宾语性复合词",
+  "of_irregular_verbs": {
+    "term": "of irregular verbs",
+    "translation": "不规则动词",
+    "explanation": "",
     "abbreviation": ""
   },
-  "objective_genitive": {
-    "term": "Objective Genitive",
-    "translation": "宾语属格",
-    "explanation": "宾语属格（备选：客体属格）",
+  "of_manner": {
+    "term": "of Manner",
+    "translation": "方式",
+    "explanation": "",
     "abbreviation": ""
   },
-  "octonarius": {
-    "term": "Octonarius",
-    "translation": "八音步",
-    "explanation": "八音步",
+  "of_means_instrument": {
+    "term": "of Means/Instrument",
+    "translation": "手段/工具",
+    "explanation": "",
     "abbreviation": ""
   },
-  "onomatopoeia": {
-    "term": "Onomatopoeia",
-    "translation": "拟声",
-    "explanation": "拟声（备选：声喻）",
+  "of_origin": {
+    "term": "of Origin",
+    "translation": "起源",
+    "explanation": "",
     "abbreviation": ""
   },
-  "open_syllable": {
-    "term": "Open Syllable",
-    "translation": "开音节",
-    "explanation": "开音节",
+  "of_personal_agent": {
+    "term": "of Personal Agent",
+    "translation": "(被动态)施事者（或者叫施事夺格）",
+    "explanation": "",
     "abbreviation": ""
   },
-  "optative_subjunctive": {
-    "term": "Optative Subjunctive",
-    "translation": "祈愿虚拟式",
-    "explanation": "祈愿虚拟式",
+  "of_place": {
+    "term": "of place",
+    "translation": "地点",
+    "explanation": "",
     "abbreviation": ""
   },
-  "orthography": {
-    "term": "Orthography",
-    "translation": "正字法",
-    "explanation": "正字法",
+  "of_place_from_which": {
+    "term": "of Place From Which",
+    "translation": "离开",
+    "explanation": "",
     "abbreviation": ""
   },
-  "osthoff_s_law": {
-    "term": "Osthoff's Law",
-    "translation": "奥斯特霍夫规律",
-    "explanation": "奥斯特霍夫规律",
+  "of_place_to_which": {
+    "term": "of Place To Which",
+    "translation": "去向",
+    "explanation": "备选：趋向",
     "abbreviation": ""
   },
-  "oxymoron": {
-    "term": "Oxymoron",
-    "translation": "矛盾形容法",
-    "explanation": "矛盾形容法（备选：逆喻）",
+  "of_place_where": {
+    "term": "of Place Where",
+    "translation": "地点",
+    "explanation": "",
     "abbreviation": ""
   },
-  "oxytone": {
-    "term": "Oxytone",
-    "translation": "扬词",
-    "explanation": "扬词",
+  "of_possession": {
+    "term": "of Possession",
+    "translation": "物主",
+    "explanation": "",
     "abbreviation": ""
   },
-  "paeon": {
-    "term": "Paeon",
-    "translation": "短长短短格",
-    "explanation": "短长短短格（备选：乙颂格）",
+  "of_price": {
+    "term": "of Price",
+    "translation": "价格/价值",
+    "explanation": "",
     "abbreviation": ""
   },
-  "palatal": {
-    "term": "Palatal",
-    "translation": "腭音",
-    "explanation": "腭音（备选：硬腭音）",
+  "of_purpose": {
+    "term": "of Purpose",
+    "translation": "目的",
+    "explanation": "",
     "abbreviation": ""
   },
-  "palimbacchiac": {
-    "term": "Palimbacchiac",
-    "translation": "长长短格",
-    "explanation": "长长短格",
+  "of_reference": {
+    "term": "of Reference",
+    "translation": "关系",
+    "explanation": "",
     "abbreviation": ""
   },
-  "paragoge": {
-    "term": "Paragoge",
-    "translation": "词末增音",
-    "explanation": "词末增音",
+  "of_respect": {
+    "term": "of Respect",
+    "translation": "限定",
+    "explanation": "",
     "abbreviation": ""
   },
-  "parataxis": {
-    "term": "Parataxis",
-    "translation": "并列结构",
-    "explanation": "并列结构",
+  "of_separation": {
+    "term": "of Separation",
+    "translation": "分离",
+    "explanation": "",
     "abbreviation": ""
   },
-  "parenthesis": {
-    "term": "Parenthesis",
-    "translation": "插入语",
-    "explanation": "插入语",
+  "of_the_possessor": {
+    "term": "of the Possessor",
+    "translation": "物主",
+    "explanation": "",
     "abbreviation": ""
   },
-  "parisyllabic_noun": {
-    "term": "Parisyllabic Noun",
-    "translation": "等音节名词",
-    "explanation": "等音节名词",
+  "of_time_when": {
+    "term": "of Time When",
+    "translation": "时间(点）",
+    "explanation": "",
     "abbreviation": ""
   },
-  "paroxytone": {
-    "term": "Paroxytone",
-    "translation": "次扬词",
-    "explanation": "次扬词",
+  "of_time_within_which": {
+    "term": "of Time Within Which",
+    "translation": "时段(内)",
+    "explanation": "",
     "abbreviation": ""
   },
-  "participial_suffix": {
-    "term": "Participial Suffix",
-    "translation": "分词性后缀",
-    "explanation": "分词性后缀",
-    "abbreviation": ""
-  },
-  "participle": {
-    "term": "Participle",
+  "participles": {
+    "term": "participles",
     "translation": "分词",
-    "explanation": "分词",
+    "explanation": "",
     "abbreviation": ""
   },
-  "participle_as_adjective": {
-    "term": "Participle as Adjective",
-    "translation": "分词作形容词",
-    "explanation": "分词作形容词",
-    "abbreviation": ""
-  },
-  "particular_condition": {
-    "term": "Particular Condition",
-    "translation": "特殊条件",
-    "explanation": "特殊条件",
-    "abbreviation": ""
-  },
-  "particular_grammar": {
-    "term": "Particular Grammar",
-    "translation": "特定语法",
-    "explanation": "特定语法",
-    "abbreviation": ""
-  },
-  "partitive_apposition": {
-    "term": "Partitive Apposition",
-    "translation": "部分同位",
-    "explanation": "部分同位",
-    "abbreviation": ""
-  },
-  "partitive_genitive": {
-    "term": "Partitive Genitive",
-    "translation": "部分属格",
-    "explanation": "部分属格（备选：整体属格）",
-    "abbreviation": ""
-  },
-  "passive_periphrastic": {
-    "term": "Passive Periphrastic",
-    "translation": "被动迂说法",
-    "explanation": "被动迂说法",
-    "abbreviation": ""
-  },
-  "passive_voice": {
-    "term": "Passive Voice",
-    "translation": "被动态",
-    "explanation": "被动态",
-    "abbreviation": ""
-  },
-  "passus": {
-    "term": "Passus",
-    "translation": "罗马步",
-    "explanation": "罗马步",
+  "partitive": {
+    "term": "Partitive",
+    "translation": "部分",
+    "explanation": "",
     "abbreviation": ""
   },
   "past_contrary_to_fact": {
-    "term": "Past Contrary-to-Fact",
-    "translation": "悖于过去事实",
-    "explanation": "悖于过去事实（备选：与过去事实相反）",
+    "term": "past contrary-to-fact",
+    "translation": "悖于过去事实/与过去事实相悖",
+    "explanation": "",
     "abbreviation": ""
   },
   "past_simple": {
-    "term": "Past Simple",
-    "translation": "过去一般条件",
-    "explanation": "过去一般条件",
-    "abbreviation": ""
-  },
-  "patronymic": {
-    "term": "Patronymic",
-    "translation": "源自父系祖先的名号",
-    "explanation": "源自父系祖先的名号",
-    "abbreviation": ""
-  },
-  "pentameter": {
-    "term": "Pentameter",
-    "translation": "五拍",
-    "explanation": "五拍",
-    "abbreviation": ""
-  },
-  "penthemimeral": {
-    "term": "Penthemimeral",
-    "translation": "五半音步",
-    "explanation": "五半音步",
+    "term": "past simple",
+    "translation": "过去一般",
+    "explanation": "",
     "abbreviation": ""
   },
   "penult": {
-    "term": "Penult",
-    "translation": "次音节",
-    "explanation": "次音节（备选：倒二音节）",
+    "term": "penult",
+    "translation": "倒二音节",
+    "explanation": "",
     "abbreviation": ""
   },
-  "perfect_passive_participle": {
-    "term": "Perfect Passive Participle",
-    "translation": "完成被动分词",
-    "explanation": "完成被动分词",
-    "abbreviation": ""
-  },
-  "perfect_tense": {
-    "term": "Perfect Tense",
-    "translation": "完成时",
-    "explanation": "完成时",
-    "abbreviation": ""
-  },
-  "period_periodic_sentence": {
-    "term": "Period/Periodic Sentence",
-    "translation": "圆周句",
-    "explanation": "圆周句",
-    "abbreviation": ""
-  },
-  "periphrastic_conjugation": {
-    "term": "Periphrastic Conjugation",
-    "translation": "迂说变位",
-    "explanation": "迂说变位",
-    "abbreviation": ""
-  },
-  "perispomenon": {
-    "term": "Perispomenon",
-    "translation": "抑词",
-    "explanation": "抑词",
-    "abbreviation": ""
-  },
-  "personal_name": {
-    "term": "Personal Name",
-    "translation": "本名",
-    "explanation": "本名",
-    "abbreviation": ""
-  },
-  "personal_pronoun": {
-    "term": "Personal Pronoun",
-    "translation": "人称代词",
-    "explanation": "人称代词",
-    "abbreviation": ""
-  },
-  "pes": {
-    "term": "Pes (Roman Foot)",
-    "translation": "罗马尺",
-    "explanation": "罗马尺",
-    "abbreviation": "Roman Foot"
-  },
-  "phalaecean": {
-    "term": "Phalaecean",
-    "translation": "法莱科斯体",
-    "explanation": "法莱科斯体",
-    "abbreviation": ""
-  },
-  "pherecratic": {
-    "term": "Pherecratic",
-    "translation": "斐热克剌忒斯体",
-    "explanation": "斐热克剌忒斯体",
-    "abbreviation": ""
-  },
-  "phonetics": {
-    "term": "Phonetics",
-    "translation": "语音学",
-    "explanation": "语音学",
-    "abbreviation": ""
-  },
-  "phonology": {
-    "term": "Phonology",
-    "translation": "音系学",
-    "explanation": "音系学",
-    "abbreviation": ""
-  },
-  "pitch": {
-    "term": "Pitch",
-    "translation": "音高",
-    "explanation": "音高",
-    "abbreviation": ""
-  },
-  "pleonasm": {
-    "term": "Pleonasm",
-    "translation": "冗言",
-    "explanation": "冗言",
-    "abbreviation": ""
-  },
-  "plosive": {
-    "term": "Plosive",
-    "translation": "爆破音",
-    "explanation": "爆破音（备选：塞音）",
-    "abbreviation": ""
-  },
-  "pluperfect_tense": {
-    "term": "Pluperfect Tense",
-    "translation": "过去完成时",
-    "explanation": "过去完成时（备选：愈过去时）",
-    "abbreviation": ""
-  },
-  "polysyndeton": {
-    "term": "Polysyndeton",
-    "translation": "同意连词叠用",
-    "explanation": "同意连词叠用",
-    "abbreviation": ""
-  },
-  "positive": {
-    "term": "Positive",
-    "translation": "原级",
-    "explanation": "原级",
-    "abbreviation": ""
-  },
-  "possessive_adjective": {
-    "term": "Possessive Adjective",
-    "translation": "物主形容词",
-    "explanation": "物主形容词",
-    "abbreviation": ""
-  },
-  "possessive_pronoun": {
-    "term": "Possessive Pronoun",
-    "translation": "物主代词",
-    "explanation": "物主代词",
-    "abbreviation": ""
-  },
-  "potential_subjunctive": {
-    "term": "Potential Subjunctive",
-    "translation": "潜在虚拟式",
-    "explanation": "潜在虚拟式",
-    "abbreviation": ""
-  },
-  "praenomen": {
-    "term": "Praenomen",
-    "translation": "前名",
-    "explanation": "前名（备选：名）",
+  "possessive": {
+    "term": "possessive",
+    "translation": "物主",
+    "explanation": "",
     "abbreviation": ""
   },
   "predicate": {
-    "term": "Predicate",
+    "term": "predicate",
     "translation": "谓语",
-    "explanation": "谓语",
-    "abbreviation": ""
-  },
-  "predicate_accusative": {
-    "term": "Predicate Accusative",
-    "translation": "谓语宾格",
-    "explanation": "谓语宾格",
+    "explanation": "",
     "abbreviation": ""
   },
   "predicate_adjective": {
-    "term": "Predicate Adjective",
+    "term": "Predicate adjective",
     "translation": "谓语形容词",
-    "explanation": "谓语形容词",
-    "abbreviation": ""
-  },
-  "predicate_genitive": {
-    "term": "Predicate Genitive",
-    "translation": "谓语属格",
-    "explanation": "谓语属格",
-    "abbreviation": ""
-  },
-  "prefix": {
-    "term": "Prefix",
-    "translation": "前缀",
-    "explanation": "前缀",
-    "abbreviation": ""
-  },
-  "present_active_participle": {
-    "term": "Present Active Participle",
-    "translation": "现在主动分词",
-    "explanation": "现在主动分词",
+    "explanation": "",
     "abbreviation": ""
   },
   "present_contrary_to_fact": {
-    "term": "Present Contrary-to-Fact",
-    "translation": "悖于现在事实",
-    "explanation": "悖于现在事实（备选：与现在事实相反）",
+    "term": "present contrary-to-fact",
+    "translation": "悖于现在事实/",
+    "explanation": "",
     "abbreviation": ""
   },
   "present_simple": {
-    "term": "Present Simple",
-    "translation": "现在一般条件",
-    "explanation": "现在一般条件",
+    "term": "present simple",
+    "translation": "现在一般",
+    "explanation": "",
     "abbreviation": ""
   },
-  "present_tense": {
-    "term": "Present Tense",
-    "translation": "现在时",
-    "explanation": "现在时",
+  "principal_parts_in_this_textbook": {
+    "term": "Principal parts, in this textbook",
+    "translation": "动词主要部分",
+    "explanation": "",
     "abbreviation": ""
   },
-  "prevention_clause": {
-    "term": "Prevention Clause",
-    "translation": "阻止从句",
-    "explanation": "阻止从句",
+  "reflexive_possessive": {
+    "term": "reflexive-possessive",
+    "translation": "反身物主",
+    "explanation": "",
     "abbreviation": ""
   },
-  "priapean": {
-    "term": "Priapean",
-    "translation": "璞瑞阿珀斯体",
-    "explanation": "璞瑞阿珀斯体",
-    "abbreviation": ""
-  },
-  "primary_suffix": {
-    "term": "Primary Suffix",
-    "translation": "初级后缀",
-    "explanation": "初级后缀",
-    "abbreviation": ""
-  },
-  "primary_tense": {
-    "term": "Primary Tense",
-    "translation": "基本时态",
-    "explanation": "基本时态（备选：初级时态）",
-    "abbreviation": ""
-  },
-  "primitive_verb": {
-    "term": "Primitive Verb",
-    "translation": "原始动词",
-    "explanation": "原始动词（备选：词根动词）",
-    "abbreviation": ""
-  },
-  "princeps_position": {
-    "term": "Princeps Position",
-    "translation": "首要位置",
-    "explanation": "首要位置",
-    "abbreviation": ""
-  },
-  "principal_caesura": {
-    "term": "Principal Caesura",
-    "translation": "主要异步停顿",
-    "explanation": "主要异步停顿",
-    "abbreviation": ""
-  },
-  "proceleusmatic": {
-    "term": "Proceleusmatic",
-    "translation": "四短格",
-    "explanation": "四短格（备选：丁颂格）",
-    "abbreviation": ""
-  },
-  "prodelision": {
-    "term": "Prodelision",
-    "translation": "词首省音",
-    "explanation": "词首省音",
-    "abbreviation": ""
-  },
-  "prolative_infinitive": {
-    "term": "Prolative Infinitive",
-    "translation": "补述不定式",
-    "explanation": "补述不定式",
-    "abbreviation": ""
-  },
-  "prolepsis": {
-    "term": "Prolepsis",
-    "translation": "预词",
-    "explanation": "预词（备选：预辩）",
-    "abbreviation": ""
-  },
-  "pronunciation": {
-    "term": "Pronunciation",
-    "translation": "发音",
-    "explanation": "发音",
-    "abbreviation": ""
-  },
-  "proparoxytone": {
-    "term": "Proparoxytone",
-    "translation": "三扬词",
-    "explanation": "三扬词",
-    "abbreviation": ""
-  },
-  "proper_noun": {
-    "term": "Proper Noun",
-    "translation": "专有名词",
-    "explanation": "专有名词",
-    "abbreviation": ""
-  },
-  "properispomenon": {
-    "term": "Properispomenon",
-    "translation": "次扬抑词",
-    "explanation": "次扬抑词",
-    "abbreviation": ""
-  },
-  "prosody": {
-    "term": "Prosody",
-    "translation": "诗律学",
-    "explanation": "诗律学（备选：韵律学）",
-    "abbreviation": ""
-  },
-  "prosopopoeia": {
-    "term": "Prosopopoeia",
-    "translation": "拟人",
-    "explanation": "拟人",
-    "abbreviation": ""
-  },
-  "prospective_subjunctive": {
-    "term": "Prospective Subjunctive",
-    "translation": "预期虚拟式",
-    "explanation": "预期虚拟式",
-    "abbreviation": ""
-  },
-  "proto_indo_european": {
-    "term": "Proto-Indo-European (PIE)",
-    "translation": "原始印欧语",
-    "explanation": "原始印欧语",
-    "abbreviation": "PIE"
-  },
-  "proviso_clause": {
-    "term": "Proviso Clause",
-    "translation": "附带条件从句",
-    "explanation": "附带条件从句",
-    "abbreviation": ""
-  },
-  "pure_i_stem": {
-    "term": "Pure I-stem",
-    "translation": "纯粹i词干",
-    "explanation": "纯粹i词干",
-    "abbreviation": ""
-  },
-  "purpose_clause": {
-    "term": "Purpose Clause",
-    "translation": "目的从句",
-    "explanation": "目的从句（备选：Final Clause）",
-    "abbreviation": ""
-  },
-  "pyrrhic": {
-    "term": "Pyrrhic",
-    "translation": "短短格",
-    "explanation": "短短格",
-    "abbreviation": ""
-  },
-  "quantitative_meter": {
-    "term": "Quantitative Meter",
-    "translation": "音量格律",
-    "explanation": "音量格律",
-    "abbreviation": ""
-  },
-  "quantity": {
-    "term": "Quantity",
-    "translation": "音量",
-    "explanation": "音量",
-    "abbreviation": ""
-  },
-  "reciprocal_pronoun": {
-    "term": "Reciprocal Pronoun",
-    "translation": "相互代词",
-    "explanation": "相互代词",
-    "abbreviation": ""
-  },
-  "reductio_ad_absurdum": {
-    "term": "Reductio ad Absurdum",
-    "translation": "归谬法",
-    "explanation": "归谬法",
-    "abbreviation": ""
-  },
-  "reduplication": {
-    "term": "Reduplication",
-    "translation": "词首叠音",
-    "explanation": "词首叠音（备选：重叠）",
-    "abbreviation": ""
-  },
-  "reflexive_pronoun": {
-    "term": "Reflexive Pronoun",
-    "translation": "反身代词",
-    "explanation": "反身代词",
-    "abbreviation": ""
-  },
-  "reflexive_possessive_adjective": {
-    "term": "Reflexive-Possessive Adjective",
-    "translation": "反身物主形容词",
-    "explanation": "反身物主形容词",
-    "abbreviation": ""
-  },
-  "regular_verb": {
-    "term": "Regular Verb",
-    "translation": "规则动词",
-    "explanation": "规则动词",
-    "abbreviation": ""
-  },
-  "relative_clause_of_cause": {
-    "term": "Relative Clause of Cause",
-    "translation": "原因关系从句",
-    "explanation": "原因关系从句",
-    "abbreviation": ""
-  },
-  "relative_clause_of_characteristic": {
-    "term": "Relative Clause of Characteristic",
-    "translation": "特征关系从句",
-    "explanation": "特征关系从句",
-    "abbreviation": ""
-  },
-  "relative_clause_of_concession": {
-    "term": "Relative Clause of Concession",
-    "translation": "让步关系从句",
-    "explanation": "让步关系从句",
-    "abbreviation": ""
-  },
-  "relative_clause_of_purpose": {
-    "term": "Relative Clause of Purpose",
-    "translation": "目的关系从句",
-    "explanation": "目的关系从句",
-    "abbreviation": ""
-  },
-  "relative_clause_of_result": {
-    "term": "Relative Clause of Result",
-    "translation": "结果关系从句",
-    "explanation": "结果关系从句",
-    "abbreviation": ""
-  },
-  "relative_pronoun": {
-    "term": "Relative Pronoun",
-    "translation": "关系代词",
-    "explanation": "关系代词",
-    "abbreviation": ""
-  },
-  "relative_time": {
-    "term": "Relative Time",
-    "translation": "相对时间",
-    "explanation": "相对时间",
-    "abbreviation": ""
-  },
-  "repraesentatio": {
-    "term": "Repraesentatio",
-    "translation": "再现法",
-    "explanation": "再现法",
-    "abbreviation": ""
-  },
-  "resolution": {
-    "term": "Resolution",
-    "translation": "拆分",
-    "explanation": "拆分",
-    "abbreviation": ""
-  },
-  "result_clause": {
-    "term": "Result Clause",
-    "translation": "结果从句",
-    "explanation": "结果从句（备选：Consecutive Clause）",
-    "abbreviation": ""
-  },
-  "rhetorical_question": {
-    "term": "Rhetorical Question",
-    "translation": "修辞性疑问",
-    "explanation": "修辞性疑问（备选：反问）",
-    "abbreviation": ""
-  },
-  "rhotacism": {
-    "term": "Rhotacism",
-    "translation": "r音化",
-    "explanation": "r音化",
-    "abbreviation": ""
-  },
-  "romance_languages": {
-    "term": "Romance Languages",
-    "translation": "罗曼语族",
-    "explanation": "罗曼语族",
-    "abbreviation": ""
-  },
-  "root": {
-    "term": "Root",
-    "translation": "词根",
-    "explanation": "词根",
-    "abbreviation": ""
-  },
-  "root_vowel": {
-    "term": "Root Vowel",
-    "translation": "词根元音",
-    "explanation": "词根元音",
-    "abbreviation": ""
-  },
-  "rough_breathing": {
-    "term": "Rough Breathing",
-    "translation": "送气符",
-    "explanation": "送气符",
-    "abbreviation": ""
-  },
-  "sapphic": {
-    "term": "Sapphic",
-    "translation": "萨福体",
-    "explanation": "萨福体",
-    "abbreviation": ""
-  },
-  "saturnian_verse": {
-    "term": "Saturnian Verse",
-    "translation": "萨图尔努斯诗行",
-    "explanation": "萨图尔努斯诗行",
-    "abbreviation": ""
-  },
-  "second_conjugation": {
-    "term": "Second Conjugation",
-    "translation": "第二变位法",
-    "explanation": "第二变位法",
-    "abbreviation": ""
-  },
-  "second_declension": {
-    "term": "Second Declension",
-    "translation": "第二变格法",
-    "explanation": "第二变格法",
-    "abbreviation": ""
-  },
-  "second_passive_periphrastic_conjugation": {
-    "term": "Second/Passive Periphrastic Conjugation",
-    "translation": "被动迂说变位",
-    "explanation": "被动迂说变位",
-    "abbreviation": ""
-  },
-  "secondary_suffix": {
-    "term": "Secondary Suffix",
-    "translation": "次级后缀",
-    "explanation": "次级后缀",
-    "abbreviation": ""
-  },
-  "secondary_tense": {
-    "term": "Secondary Tense",
-    "translation": "历史时态",
-    "explanation": "历史时态（备选：次级时态/派生时态）",
-    "abbreviation": ""
-  },
-  "semi_deponent": {
-    "term": "Semi-deponent",
-    "translation": "半异态动词",
-    "explanation": "半异态动词",
-    "abbreviation": ""
-  },
-  "semivowel": {
-    "term": "Semivowel",
-    "translation": "半元音",
-    "explanation": "半元音",
-    "abbreviation": ""
-  },
-  "septenarius": {
-    "term": "Septenarius",
-    "translation": "七音步",
-    "explanation": "七音步",
-    "abbreviation": ""
-  },
-  "setting": {
-    "term": "Setting",
-    "translation": "场景",
-    "explanation": "场景",
-    "abbreviation": ""
-  },
-  "short": {
-    "term": "Short",
-    "translation": "短",
-    "explanation": "短",
-    "abbreviation": ""
-  },
-  "sibilant": {
-    "term": "Sibilant",
-    "translation": "咝音",
-    "explanation": "咝音",
-    "abbreviation": ""
-  },
-  "silver_age_latin": {
-    "term": "Silver Age Latin",
-    "translation": "白银时代拉丁语",
-    "explanation": "白银时代拉丁语",
-    "abbreviation": ""
-  },
-  "simile": {
-    "term": "Simile",
-    "translation": "明喻",
-    "explanation": "明喻",
-    "abbreviation": ""
-  },
-  "simple_sentence": {
-    "term": "Simple Sentence",
-    "translation": "简单句",
-    "explanation": "简单句",
-    "abbreviation": ""
-  },
-  "simple_vowel": {
-    "term": "Simple Vowel",
-    "translation": "单元音",
-    "explanation": "单元音",
-    "abbreviation": ""
-  },
-  "smooth_breathing": {
-    "term": "Smooth Breathing",
-    "translation": "不送气符",
-    "explanation": "不送气符",
-    "abbreviation": ""
-  },
-  "smooth_breathing_2": {
-    "term": "Smooth Breathing",
-    "translation": "不送气符",
-    "explanation": "不送气符",
-    "abbreviation": ""
-  },
-  "sonant": {
-    "term": "Sonant",
-    "translation": "浊辅音",
-    "explanation": "浊辅音",
-    "abbreviation": ""
-  },
-  "spirant": {
-    "term": "Spirant",
-    "translation": "擦音",
-    "explanation": "擦音",
-    "abbreviation": ""
-  },
-  "spiritus_lenis": {
-    "term": "Spiritus Lenis",
-    "translation": "不送气符",
-    "explanation": "不送气符",
-    "abbreviation": ""
-  },
-  "spondee": {
-    "term": "Spondee",
-    "translation": "长长格",
-    "explanation": "长长格",
-    "abbreviation": ""
-  },
-  "stanza_strophe": {
-    "term": "Stanza/Strophe",
-    "translation": "诗节",
-    "explanation": "诗节",
-    "abbreviation": ""
-  },
-  "stem": {
-    "term": "Stem",
-    "translation": "词干",
-    "explanation": "词干",
-    "abbreviation": ""
-  },
-  "stem_vowel": {
-    "term": "Stem-Vowel",
-    "translation": "词干元音",
-    "explanation": "词干元音（备选：构干元音）",
-    "abbreviation": ""
-  },
-  "stichic_verse": {
-    "term": "Stichic Verse",
-    "translation": "同律诗",
-    "explanation": "同律诗（备选：散行诗）",
-    "abbreviation": ""
-  },
-  "stress": {
-    "term": "Stress",
-    "translation": "重读",
-    "explanation": "重读",
+  "special_uses_of": {
+    "term": "special uses of",
+    "translation": "特殊用途",
+    "explanation": "",
     "abbreviation": ""
   },
   "subject": {
     "term": "Subject",
     "translation": "主语",
-    "explanation": "主语",
+    "explanation": "",
     "abbreviation": ""
   },
-  "subject_infinitive": {
-    "term": "Subject Infinitive",
-    "translation": "主语不定式",
-    "explanation": "主语不定式",
+  "subject_of_an_indirect_statement": {
+    "term": "Subject of an Indirect Statement",
+    "translation": "间接陈述主语",
+    "explanation": "",
     "abbreviation": ""
   },
-  "subjective_genitive": {
-    "term": "Subjective Genitive",
-    "translation": "主语属格",
-    "explanation": "主语属格（备选：主体属格）",
-    "abbreviation": ""
-  },
-  "subjunctive": {
-    "term": "Subjunctive",
-    "translation": "虚拟式",
-    "explanation": "虚拟式",
-    "abbreviation": ""
-  },
-  "subordinate_clause": {
-    "term": "Subordinate Clause",
-    "translation": "从句",
-    "explanation": "从句（备选：从属分句）",
-    "abbreviation": ""
-  },
-  "subordinated": {
-    "term": "Subordinated",
-    "translation": "从属的",
-    "explanation": "从属的",
-    "abbreviation": ""
-  },
-  "subordinating_conjunction": {
-    "term": "Subordinating Conjunction",
-    "translation": "从属连词",
-    "explanation": "从属连词",
-    "abbreviation": ""
-  },
-  "subordination": {
-    "term": "Subordination",
-    "translation": "从属",
-    "explanation": "从属",
-    "abbreviation": ""
-  },
-  "substantive_interrogative_pronoun": {
-    "term": "Substantive Interrogative Pronoun",
-    "translation": "实词性疑问代词",
-    "explanation": "实词性疑问代词",
+  "subjective": {
+    "term": "Subjective",
+    "translation": "主语",
+    "explanation": "",
     "abbreviation": ""
   },
   "substantive_use": {
-    "term": "Substantive Use",
+    "term": "substantive use",
     "translation": "名词化用法",
-    "explanation": "名词化用法",
+    "explanation": "",
     "abbreviation": ""
   },
-  "suffix": {
-    "term": "Suffix",
-    "translation": "后缀",
-    "explanation": "后缀",
-    "abbreviation": ""
-  },
-  "superlative": {
-    "term": "Superlative",
+  "superlative_of": {
+    "term": "superlative of (irregular)",
     "translation": "最高级",
-    "explanation": "最高级",
-    "abbreviation": ""
+    "explanation": "",
+    "abbreviation": "irregular"
   },
-  "supine": {
-    "term": "Supine",
-    "translation": "目的动名词",
-    "explanation": "目的动名词（备选：目的分词/目的式）",
-    "abbreviation": ""
+  "superlative_of_2": {
+    "term": "superlative of(regular)",
+    "translation": "最高级",
+    "explanation": "",
+    "abbreviation": "regular"
   },
-  "supplementary_participle": {
-    "term": "Supplementary Participle",
-    "translation": "补充性分词",
-    "explanation": "补充性分词",
-    "abbreviation": ""
-  },
-  "surd": {
-    "term": "Surd",
-    "translation": "清辅音",
-    "explanation": "清辅音",
-    "abbreviation": ""
-  },
-  "syllable": {
-    "term": "Syllable",
-    "translation": "音节",
-    "explanation": "音节",
-    "abbreviation": ""
-  },
-  "synaeresis": {
-    "term": "Synaeresis",
-    "translation": "合音",
-    "explanation": "合音",
-    "abbreviation": ""
-  },
-  "synaloepha": {
-    "term": "Synaloepha",
-    "translation": "音节合并",
-    "explanation": "音节合并",
-    "abbreviation": ""
-  },
-  "synapheia": {
-    "term": "Synapheia",
-    "translation": "行末省音",
-    "explanation": "行末省音",
-    "abbreviation": ""
-  },
-  "synchysis": {
-    "term": "Synchysis",
-    "translation": "混杂配列",
-    "explanation": "混杂配列",
-    "abbreviation": ""
-  },
-  "syncope": {
-    "term": "Syncope",
-    "translation": "词中省音",
-    "explanation": "词中省音（备选：省略弱拍）",
-    "abbreviation": ""
-  },
-  "synecdoche": {
-    "term": "Synecdoche",
-    "translation": "提喻",
-    "explanation": "提喻",
-    "abbreviation": ""
-  },
-  "synecdochical_accusative": {
-    "term": "Synecdochical Accusative",
-    "translation": "提喻宾格",
-    "explanation": "提喻宾格",
-    "abbreviation": ""
-  },
-  "synesis": {
-    "term": "Synesis",
-    "translation": "含义上的一致",
-    "explanation": "含义上的一致",
-    "abbreviation": ""
-  },
-  "synizesis": {
-    "term": "Synizesis",
-    "translation": "并音",
-    "explanation": "并音",
-    "abbreviation": ""
-  },
-  "syntactic_compound": {
-    "term": "Syntactic Compound",
-    "translation": "句法性复合词",
-    "explanation": "句法性复合词",
-    "abbreviation": ""
-  },
-  "syntax": {
-    "term": "Syntax",
-    "translation": "句法",
-    "explanation": "句法",
-    "abbreviation": ""
-  },
-  "talentum": {
-    "term": "Talentum",
-    "translation": "塔兰同",
-    "explanation": "塔兰同（备选：塔冷通）",
-    "abbreviation": ""
-  },
-  "temporal_clause": {
-    "term": "Temporal Clause",
-    "translation": "时间从句",
-    "explanation": "时间从句",
-    "abbreviation": ""
-  },
-  "temporal_conjunction": {
-    "term": "Temporal Conjunction",
-    "translation": "时间连词",
-    "explanation": "时间连词",
-    "abbreviation": ""
-  },
-  "tetrameter": {
-    "term": "Tetrameter",
-    "translation": "四拍",
-    "explanation": "四拍",
-    "abbreviation": ""
-  },
-  "tetrapody": {
-    "term": "Tetrapody",
-    "translation": "四音步",
-    "explanation": "四音步",
-    "abbreviation": ""
-  },
-  "tetrastich": {
-    "term": "Tetrastich",
-    "translation": "四行诗节",
-    "explanation": "四行诗节",
-    "abbreviation": ""
-  },
-  "thematic_verb": {
-    "term": "Thematic Verb",
-    "translation": "构干元音型动词",
-    "explanation": "构干元音型动词",
-    "abbreviation": ""
-  },
-  "thematic_vowel": {
-    "term": "Thematic Vowel",
-    "translation": "构干元音",
-    "explanation": "构干元音（备选：词干元音）",
-    "abbreviation": ""
-  },
-  "thesis": {
-    "term": "Thesis",
-    "translation": "强拍",
-    "explanation": "强拍",
-    "abbreviation": ""
-  },
-  "third_conjugation": {
-    "term": "Third Conjugation",
-    "translation": "第三变位法",
-    "explanation": "第三变位法",
+  "the_second_principal_part": {
+    "term": "the second principal part，",
+    "translation": "第二主要部分（其他类推）",
+    "explanation": "",
     "abbreviation": ""
   },
   "third_declension": {
-    "term": "Third Declension",
+    "term": "third declension",
     "translation": "第三变格法",
-    "explanation": "第三变格法",
-    "abbreviation": ""
-  },
-  "third_declension_adjective": {
-    "term": "Third Declension Adjective",
-    "translation": "第三变格法形容词",
-    "explanation": "第三变格法形容词",
-    "abbreviation": ""
-  },
-  "third_i_stem_conjugation": {
-    "term": "Third I-stem Conjugation",
-    "translation": "第三i词干变位法",
-    "explanation": "第三i词干变位法",
-    "abbreviation": ""
-  },
-  "tmesis": {
-    "term": "Tmesis",
-    "translation": "插词",
-    "explanation": "插词",
-    "abbreviation": ""
-  },
-  "transitive_verb": {
-    "term": "Transitive Verb",
-    "translation": "及物动词",
-    "explanation": "及物动词",
-    "abbreviation": ""
-  },
-  "tribrach": {
-    "term": "Tribrach",
-    "translation": "三短格",
-    "explanation": "三短格",
-    "abbreviation": ""
-  },
-  "trimeter": {
-    "term": "Trimeter",
-    "translation": "三拍",
-    "explanation": "三拍",
-    "abbreviation": ""
-  },
-  "tripody": {
-    "term": "Tripody",
-    "translation": "三音步",
-    "explanation": "三音步",
-    "abbreviation": ""
-  },
-  "tristich": {
-    "term": "Tristich",
-    "translation": "三行诗节",
-    "explanation": "三行诗节",
-    "abbreviation": ""
-  },
-  "trochee": {
-    "term": "Trochee",
-    "translation": "长短格",
-    "explanation": "长短格",
+    "explanation": "",
     "abbreviation": ""
   },
   "ultima": {
-    "term": "Ultima",
+    "term": "ultima",
     "translation": "末音节",
-    "explanation": "末音节",
+    "explanation": "",
     "abbreviation": ""
   },
-  "uncia": {
-    "term": "Uncia",
-    "translation": "罗马两",
-    "explanation": "罗马两（备选：盎司）",
+  "with_a_compound_verb": {
+    "term": "with a Compound Verb",
+    "translation": "随复合动词",
+    "explanation": "",
     "abbreviation": ""
   },
-  "uncial": {
-    "term": "Uncial",
-    "translation": "安色尔体",
-    "explanation": "安色尔体",
+  "with_an_intransitive_verb": {
+    "term": "with an Intransitive Verb",
+    "translation": "随不及物动词",
+    "explanation": "",
     "abbreviation": ""
   },
-  "unelaborated": {
-    "term": "Unelaborated",
-    "translation": "不受增饰的",
-    "explanation": "不受增饰的",
+  "with_emphatic_protasis": {
+    "term": "with emphatic protasis",
+    "translation": "带强调的前提分句",
+    "explanation": "",
     "abbreviation": ""
   },
-  "utterance_verb": {
-    "term": "Utterance Verb",
-    "translation": "陈言动词",
-    "explanation": "陈言动词",
+  "with_imperfect_tense": {
+    "term": "with imperfect tense",
+    "translation": "随未完成时的时间宾格",
+    "explanation": "",
     "abbreviation": ""
   },
-  "variable_noun": {
-    "term": "Variable Noun",
-    "translation": "多变化名词",
-    "explanation": "多变化名词",
+  "with_present_tense": {
+    "term": "with present tense",
+    "translation": "随现在时的时间宾格",
+    "explanation": "",
     "abbreviation": ""
   },
-  "velar": {
-    "term": "Velar",
-    "translation": "软腭音",
-    "explanation": "软腭音",
-    "abbreviation": ""
-  },
-  "verbal_idea": {
-    "term": "Verbal Idea",
-    "translation": "动词性概念",
-    "explanation": "动词性概念",
-    "abbreviation": ""
-  },
-  "verbal_noun": {
-    "term": "Verbal Noun",
-    "translation": "动词性名词",
-    "explanation": "动词性名词",
-    "abbreviation": ""
-  },
-  "verbal_noun_2": {
-    "term": "Verbal Noun",
-    "translation": "动词性名词",
-    "explanation": "动词性名词",
-    "abbreviation": ""
-  },
-  "verbal_root": {
-    "term": "Verbal Root",
-    "translation": "动词性词根",
-    "explanation": "动词性词根",
-    "abbreviation": ""
-  },
-  "verbs_of_intellectual_knowledge": {
-    "term": "Verbs of Intellectual Knowledge",
-    "translation": "表达智识认知的动词",
-    "explanation": "表达智识认知的动词",
-    "abbreviation": ""
-  },
-  "verbs_of_practical_knowledge": {
-    "term": "Verbs of Practical Knowledge",
-    "translation": "表达实践性认知的动词",
-    "explanation": "表达实践性认知的动词",
-    "abbreviation": ""
-  },
-  "verbs_of_sentiendi": {
-    "term": "Verbs of Sentiendi",
-    "translation": "表达感觉的动词",
-    "explanation": "表达感觉的动词",
-    "abbreviation": ""
-  },
-  "vocative": {
-    "term": "Vocative",
-    "translation": "呼格",
-    "explanation": "呼格",
-    "abbreviation": ""
-  },
-  "vowel": {
-    "term": "Vowel",
-    "translation": "元音",
-    "explanation": "元音",
-    "abbreviation": ""
-  },
-  "vowel_variation": {
-    "term": "Vowel Variation",
-    "translation": "元音变换",
-    "explanation": "元音变换",
-    "abbreviation": ""
-  },
-  "vowel_weakening": {
-    "term": "Vowel Weakening",
-    "translation": "元音弱化",
-    "explanation": "元音弱化",
-    "abbreviation": ""
-  },
-  "word_order": {
-    "term": "Word Order",
-    "translation": "词序",
-    "explanation": "词序",
-    "abbreviation": ""
-  },
-  "zeugma": {
-    "term": "Zeugma",
-    "translation": "拈连",
-    "explanation": "拈连（备选：轭式搭配）",
+  "with_superlatives": {
+    "term": "with superlatives",
+    "translation": "随最高级",
+    "explanation": "",
     "abbreviation": ""
   }
 }

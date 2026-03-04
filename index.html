@@ -1437,7 +1437,7 @@
   </main>
   
   <footer>
-    <p style="font-family: 'Crimson Text', serif; font-style: italic; margin-bottom: 0.5rem;">Lingua Latina per se illustrata</p>
+    <p style="font-family: 'Crimson Text', serif; font-style: italic; margin-bottom: 0.5rem;">Learn to Read Laitn</p>
     <p>仅供学习使用 | <a href="https://github.com/MaxLinkerAlpha/LTRL_reader" target="_blank">GitHub</a></p>
   </footer>
   
@@ -2589,7 +2589,7 @@ Base Path: ${CONFIG.basePath}</pre>
             <div class="term-card" data-term="${t.term.toLowerCase()}" data-cn="${t.translation.toLowerCase()}">
               <h3>${t.term}${t.abbreviation ? `<span class="abbr"> (${t.abbreviation})</span>` : ''}</h3>
               <div class="cn">${t.translation}</div>
-              ${t.explanation ? `<div class="desc">${t.explanation}</div>` : ''}
+              ${(t.explanation && t.explanation.trim() && t.explanation.trim() !== t.translation.trim()) ? `<div class="desc">${t.explanation}</div>` : ''}
             </div>
           `).join('')}
         </div>
