@@ -1064,6 +1064,149 @@
       margin-top: 0.2rem;
       line-height: 1.25;
     }
+
+    .ref-page {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .ref-header {
+      text-align: center;
+      margin-bottom: 1.2rem;
+    }
+
+    .ref-header h1 {
+      font-family: 'Crimson Text', serif;
+      color: var(--wine);
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .ref-header p {
+      color: var(--ink-light);
+      font-size: 0.92rem;
+    }
+
+    .guide-layout {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .guide-content,
+    .model-content {
+      background: rgba(255, 255, 255, 0.68);
+      border: 1px solid rgba(184, 134, 11, 0.28);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+    }
+
+    .guide-content h1,
+    .guide-content h2,
+    .model-content h1,
+    .model-content h2 {
+      color: var(--wine);
+      font-family: 'Crimson Text', serif;
+      margin: 0.8rem 0 0.35rem;
+    }
+
+    .guide-content h3,
+    .model-content h3 {
+      color: var(--olive);
+      margin: 0.7rem 0 0.25rem;
+    }
+
+    .guide-content p,
+    .model-content p,
+    .guide-content li,
+    .model-content li {
+      font-size: 0.92rem;
+      color: var(--ink);
+      line-height: 1.65;
+    }
+
+    .guide-content ul,
+    .model-content ul {
+      margin: 0.35rem 0 0.65rem 1.2rem;
+    }
+
+    .guide-gallery {
+      position: sticky;
+      top: 92px;
+      background: rgba(255, 255, 255, 0.64);
+      border: 1px solid rgba(184, 134, 11, 0.28);
+      border-radius: 10px;
+      padding: 0.7rem;
+      max-height: calc(100vh - 112px);
+      overflow-y: auto;
+    }
+
+    .guide-gallery h3 {
+      color: var(--wine);
+      font-size: 1rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.45rem;
+    }
+
+    .gallery-item {
+      display: block;
+      background: #fff;
+      border: 1px solid rgba(184, 134, 11, 0.25);
+      border-radius: 6px;
+      overflow: hidden;
+      text-decoration: none;
+    }
+
+    .gallery-item img {
+      display: block;
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .gallery-item span {
+      display: block;
+      padding: 0.3rem 0.45rem;
+      color: var(--ink-light);
+      font-size: 0.75rem;
+      text-align: center;
+    }
+
+    .model-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.9rem;
+    }
+
+    .model-hero {
+      background: linear-gradient(135deg, rgba(114,47,55,0.12), rgba(184,134,11,0.12));
+      border: 1px solid rgba(114, 47, 55, 0.22);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+    }
+
+    .model-hero p {
+      font-size: 0.95rem;
+      color: var(--ink);
+    }
+
+    .model-cover {
+      margin-top: 0.7rem;
+    }
+
+    .model-cover img {
+      width: 100%;
+      max-width: 560px;
+      border-radius: 8px;
+      border: 1px solid rgba(184, 134, 11, 0.3);
+      display: block;
+    }
     
     footer {
       text-align: center;
@@ -1086,6 +1229,12 @@
       nav { width: 100%; justify-content: space-between; }
       .controls { flex-direction: column; align-items: flex-start; }
       .chapter-title { font-size: 1.5rem; }
+      .guide-layout { grid-template-columns: 1fr; }
+      .guide-gallery {
+        position: static;
+        max-height: none;
+      }
+      .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     }
   </style>
 </head>
@@ -1111,6 +1260,8 @@
           </div>
         </div>
         <a href="#" onclick="showTerminology(); return false;">术语表</a>
+        <a href="#" onclick="showLatinGuide(); return false;">拉丁语入门指南</a>
+        <a href="#" onclick="showUltimateModel(); return false;">终极学习模型</a>
         <a href="#" onclick="showAbout(); return false;">关于</a>
       </nav>
     </div>
@@ -1199,6 +1350,10 @@
           await loadChapter(hash);
         } else if (hash === 'terminology') {
           showTerminology();
+        } else if (hash === 'latin-guide') {
+          await showLatinGuide();
+        } else if (hash === 'ultimate-model') {
+          await showUltimateModel();
         } else if (hash === 'about') {
           showAbout();
         } else {
@@ -1282,6 +1437,15 @@ Base Path: ${CONFIG.basePath}</pre>
               <div class="meta">点击查看详细内容</div>
             </a>
           `).join('')}
+
+          <a href="#latin-guide" class="chapter-card" onclick="showLatinGuide(); return false;">
+            <h3>拉丁语入门指南</h3>
+            <div class="meta">学习路线、教材建议与书影资料</div>
+          </a>
+          <a href="#ultimate-model" class="chapter-card" onclick="showUltimateModel(); return false;">
+            <h3>终极语言学习模型</h3>
+            <div class="meta">方法论框架与可执行学习策略</div>
+          </a>
         </div>
       `;
     }
@@ -2188,6 +2352,85 @@ Base Path: ${CONFIG.basePath}</pre>
         const cn = card.getAttribute('data-cn') || '';
         card.classList.toggle('hidden', !term.includes(q) && !cn.includes(q));
       });
+    }
+
+    async function fetchMarkdownWithFallback(path) {
+      let res = await fetch(getDataPath(path));
+      if (!res.ok) res = await fetch(getRawDataPath(path));
+      if (!res.ok) throw new Error(`无法加载文件: ${path} (HTTP ${res.status})`);
+      return await res.text();
+    }
+
+    async function showLatinGuide() {
+      window.location.hash = 'latin-guide';
+      document.getElementById('main-content').innerHTML = `
+        <div style="text-align:center; padding: 2rem;"><p>正在加载拉丁语入门指南...</p></div>
+      `;
+      try {
+        const md = await fetchMarkdownWithFallback('data/reference/latin_guide.md');
+        const imageNames = ['image1.png','image2.png','image3.png','image4.png','image5.png','image6.png','image7.png','image8.png','image9.png','image10.png','image11.jpg'];
+        const gallery = imageNames.map((name, idx) => {
+          const src = getDataPath(`assets/reference/latin-guide/${name}`);
+          return `
+            <a class="gallery-item" href="${src}" target="_blank" rel="noopener">
+              <img loading="lazy" src="${src}" alt="拉丁语入门指南书影 ${idx + 1}">
+              <span>书影 ${idx + 1}</span>
+            </a>
+          `;
+        }).join('');
+
+        document.getElementById('main-content').innerHTML = `
+          <section class="ref-page">
+            <div class="ref-header">
+              <h1>拉丁语入门指南</h1>
+              <p>教材路线、学习建议与书影资料（来自文档整理）</p>
+            </div>
+            <div class="guide-layout">
+              <article class="guide-content markdown-body">
+                ${marked.parse(md)}
+              </article>
+              <aside class="guide-gallery">
+                <h3>教材书影</h3>
+                <div class="gallery-grid">${gallery}</div>
+              </aside>
+            </div>
+          </section>
+        `;
+      } catch (e) {
+        showError('加载拉丁语入门指南失败', e.message);
+      }
+    }
+
+    async function showUltimateModel() {
+      window.location.hash = 'ultimate-model';
+      document.getElementById('main-content').innerHTML = `
+        <div style="text-align:center; padding: 2rem;"><p>正在加载终极语言学习模型...</p></div>
+      `;
+      try {
+        const md = await fetchMarkdownWithFallback('data/reference/ultimate_model.md');
+        const modelImage = getDataPath('assets/reference/language-model/image1.jpg');
+        document.getElementById('main-content').innerHTML = `
+          <section class="ref-page">
+            <div class="ref-header">
+              <h1>终极语言学习模型</h1>
+              <p>输入输出策略、曝光法核心逻辑与实操路径</p>
+            </div>
+            <div class="model-layout">
+              <div class="model-hero">
+                <p>这份页面将原文档整理为在线可读版本，便于在章节学习之外快速查阅学习方法论。</p>
+                <div class="model-cover">
+                  <img loading="lazy" src="${modelImage}" alt="终极语言学习模型配图">
+                </div>
+              </div>
+              <article class="model-content markdown-body">
+                ${marked.parse(md)}
+              </article>
+            </div>
+          </section>
+        `;
+      } catch (e) {
+        showError('加载终极语言学习模型失败', e.message);
+      }
     }
     
     // ==================== 关于页 ====================
