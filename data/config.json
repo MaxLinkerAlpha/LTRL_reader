@@ -6,62 +6,62 @@
     "author": "民间翻译团队",
     "license": "仅供学习使用，禁止商业用途",
     "github": "https://github.com/MaxLinkerAlpha/LTRL_reader",
-    "iteration_version": "v2026.03.04.032346"
+    "iteration_version": "v2026.03.04.190500"
   },
   "translators": [
     {
       "id": "Lanx",
       "name": "Lanx",
-      "color": "#FFC000",
+      "color": "#B78600",
       "is_primary": true,
       "description": "主译者"
     },
     {
       "id": "簪花落梅",
       "name": "簪花落梅",
-      "color": "#C3EAD5",
+      "color": "#3F8D72",
       "is_primary": false,
       "description": "译者"
     },
     {
       "id": "Yancey",
       "name": "Yancey",
-      "color": "#FDEBFF",
+      "color": "#9B4FA0",
       "is_primary": false,
       "description": "译者"
     },
     {
       "id": "tuche est",
       "name": "tuche est",
-      "color": "#00A3F5",
+      "color": "#007CBF",
       "is_primary": false,
       "description": "译者"
     },
     {
       "id": "Mecius",
       "name": "Mecius",
-      "color": "#D58EFF",
+      "color": "#7A58C0",
       "is_primary": false,
       "description": "译者"
     },
     {
       "id": "机翻",
       "name": "机翻",
-      "color": "#999999",
+      "color": "#6A6A6A",
       "is_primary": false,
       "description": "待校订"
     },
     {
       "id": "cyan",
       "name": "cyan",
-      "color": "#EAFAF1",
+      "color": "#2E8E8E",
       "is_primary": false,
       "description": "译者"
     },
     {
       "id": "iambicus",
       "name": "iambicus",
-      "color": "#D2FF70",
+      "color": "#7AA600",
       "is_primary": false,
       "description": "译者"
     }

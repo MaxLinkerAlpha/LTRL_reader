@@ -304,6 +304,16 @@
       background: linear-gradient(180deg, rgba(85,107,47,0.16), rgba(255,255,255,0.64));
     }
 
+    .section.section-rule {
+      border-color: rgba(114, 47, 55, 0.5);
+      background: linear-gradient(180deg, rgba(114,47,55,0.16), rgba(255,255,255,0.66));
+    }
+
+    .section.section-vocabulary {
+      border-color: rgba(46, 93, 123, 0.48);
+      background: linear-gradient(180deg, rgba(46,93,123,0.14), rgba(255,255,255,0.66));
+    }
+
     .section.section-derivatives .content-block {
       border-color: rgba(46, 93, 123, 0.35);
       background: rgba(255,255,255,0.72);
@@ -322,6 +332,16 @@
     .section.section-drill .content-block {
       border-color: rgba(79,97,45,0.35);
       background: rgba(255,255,255,0.74);
+    }
+
+    .section.section-rule .content-block {
+      border-color: rgba(114,47,55,0.36);
+      background: rgba(255,255,255,0.76);
+    }
+
+    .section.section-vocabulary .content-block {
+      border-color: rgba(46,93,123,0.33);
+      background: rgba(255,255,255,0.76);
     }
     
     .section-title {
@@ -382,11 +402,35 @@
       border-color: rgba(79, 97, 45, 0.42);
     }
 
+    .section-marker.rule {
+      color: #5a252d;
+      background: rgba(114,47,55,0.2);
+      border-color: rgba(114,47,55,0.4);
+    }
+
+    .section-marker.vocabulary {
+      color: #1f4b63;
+      background: rgba(46,93,123,0.2);
+      border-color: rgba(46,93,123,0.42);
+    }
+
     .section-title-cn {
       margin-left: 0.45rem;
       color: #8a5a1d;
       font-weight: 700;
       font-size: 0.95em;
+    }
+
+    .section-title.title-compact {
+      font-size: 1.07rem;
+      padding-top: 0.28rem;
+      padding-bottom: 0.32rem;
+      letter-spacing: 0.01em;
+    }
+
+    .section-title.title-main {
+      font-size: 1.26rem;
+      font-weight: 700;
     }
     
     /* 原文样式 - 羊皮纸背景 */
@@ -882,6 +926,8 @@
       gap: 0.5rem;
       padding: 0.28rem 0;
       border-bottom: 1px dashed rgba(184,134,11,0.1);
+      border-left: 2px solid transparent;
+      padding-left: 0.36rem;
     }
     
     .translation:last-child {
@@ -1709,22 +1755,51 @@ Base Path: ${CONFIG.basePath}</pre>
       loadUtterances();
     }
     
+    function compactSectionKey(title) {
+      return decodeHtmlEntities(title || '')
+        .toLowerCase()
+        .replace(/\s+/g, '')
+        .replace(/[0-9]/g, '')
+        .replace(/[^\u4e00-\u9fffa-z]/g, '');
+    }
+
+    function isRuleHeadingTitle(title) {
+      const raw = decodeHtmlEntities(title || '').trim();
+      if (!raw) return false;
+      const normalized = raw.replace(/\s+/g, ' ').trim();
+      const lower = normalized.toLowerCase();
+      if (/^(always|note that|when |before |in questions|familiarize yourself)/.test(lower)) return true;
+      if (/[.。]$/.test(normalized) && normalized.length > 18 && /^[A-Z0-9 ,.'’\-;:()]+$/.test(normalized)) return true;
+      const letters = (normalized.match(/[A-Za-z]/g) || []).length;
+      const uppers = (normalized.match(/[A-Z]/g) || []).length;
+      if (letters >= 12 && uppers / letters > 0.82) return true;
+      return false;
+    }
+
     function classifySection(title) {
-      const t = (title || '').toLowerCase();
-      const normalized = t.replace(/\s+/g, ' ').trim();
-      if (normalized.includes('derivatives and cognates') || normalized.includes('派生词和同源词')) {
-        return { cls: 'section-derivatives', marker: '专项词汇', markerClass: 'derivatives' };
+      const raw = decodeHtmlEntities(title || '');
+      const normalized = raw.toLowerCase().replace(/\s+/g, ' ').trim();
+      const compact = compactSectionKey(raw);
+
+      if (compact.includes('derivativesandcognates') || compact.includes('派生词和同源词')) {
+        return { cls: 'section-derivatives', marker: '专项词汇', markerClass: 'derivatives', titleClass: 'title-main' };
       }
-      if (normalized.includes('short readings') || normalized.includes('short reading') || normalized.includes('短篇阅读')) {
-        return { cls: 'section-short-readings', marker: '短文阅读', markerClass: 'short-readings' };
+      if (compact.includes('shortreadings') || compact.includes('短篇阅读')) {
+        return { cls: 'section-short-readings', marker: '短文阅读', markerClass: 'short-readings', titleClass: 'title-main' };
       }
-      if (/\bdrill\b/.test(normalized) || normalized.includes('操练') || normalized.includes('训练')) {
-        return { cls: 'section-drill', marker: '操练区', markerClass: 'drill' };
+      if (compact.includes('vocabularynotes') || compact === 'vocabulary' || compact === '单词表' || compact === '单词笔记') {
+        return { cls: 'section-vocabulary', marker: '词汇模块', markerClass: 'vocabulary', titleClass: 'title-main' };
       }
-      if (/\bobservations?\b/.test(normalized) || normalized === '观察' || normalized === '温馨提示' || normalized === '注意') {
-        return { cls: 'section-observation', marker: '观察提示', markerClass: 'observation' };
+      if (compact.includes('drill') || compact.includes('操练') || compact.includes('训练')) {
+        return { cls: 'section-drill', marker: '操练区', markerClass: 'drill', titleClass: 'title-main' };
       }
-      return { cls: '', marker: '', markerClass: '' };
+      if (compact.includes('observation') || compact === '观察' || compact === '温馨提示' || compact === '注意') {
+        return { cls: 'section-observation', marker: '观察提示', markerClass: 'observation', titleClass: 'title-compact' };
+      }
+      if (isRuleHeadingTitle(raw)) {
+        return { cls: 'section-rule', marker: '规则提示', markerClass: 'rule', titleClass: 'title-compact' };
+      }
+      return { cls: '', marker: '', markerClass: '', titleClass: 'title-main' };
     }
 
     function pickObservationCn(blocks) {
@@ -1746,7 +1821,7 @@ Base Path: ${CONFIG.basePath}</pre>
       const secMeta = classifySection(section.title);
 
       // Keep heading hierarchy aligned for paired titles such as OBSERVATION(S) / 注意|观察|温馨提示.
-      if (/\bOBSERVATIONS?\b/i.test(section.title) && blocks.length > 0) {
+      if (/^\s*\d*\s*o\s*b\s*s\s*e\s*r\s*v\s*a\s*t\s*i\s*o\s*n\s*s?\s*$/i.test(section.title.replace(/[^a-zA-Z0-9\s]/g, '')) && blocks.length > 0) {
         sectionTitleCn = pickObservationCn(blocks);
         if (sectionTitleCn) {
           blocks = blocks.slice(1);
@@ -1755,7 +1830,7 @@ Base Path: ${CONFIG.basePath}</pre>
 
       return `
         <section class="section ${secMeta.cls}" id="${section.id}">
-          <h2 class="section-title">
+          <h2 class="section-title ${secMeta.titleClass || 'title-main'}">
             ${escapeHtml(section.title)}
             ${sectionTitleCn ? `<span class="section-title-cn">${escapeHtml(sectionTitleCn)}</span>` : ''}
             ${secMeta.marker ? `<span class="section-marker ${secMeta.markerClass}">${secMeta.marker}</span>` : ''}
@@ -1811,10 +1886,12 @@ Base Path: ${CONFIG.basePath}</pre>
         const translations = block.translations.map((t, i) => {
           const safeTranslator = normalizeTranslatorName(t.translator);
           const info = getTranslatorInfo(safeTranslator);
+          const badgeStyle = getTranslatorBadgeStyle(info.color);
           return {
             ...t,
             translator: safeTranslator,
             color: info.color,
+            badgeStyle,
             isPrimary: info.is_primary,
             isFallback: i === 0  // 第一个作为底漌
           };
@@ -1835,8 +1912,9 @@ Base Path: ${CONFIG.basePath}</pre>
                   <div class="translation" 
                        data-translator="${escapeHtml(t.translator)}"
                        data-primary="${t.isPrimary}"
-                       data-fallback="${t.isFallback}">
-                    <span class="translator-tag" style="background: ${t.color}20; color: ${t.color}; border-color: ${t.color}40;">
+                       data-fallback="${t.isFallback}"
+                       style="border-left-color: ${t.badgeStyle.rowAccent};">
+                    <span class="translator-tag" style="background: ${t.badgeStyle.background}; color: ${t.badgeStyle.text}; border-color: ${t.badgeStyle.border};">
                       ${escapeHtml(t.translator)}
                     </span>
                     <span class="translation-text">${highlightTerms(t.text)}</span>
@@ -2238,6 +2316,63 @@ Base Path: ${CONFIG.basePath}</pre>
         .replace(/<[^>]*>/g, '')
         .replace(/\s+/g, ' ')
         .trim();
+    }
+
+    function parseHexColor(hex) {
+      const raw = (hex || '').replace('#', '').trim();
+      if (!/^[0-9a-fA-F]{3}$|^[0-9a-fA-F]{6}$/.test(raw)) return { r: 102, g: 102, b: 102 };
+      const full = raw.length === 3
+        ? raw.split('').map(c => c + c).join('')
+        : raw;
+      return {
+        r: parseInt(full.slice(0, 2), 16),
+        g: parseInt(full.slice(2, 4), 16),
+        b: parseInt(full.slice(4, 6), 16)
+      };
+    }
+
+    function clampColor(v) {
+      return Math.max(0, Math.min(255, Math.round(v)));
+    }
+
+    function mixRgb(a, b, ratio) {
+      return {
+        r: clampColor(a.r * (1 - ratio) + b.r * ratio),
+        g: clampColor(a.g * (1 - ratio) + b.g * ratio),
+        b: clampColor(a.b * (1 - ratio) + b.b * ratio)
+      };
+    }
+
+    function rgbToRgba(rgb, alpha) {
+      return `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${alpha})`;
+    }
+
+    function relativeLuminance(rgb) {
+      const toLinear = (c) => {
+        const v = c / 255;
+        return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+      };
+      const r = toLinear(rgb.r);
+      const g = toLinear(rgb.g);
+      const b = toLinear(rgb.b);
+      return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    }
+
+    function getTranslatorBadgeStyle(hex) {
+      const base = parseHexColor(hex);
+      const lum = relativeLuminance(base);
+      const darkInk = { r: 44, g: 36, b: 27 };
+      const lightInk = { r: 248, g: 242, b: 230 };
+      const darkerBase = mixRgb(base, darkInk, 0.4);
+      const lighterBase = mixRgb(base, { r: 255, g: 255, b: 255 }, 0.45);
+      const isLight = lum > 0.48;
+
+      return {
+        background: rgbToRgba(isLight ? darkerBase : lighterBase, isLight ? 0.24 : 0.28),
+        border: rgbToRgba(isLight ? mixRgb(base, darkInk, 0.55) : mixRgb(base, lightInk, 0.3), 0.72),
+        text: isLight ? '#2c241b' : '#f5f0e6',
+        rowAccent: rgbToRgba(isLight ? mixRgb(base, darkInk, 0.45) : mixRgb(base, lightInk, 0.25), 0.82)
+      };
     }
 
     function highlightTerms(text) {
