@@ -947,6 +947,18 @@
       letter-spacing: 0.02em;
       font-family: 'Noto Serif SC', serif;
       text-transform: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.32rem;
+      box-shadow: 0 1px 0 rgba(255,255,255,0.75), inset 0 0 0 1px rgba(0,0,0,0.02);
+    }
+
+    .translator-tag .tag-dot {
+      width: 0.46rem;
+      height: 0.46rem;
+      border-radius: 50%;
+      flex-shrink: 0;
+      border: 1px solid rgba(0,0,0,0.16);
     }
     
     .translation-text {
@@ -1915,6 +1927,7 @@ Base Path: ${CONFIG.basePath}</pre>
                        data-fallback="${t.isFallback}"
                        style="border-left-color: ${t.badgeStyle.rowAccent};">
                     <span class="translator-tag" style="background: ${t.badgeStyle.background}; color: ${t.badgeStyle.text}; border-color: ${t.badgeStyle.border};">
+                      <span class="tag-dot" style="background:${t.badgeStyle.dot};"></span>
                       ${escapeHtml(t.translator)}
                     </span>
                     <span class="translation-text">${highlightTerms(t.text)}</span>
@@ -2362,16 +2375,17 @@ Base Path: ${CONFIG.basePath}</pre>
       const base = parseHexColor(hex);
       const lum = relativeLuminance(base);
       const darkInk = { r: 44, g: 36, b: 27 };
-      const lightInk = { r: 248, g: 242, b: 230 };
-      const darkerBase = mixRgb(base, darkInk, 0.4);
-      const lighterBase = mixRgb(base, { r: 255, g: 255, b: 255 }, 0.45);
-      const isLight = lum > 0.48;
+      const isLight = lum > 0.5;
+      const accent = isLight ? mixRgb(base, darkInk, 0.38) : mixRgb(base, { r: 255, g: 255, b: 255 }, 0.08);
+      const borderRgb = isLight ? mixRgb(base, darkInk, 0.5) : mixRgb(base, darkInk, 0.22);
 
       return {
-        background: rgbToRgba(isLight ? darkerBase : lighterBase, isLight ? 0.24 : 0.28),
-        border: rgbToRgba(isLight ? mixRgb(base, darkInk, 0.55) : mixRgb(base, lightInk, 0.3), 0.72),
-        text: isLight ? '#2c241b' : '#f5f0e6',
-        rowAccent: rgbToRgba(isLight ? mixRgb(base, darkInk, 0.45) : mixRgb(base, lightInk, 0.25), 0.82)
+        // Fixed high-contrast parchment badge; color identity moves to border/dot/row accent.
+        background: 'rgba(255, 252, 244, 0.96)',
+        border: rgbToRgba(borderRgb, 0.9),
+        text: '#2c241b',
+        dot: rgbToRgba(accent, 0.96),
+        rowAccent: rgbToRgba(borderRgb, 0.9)
       };
     }
 
