@@ -1193,6 +1193,13 @@
       color: var(--gold);
     }
     
+    .term-card .alt {
+      font-size: 0.75rem;
+      color: var(--gold);
+      margin-top: 0.15rem;
+      line-height: 1.25;
+    }
+    
     .term-card .desc {
       font-size: 0.78rem;
       color: var(--ink-light);
@@ -2590,10 +2597,11 @@ Base Path: ${CONFIG.basePath}</pre>
         </div>
         
         <div class="terminology-list" id="term-list">
-          ${terms.map(t => `
+          ${terms.filter(t => t.translation && t.translation.trim()).map(t => `
             <div class="term-card" data-term="${t.term.toLowerCase()}" data-cn="${t.translation.toLowerCase()}">
               <h3>${t.term}${t.abbreviation ? `<span class="abbr"> (${t.abbreviation})</span>` : ''}</h3>
               <div class="cn">${t.translation}</div>
+              ${t.alternatives ? `<div class="alt">备选: ${t.alternatives}</div>` : ''}
               ${(t.explanation && t.explanation.trim() && t.explanation.trim() !== t.translation.trim()) ? `<div class="desc">${t.explanation}</div>` : ''}
             </div>
           `).join('')}

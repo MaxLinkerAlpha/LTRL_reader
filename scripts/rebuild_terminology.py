@@ -141,7 +141,7 @@ def process_terminology(rows):
     return terminology
 
 def main():
-    xlsx_path = Path("source/reference/疑问汇总及术语对照表.xlsx")
+    xlsx_path = Path("source/reference/术语对照表.xlsx")
     
     print("解析Excel...")
     rows = parse_excel(xlsx_path)
