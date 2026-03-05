@@ -1,11 +1,4 @@
----
-id: chapter_I_companion
-title: "Chapter I 补充 - 梅老师小贴士"
-version: "v2026.03.05"
-translators: ["簪花落梅"]
----
-
-
+# CHAPTER I
 
 ## **语法部分 *GRAMMAR***
 

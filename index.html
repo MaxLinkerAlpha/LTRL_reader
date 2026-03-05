@@ -1433,8 +1433,13 @@
         // 解析 URL hash
         const hash = window.location.hash.slice(1);
         log('URL hash:', hash);
-        if (state.config.chapters?.some(c => c.id === hash)) {
-          await loadChapter(hash);
+        const chapterConfig = state.config.chapters?.find(c => c.id === hash);
+        if (chapterConfig) {
+          if (chapterConfig.type === 'reference') {
+            await loadReferenceChapter(hash);
+          } else {
+            await loadChapter(hash);
+          }
         } else if (hash === 'terminology') {
           showTerminology();
         } else if (hash === 'latin-guide') {
@@ -1505,16 +1510,19 @@ Base Path: ${CONFIG.basePath}</pre>
         </div>
         <div class="chapter-list">
           <h2 style="text-align: center; margin-bottom: 1.5rem; color: var(--wine);">可用章节</h2>
-          ${available.map(c => `
-            <a href="#${c.id}" class="chapter-card" onclick="loadChapter('${c.id}'); return false;">
-              <h3>
-                <span style="display: inline-block; width: 28px; height: 28px; background: var(--wine); color: white; border-radius: 50%; text-align: center; line-height: 28px; font-size: 0.85rem; margin-right: 0.5rem;">${c.number}</span>
-                ${c.title}
-                ${!c.available ? '<span class="badge badge-incomplete">未完成</span>' : ''}
-              </h3>
-              <div class="meta">点击查看详细内容</div>
-            </a>
-          `).join('')}
+          ${available.map(c => {
+            const loadFn = c.type === 'reference' ? 'loadReferenceChapter' : 'loadChapter';
+            return `
+              <a href="#${c.id}" class="chapter-card" onclick="${loadFn}('${c.id}'); return false;">
+                <h3>
+                  <span style="display: inline-block; width: 28px; height: 28px; background: var(--wine); color: white; border-radius: 50%; text-align: center; line-height: 28px; font-size: 0.85rem; margin-right: 0.5rem;">${c.number}</span>
+                  ${c.title}
+                  ${c.type === 'reference' ? '<span style="font-size: 0.7rem; color: var(--olive); margin-left: 0.5rem;">[参考]</span>' : ''}
+                </h3>
+                <div class="meta">点击查看详细内容</div>
+              </a>
+            `;
+          }).join('')}
           <a href="#latin-guide" class="chapter-card" onclick="showLatinGuide(); return false;">
             <h3>拉丁语入门指南</h3>
             <div class="meta">学习路线、教材建议与书影资料</div>
@@ -1565,6 +1573,51 @@ Base Path: ${CONFIG.basePath}</pre>
       } catch (e) {
         console.error('加载章节失败:', e);
         showError('加载章节失败', e.message);
+      }
+    }
+    async function loadReferenceChapter(chapterId) {
+      log('加载参考文档:', chapterId);
+      window.location.hash = chapterId;
+      state.currentChapter = chapterId;
+      const chapterConfig = state.config.chapters.find(c => c.id === chapterId);
+      if (!chapterConfig) {
+        showError('文档未找到', `找不到 ID 为 ${chapterId} 的文档`);
+        return;
+      }
+      // 显示加载状态
+      document.getElementById('main-content').innerHTML = `
+        <div style="text-align: center; padding: 3rem;">
+          <p>正在加载 ${chapterConfig.title}...</p>
+        </div>
+      `;
+      try {
+        // 尝试从 data/reference/ 目录加载
+        const refPath = `data/reference/${chapterId}.md`;
+        let md = '';
+        let res = await fetch(getDataPath(refPath));
+        if (!res.ok) {
+          res = await fetch(getRawDataPath(refPath));
+          if (!res.ok) {
+            throw new Error(`无法加载文档文件: HTTP ${res.status}`);
+          }
+        }
+        md = await res.text();
+        log('参考文档内容长度:', md.length);
+        const html = marked.parse(md);
+        document.getElementById('main-content').innerHTML = `
+          <section class="ref-page">
+            <div class="ref-header">
+              <h1>${escapeHtml(chapterConfig.title)}</h1>
+              <p>梅老师语法小贴士 - 原样保留供参考</p>
+            </div>
+            <article class="reference-content markdown-body">${html}</article>
+          </section>
+        `;
+        updateSectionToc([]);
+        updateChapterToc();
+      } catch (e) {
+        console.error('加载参考文档失败:', e);
+        showError('加载参考文档失败', e.message);
       }
     }
     function renderChapter(data, config) {
@@ -2202,16 +2255,19 @@ Base Path: ${CONFIG.basePath}</pre>
       const tocList = document.getElementById('chapter-toc');
       if (!tocList || !state.config?.chapters) return;
       const availableChapters = state.config.chapters.filter(c => c.available);
-      tocList.innerHTML = availableChapters.map(c => `
-        <li class="toc-item">
-          <a href="#${c.id}" 
-             class="toc-link ${c.id === state.currentChapter ? 'active' : ''}"
-             onclick="loadChapter('${c.id}'); return false;">
-            <span style="color: var(--gold); font-weight: 600;">${c.number}</span> 
-            ${escapeHtml(c.title.replace(/^Chapter \w+\s*-\s*/, ''))}
-          </a>
-        </li>
-      `).join('');
+      tocList.innerHTML = availableChapters.map(c => {
+        const loadFn = c.type === 'reference' ? 'loadReferenceChapter' : 'loadChapter';
+        return `
+          <li class="toc-item">
+            <a href="#${c.id}" 
+               class="toc-link ${c.id === state.currentChapter ? 'active' : ''}"
+               onclick="${loadFn}('${c.id}'); return false;">
+              <span style="color: var(--gold); font-weight: 600;">${c.number}</span> 
+              ${escapeHtml(c.title.replace(/^Chapter \w+\s*-\s*/, ''))}
+            </a>
+          </li>
+        `;
+      }).join('');
     }
     function updateSectionToc(sections) {
       const tocList = document.getElementById('section-toc');
@@ -2333,7 +2389,13 @@ Base Path: ${CONFIG.basePath}</pre>
       const prev = state.config.chapters
         .filter(c => c.available)
         .find(c => c.number === current.number - 1);
-      if (prev) loadChapter(prev.id);
+      if (prev) {
+        if (prev.type === 'reference') {
+          loadReferenceChapter(prev.id);
+        } else {
+          loadChapter(prev.id);
+        }
+      }
     }
     function nextChapter() {
       const current = state.config.chapters.find(c => c.id === state.currentChapter);
@@ -2341,7 +2403,13 @@ Base Path: ${CONFIG.basePath}</pre>
       const next = state.config.chapters
         .filter(c => c.available)
         .find(c => c.number === current.number + 1);
-      if (next) loadChapter(next.id);
+      if (next) {
+        if (next.type === 'reference') {
+          loadReferenceChapter(next.id);
+        } else {
+          loadChapter(next.id);
+        }
+      }
     }
     // ==================== 术语表 ====================
     function showTerminology() {
@@ -2520,13 +2588,16 @@ Base Path: ${CONFIG.basePath}</pre>
         dropdown.innerHTML = '<div style="padding: 1rem;">暂无可用章节</div>';
         return;
       }
-      dropdown.innerHTML = available.map(c => `
-        <a href="#${c.id}" onclick="loadChapter('${c.id}'); return false;">
-          <span style="display: inline-block; width: 20px; text-align: center; color: var(--gold); font-weight: bold;">${c.number}</span>
-          ${c.title}
-
-        </a>
-      `).join('');
+      dropdown.innerHTML = available.map(c => {
+        const loadFn = c.type === 'reference' ? 'loadReferenceChapter' : 'loadChapter';
+        return `
+          <a href="#${c.id}" onclick="${loadFn}('${c.id}'); return false;">
+            <span style="display: inline-block; width: 20px; text-align: center; color: var(--gold); font-weight: bold;">${c.number}</span>
+            ${c.title}
+            ${c.type === 'reference' ? '<span style="color: var(--olive); font-size: 0.75rem; margin-left: 0.5rem;">[参考]</span>' : ''}
+          </a>
+        `;
+      }).join('');
     }
     // ==================== 术语提示 ====================
     document.addEventListener('mouseover', (e) => {
