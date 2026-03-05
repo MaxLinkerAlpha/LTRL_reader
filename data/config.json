@@ -6,7 +6,7 @@
     "author": "民间翻译团队",
     "license": "仅供学习使用，禁止商业用途",
     "github": "https://github.com/MaxLinkerAlpha/LTRL_reader",
-    "iteration_version": "v2026.03.04.145000"
+    "iteration_version": "v2026.03.05.160000"
   },
   "translators": [
     {
@@ -71,42 +71,42 @@
       "id": "chapter_O",
       "number": 0,
       "title": "Chapter O - Introduction",
-      "has_companion": false,
       "available": true
     },
     {
       "id": "chapter_I",
       "number": 1,
       "title": "Chapter I - 名词与动词概述",
-      "has_companion": true,
+      "available": true
+    },
+    {
+      "id": "chapter_I_companion",
+      "number": 1.5,
+      "title": "Chapter I 补充 - 梅老师小贴士",
       "available": true
     },
     {
       "id": "chapter_II",
       "number": 2,
       "title": "Chapter II - 形容词与副词",
-      "has_companion": false,
       "available": true
     },
     {
       "id": "chapter_III",
       "number": 3,
       "title": "Chapter III - 代词",
-      "has_companion": false,
       "available": true
     },
     {
       "id": "chapter_IV",
       "number": 4,
       "title": "Chapter IV - 动词时态",
-      "has_companion": false,
       "available": true
     },
     {
       "id": "chapter_V",
       "number": 5,
       "title": "Chapter V - 从句",
-      "has_companion": false,
       "available": true
     }
   ]

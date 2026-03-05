@@ -161,10 +161,156 @@
       font-size: 0.85rem;
       color: var(--ink-light);
     }
-    main {
-      max-width: 1200px;
+    /* 页面布局 */
+    .page-layout {
+      display: flex;
+      gap: 1.5rem;
+      max-width: 1400px;
       margin: 0 auto;
       padding: 2rem 1rem;
+    }
+    .sidebar {
+      width: 260px;
+      flex-shrink: 0;
+      position: sticky;
+      top: 80px;
+      height: calc(100vh - 100px);
+      overflow-y: auto;
+      transition: transform 0.3s ease, width 0.3s ease;
+    }
+    .sidebar.collapsed {
+      width: 40px;
+      overflow: hidden;
+    }
+    .sidebar-toggle {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      padding: 0.6rem;
+      background: var(--wine);
+      color: white;
+      border: none;
+      border-radius: 6px 6px 0 0;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 10;
+    }
+    .sidebar-toggle:hover {
+      background: var(--wine-light);
+    }
+    .sidebar-content {
+      background: rgba(255,255,255,0.7);
+      border: 1px solid rgba(184, 134, 11, 0.3);
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      padding: 1rem 0.75rem;
+      max-height: calc(100% - 40px);
+      overflow-y: auto;
+    }
+    .sidebar.collapsed .sidebar-content {
+      display: none;
+    }
+    .toc-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--wine);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+    }
+    .toc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .toc-item {
+      margin-bottom: 0.25rem;
+    }
+    .toc-link {
+      display: block;
+      padding: 0.4rem 0.6rem;
+      border-radius: 4px;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 0.85rem;
+      line-height: 1.4;
+      transition: all 0.15s ease;
+      border-left: 2px solid transparent;
+    }
+    .toc-link:hover {
+      background: rgba(184, 134, 11, 0.1);
+      border-left-color: var(--gold);
+      color: var(--wine);
+    }
+    .toc-link.active {
+      background: rgba(114, 47, 55, 0.1);
+      border-left-color: var(--wine);
+      color: var(--wine);
+      font-weight: 600;
+    }
+    main {
+      flex: 1;
+      min-width: 0;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .page-layout.no-sidebar main {
+      max-width: 1200px;
+      padding: 0 1rem;
+    }
+    /* 响应式 */
+    @media (max-width: 1024px) {
+      .sidebar {
+        position: fixed;
+        left: 0;
+        top: 60px;
+        z-index: 200;
+        transform: translateX(-100%);
+        height: calc(100vh - 60px);
+        background: var(--parchment);
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+      }
+      .sidebar.open {
+        transform: translateX(0);
+      }
+      .sidebar.collapsed {
+        width: 260px;
+        transform: translateX(-100%);
+      }
+      .mobile-menu-btn {
+        display: flex !important;
+      }
+    }
+    @media (min-width: 1025px) {
+      .mobile-menu-btn {
+        display: none !important;
+      }
+    }
+    .mobile-menu-btn {
+      display: none;
+      position: fixed;
+      left: 1rem;
+      bottom: 1rem;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--wine);
+      color: white;
+      border: none;
+      font-size: 1.25rem;
+      cursor: pointer;
+      z-index: 300;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      align-items: center;
+      justify-content: center;
+    }
+    .mobile-menu-btn:hover {
+      background: var(--wine-light);
     }
     .controls {
       background: rgba(255,255,255,0.6);
@@ -490,40 +636,6 @@
       font-size: 0.85rem;
       color: var(--ink-light);
     }
-    .companion-note {
-      margin-top: 1rem;
-      border: 1px solid rgba(85, 107, 47, 0.35);
-      border-radius: 10px;
-      background: linear-gradient(180deg, rgba(85,107,47,0.06), rgba(85,107,47,0.02));
-      overflow: hidden;
-    }
-    .companion-toggle {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: var(--olive);
-      font-size: 0.9rem;
-      cursor: pointer;
-      background: rgba(85,107,47,0.1);
-      border: none;
-      font-family: inherit;
-      width: 100%;
-      padding: 0.55rem 0.75rem;
-      text-align: left;
-    }
-    .companion-toggle:hover {
-      color: var(--olive);
-      filter: brightness(0.8);
-    }
-    .companion-content {
-      display: none;
-      padding: 0.85rem 0.9rem;
-      background: rgba(85,107,47,0.05);
-      font-size: 0.95rem;
-    }
-    .companion-content.show {
-      display: block;
-    }
     .incomplete-badge {
       display: inline-block;
       background: rgba(184,134,11,0.2);
@@ -636,10 +748,6 @@
       padding: 0.125rem 0.375rem;
       border-radius: 4px;
       margin-left: 0.5rem;
-    }
-    .badge-companion {
-      background: rgba(85,107,47,0.2);
-      color: var(--olive);
     }
     .badge-incomplete {
       background: rgba(184,134,11,0.2);
@@ -1242,11 +1350,32 @@
     <h3>⚠️ 重要声明</h3>
     <p>本站内容为 LTRL (Learn to Read Latin) 的民间中文翻译，仅供学习交流使用。版权归原作者及出版社所有，禁止商业用途。</p>
   </div>
-  <main id="main-content">
-    <div style="text-align: center; padding: 3rem;">
-      <p>加载中...</p>
-    </div>
-  </main>
+  <div class="page-layout no-sidebar" id="page-layout">
+    <aside class="sidebar collapsed" id="sidebar">
+      <button class="sidebar-toggle" onclick="toggleSidebar()">
+        <span>📑 目录</span>
+        <span id="sidebar-toggle-icon">▶</span>
+      </button>
+      <div class="sidebar-content" id="sidebar-content">
+        <div class="toc-title">章节导航</div>
+        <ul class="toc-list" id="chapter-toc">
+          <!-- 动态生成 -->
+        </ul>
+        <div class="toc-title" style="margin-top: 1.5rem;">本章段落</div>
+        <ul class="toc-list" id="section-toc">
+          <!-- 动态生成 -->
+        </ul>
+      </div>
+    </aside>
+    <main id="main-content">
+      <div style="text-align: center; padding: 3rem;">
+        <p>加载中...</p>
+      </div>
+    </main>
+  </div>
+  <button class="mobile-menu-btn" id="mobile-menu-btn" onclick="toggleMobileSidebar()" title="目录">
+    ☰
+  </button>
   <footer>
     <p style="font-family: 'Crimson Text', serif; font-style: italic; margin-bottom: 0.5rem;">Learn to Read Laitn</p>
     <p>仅供学习使用 | <a href="https://github.com/MaxLinkerAlpha/LTRL_reader" target="_blank">GitHub</a></p>
@@ -1275,7 +1404,6 @@
       terminology: {},
       showLatin: true,
       showTranslation: true,
-      showCompanion: true,
       selectedTranslator: 'all'
     };
     // ==================== 辅助函数 ====================
@@ -1300,6 +1428,8 @@
         await loadTerminology();
         log('术语表加载成功:', Object.keys(state.terminology).length, '条术语');
         renderChapterDropdown();
+        initSidebar();
+        updateChapterToc();
         // 解析 URL hash
         const hash = window.location.hash.slice(1);
         log('URL hash:', hash);
@@ -1380,7 +1510,6 @@ Base Path: ${CONFIG.basePath}</pre>
               <h3>
                 <span style="display: inline-block; width: 28px; height: 28px; background: var(--wine); color: white; border-radius: 50%; text-align: center; line-height: 28px; font-size: 0.85rem; margin-right: 0.5rem;">${c.number}</span>
                 ${c.title}
-                ${c.has_companion ? '<span class="badge badge-companion">贴士</span>' : ''}
                 ${!c.available ? '<span class="badge badge-incomplete">未完成</span>' : ''}
               </h3>
               <div class="meta">点击查看详细内容</div>
@@ -1396,6 +1525,8 @@ Base Path: ${CONFIG.basePath}</pre>
           </a>
         </div>
       `;
+      updateSectionToc([]);
+      updateChapterToc();
     }
     async function loadChapter(chapterId) {
       log('加载章节:', chapterId);
@@ -1430,41 +1561,13 @@ Base Path: ${CONFIG.basePath}</pre>
         log('Markdown 内容长度:', md.length);
         const parsed = parseChapterMarkdown(md);
         log('解析结果:', parsed.sections.length, '个段落');
-        // 加载梅老师小贴士
-        let companion = {};
-        if (chapterConfig.has_companion) {
-          try {
-            const candidates = [
-              `data/companion/${chapterId}-companion.md`,
-              `data/companion/chapter-${chapterConfig.number}-companion.md`
-            ];
-            for (const compPath of candidates) {
-              const compUrl = getDataPath(compPath);
-              log('加载梅老师小贴士:', compUrl);
-              let compRes = await fetch(compUrl);
-              if (!compRes.ok) {
-                const rawCompUrl = getRawDataPath(compPath);
-                log('本地伴侣加载失败，尝试 raw:', rawCompUrl);
-                compRes = await fetch(rawCompUrl);
-              }
-              if (compRes.ok) {
-                const compMd = await compRes.text();
-              companion = buildCompanionLookup(parseCompanionMarkdown(compMd), parsed.sections);
-              log('梅老师小贴士加载成功:', compPath);
-              break;
-              }
-            }
-          } catch (e) {
-            log('无梅老师小贴士或加载失败:', e);
-          }
-        }
-        renderChapter(parsed, chapterConfig, companion);
+        renderChapter(parsed, chapterConfig);
       } catch (e) {
         console.error('加载章节失败:', e);
         showError('加载章节失败', e.message);
       }
     }
-    function renderChapter(data, config, companion) {
+    function renderChapter(data, config) {
       // 合并配置中的译者和章节中的译者
       const configTranslators = state.config.translators || [];
       const chapterTranslators = data.meta.translators || [];
@@ -1499,7 +1602,6 @@ Base Path: ${CONFIG.basePath}</pre>
         <div class="controls">
           <div class="control-group">
             <label><input type="checkbox" id="ctrl-translation" ${state.showTranslation ? 'checked' : ''}> 译文</label>
-            <label><input type="checkbox" id="ctrl-companion" ${state.showCompanion ? 'checked' : ''}> 梅老师小贴士</label>
           </div>
           <div class="control-group">
             <label>译者:</label>
@@ -1511,7 +1613,7 @@ Base Path: ${CONFIG.basePath}</pre>
           </div>
         </div>
         <article id="chapter-content">
-          ${data.sections.map(sec => renderSection(sec, companion[sec.id])).join('')}
+          ${data.sections.map(sec => renderSection(sec)).join('')}
         </article>
         <nav class="chapter-nav">
           <a href="javascript:void(0)" onclick="prevChapter()" class="nav-btn ${hasPrev ? '' : 'disabled'}">← 上一章</a>
@@ -1536,6 +1638,8 @@ Base Path: ${CONFIG.basePath}</pre>
       `;
       bindControls();
       loadUtterances();
+      updateSectionToc(data.sections);
+      updateChapterToc();
     }
     function compactSectionKey(title) {
       return decodeHtmlEntities(title || '')
@@ -1597,7 +1701,7 @@ Base Path: ${CONFIG.basePath}</pre>
       return '';
     }
     // 渲染段落 (v7 格式)
-    function renderSection(section, companionNote) {
+    function renderSection(section) {
       let blocks = section.blocks || [];
       let sectionTitleCn = '';
       const secMeta = classifySection(section.title);
@@ -1615,20 +1719,6 @@ Base Path: ${CONFIG.basePath}</pre>
             ${secMeta.marker ? `<span class="section-marker ${secMeta.markerClass}">${secMeta.marker}</span>` : ''}
           </h2>
           ${blocks.map(block => renderBlockV7(block)).join('')}
-          ${companionNote ? `
-            <div class="companion-section" data-type="companion">
-              <div class="companion-note">
-                <button class="companion-toggle" onclick="toggleCompanion(this)">
-                  <span>💡</span>
-                  <span>梅老师小贴士: ${escapeHtml(companionNote.title)}</span>
-                  <span style="margin-left: auto;">▼</span>
-                </button>
-                <div class="companion-content">
-                  ${marked.parse(companionNote.content)}
-                </div>
-              </div>
-            </div>
-          ` : ''}
         </section>
       `;
     }
@@ -1765,27 +1855,6 @@ Base Path: ${CONFIG.basePath}</pre>
         .trim()
         .replace(/[^a-z0-9\u4e00-\u9fff]+/g, '-')
         .replace(/^-+|-+$/g, '') || 'section';
-    }
-    function buildCompanionLookup(rawNotes, sections) {
-      const resolved = {};
-      if (!rawNotes || !sections) return resolved;
-      const byId = new Map(sections.map(sec => [sec.id, sec.id]));
-      const bySlug = new Map(sections.map(sec => [slugifySectionTitle(sec.title), sec.id]));
-      for (const [rawKey, note] of Object.entries(rawNotes)) {
-        let targetId = null;
-        if (byId.has(rawKey)) {
-          targetId = byId.get(rawKey);
-        } else if (/^sec-\d+$/.test(rawKey)) {
-          const idx = parseInt(rawKey.replace('sec-', ''), 10) - 1;
-          if (idx >= 0 && idx < sections.length) targetId = sections[idx].id;
-        } else if (bySlug.has(rawKey)) {
-          targetId = bySlug.get(rawKey);
-        }
-        if (targetId) {
-          resolved[targetId] = note;
-        }
-      }
-      return resolved;
     }
     function parseChapterMarkdown(md) {
       log('开始解析 Markdown (v7)');
@@ -2003,23 +2072,6 @@ Base Path: ${CONFIG.basePath}</pre>
       log('解析完成，共', result.sections.length, '个段落, 译者:', result.meta.translators);
       return result;
     }
-    function parseCompanionMarkdown(md) {
-      // 标准化换行符（处理CRLF）
-      md = md.replace(/\r\n/g, '\n');
-      const notes = {};
-      const sections = md.split('## ').slice(1);
-      for (const section of sections) {
-        const lines = section.split('\n');
-        const title = lines[0].trim();
-        const content = lines.slice(1).join('\n').trim();
-        const refMatch = content.match(/\[ref:(.+?)\]/);
-        if (refMatch) {
-          const key = refMatch[1].trim().toLowerCase();
-          notes[key] = { title, content: content.replace(/\[ref:.+?\]/, '').trim() };
-        }
-      }
-      return notes;
-    }
     // 获取译者信息（合并配置和章节数据）
     function getTranslatorInfo(name) {
       const normalized = normalizeTranslatorName(name);
@@ -2121,6 +2173,66 @@ Base Path: ${CONFIG.basePath}</pre>
       div.textContent = text;
       return div.innerHTML;
     }
+    // ==================== 侧边栏目录功能 ====================
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const icon = document.getElementById('sidebar-toggle-icon');
+      const layout = document.getElementById('page-layout');
+      sidebar.classList.toggle('collapsed');
+      const isCollapsed = sidebar.classList.contains('collapsed');
+      icon.textContent = isCollapsed ? '▶' : '◀';
+      layout.classList.toggle('no-sidebar', isCollapsed);
+      localStorage.setItem('sidebar-collapsed', isCollapsed);
+    }
+    function toggleMobileSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('open');
+    }
+    function initSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const layout = document.getElementById('page-layout');
+      const isCollapsed = localStorage.getItem('sidebar-collapsed') === 'true';
+      if (isCollapsed) {
+        sidebar.classList.add('collapsed');
+        layout.classList.add('no-sidebar');
+        document.getElementById('sidebar-toggle-icon').textContent = '▶';
+      }
+    }
+    function updateChapterToc() {
+      const tocList = document.getElementById('chapter-toc');
+      if (!tocList || !state.config?.chapters) return;
+      const availableChapters = state.config.chapters.filter(c => c.available);
+      tocList.innerHTML = availableChapters.map(c => `
+        <li class="toc-item">
+          <a href="#${c.id}" 
+             class="toc-link ${c.id === state.currentChapter ? 'active' : ''}"
+             onclick="loadChapter('${c.id}'); return false;">
+            <span style="color: var(--gold); font-weight: 600;">${c.number}</span> 
+            ${escapeHtml(c.title.replace(/^Chapter \w+\s*-\s*/, ''))}
+          </a>
+        </li>
+      `).join('');
+    }
+    function updateSectionToc(sections) {
+      const tocList = document.getElementById('section-toc');
+      if (!tocList) return;
+      if (!sections || sections.length === 0) {
+        tocList.innerHTML = '<li class="toc-item" style="color: var(--ink-light); font-size: 0.8rem;">暂无段落</li>';
+        return;
+      }
+      tocList.innerHTML = sections.map(sec => {
+        const shortTitle = sec.title.length > 25 ? sec.title.slice(0, 25) + '...' : sec.title;
+        return `
+          <li class="toc-item">
+            <a href="#${sec.id}" 
+               class="toc-link"
+               onclick="document.getElementById('${sec.id}')?.scrollIntoView({behavior: 'smooth'}); return false;">
+              ${escapeHtml(shortTitle)}
+            </a>
+          </li>
+        `;
+      }).join('');
+    }
     function bindControls() {
       document.getElementById('ctrl-translation')?.addEventListener('change', (e) => {
         state.showTranslation = e.target.checked;
@@ -2131,12 +2243,7 @@ Base Path: ${CONFIG.basePath}</pre>
           el.style.display = state.showTranslation ? '' : 'none';
         });
       });
-      document.getElementById('ctrl-companion')?.addEventListener('change', (e) => {
-        state.showCompanion = e.target.checked;
-        document.querySelectorAll('[data-type="companion"]').forEach(el => {
-          el.style.display = state.showCompanion ? 'block' : 'none';
-        });
-      });
+
       document.getElementById('ctrl-translator')?.addEventListener('change', (e) => {
         state.selectedTranslator = e.target.value;
         filterTranslations();
@@ -2212,12 +2319,6 @@ Base Path: ${CONFIG.basePath}</pre>
         el.classList.toggle('hidden', translator !== value);
       });
     }
-    function toggleCompanion(btn) {
-      const content = btn.nextElementSibling;
-      content.classList.toggle('show');
-      btn.querySelector('span:last-child').textContent = 
-        content.classList.contains('show') ? '▲' : '▼';
-    }
     async function copyText(text) {
       try {
         await navigator.clipboard.writeText(text);
@@ -2245,6 +2346,8 @@ Base Path: ${CONFIG.basePath}</pre>
     // ==================== 术语表 ====================
     function showTerminology() {
       window.location.hash = 'terminology';
+      updateSectionToc([]);
+      updateChapterToc();
       const terms = Object.values(state.terminology);
       document.getElementById('main-content').innerHTML = `
         <div style="text-align: center; margin-bottom: 2rem;">
@@ -2304,6 +2407,8 @@ Base Path: ${CONFIG.basePath}</pre>
     }
     async function showLatinGuide() {
       window.location.hash = 'latin-guide';
+      updateSectionToc([]);
+      updateChapterToc();
       document.getElementById('main-content').innerHTML = `
         <div style="text-align:center; padding: 2rem;"><p>正在加载拉丁语入门指南...</p></div>
       `;
@@ -2325,6 +2430,8 @@ Base Path: ${CONFIG.basePath}</pre>
     }
     async function showUltimateModel() {
       window.location.hash = 'ultimate-model';
+      updateSectionToc([]);
+      updateChapterToc();
       document.getElementById('main-content').innerHTML = `
         <div style="text-align:center; padding: 2rem;"><p>正在加载终极语言学习模型...</p></div>
       `;
@@ -2352,6 +2459,8 @@ Base Path: ${CONFIG.basePath}</pre>
     // ==================== 关于页 ====================
     function showAbout() {
       window.location.hash = 'about';
+      updateSectionToc([]);
+      updateChapterToc();
       document.getElementById('main-content').innerHTML = `
         <div style="max-width: 700px; margin: 0 auto;">
           <h1 class="chapter-title" style="text-align: center;">关于项目</h1>
@@ -2415,7 +2524,7 @@ Base Path: ${CONFIG.basePath}</pre>
         <a href="#${c.id}" onclick="loadChapter('${c.id}'); return false;">
           <span style="display: inline-block; width: 20px; text-align: center; color: var(--gold); font-weight: bold;">${c.number}</span>
           ${c.title}
-          ${c.has_companion ? '<span style="color: var(--olive); font-size: 0.75rem; margin-left: 0.5rem;">[贴士]</span>' : ''}
+
         </a>
       `).join('');
     }
