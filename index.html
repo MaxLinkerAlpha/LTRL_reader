@@ -24,9 +24,7 @@
       --marble: #fbf8f1;
       --roman-shadow: rgba(61, 39, 14, 0.12);
     }
-    
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    
     body {
       font-family: 'Noto Serif SC', 'Source Han Serif SC', SimSun, serif;
       background: var(--parchment);
@@ -34,7 +32,6 @@
       line-height: 1.8;
       min-height: 100vh;
     }
-    
     body::before {
       content: '';
       position: fixed;
@@ -43,12 +40,10 @@
       pointer-events: none;
       z-index: -1;
     }
-    
     .top-bar {
       height: 4px;
       background: linear-gradient(90deg, var(--wine), var(--gold), var(--wine));
     }
-    
     header {
       background: rgba(245, 240, 230, 0.95);
       backdrop-filter: blur(10px);
@@ -58,7 +53,6 @@
       top: 0;
       z-index: 100;
     }
-    
     .header-content {
       max-width: 1200px;
       margin: 0 auto;
@@ -69,7 +63,6 @@
       flex-wrap: wrap;
       gap: 1rem;
     }
-    
     .logo {
       display: flex;
       align-items: center;
@@ -77,7 +70,6 @@
       text-decoration: none;
       color: var(--ink);
     }
-    
     .logo-icon {
       width: 40px;
       height: 40px;
@@ -91,24 +83,20 @@
       font-size: 1.5rem;
       font-weight: 700;
     }
-    
     .logo-text h1 {
       font-size: 1.25rem;
       font-weight: 700;
       color: var(--wine);
     }
-    
     .logo-text span {
       font-size: 0.75rem;
       color: var(--ink-light);
     }
-    
     nav {
       display: flex;
       align-items: center;
       gap: 1.5rem;
     }
-    
     nav a, nav button {
       color: var(--ink-light);
       text-decoration: none;
@@ -119,15 +107,12 @@
       cursor: pointer;
       font-family: inherit;
     }
-    
     nav a:hover, nav button:hover {
       color: var(--wine);
     }
-    
     .dropdown {
       position: relative;
     }
-    
     .dropdown-content {
       display: none;
       position: absolute;
@@ -143,27 +128,22 @@
       margin-top: 0.5rem;
       z-index: 1000;
     }
-    
     .dropdown:hover .dropdown-content {
       display: block;
     }
-    
     .dropdown-content a {
       display: block;
       padding: 0.75rem 1rem;
       border-bottom: 1px solid rgba(184, 134, 11, 0.2);
       color: var(--ink);
     }
-    
     .dropdown-content a:last-child {
       border-bottom: none;
     }
-    
     .dropdown-content a:hover {
       background: rgba(184, 134, 11, 0.1);
       color: var(--wine);
     }
-    
     .disclaimer {
       background: rgba(114, 47, 55, 0.1);
       border-left: 4px solid var(--wine);
@@ -172,24 +152,20 @@
       max-width: 1200px;
       border-radius: 0 8px 8px 0;
     }
-    
     .disclaimer h3 {
       color: var(--wine);
       font-size: 0.9rem;
       margin-bottom: 0.25rem;
     }
-    
     .disclaimer p {
       font-size: 0.85rem;
       color: var(--ink-light);
     }
-    
     main {
       max-width: 1200px;
       margin: 0 auto;
       padding: 2rem 1rem;
     }
-    
     .controls {
       background: rgba(255,255,255,0.6);
       border: 1px solid rgba(184, 134, 11, 0.3);
@@ -201,22 +177,18 @@
       gap: 1.5rem;
       flex-wrap: wrap;
     }
-    
     .control-group {
       display: flex;
       align-items: center;
       gap: 0.5rem;
     }
-    
     .control-group label {
       font-size: 0.85rem;
       color: var(--ink-light);
     }
-    
     select, input[type="checkbox"] {
       accent-color: var(--wine);
     }
-    
     select {
       padding: 0.25rem 0.5rem;
       border: 1px solid rgba(184, 134, 11, 0.3);
@@ -224,14 +196,12 @@
       background: var(--parchment);
       font-family: inherit;
     }
-    
     .chapter-header {
       text-align: center;
       margin-bottom: 2rem;
       padding: 1rem 0 0.2rem;
       position: relative;
     }
-    
     .chapter-number {
       display: inline-flex;
       align-items: center;
@@ -246,7 +216,6 @@
       font-weight: 700;
       margin-bottom: 0.5rem;
     }
-    
     .chapter-title {
       font-family: 'Crimson Text', serif;
       font-size: 2.15rem;
@@ -255,7 +224,6 @@
       letter-spacing: 0.02em;
       text-shadow: 0 1px 0 rgba(255,255,255,0.5);
     }
-    
     .chapter-meta {
       color: var(--ink-light);
       font-size: 0.9rem;
@@ -265,7 +233,6 @@
       display: inline-block;
       padding: 0.2rem 0.75rem;
     }
-
     .chapter-header::after {
       content: '';
       display: block;
@@ -274,7 +241,6 @@
       height: 1px;
       background: linear-gradient(90deg, rgba(184,134,11,0.05), rgba(184,134,11,0.75), rgba(184,134,11,0.05));
     }
-    
     .section {
       background: linear-gradient(180deg, rgba(255,255,255,0.72), rgba(255,255,255,0.56));
       border: 1px solid rgba(123, 91, 47, 0.32);
@@ -283,67 +249,54 @@
       margin-bottom: 0.95rem;
       box-shadow: 0 2px 10px var(--roman-shadow);
     }
-
     .section.section-derivatives {
       border-color: rgba(46, 93, 123, 0.45);
       background: linear-gradient(180deg, rgba(46,93,123,0.09), rgba(255,255,255,0.62));
     }
-
     .section.section-short-readings {
       border-color: rgba(114, 47, 55, 0.45);
       background: linear-gradient(180deg, rgba(114,47,55,0.1), rgba(255,255,255,0.62));
     }
-
     .section.section-observation {
       border-color: rgba(136, 102, 30, 0.48);
       background: linear-gradient(180deg, rgba(184,134,11,0.13), rgba(255,255,255,0.62));
     }
-
     .section.section-drill {
       border-color: rgba(79, 97, 45, 0.52);
       background: linear-gradient(180deg, rgba(85,107,47,0.16), rgba(255,255,255,0.64));
     }
-
     .section.section-rule {
       border-color: rgba(114, 47, 55, 0.5);
       background: linear-gradient(180deg, rgba(114,47,55,0.16), rgba(255,255,255,0.66));
     }
-
     .section.section-vocabulary {
       border-color: rgba(46, 93, 123, 0.48);
       background: linear-gradient(180deg, rgba(46,93,123,0.14), rgba(255,255,255,0.66));
     }
-
     .section.section-derivatives .content-block {
       border-color: rgba(46, 93, 123, 0.35);
       background: rgba(255,255,255,0.72);
     }
-
     .section.section-short-readings .content-block {
       border-color: rgba(114, 47, 55, 0.32);
       background: rgba(255,255,255,0.74);
     }
-
     .section.section-observation .content-block {
       border-color: rgba(184,134,11,0.3);
       background: rgba(255,255,255,0.76);
     }
-
     .section.section-drill .content-block {
       border-color: rgba(79,97,45,0.35);
       background: rgba(255,255,255,0.74);
     }
-
     .section.section-rule .content-block {
       border-color: rgba(114,47,55,0.36);
       background: rgba(255,255,255,0.76);
     }
-
     .section.section-vocabulary .content-block {
       border-color: rgba(46,93,123,0.33);
       background: rgba(255,255,255,0.76);
     }
-    
     .section-title {
       position: relative;
       font-size: 1.22rem;
@@ -357,7 +310,6 @@
       letter-spacing: 0.02em;
       line-height: 1.3;
     }
-
     .section-title::after {
       content: '';
       position: absolute;
@@ -367,7 +319,6 @@
       height: 1px;
       background: linear-gradient(90deg, rgba(184,134,11,0.06), rgba(184,134,11,0.6), rgba(184,134,11,0.06));
     }
-
     .section-marker {
       display: inline-block;
       margin-left: 0.55rem;
@@ -377,62 +328,52 @@
       vertical-align: middle;
       border: 1px solid rgba(0, 0, 0, 0.15);
     }
-
     .section-marker.derivatives {
       color: #20435a;
       background: rgba(100, 169, 214, 0.25);
       border-color: rgba(46, 93, 123, 0.4);
     }
-
     .section-marker.short-readings {
       color: #5c2228;
       background: rgba(173, 89, 101, 0.2);
       border-color: rgba(114, 47, 55, 0.35);
     }
-
     .section-marker.observation {
       color: #5e4a19;
       background: rgba(184, 134, 11, 0.18);
       border-color: rgba(184, 134, 11, 0.35);
     }
-
     .section-marker.drill {
       color: #30401f;
       background: rgba(85, 107, 47, 0.2);
       border-color: rgba(79, 97, 45, 0.42);
     }
-
     .section-marker.rule {
       color: #5a252d;
       background: rgba(114,47,55,0.2);
       border-color: rgba(114,47,55,0.4);
     }
-
     .section-marker.vocabulary {
       color: #1f4b63;
       background: rgba(46,93,123,0.2);
       border-color: rgba(46,93,123,0.42);
     }
-
     .section-title-cn {
       margin-left: 0.45rem;
       color: #8a5a1d;
       font-weight: 700;
       font-size: 0.95em;
     }
-
     .section-title.title-compact {
       font-size: 1.07rem;
       padding-top: 0.28rem;
       padding-bottom: 0.32rem;
       letter-spacing: 0.01em;
     }
-
     .section-title.title-main {
       font-size: 1.26rem;
       font-weight: 700;
     }
-    
     /* 原文样式 - 羊皮纸背景 */
     .latin-text,
     .original {
@@ -444,7 +385,6 @@
       color: var(--ink);
       font-size: 0.95rem;
     }
-    
     .latin-text {
       font-style: italic;
       font-size: 1.125rem;
@@ -457,7 +397,6 @@
       line-height: 1.8;
       letter-spacing: 0.02em;
     }
-    
     .latin-meta {
       display: flex;
       align-items: center;
@@ -465,7 +404,6 @@
       margin-bottom: 0.5rem;
       flex-wrap: wrap;
     }
-    
     .latin-label {
       font-size: 0.75rem;
       background: rgba(114,47,55,0.1);
@@ -475,7 +413,6 @@
       font-family: 'Crimson Text', serif;
       font-style: normal;
     }
-    
     .forvo-link {
       font-size: 0.75rem;
       color: var(--wine);
@@ -484,11 +421,9 @@
       align-items: center;
       gap: 0.25rem;
     }
-    
     .forvo-link:hover {
       text-decoration: underline;
     }
-    
     .copy-btn {
       margin-left: auto;
       background: none;
@@ -498,25 +433,20 @@
       font-size: 0.85rem;
       padding: 0.25rem;
     }
-    
     .copy-btn:hover {
       color: var(--wine);
     }
-    
     .translations {
       margin-top: 1rem;
     }
-    
     .translation {
       margin-bottom: 0.75rem;
       padding-left: 1rem;
       border-left: 2px solid rgba(114,47,55,0.2);
     }
-    
     .translation.hidden {
       display: none;
     }
-    
     .translator-label {
       display: inline-block;
       font-size: 0.75rem;
@@ -524,21 +454,17 @@
       border-radius: 4px;
       margin-bottom: 0.25rem;
     }
-    
     .translation-text {
       color: var(--ink);
     }
-    
     .term {
       border-bottom: 2px dotted var(--gold);
       cursor: help;
       position: relative;
     }
-    
     .term:hover {
       background: rgba(184,134,11,0.15);
     }
-    
     #tooltip {
       position: fixed;
       background: var(--parchment-dark);
@@ -550,24 +476,20 @@
       z-index: 1000;
       display: none;
     }
-    
     #tooltip h4 {
       font-family: 'Crimson Text', serif;
       color: var(--wine);
       margin-bottom: 0.25rem;
     }
-    
     #tooltip .translation {
       font-weight: 600;
       color: var(--ink);
       margin-bottom: 0.25rem;
     }
-    
     #tooltip .explanation {
       font-size: 0.85rem;
       color: var(--ink-light);
     }
-    
     .companion-note {
       margin-top: 1rem;
       border: 1px solid rgba(85, 107, 47, 0.35);
@@ -575,7 +497,6 @@
       background: linear-gradient(180deg, rgba(85,107,47,0.06), rgba(85,107,47,0.02));
       overflow: hidden;
     }
-    
     .companion-toggle {
       display: flex;
       align-items: center;
@@ -590,23 +511,19 @@
       padding: 0.55rem 0.75rem;
       text-align: left;
     }
-    
     .companion-toggle:hover {
       color: var(--olive);
       filter: brightness(0.8);
     }
-    
     .companion-content {
       display: none;
       padding: 0.85rem 0.9rem;
       background: rgba(85,107,47,0.05);
       font-size: 0.95rem;
     }
-    
     .companion-content.show {
       display: block;
     }
-    
     .incomplete-badge {
       display: inline-block;
       background: rgba(184,134,11,0.2);
@@ -616,7 +533,6 @@
       border-radius: 4px;
       margin-left: 0.5rem;
     }
-    
     .incomplete-notice {
       background: rgba(184,134,11,0.1);
       border: 1px dashed rgba(184,134,11,0.3);
@@ -626,7 +542,6 @@
       color: var(--ink-light);
       font-style: italic;
     }
-    
     .chapter-nav {
       display: flex;
       justify-content: space-between;
@@ -634,7 +549,6 @@
       padding-top: 2rem;
       border-top: 1px solid rgba(184,134,11,0.3);
     }
-    
     .nav-btn {
       display: inline-flex;
       align-items: center;
@@ -647,22 +561,18 @@
       font-size: 0.9rem;
       transition: background 0.2s;
     }
-    
     .nav-btn:hover {
       background: var(--wine-light);
     }
-    
     .nav-btn.disabled {
       opacity: 0.5;
       pointer-events: none;
     }
-    
     .comments-section {
       margin-top: 3rem;
       padding-top: 2rem;
       border-top: 2px solid rgba(184,134,11,0.3);
     }
-    
     .comments-section h2 {
       font-family: 'Crimson Text', serif;
       color: var(--wine);
@@ -671,37 +581,31 @@
       align-items: center;
       gap: 0.5rem;
     }
-    
     .home-hero {
       text-align: center;
       padding: 3rem 1rem;
     }
-    
     .home-hero .logo-icon {
       width: 80px;
       height: 80px;
       font-size: 2.5rem;
       margin: 0 auto 1rem;
     }
-    
     .home-hero h1 {
       font-family: 'Crimson Text', serif;
       font-size: 2.5rem;
       color: var(--wine);
       margin-bottom: 0.5rem;
     }
-    
     .home-hero p {
       color: var(--ink-light);
       max-width: 600px;
       margin: 0 auto 2rem;
     }
-    
     .chapter-list {
       max-width: 600px;
       margin: 0 auto;
     }
-    
     .chapter-card {
       display: block;
       background: rgba(255,255,255,0.6);
@@ -713,23 +617,19 @@
       color: var(--ink);
       transition: all 0.2s;
     }
-    
     .chapter-card:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       border-color: var(--gold);
     }
-    
     .chapter-card h3 {
       font-size: 1.1rem;
       margin-bottom: 0.25rem;
     }
-    
     .chapter-card .meta {
       font-size: 0.85rem;
       color: var(--ink-light);
     }
-    
     .badge {
       display: inline-block;
       font-size: 0.7rem;
@@ -737,22 +637,18 @@
       border-radius: 4px;
       margin-left: 0.5rem;
     }
-    
     .badge-companion {
       background: rgba(85,107,47,0.2);
       color: var(--olive);
     }
-    
     .badge-incomplete {
       background: rgba(184,134,11,0.2);
       color: var(--gold);
     }
-    
     .terminology-search {
       max-width: 400px;
       margin: 0 auto 2rem;
     }
-    
     .terminology-search input {
       width: 100%;
       padding: 0.75rem 1rem;
@@ -762,48 +658,40 @@
       font-family: inherit;
       font-size: 1rem;
     }
-    
     .terminology-search input:focus {
       outline: none;
       border-color: var(--gold);
     }
-    
     .terminology-list {
       display: grid;
       gap: 1rem;
       max-width: 800px;
       margin: 0 auto;
     }
-    
     .term-card {
       background: rgba(255,255,255,0.6);
       border: 1px solid rgba(184,134,11,0.3);
       border-radius: 8px;
       padding: 1rem;
     }
-    
     .term-card h3 {
       font-family: 'Crimson Text', serif;
       color: var(--wine);
       font-size: 1.25rem;
     }
-    
     .term-card .cn {
       font-weight: 600;
       margin: 0.25rem 0;
     }
-    
     .term-card .abbr {
       font-size: 0.8rem;
       color: var(--gold);
     }
-    
     .term-card .desc {
       font-size: 0.9rem;
       color: var(--ink-light);
       margin-top: 0.5rem;
     }
-    
     .error-box {
       background: rgba(114,47,55,0.1);
       border: 1px solid rgba(114,47,55,0.3);
@@ -812,12 +700,10 @@
       text-align: center;
       margin: 2rem 0;
     }
-    
     .error-box h3 {
       color: var(--wine);
       margin-bottom: 1rem;
     }
-    
     .error-box pre {
       background: rgba(0,0,0,0.05);
       padding: 1rem;
@@ -827,11 +713,8 @@
       font-size: 0.85rem;
       margin-top: 1rem;
     }
-    
     .hidden { display: none !important; }
-    
     /* ========== v7 新版本 Block 样式 ========== */
-    
     /* 注释样式 */
     .note, .footnote {
       margin: 0.5rem 0;
@@ -841,16 +724,13 @@
       font-size: 0.9rem;
       color: var(--ink-light);
     }
-    
     .note {
       border-color: #666;
     }
-    
     .footnote {
       border-color: var(--gold);
       font-style: italic;
     }
-    
     /* 元信息行（序号/页数） */
     .meta-line {
       display: flex;
@@ -863,21 +743,17 @@
       margin-bottom: 0.5rem;
       border-radius: 0 4px 4px 0;
     }
-    
     .meta-line .seq {
       font-weight: 600;
       color: var(--wine);
     }
-
     .meta-line .shot {
       font-weight: 600;
       color: var(--wine);
     }
-    
     .meta-line .page {
       color: var(--gold);
     }
-    
     /* 内容 block - 压缩间距 */
     .content-block {
       margin-bottom: 0.82rem;
@@ -886,7 +762,6 @@
       overflow: hidden;
       background: rgba(255,255,255,0.62);
     }
-    
     /* 原文样式 - 羊皮纸背景 */
     .original {
       padding: 0.68rem 0.82rem;
@@ -897,13 +772,11 @@
       color: var(--ink);
       font-size: 1rem;
     }
-    
     .original.latin,
     .latin-text.latin-special {
       font-style: italic;
       color: var(--wine);
     }
-    
     /* 变格表特殊样式 */
     .latin-text.latin-special {
       font-family: 'Crimson Text', serif;
@@ -913,13 +786,11 @@
       border-left: 2px solid var(--gold);
       font-size: 0.9rem;
     }
-    
     /* 译文区域 - 压缩间距 */
     .translations {
       padding: 0.38rem 0.58rem;
       background: linear-gradient(180deg, rgba(255,255,255,0.74), rgba(255,255,255,0.58));
     }
-    
     .translation {
       display: flex;
       align-items: flex-start;
@@ -929,11 +800,9 @@
       border-left: 2px solid transparent;
       padding-left: 0.36rem;
     }
-    
     .translation:last-child {
       border-bottom: none;
     }
-    
     /* 译者标签 - 更紧凑 */
     .translator-tag {
       flex-shrink: 0;
@@ -952,7 +821,6 @@
       gap: 0.32rem;
       box-shadow: 0 1px 0 rgba(255,255,255,0.75), inset 0 0 0 1px rgba(0,0,0,0.02);
     }
-
     .translator-tag .tag-dot {
       width: 0.46rem;
       height: 0.46rem;
@@ -960,24 +828,20 @@
       flex-shrink: 0;
       border: 1px solid rgba(0,0,0,0.16);
     }
-    
     .translation-text {
       font-size: 0.9rem;
       line-height: 1.4;
       color: var(--ink);
     }
-    
     /* 底漌显示的翻译 */
     .translation.fallback .translator-tag,
     .translation[data-fallback='true'] .tag {
       opacity: 0.7;
     }
-    
     .translation.fallback .translator-tag::after {
       content: ' (底漌)';
       font-size: 0.75em;
     }
-    
     /* 旧版格式的译者标签 */
     .translation .tag {
       font-size: 0.75em;
@@ -986,7 +850,6 @@
       margin-left: 0.5rem;
       color: white;
     }
-    
     /* 词汇表样式 */
     .vocabulary {
       background: rgba(85, 107, 47, 0.08);
@@ -996,7 +859,6 @@
       font-size: 0.9rem;
       border-radius: 0 6px 6px 0;
     }
-    
     /* 注释样式 */
     .note {
       background: rgba(184, 134, 11, 0.1);
@@ -1007,7 +869,6 @@
       color: var(--ink-light);
       border-radius: 0 6px 6px 0;
     }
-
     .translator-note-block {
       margin: 0.5rem 0;
       padding: 0.55rem 0.7rem;
@@ -1018,7 +879,6 @@
       font-size: 0.86rem;
       line-height: 1.45;
     }
-
     .translator-note-label {
       display: inline-block;
       margin-right: 0.4rem;
@@ -1029,13 +889,11 @@
       background: rgba(47, 111, 137, 0.16);
       border: 1px solid rgba(47, 111, 137, 0.3);
     }
-
     .content-block.emphasis-block {
       border-color: rgba(114, 47, 55, 0.48);
       box-shadow: inset 0 0 0 1px rgba(114, 47, 55, 0.08);
       background: linear-gradient(90deg, rgba(114,47,55,0.09), rgba(184,134,11,0.06));
     }
-
     .original.emphasis {
       color: #6a1f2a;
       font-weight: 700;
@@ -1044,7 +902,6 @@
       border-left: 4px solid #8b2d3a;
       position: relative;
     }
-
     .original.emphasis::before {
       content: '强调注释';
       display: inline-block;
@@ -1058,7 +915,6 @@
       padding: 0.03rem 0.36rem;
       vertical-align: middle;
     }
-    
     .table-wrapper {
       margin: 0.7rem 0;
       border: 1px solid rgba(123, 91, 47, 0.42);
@@ -1067,7 +923,6 @@
       background: linear-gradient(180deg, #f8f4ea, #f2ebdd);
       box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.75), 0 2px 8px rgba(50, 33, 13, 0.08);
     }
-
     .table-label {
       padding: 0.38rem 0.75rem;
       font-size: 0.8rem;
@@ -1077,7 +932,6 @@
       border-bottom: 1px solid rgba(123, 91, 47, 0.35);
       font-weight: 700;
     }
-
     /* 表格样式 */
     .table-content {
       background:
@@ -1087,14 +941,12 @@
       font-size: 0.9rem;
       overflow-x: auto;
     }
-
     .table-grid {
       width: 100%;
       border-collapse: collapse;
       table-layout: auto;
       min-width: 280px;
     }
-
     .table-grid th,
     .table-grid td {
       padding: 0.38rem 0.5rem;
@@ -1105,7 +957,6 @@
       line-height: 1.34;
       text-align: left;
     }
-
     .table-grid th {
       width: 26%;
       white-space: nowrap;
@@ -1114,12 +965,10 @@
       background: rgba(184,134,11,0.11);
       border-right: 1px solid rgba(123, 91, 47, 0.2);
     }
-
     .table-grid tr:last-child th,
     .table-grid tr:last-child td {
       border-bottom: none;
     }
-
     .table-grid tr.table-subhead th {
       width: auto;
       color: #5f232a;
@@ -1127,11 +976,9 @@
       border-bottom: 1px solid rgba(123, 91, 47, 0.34);
       font-weight: 700;
     }
-
     .table-grid tr:nth-child(odd):not(.table-subhead) td {
       background: rgba(255,255,255,0.36);
     }
-
     .subsection-title {
       margin: 0.82rem 0 0.46rem;
       padding: 0.35rem 0.65rem;
@@ -1143,7 +990,6 @@
       border-radius: 0 7px 7px 0;
       box-shadow: inset 0 0 0 1px rgba(85,107,47,0.14);
     }
-    
     /* 术语表紧凑布局 */
     .terminology-list {
       display: block;
@@ -1151,19 +997,16 @@
       column-gap: 0.75rem;
       max-width: 1100px;
     }
-    
     @media (max-width: 1100px) {
       .terminology-list {
         column-count: 2;
       }
     }
-    
     @media (max-width: 720px) {
       .terminology-list {
         column-count: 1;
       }
     }
-    
     .term-card {
       break-inside: avoid;
       margin-bottom: 0.45rem;
@@ -1174,61 +1017,51 @@
       font-size: 0.82rem;
       line-height: 1.25;
     }
-    
     .term-card h3 {
       font-family: 'Crimson Text', serif;
       color: var(--wine);
       font-size: 0.95rem;
       margin-bottom: 0.1rem;
     }
-    
     .term-card .cn {
       font-weight: 600;
       color: var(--ink);
       margin-bottom: 0.1rem;
     }
-    
     .term-card .abbr {
       font-size: 0.75rem;
       color: var(--gold);
     }
-    
     .term-card .alt {
       font-size: 0.75rem;
       color: var(--gold);
       margin-top: 0.15rem;
       line-height: 1.25;
     }
-    
     .term-card .desc {
       font-size: 0.78rem;
       color: var(--ink-light);
       margin-top: 0.2rem;
       line-height: 1.25;
     }
-
     .ref-page {
       max-width: 1120px;
       margin: 0 auto;
     }
-
     .ref-header {
       text-align: center;
       margin-bottom: 1.2rem;
     }
-
     .ref-header h1 {
       font-family: 'Crimson Text', serif;
       color: var(--wine);
       font-size: 2rem;
       margin-bottom: 0.25rem;
     }
-
     .ref-header p {
       color: var(--ink-light);
       font-size: 0.92rem;
     }
-
     .guide-content,
     .model-content {
       background: rgba(255, 255, 255, 0.68);
@@ -1236,7 +1069,6 @@
       border-radius: 10px;
       padding: 1rem 1.1rem;
     }
-
     .guide-content h1,
     .guide-content h2,
     .model-content h1,
@@ -1245,13 +1077,11 @@
       font-family: 'Crimson Text', serif;
       margin: 0.8rem 0 0.35rem;
     }
-
     .guide-content h3,
     .model-content h3 {
       color: var(--olive);
       margin: 0.7rem 0 0.25rem;
     }
-
     .guide-content p,
     .model-content p,
     .guide-content li,
@@ -1260,12 +1090,10 @@
       color: var(--ink);
       line-height: 1.65;
     }
-
     .guide-content ul,
     .model-content ul {
       margin: 0.35rem 0 0.65rem 1.2rem;
     }
-
     .guide-gallery {
       background: rgba(255, 255, 255, 0.64);
       border: 1px solid rgba(184, 134, 11, 0.28);
@@ -1273,19 +1101,16 @@
       padding: 0.85rem;
       margin-top: 0.9rem;
     }
-
     .guide-gallery h3 {
       color: var(--wine);
       font-size: 1rem;
       margin-bottom: 0.45rem;
     }
-
     .book-gallery {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 0.6rem;
     }
-
     .book-gallery .gallery-item {
       display: block;
       background: #fff;
@@ -1294,7 +1119,6 @@
       overflow: hidden;
       text-decoration: none;
     }
-
     .book-gallery .gallery-item img {
       display: block;
       width: 100%;
@@ -1302,7 +1126,6 @@
       object-fit: contain;
       background: #fff;
     }
-
     .book-gallery .gallery-item span {
       display: block;
       padding: 0.3rem 0.45rem;
@@ -1310,11 +1133,9 @@
       font-size: 0.75rem;
       text-align: center;
     }
-
     .reference-content {
       color: var(--ink);
     }
-
     .reference-content h1,
     .reference-content h2,
     .reference-content h3 {
@@ -1322,7 +1143,6 @@
       font-family: 'Crimson Text', serif;
       margin: 0.9rem 0 0.35rem;
     }
-
     .reference-content p,
     .reference-content li {
       margin: 0.3rem 0;
@@ -1330,12 +1150,10 @@
       font-size: 0.96rem;
       word-break: break-word;
     }
-
     .reference-content ul,
     .reference-content ol {
       margin: 0.2rem 0 0.6rem 1.2rem;
     }
-
     .reference-content img {
       width: 100%;
       max-width: 920px;
@@ -1347,29 +1165,24 @@
       margin: 0.55rem 0;
       display: block;
     }
-
     .model-layout {
       display: grid;
       grid-template-columns: 1fr;
       gap: 0.9rem;
     }
-
     .model-hero {
       background: linear-gradient(135deg, rgba(114,47,55,0.12), rgba(184,134,11,0.12));
       border: 1px solid rgba(114, 47, 55, 0.22);
       border-radius: 10px;
       padding: 1rem 1.1rem;
     }
-
     .model-hero p {
       font-size: 0.95rem;
       color: var(--ink);
     }
-
     .model-cover {
       margin-top: 0.7rem;
     }
-
     .model-cover img {
       width: 100%;
       max-width: 560px;
@@ -1377,23 +1190,19 @@
       border: 1px solid rgba(184, 134, 11, 0.3);
       display: block;
     }
-    
     footer {
       text-align: center;
       padding: 2rem;
       border-top: 1px solid rgba(184,134,11,0.3);
       margin-top: 3rem;
     }
-    
     footer p {
       color: var(--ink-light);
       font-size: 0.9rem;
     }
-    
     footer a {
       color: var(--wine);
     }
-    
     @media (max-width: 768px) {
       .header-content { flex-direction: column; align-items: flex-start; }
       nav { width: 100%; justify-content: space-between; }
@@ -1405,7 +1214,6 @@
 </head>
 <body>
   <div class="top-bar"></div>
-  
   <header>
     <div class="header-content">
       <a href="#" class="logo" onclick="showHome(); return false;">
@@ -1416,7 +1224,6 @@
           <span style="display: block; font-size: 0.7rem; color: var(--gold); margin-top: 2px;">made by Max Linker with Kimi Code</span>
         </div>
       </a>
-      
       <nav>
         <div class="dropdown">
           <button>选择章节 ▼</button>
@@ -1431,29 +1238,24 @@
       </nav>
     </div>
   </header>
-  
   <div class="disclaimer">
     <h3>⚠️ 重要声明</h3>
     <p>本站内容为 LTRL (Learn to Read Latin) 的民间中文翻译，仅供学习交流使用。版权归原作者及出版社所有，禁止商业用途。</p>
   </div>
-  
   <main id="main-content">
     <div style="text-align: center; padding: 3rem;">
       <p>加载中...</p>
     </div>
   </main>
-  
   <footer>
     <p style="font-family: 'Crimson Text', serif; font-style: italic; margin-bottom: 0.5rem;">Learn to Read Laitn</p>
     <p>仅供学习使用 | <a href="https://github.com/MaxLinkerAlpha/LTRL_reader" target="_blank">GitHub</a></p>
   </footer>
-  
   <div id="tooltip">
     <h4 id="tooltip-term"></h4>
     <div class="translation" id="tooltip-cn"></div>
     <div class="explanation" id="tooltip-desc"></div>
   </div>
-
   <script>
     // ==================== 配置 ====================
     const CONFIG = {
@@ -1461,13 +1263,11 @@
       // 自动检测基础路径（适配 GitHub Pages 子目录，不区分大小写）
       basePath: window.location.pathname.toLowerCase().includes('/ltrl_reader') ? '/LTRL_reader' : ''
     };
-    
     // 调试模式 - 打开浏览器控制台可以看到日志
     const DEBUG = true;
     function log(...args) {
       if (DEBUG) console.log('[LTRL]', ...args);
     }
-    
     // ==================== 状态 ====================
     let state = {
       currentChapter: null,
@@ -1478,7 +1278,6 @@
       showCompanion: true,
       selectedTranslator: 'all'
     };
-    
     // ==================== 辅助函数 ====================
     function getDataPath(path) {
       // 使用相对路径，优先读取当前部署/分支下的数据
@@ -1487,30 +1286,23 @@
       log('获取路径:', fullPath);
       return fullPath;
     }
-
     function getRawDataPath(path) {
       return `https://raw.githubusercontent.com/${CONFIG.repo}/main/${path}`;
     }
-    
     // ==================== 初始化 ====================
     async function init() {
       log('开始初始化...');
       log('当前路径:', window.location.pathname);
       log('Base Path:', CONFIG.basePath);
-      
       try {
         await loadConfig();
         log('配置加载成功:', state.config);
-        
         await loadTerminology();
         log('术语表加载成功:', Object.keys(state.terminology).length, '条术语');
-        
         renderChapterDropdown();
-        
         // 解析 URL hash
         const hash = window.location.hash.slice(1);
         log('URL hash:', hash);
-        
         if (state.config.chapters?.some(c => c.id === hash)) {
           await loadChapter(hash);
         } else if (hash === 'terminology') {
@@ -1529,12 +1321,10 @@
         showError('初始化失败', e.message);
       }
     }
-    
     // ==================== 数据加载 ====================
     async function loadConfig() {
       const url = getDataPath('data/config.json');
       log('加载配置:', url);
-      
       try {
         const res = await fetch(url);
         if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
@@ -1544,11 +1334,9 @@
         throw e;
       }
     }
-    
     async function loadTerminology() {
       const url = getDataPath('data/terminology.json');
       log('加载术语表:', url);
-      
       try {
         const res = await fetch(url);
         if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
@@ -1558,7 +1346,6 @@
         state.terminology = {};
       }
     }
-    
     // ==================== 错误显示 ====================
     function showError(title, message) {
       document.getElementById('main-content').innerHTML = `
@@ -1576,19 +1363,16 @@ Base Path: ${CONFIG.basePath}</pre>
         </div>
       `;
     }
-    
     // ==================== 页面渲染 ====================
     function showHome() {
       window.location.hash = '';
       const available = state.config.chapters?.filter(c => c.available) || [];
-      
       document.getElementById('main-content').innerHTML = `
         <div class="home-hero">
           <div class="logo-icon">L</div>
           <h1>LTRL 拉丁语阅读器</h1>
           <p>${state.config.site?.description || 'Learn to Read Latin 中文翻译版'}</p>
         </div>
-        
         <div class="chapter-list">
           <h2 style="text-align: center; margin-bottom: 1.5rem; color: var(--wine);">可用章节</h2>
           ${available.map(c => `
@@ -1602,7 +1386,6 @@ Base Path: ${CONFIG.basePath}</pre>
               <div class="meta">点击查看详细内容</div>
             </a>
           `).join('')}
-
           <a href="#latin-guide" class="chapter-card" onclick="showLatinGuide(); return false;">
             <h3>拉丁语入门指南</h3>
             <div class="meta">学习路线、教材建议与书影资料</div>
@@ -1614,30 +1397,25 @@ Base Path: ${CONFIG.basePath}</pre>
         </div>
       `;
     }
-    
     async function loadChapter(chapterId) {
       log('加载章节:', chapterId);
       window.location.hash = chapterId;
       state.currentChapter = chapterId;
-      
       const chapterConfig = state.config.chapters.find(c => c.id === chapterId);
       if (!chapterConfig) {
         showError('章节未找到', `找不到 ID 为 ${chapterId} 的章节`);
         return;
       }
-      
       // 显示加载状态
       document.getElementById('main-content').innerHTML = `
         <div style="text-align: center; padding: 3rem;">
           <p>正在加载 ${chapterConfig.title}...</p>
         </div>
       `;
-      
       try {
         const chapterPath = `data/chapters/${chapterId}.md`;
         const mdUrl = getDataPath(chapterPath);
         log('加载 Markdown:', mdUrl);
-        
         let md = '';
         let res = await fetch(mdUrl);
         if (!res.ok) {
@@ -1650,11 +1428,9 @@ Base Path: ${CONFIG.basePath}</pre>
         }
         md = await res.text();
         log('Markdown 内容长度:', md.length);
-        
         const parsed = parseChapterMarkdown(md);
         log('解析结果:', parsed.sections.length, '个段落');
-        
-        // 加载伴侣注释
+        // 加载梅老师小贴士
         let companion = {};
         if (chapterConfig.has_companion) {
           try {
@@ -1664,7 +1440,7 @@ Base Path: ${CONFIG.basePath}</pre>
             ];
             for (const compPath of candidates) {
               const compUrl = getDataPath(compPath);
-              log('加载伴侣注释:', compUrl);
+              log('加载梅老师小贴士:', compUrl);
               let compRes = await fetch(compUrl);
               if (!compRes.ok) {
                 const rawCompUrl = getRawDataPath(compPath);
@@ -1674,36 +1450,31 @@ Base Path: ${CONFIG.basePath}</pre>
               if (compRes.ok) {
                 const compMd = await compRes.text();
               companion = buildCompanionLookup(parseCompanionMarkdown(compMd), parsed.sections);
-              log('伴侣注释加载成功:', compPath);
+              log('梅老师小贴士加载成功:', compPath);
               break;
               }
             }
           } catch (e) {
-            log('无伴侣注释或加载失败:', e);
+            log('无梅老师小贴士或加载失败:', e);
           }
         }
-        
         renderChapter(parsed, chapterConfig, companion);
       } catch (e) {
         console.error('加载章节失败:', e);
         showError('加载章节失败', e.message);
       }
     }
-    
     function renderChapter(data, config, companion) {
       // 合并配置中的译者和章节中的译者
       const configTranslators = state.config.translators || [];
       const chapterTranslators = data.meta.translators || [];
-      
       // 创建译者映射表（合并配置和章节数据）
       const translatorMap = new Map();
-      
       // 先添加配置中的译者
       configTranslators.forEach(t => {
         const id = normalizeTranslatorName(t.id);
         translatorMap.set(id, { id, name: normalizeTranslatorName(t.name || t.id), color: t.color, is_primary: t.is_primary });
       });
-      
       // 再添加章节中发现的译者（如果不在配置中）
       chapterTranslators.forEach(name => {
         const normalized = normalizeTranslatorName(name);
@@ -1711,12 +1482,10 @@ Base Path: ${CONFIG.basePath}</pre>
           translatorMap.set(normalized, { id: normalized, name: normalized, color: '#666', is_primary: false });
         }
       });
-      
       const allTranslators = Array.from(translatorMap.values());
       const availableChapters = state.config.chapters?.filter(c => c.available) || [];
       const hasPrev = availableChapters.some(c => c.number === config.number - 1);
       const hasNext = availableChapters.some(c => c.number === config.number + 1);
-      
       document.getElementById('main-content').innerHTML = `
         <div class="chapter-header">
           <div class="chapter-number">${config.number}</div>
@@ -1727,7 +1496,6 @@ Base Path: ${CONFIG.basePath}</pre>
             ${data.meta.status === 'incomplete' ? '<span class="incomplete-badge">翻译中</span>' : ''}
           </div>
         </div>
-        
         <div class="controls">
           <div class="control-group">
             <label><input type="checkbox" id="ctrl-translation" ${state.showTranslation ? 'checked' : ''}> 译文</label>
@@ -1742,17 +1510,14 @@ Base Path: ${CONFIG.basePath}</pre>
             </select>
           </div>
         </div>
-        
         <article id="chapter-content">
           ${data.sections.map(sec => renderSection(sec, companion[sec.id])).join('')}
         </article>
-        
         <nav class="chapter-nav">
           <a href="javascript:void(0)" onclick="prevChapter()" class="nav-btn ${hasPrev ? '' : 'disabled'}">← 上一章</a>
           <a href="#" onclick="showHome(); return false;" class="nav-btn" style="background: var(--ink-light);">返回目录</a>
           <a href="javascript:void(0)" onclick="nextChapter()" class="nav-btn ${hasNext ? '' : 'disabled'}">下一章 →</a>
         </nav>
-        
         <div class="comments-section">
           <h2>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;">
@@ -1769,11 +1534,9 @@ Base Path: ${CONFIG.basePath}</pre>
           <div id="utterances-container"></div>
         </div>
       `;
-      
       bindControls();
       loadUtterances();
     }
-    
     function compactSectionKey(title) {
       return decodeHtmlEntities(title || '')
         .toLowerCase()
@@ -1781,13 +1544,11 @@ Base Path: ${CONFIG.basePath}</pre>
         .replace(/[0-9]/g, '')
         .replace(/[^\u4e00-\u9fffa-z]/g, '');
     }
-
     function isObservationHeadingTitle(title) {
       const compact = compactSectionKey(title);
       if (compact === '观察' || compact === '温馨提示' || compact === '注意') return true;
       return compact.includes('observation');
     }
-
     function isRuleHeadingTitle(title) {
       const raw = decodeHtmlEntities(title || '').trim();
       if (!raw) return false;
@@ -1800,12 +1561,10 @@ Base Path: ${CONFIG.basePath}</pre>
       if (letters >= 12 && uppers / letters > 0.82) return true;
       return false;
     }
-
     function classifySection(title) {
       const raw = decodeHtmlEntities(title || '');
       const normalized = raw.toLowerCase().replace(/\s+/g, ' ').trim();
       const compact = compactSectionKey(raw);
-
       if (compact.includes('derivativesandcognates') || compact.includes('派生词和同源词')) {
         return { cls: 'section-derivatives', marker: '专项词汇', markerClass: 'derivatives', titleClass: 'title-main' };
       }
@@ -1826,7 +1585,6 @@ Base Path: ${CONFIG.basePath}</pre>
       }
       return { cls: '', marker: '', markerClass: '', titleClass: 'title-main' };
     }
-
     function pickObservationCn(blocks) {
       if (!blocks?.length) return '';
       const first = blocks[0];
@@ -1838,20 +1596,17 @@ Base Path: ${CONFIG.basePath}</pre>
       }
       return '';
     }
-
     // 渲染段落 (v7 格式)
     function renderSection(section, companionNote) {
       let blocks = section.blocks || [];
       let sectionTitleCn = '';
       const secMeta = classifySection(section.title);
-
       // Keep heading hierarchy aligned for paired titles such as OBSERVATION(S) / 注意|观察|温馨提示.
       if (isObservationHeadingTitle(section.title)) {
         sectionTitleCn = '温馨提示';
         const picked = pickObservationCn(blocks);
         if (picked) blocks = blocks.slice(1);
       }
-
       return `
         <section class="section ${secMeta.cls}" id="${section.id}">
           <h2 class="section-title ${secMeta.titleClass || 'title-main'}">
@@ -1859,9 +1614,7 @@ Base Path: ${CONFIG.basePath}</pre>
             ${sectionTitleCn ? `<span class="section-title-cn">${escapeHtml(sectionTitleCn)}</span>` : ''}
             ${secMeta.marker ? `<span class="section-marker ${secMeta.markerClass}">${secMeta.marker}</span>` : ''}
           </h2>
-          
           ${blocks.map(block => renderBlockV7(block)).join('')}
-          
           ${companionNote ? `
             <div class="companion-section" data-type="companion">
               <div class="companion-note">
@@ -1879,7 +1632,6 @@ Base Path: ${CONFIG.basePath}</pre>
         </section>
       `;
     }
-    
     // 渲染 Block (v7 格式)
     function renderBlockV7(block) {
       if (block.type === 'meta') {
@@ -1891,7 +1643,6 @@ Base Path: ${CONFIG.basePath}</pre>
             </div>
           `;
         }
-
         return `
           <div class="meta-line" data-seq="${block.seq}" data-page="${block.page}">
             <span class="seq">序号${block.seq}</span>
@@ -1899,13 +1650,10 @@ Base Path: ${CONFIG.basePath}</pre>
           </div>
         `;
       }
-      
       if (block.type === 'content') {
         const hasOriginal = block.original;
         const hasTranslations = block.translations && block.translations.length > 0;
-        
         if (!hasOriginal && !hasTranslations) return '';
-        
         // 为翻译添加颜色和fallback标记
         const translations = block.translations.map((t, i) => {
           const safeTranslator = normalizeTranslatorName(t.translator);
@@ -1921,7 +1669,6 @@ Base Path: ${CONFIG.basePath}</pre>
           };
         });
         const isEmphasis = block.original?.type === 'emphasis';
-        
         return `
           <div class="content-block ${isEmphasis ? 'emphasis-block' : ''}">
             ${hasOriginal ? `
@@ -1929,7 +1676,6 @@ Base Path: ${CONFIG.basePath}</pre>
                 ${highlightTerms(block.original.text)}
               </div>
             ` : ''}
-            
             ${hasTranslations ? `
               <div class="translations" data-type="translation">
                 ${translations.map(t => `
@@ -1950,19 +1696,15 @@ Base Path: ${CONFIG.basePath}</pre>
           </div>
         `;
       }
-      
       if (block.type === 'note') {
         return `<div class="note">💡 ${highlightTerms(block.text)}</div>`;
       }
-      
       if (block.type === 'footnote') {
         return `<div class="footnote">📌 ${highlightTerms(block.text)}</div>`;
       }
-      
       if (block.type === 'vocabulary') {
         return `<div class="vocabulary">${highlightTerms(block.text)}</div>`;
       }
-      
       if (block.type === 'table') {
         const rows = block.text
           .split(/<br\s*\/?>/i)
@@ -2002,11 +1744,9 @@ Base Path: ${CONFIG.basePath}</pre>
           </div>
         `;
       }
-
       if (block.type === 'subsection') {
         return `<h3 class="subsection-title">${highlightTerms(block.text)}</h3>`;
       }
-
       if (block.type === 'translator-note') {
         const noteText = (block.text || '').replace(/^【?译者注释】?/, '').trim();
         return `
@@ -2016,10 +1756,8 @@ Base Path: ${CONFIG.basePath}</pre>
           </div>
         `;
       }
-      
       return '';
     }
-    
     // ==================== Markdown 解析 (v7 格式) ====================
     function slugifySectionTitle(title) {
       return title
@@ -2028,17 +1766,13 @@ Base Path: ${CONFIG.basePath}</pre>
         .replace(/[^a-z0-9\u4e00-\u9fff]+/g, '-')
         .replace(/^-+|-+$/g, '') || 'section';
     }
-
     function buildCompanionLookup(rawNotes, sections) {
       const resolved = {};
       if (!rawNotes || !sections) return resolved;
-
       const byId = new Map(sections.map(sec => [sec.id, sec.id]));
       const bySlug = new Map(sections.map(sec => [slugifySectionTitle(sec.title), sec.id]));
-
       for (const [rawKey, note] of Object.entries(rawNotes)) {
         let targetId = null;
-
         if (byId.has(rawKey)) {
           targetId = byId.get(rawKey);
         } else if (/^sec-\d+$/.test(rawKey)) {
@@ -2047,15 +1781,12 @@ Base Path: ${CONFIG.basePath}</pre>
         } else if (bySlug.has(rawKey)) {
           targetId = bySlug.get(rawKey);
         }
-
         if (targetId) {
           resolved[targetId] = note;
         }
       }
-
       return resolved;
     }
-
     function parseChapterMarkdown(md) {
       log('开始解析 Markdown (v7)');
       // 标准化换行符（处理CRLF）
@@ -2063,7 +1794,6 @@ Base Path: ${CONFIG.basePath}</pre>
       const lines = md.split('\n');
       const result = { meta: {}, sections: [] };
       const translators = new Set();
-      
       // 解析 YAML frontmatter
       if (lines[0] === '---') {
         const endIndex = lines.indexOf('---', 1);
@@ -2074,12 +1804,10 @@ Base Path: ${CONFIG.basePath}</pre>
           log('YAML 元信息:', result.meta);
         }
       }
-      
       // 解析段落
       let currentSection = null;
       const sectionIdCounter = {};
       const pendingLeadingMeta = [];
-      
       // 创建默认章节，用于存放第一个##之前的内容
       function ensureSection() {
         if (!currentSection) {
@@ -2092,10 +1820,8 @@ Base Path: ${CONFIG.basePath}</pre>
         }
         return currentSection;
       }
-      
       for (let i = 0; i < lines.length; i++) {
         let line = lines[i];
-        
         // 段落标题 ## Section 1. xxx
         if (line.startsWith('## ')) {
           if (currentSection) result.sections.push(currentSection);
@@ -2111,7 +1837,6 @@ Base Path: ${CONFIG.basePath}</pre>
           log('发现段落:', currentSection.title);
           continue;
         }
-        
         // 小节标题 ### §...
         if (line.startsWith('### ')) {
           ensureSection().blocks.push({
@@ -2120,7 +1845,6 @@ Base Path: ${CONFIG.basePath}</pre>
           });
           continue;
         }
-
         // HTML 注释 <!-- shot:33 page:1 -->
         const shotMatch = line.match(/<!--\s*shot:(\d+)\s+page:(\d+)\s*-->/i);
         if (shotMatch) {
@@ -2137,7 +1861,6 @@ Base Path: ${CONFIG.basePath}</pre>
           }
           continue;
         }
-
         // HTML 注释 <!-- seq:43 page:11 -->
         const seqMatch = line.match(/<!--\s*seq:(\d+)\s+page:(\d+)\s*-->/i);
         if (seqMatch) {
@@ -2154,7 +1877,6 @@ Base Path: ${CONFIG.basePath}</pre>
           }
           continue;
         }
-        
         // 强调注释原文 <div class='latin-text emphasis-note'>...</div>
         const emphasisLatinMatch = line.match(/<div class='latin-text emphasis-note'>([\s\S]+)<\/div>/);
         if (emphasisLatinMatch) {
@@ -2165,7 +1887,6 @@ Base Path: ${CONFIG.basePath}</pre>
           });
           continue;
         }
-
         // 拉丁文 <div class='latin-text'>...</div>
         const latinMatch = line.match(/<div class='latin-text'>([\s\S]+)<\/div>/);
         if (latinMatch) {
@@ -2176,7 +1897,6 @@ Base Path: ${CONFIG.basePath}</pre>
           });
           continue;
         }
-        
         // 新格式：原文 <div class='original english'>...</div>
         const originalMatch = line.match(/<div class='original english'>([\s\S]+)<\/div>/);
         if (originalMatch) {
@@ -2187,7 +1907,6 @@ Base Path: ${CONFIG.basePath}</pre>
           });
           continue;
         }
-        
         // 特殊拉丁文 <div class='latin-text latin-special'>...</div>
         const latinSpecialMatch = line.match(/<div class='latin-text latin-special'>([\s\S]+)<\/div>/);
         if (latinSpecialMatch) {
@@ -2199,7 +1918,6 @@ Base Path: ${CONFIG.basePath}</pre>
           });
           continue;
         }
-        
         // 译者注释 <div class='translator-note' data-translator='...'>...</div>
         const translatorNoteMatch = line.match(/<div class='translator-note' data-translator='([^']+)'>([\s\S]+)<\/div>/);
         if (translatorNoteMatch) {
@@ -2212,7 +1930,6 @@ Base Path: ${CONFIG.basePath}</pre>
           });
           continue;
         }
-
         // 译文 <div class='translation' data-translator='...' ...>...</div>
         const transMatch = line.match(/<div class='translation' data-translator='([^']+)'[^>]*>([\s\S]+)<\/div>/);
         if (transMatch) {
@@ -2222,7 +1939,6 @@ Base Path: ${CONFIG.basePath}</pre>
           // 提取文本（去掉span标签）
           const textMatch = content.match(/^(.+?)\s*<span/);
           const text = decodeHtmlEntities(textMatch ? textMatch[1] : content);
-          
           // 检查是否已经有当前block
           const section = ensureSection();
           const lastBlock = section.blocks[section.blocks.length - 1];
@@ -2244,7 +1960,6 @@ Base Path: ${CONFIG.basePath}</pre>
           }
           continue;
         }
-        
         // 注释 <div class='note'>...</div>
         const noteMatch = line.match(/<div class='note'>([\s\S]+)<\/div>/);
         if (noteMatch) {
@@ -2254,7 +1969,6 @@ Base Path: ${CONFIG.basePath}</pre>
           });
           continue;
         }
-        
         // 脚注 <div class='footnote'>...</div>
         const footnoteMatch = line.match(/<div class='footnote'>([\s\S]+)<\/div>/);
         if (footnoteMatch) {
@@ -2264,7 +1978,6 @@ Base Path: ${CONFIG.basePath}</pre>
           });
           continue;
         }
-        
         // 词汇表 <div class='vocabulary'>...</div>
         const vocabMatch = line.match(/<div class='vocabulary'>([\s\S]+)<\/div>/);
         if (vocabMatch) {
@@ -2274,7 +1987,6 @@ Base Path: ${CONFIG.basePath}</pre>
           });
           continue;
         }
-        
         // 表格 <div class='table-content'>...</div>
         const tableMatch = line.match(/<div class='table-content'>([\s\S]+)<\/div>/);
         if (tableMatch) {
@@ -2285,37 +1997,29 @@ Base Path: ${CONFIG.basePath}</pre>
           continue;
         }
       }
-      
       if (currentSection) result.sections.push(currentSection);
-      
       // 收集译者信息
       result.meta.translators = Array.from(translators);
-      
       log('解析完成，共', result.sections.length, '个段落, 译者:', result.meta.translators);
       return result;
     }
-    
     function parseCompanionMarkdown(md) {
       // 标准化换行符（处理CRLF）
       md = md.replace(/\r\n/g, '\n');
       const notes = {};
       const sections = md.split('## ').slice(1);
-      
       for (const section of sections) {
         const lines = section.split('\n');
         const title = lines[0].trim();
         const content = lines.slice(1).join('\n').trim();
-        
         const refMatch = content.match(/\[ref:(.+?)\]/);
         if (refMatch) {
           const key = refMatch[1].trim().toLowerCase();
           notes[key] = { title, content: content.replace(/\[ref:.+?\]/, '').trim() };
         }
       }
-      
       return notes;
     }
-    
     // 获取译者信息（合并配置和章节数据）
     function getTranslatorInfo(name) {
       const normalized = normalizeTranslatorName(name);
@@ -2327,7 +2031,6 @@ Base Path: ${CONFIG.basePath}</pre>
       // 默认值
       return { color: '#666', is_primary: false };
     }
-    
     // ==================== 辅助功能 ====================
     function decodeHtmlEntities(text) {
       if (text === null || text === undefined) return '';
@@ -2335,14 +2038,12 @@ Base Path: ${CONFIG.basePath}</pre>
       textarea.innerHTML = String(text);
       return textarea.value;
     }
-
     function normalizeTranslatorName(name) {
       return decodeHtmlEntities(name || '')
         .replace(/<[^>]*>/g, '')
         .replace(/\s+/g, ' ')
         .trim();
     }
-
     function parseHexColor(hex) {
       const raw = (hex || '').replace('#', '').trim();
       if (!/^[0-9a-fA-F]{3}$|^[0-9a-fA-F]{6}$/.test(raw)) return { r: 102, g: 102, b: 102 };
@@ -2355,11 +2056,9 @@ Base Path: ${CONFIG.basePath}</pre>
         b: parseInt(full.slice(4, 6), 16)
       };
     }
-
     function clampColor(v) {
       return Math.max(0, Math.min(255, Math.round(v)));
     }
-
     function mixRgb(a, b, ratio) {
       return {
         r: clampColor(a.r * (1 - ratio) + b.r * ratio),
@@ -2367,11 +2066,9 @@ Base Path: ${CONFIG.basePath}</pre>
         b: clampColor(a.b * (1 - ratio) + b.b * ratio)
       };
     }
-
     function rgbToRgba(rgb, alpha) {
       return `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${alpha})`;
     }
-
     function relativeLuminance(rgb) {
       const toLinear = (c) => {
         const v = c / 255;
@@ -2382,7 +2079,6 @@ Base Path: ${CONFIG.basePath}</pre>
       const b = toLinear(rgb.b);
       return 0.2126 * r + 0.7152 * g + 0.0722 * b;
     }
-
     function getTranslatorBadgeStyle(hex) {
       const base = parseHexColor(hex);
       const lum = relativeLuminance(base);
@@ -2390,7 +2086,6 @@ Base Path: ${CONFIG.basePath}</pre>
       const isLight = lum > 0.5;
       const accent = isLight ? mixRgb(base, darkInk, 0.38) : mixRgb(base, { r: 255, g: 255, b: 255 }, 0.08);
       const borderRgb = isLight ? mixRgb(base, darkInk, 0.5) : mixRgb(base, darkInk, 0.22);
-
       return {
         // Fixed high-contrast parchment badge; color identity moves to border/dot/row accent.
         background: 'rgba(255, 252, 244, 0.96)',
@@ -2400,7 +2095,6 @@ Base Path: ${CONFIG.basePath}</pre>
         rowAccent: rgbToRgba(borderRgb, 0.9)
       };
     }
-
     function highlightTerms(text) {
       if (!text) return '';
       text = decodeHtmlEntities(text);
@@ -2408,31 +2102,25 @@ Base Path: ${CONFIG.basePath}</pre>
       let out = '';
       let lastIndex = 0;
       let match;
-      
       while ((match = pattern.exec(text)) !== null) {
         out += escapeHtml(text.slice(lastIndex, match.index));
         const termId = match[1];
         const label = match[2];
-        
         if (state.terminology[termId]) {
           out += `<span class="term" data-term="${escapeHtml(termId)}">${escapeHtml(label)}</span>`;
         } else {
           out += escapeHtml(match[0]);
         }
-        
         lastIndex = pattern.lastIndex;
       }
-      
       out += escapeHtml(text.slice(lastIndex));
       return out;
     }
-    
     function escapeHtml(text) {
       const div = document.createElement('div');
       div.textContent = text;
       return div.innerHTML;
     }
-    
     function bindControls() {
       document.getElementById('ctrl-translation')?.addEventListener('change', (e) => {
         state.showTranslation = e.target.checked;
@@ -2443,24 +2131,20 @@ Base Path: ${CONFIG.basePath}</pre>
           el.style.display = state.showTranslation ? '' : 'none';
         });
       });
-      
       document.getElementById('ctrl-companion')?.addEventListener('change', (e) => {
         state.showCompanion = e.target.checked;
         document.querySelectorAll('[data-type="companion"]').forEach(el => {
           el.style.display = state.showCompanion ? 'block' : 'none';
         });
       });
-      
       document.getElementById('ctrl-translator')?.addEventListener('change', (e) => {
         state.selectedTranslator = e.target.value;
         filterTranslations();
       });
     }
-    
     function filterTranslations() {
       const value = state.selectedTranslator;
       const noteBlocks = document.querySelectorAll('.translator-note-block');
-      
       // 仅显示原文模式
       if (value === 'original-only') {
         document.querySelectorAll('.translations').forEach(el => {
@@ -2475,7 +2159,6 @@ Base Path: ${CONFIG.basePath}</pre>
           el.style.display = '';
         });
       }
-      
       // 全部显示
       if (value === 'all') {
         document.querySelectorAll('.translation').forEach(el => {
@@ -2486,7 +2169,6 @@ Base Path: ${CONFIG.basePath}</pre>
         });
         return;
       }
-      
       // 主译者模式
       if (value === 'primary') {
         document.querySelectorAll('.translation').forEach(el => {
@@ -2501,23 +2183,19 @@ Base Path: ${CONFIG.basePath}</pre>
         });
         return;
       }
-      
       // 特定译者模式 - 底漌逻辑
       document.querySelectorAll('.translations').forEach(block => {
         const translations = block.querySelectorAll('.translation');
         let hasSelectedTranslator = false;
-        
         translations.forEach(el => {
           const translator = el.getAttribute('data-translator');
           if (translator === value) {
             hasSelectedTranslator = true;
           }
         });
-        
         translations.forEach(el => {
           const translator = el.getAttribute('data-translator');
           const isFallback = el.getAttribute('data-fallback') === 'true';
-          
           if (translator === value) {
             el.classList.remove('hidden', 'fallback');
           } else if (!hasSelectedTranslator && isFallback) {
@@ -2529,20 +2207,17 @@ Base Path: ${CONFIG.basePath}</pre>
           }
         });
       });
-
       noteBlocks.forEach(el => {
         const translator = el.getAttribute('data-translator');
         el.classList.toggle('hidden', translator !== value);
       });
     }
-    
     function toggleCompanion(btn) {
       const content = btn.nextElementSibling;
       content.classList.toggle('show');
       btn.querySelector('span:last-child').textContent = 
         content.classList.contains('show') ? '▲' : '▼';
     }
-    
     async function copyText(text) {
       try {
         await navigator.clipboard.writeText(text);
@@ -2551,7 +2226,6 @@ Base Path: ${CONFIG.basePath}</pre>
         console.error('复制失败:', e);
       }
     }
-    
     function prevChapter() {
       const current = state.config.chapters.find(c => c.id === state.currentChapter);
       if (!current || current.number <= 0) return;
@@ -2560,7 +2234,6 @@ Base Path: ${CONFIG.basePath}</pre>
         .find(c => c.number === current.number - 1);
       if (prev) loadChapter(prev.id);
     }
-    
     function nextChapter() {
       const current = state.config.chapters.find(c => c.id === state.currentChapter);
       if (!current) return;
@@ -2569,18 +2242,15 @@ Base Path: ${CONFIG.basePath}</pre>
         .find(c => c.number === current.number + 1);
       if (next) loadChapter(next.id);
     }
-    
     // ==================== 术语表 ====================
     function showTerminology() {
       window.location.hash = 'terminology';
       const terms = Object.values(state.terminology);
-      
       document.getElementById('main-content').innerHTML = `
         <div style="text-align: center; margin-bottom: 2rem;">
           <h1 class="chapter-title">术语对照表</h1>
           <p style="color: var(--ink-light);">拉丁语语法术语与中文翻译对照</p>
         </div>
-        
         <!-- 术语来源说明 -->
         <div style="background: rgba(184,134,11,0.1); border-left: 4px solid var(--gold); padding: 1rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
           <h3 style="color: var(--wine); margin-bottom: 0.5rem; font-size: 1rem;">📚 术语来源</h3>
@@ -2591,11 +2261,9 @@ Base Path: ${CONFIG.basePath}</pre>
             原书链接：<a href="https://zhuanlan.zhihu.com/p/653809137" target="_blank" style="color: var(--wine);">https://zhuanlan.zhihu.com/p/653809137</a>
           </p>
         </div>
-        
         <div class="terminology-search">
           <input type="text" id="term-search" placeholder="搜索术语..." oninput="searchTerms(this.value)">
         </div>
-        
         <div class="terminology-list" id="term-list">
           ${terms.filter(t => t.translation && t.translation.trim()).map(t => `
             <div class="term-card" data-term="${t.term.toLowerCase()}" data-cn="${t.translation.toLowerCase()}">
@@ -2606,7 +2274,6 @@ Base Path: ${CONFIG.basePath}</pre>
             </div>
           `).join('')}
         </div>
-        
         <!-- 术语表鸣谢 -->
         <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(184,134,11,0.3);">
           <h3 style="color: var(--wine); margin-bottom: 1rem;">鸣谢</h3>
@@ -2621,7 +2288,6 @@ Base Path: ${CONFIG.basePath}</pre>
         </div>
       `;
     }
-    
     function searchTerms(query) {
       const q = query.toLowerCase().trim();
       document.querySelectorAll('.term-card').forEach(card => {
@@ -2630,14 +2296,12 @@ Base Path: ${CONFIG.basePath}</pre>
         card.classList.toggle('hidden', !term.includes(q) && !cn.includes(q));
       });
     }
-
     async function fetchMarkdownWithFallback(path) {
       let res = await fetch(getDataPath(path));
       if (!res.ok) res = await fetch(getRawDataPath(path));
       if (!res.ok) throw new Error(`无法加载文件: ${path} (HTTP ${res.status})`);
       return await res.text();
     }
-
     async function showLatinGuide() {
       window.location.hash = 'latin-guide';
       document.getElementById('main-content').innerHTML = `
@@ -2646,7 +2310,6 @@ Base Path: ${CONFIG.basePath}</pre>
       try {
         const md = await fetchMarkdownWithFallback('data/reference/latin_guide.md');
         const html = marked.parse(md);
-
         document.getElementById('main-content').innerHTML = `
           <section class="ref-page">
             <div class="ref-header">
@@ -2660,7 +2323,6 @@ Base Path: ${CONFIG.basePath}</pre>
         showError('加载拉丁语入门指南失败', e.message);
       }
     }
-
     async function showUltimateModel() {
       window.location.hash = 'ultimate-model';
       document.getElementById('main-content').innerHTML = `
@@ -2687,21 +2349,18 @@ Base Path: ${CONFIG.basePath}</pre>
         showError('加载终极语言学习模型失败', e.message);
       }
     }
-    
     // ==================== 关于页 ====================
     function showAbout() {
       window.location.hash = 'about';
       document.getElementById('main-content').innerHTML = `
         <div style="max-width: 700px; margin: 0 auto;">
           <h1 class="chapter-title" style="text-align: center;">关于项目</h1>
-          
           <div style="background: rgba(255,255,255,0.6); padding: 2rem; border-radius: 8px; margin-top: 2rem;">
             <h3 style="color: var(--wine); margin-bottom: 1rem;">项目简介</h3>
             <p style="margin-bottom: 1rem;">
               本项目是 <strong>Learn to Read Latin (LTRL)</strong> 的中文翻译在线阅读器。
               LTRL 是耶鲁大学出版社出版的权威拉丁语教材。
             </p>
-            
             <h3 style="color: var(--wine); margin: 1.5rem 0 1rem;">版权声明</h3>
             <div style="background: rgba(114,47,55,0.1); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--wine);">
               <p style="font-size: 0.9rem;">
@@ -2711,7 +2370,6 @@ Base Path: ${CONFIG.basePath}</pre>
                 <strong>禁止用于商业用途</strong>。
               </p>
             </div>
-            
             <h3 style="color: var(--wine); margin: 1.5rem 0 1rem;">鸣谢</h3>
             <div style="background: rgba(184,134,11,0.1); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--gold); margin-bottom: 1rem;">
               <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
@@ -2721,7 +2379,6 @@ Base Path: ${CONFIG.basePath}</pre>
                 感谢所有译者的辛勤工作和专业贡献：Lanx、簪花落梅、Yancey、tuche est、Mecius
               </p>
             </div>
-            
             <h3 style="color: var(--wine); margin: 1.5rem 0 1rem;">参与贡献</h3>
             <p>
               欢迎通过 <a href="https://github.com/${CONFIG.repo}" target="_blank" style="color: var(--wine);">GitHub</a> 
@@ -2731,15 +2388,12 @@ Base Path: ${CONFIG.basePath}</pre>
         </div>
       `;
     }
-    
     // ==================== 评论 ====================
     function loadUtterances() {
       const container = document.getElementById('utterances-container');
       if (!container) return;
-      
       // 清除旧的评论框
       container.innerHTML = '';
-      
       const script = document.createElement('script');
       script.src = 'https://utteranc.es/client.js';
       script.setAttribute('repo', CONFIG.repo);
@@ -2749,17 +2403,14 @@ Base Path: ${CONFIG.basePath}</pre>
       script.async = true;
       container.appendChild(script);
     }
-    
     // ==================== 工具函数 ====================
     function renderChapterDropdown() {
       const dropdown = document.getElementById('chapter-dropdown');
       const available = state.config.chapters?.filter(c => c.available) || [];
-      
       if (available.length === 0) {
         dropdown.innerHTML = '<div style="padding: 1rem;">暂无可用章节</div>';
         return;
       }
-      
       dropdown.innerHTML = available.map(c => `
         <a href="#${c.id}" onclick="loadChapter('${c.id}'); return false;">
           <span style="display: inline-block; width: 20px; text-align: center; color: var(--gold); font-weight: bold;">${c.number}</span>
@@ -2768,31 +2419,26 @@ Base Path: ${CONFIG.basePath}</pre>
         </a>
       `).join('');
     }
-    
     // ==================== 术语提示 ====================
     document.addEventListener('mouseover', (e) => {
       if (e.target.classList.contains('term')) {
         const termId = e.target.getAttribute('data-term');
         const term = state.terminology[termId];
         if (!term) return;
-        
         const tooltip = document.getElementById('tooltip');
         document.getElementById('tooltip-term').textContent = term.term;
         document.getElementById('tooltip-cn').textContent = term.translation;
         document.getElementById('tooltip-desc').textContent = term.explanation;
-        
         tooltip.style.display = 'block';
         tooltip.style.left = (e.clientX + 10) + 'px';
         tooltip.style.top = (e.clientY + 10) + 'px';
       }
     });
-    
     document.addEventListener('mouseout', (e) => {
       if (e.target.classList.contains('term')) {
         document.getElementById('tooltip').style.display = 'none';
       }
     });
-    
     // 启动
     init();
   </script>

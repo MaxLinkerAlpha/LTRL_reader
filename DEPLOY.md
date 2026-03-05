@@ -29,7 +29,7 @@ LTRL_reader/
 │   │   ├── chapter_III.md
 │   │   ├── chapter_IV.md
 │   │   └── chapter_V.md
-│   └── companion/            ← 伴侣注释
+│   └── companion/            ← 梅老师小贴士
 │       └── chapter-1-companion.md
 ├── README.md               ← 项目说明
 └── DEPLOY.md               ← 本文件
@@ -123,7 +123,7 @@ Rōma in Italiā est.
 罗马位于意大利。
 
 ### Note
-这里是伴侣注释。
+这里是梅老师小贴士。
 ```
 
 ### 添加新章节

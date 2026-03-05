@@ -30,7 +30,7 @@ source/
 
 ### companion/
 伴侣文档，包含翻译注释和补充材料：
-- `chapter-1-companion.md` - 第一章伴侣注释
+- `chapter-1-companion.md` - 第一章梅老师小贴士
 
 伴侣文档内容为各章节重点语法概念的详细讲解，包含例句分析和扩展阅读推荐。
 
