@@ -1,12 +1,12 @@
 {
   "site": {
-    "title": "LTRL 拉丁语阅读器",
-    "subtitle": "Learn to Read Latin 中文翻译版",
-    "description": "LTRL (Learn to Read Latin) 的中文在线阅读器，支持多译者对比阅读",
-    "author": "民间翻译团队",
+    "title": "拉丁文阅读器",
+    "subtitle": "LTRL (Learn to Read Latin) 民间汉化在线阅读器",
+    "description": "支持多译者对比阅读，若某译者只翻了部分，则用其他译者补充",
+    "author": "LTRL 翻译小组",
     "license": "仅供学习使用，禁止商业用途",
     "github": "https://github.com/MaxLinkerAlpha/LTRL_reader",
-    "iteration_version": "v2026.03.05.170000"
+    "iteration_version": "v2026.03.07.170000"
   },
   "translators": [
     {
@@ -49,7 +49,7 @@
       "name": "机翻",
       "color": "#6A6A6A",
       "is_primary": false,
-      "description": "待校订"
+      "description": "机翻译者"
     },
     {
       "id": "cyan",
@@ -84,7 +84,7 @@
     {
       "id": "chapter_I_tips",
       "number": 1.5,
-      "title": "Chapter I 补充 - 梅老师小贴士",
+      "title": "Chapter I 伴侣 - 梅老师小贴士",
       "type": "reference",
       "available": true
     },
