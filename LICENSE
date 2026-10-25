@@ -1,0 +1,77 @@
+# 授权说明 / Licensing
+
+本仓库包含两类内容，适用**不同**条款。请勿将下述第 1 节的授权扩大到第 2 节的内容。
+
+---
+
+## 1. 程序代码 — MIT License
+
+适用于：`scripts/` 下的全部脚本、`assets/` 下的样式与前端资源、根目录的 `index.html` 与构建配置。
+
+```
+MIT License
+
+Copyright (c) 2026 Max Linker Alpha
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+---
+
+## 2. 翻译与文本内容 — 不授予再分发许可
+
+适用于：`data/chapters/`、`data/reference/`、`source/` 下的全部翻译文本与整理稿。
+
+本仓库中的拉丁语教材中文翻译，是个人语言学习过程中产生的**节选与练习稿**，
+用于学习记录与研究者之间的交流，**不构成对原作品的完整复制或替代**。
+
+**此部分内容不适用上节 MIT 授权，亦不授予任何复制、再分发或商业使用许可。**
+
+### 原作品权利归属
+
+| 作品 | 作者 | 出版方 |
+|---|---|---|
+| *Learn to Read Latin* | Andrew Keller, Stephanie Russell | Yale University Press |
+| ISBN 978-0-300-11539-2 (Part 1) | | |
+
+上述原作品的著作权归原作者及出版方所有。本仓库仅包含学习过程中涉及的部分篇章的
+译文与注释，**不含原书 PDF 扫描件，也不提供完整教材的复制品**。
+
+### 关于合理使用
+
+本仓库内容的公开，意在语言学习方法与工具层面（多译者对照、术语提示、阅读器实现）
+的交流。若任何权利人认为本仓库内容超出其可接受范围，请见第 3 节。
+
+---
+
+## 3. 权利主张与移除通道
+
+如任何权利人认为本仓库内容侵犯其合法权益，请通过以下任一方式联系：
+
+- 在本仓库提交 GitHub Issue
+- 通过 GitHub 账号 [@MaxLinkerAlpha](https://github.com/MaxLinkerAlpha) 联系
+
+**本人承诺在收到有效通知并核实后 48 小时内移除相关内容，无需对方说明法律依据。**
+
+---
+
+## 4. 第三方资源
+
+`README.md` 中提及的 Forvo 发音链接、原书参考页面等外部资源，其内容与权利状态
+由各自站点负责，不在本仓库授权范围之内。
